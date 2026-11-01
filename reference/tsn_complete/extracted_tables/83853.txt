@@ -1,0 +1,59 @@
+STANDARD DEPARTURE CHART -                                  TR ANSITION LVL        FL190                  HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                    TRANSITION ALT 5500 m                                                           RNAV RWY 25L/R
+                                                                                                                                                    TANOS 2D
+
+
+
+ 1.    TABULAR DESCRIPTION
+
+    TANOS 2D  DEPARTURE
+     Serial         Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor      Identifier     over          °M(°T)          Variation        (km)       Direction        (m)         limit     Nav Spec
+                                                                                                                                      (km/h)
+    INITIAL CLIMB R W Y 25L
+      010            CF           TS612           Y             250               +1            7.1            -            -          -445        RNAV 1
+      020            DF           TS626           -               -               +1             -             -         +1200           -         RNAV 1
+    INITIAL CLIMB R W Y 25R
+      010            CF           TS614           Y             250               +1            7.2            -            -          -445        RNAV 1
+      020            DF           TS626           -               -               +1             -             -         +1200           -         RNAV 1
+    FROM TS614
+      010            IF           TS626           -               -               +1             -            -          +1200           -         RNAV 1
+      020            TF           TS628           -       070     (069.1)         +1            9.8            -          -2750          -         RNAV 1
+      030            TF           TS632           -       070     (069.1)         +1           14.8            -         +3050           -         RNAV 1
+      040            TF           TANOS           -       091     (090.0)         +1           52.6            -            -            -         RNAV 1
+    DO VIN TRAN SITION
+     Serial         Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor      Identifier     over          °M(°T)          Variation        (km)       Direction        (m)         limit     Nav Spec
+                                                                                                                                      (km/h)
+      010            IF          TANOS            -               -               +1             -            -             -            -         RNAV 1
+      020            TF           DOVIN           -       034     (032.7)         +1          158.1            -            -            -         RNAV 1
+    BIXEX TRANSITION
+     Serial         Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor      Identifier     over          °M(°T)          Variation        (km)       Direction        (m)         limit     Nav Spec
+                                                                                                                                      (km/h)
+      010            IF          TANOS            -               -               +1             -            -             -            -         RNAV 1
+      020            TF           BIXEX           -       043     (042.1)         +1          132.6            -            -            -         RNAV 1
+    PTH TRANSITION
+     Serial         Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor      Identifier     over          °M(°T)          Variation        (km)       Direction        (m)         limit     Nav Spec
+                                                                                                                                      (km/h)
+      010             IF          TANOS           -               -               +1             -             -            -            -         RNAV 1
+      020            TF            PTH            -       075     (073.9)         +1           85.2            -            -            -         RNAV 1
+
+ 2.    WAYPOINT LIST
+
+    WAYPOINT ID                   COORD INATES (W GS-84)
+         BIXE X             11°36'13.277”N           108°08'19.311”E
+         DOVIN              11°55'01.000”N           108°06'29.000”E
+           PTH              10°55'41.000”N           108°04'19.000”E
+         TAN OS             10°42'54.621”N           107°19'24.958”E
+         TS612              10°47'15.699”N           106°34'26.946”E
+         TS614              10°47'26.829”N           106°34'22.644”E
+         TS626              10°38'09.532”N           106°37'57.938”E
+         TS628              10°40'03.476”N           106°42'59.655”E
+         TS632              10°42'55.314”N           106°50'35.195”E
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V1\VVTS_SID RNAV RWY 25LR TANOS
+2D_TABULAR_V1.docx

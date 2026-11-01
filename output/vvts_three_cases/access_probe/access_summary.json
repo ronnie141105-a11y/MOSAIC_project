@@ -1,0 +1,22 @@
+{
+  "checked_local_date": "2026-10-10",
+  "provider": "AirNav Radar",
+  "billing": "free",
+  "auto_scale": "off",
+  "initial_credits": 99,
+  "final_credits": 87,
+  "observed_credit_decrease": 12,
+  "successful_history_probe": {
+    "flight": "VN243",
+    "local_date": "2026-02-22",
+    "http_status": 200,
+    "cost_reported": 1,
+    "positions": 813,
+    "arrival_outside_requested_main_window": true,
+    "used_as_holiday_case_traffic": false
+  },
+  "wide_searches": "Airport-wide and geographic searches timed out. Empty/unreceived responses do not mean no traffic.",
+  "cost_attribution": "Only the successful response reported its cost. Other credit usage is not individually reconciled from response bodies.",
+  "credential_handling": "Temporary authentication files were deleted in cleanup. No credential is stored in outputs.",
+  "purchase_or_auto_scale_change": false
+}

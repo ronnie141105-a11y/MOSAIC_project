@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "runs": {
+    "workbook_low_20": "20261031T023558Z-9f40de82",
+    "workbook_peak_50": "20261031T023600Z-dbf5f3f6"
+  },
+  "unit_and_surface_tests": 39,
+  "published_replay_integration_tests": 2,
+  "total_tests": 41,
+  "final_native_trial_records": 44,
+  "all_final_spacing_and_runway_checks_passed": true,
+  "fcfs_resolutions": [
+    1,
+    5
+  ],
+  "seeds_per_ga_configuration": 10,
+  "source_thesis_unchanged": true
+}

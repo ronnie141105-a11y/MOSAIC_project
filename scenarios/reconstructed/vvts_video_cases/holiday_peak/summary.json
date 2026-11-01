@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "total": 80,
+    "arrivals": 37,
+    "departures": 43,
+    "video_identities": 80,
+    "synthetic_identities": 0,
+    "departures_already_airborne": 3
+  },
+  "window_start_utc": "2026-02-22T03:00:00+00:00",
+  "window_end_utc": "2026-02-22T05:00:00+00:00",
+  "replay_end_utc": "2026-02-22T07:23:07+00:00",
+  "flights_resequenced_after_window": 22,
+  "separation_audit": {
+    "method": "one sample per minute; airborne 3,000-16,570 ft within 40 NM of TSH",
+    "units": "aircraft-pair-minutes, not distinct conflicts or clearances",
+    "horizontal_under_10_nm": 80,
+    "same_heading_under_20_nm": 67,
+    "arrival_arrival_under_10_nm": 0,
+    "arrival_arrival_same_heading_under_20_nm": 0,
+    "horizontal_under_10_nm_and_vertical_under_1000_ft": 0,
+    "same_heading_under_20_nm_and_vertical_under_1000_ft": 4,
+    "close_pair_minutes_by_type": {},
+    "close_pair_examples": [],
+    "closest_nm": 0.97,
+    "caveat": "No controller clearance, surveillance error, wake category, or actual runway confirmed."
+  }
+}

@@ -1,0 +1,74 @@
+STANDARD DEPARTURE CHART -                               TRANSITION  LVL        FL190               HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                 TRANSITION ALT         5500 m                                               RNAV RWY 25L/R
+                                                                                                                                              ANTRI 2F
+
+
+  PATMA TRANSITION
+
+    Serial       Path      Waypoint     Fly-       Course        Magnetic   Distance    Radius       Arc       Turn     Altitude   Speed
+   number     Descriptor   Identifier   over        °M(°T)       Variation    (km)        (km)     Center    Direction    (m)       limit    Nav Spec
+                                                                                                     ID                            (km/h)
+
+     010          IF         ANTRI        -            -            +1          -           -         -          -          -         -        RNAV 1
+
+     020          TF        PATMA         -      027    (025.6)     +1        144.2         -         -          -          -         -        RNAV 1
+
+
+ 2.    WAYPOINT LIST
+
+    WAYPOINT ID                  COORD INATES (W GS-84)
+         AN TRI            11°09'41.423”N          107°14'10.485”E
+         BIXE X            11°36'13.277”N          108°08'19.311”E
+         DOVIN             11°55'01.000”N          108°06'29.000”E
+
+        PATMA              12°20'11.000”N          107°48'36.000”E
+          PTH              10°55'41.000”N          108°04'19.000”E
+
+        R W25L             10°49'25.371”N          106°40'10.310”E
+        R W25R             10°49'29.480”N          106°39'47.432”E
+
+         TS652             10°47'58.727”N          106°36'20.842”E
+         TS654             10°48'08.831”N          106°36'13.830”E
+
+         TS658             10°53'08.037”N          106°32'46.261”E
+         TS662             10°54'10.238”N          106°35'35.835”E
+         TS664             10°53'46.841”N          106°38'41.746”E
+         TS666             10°53'08.706”N          106°43'44.214”E
+         TS668             10°53'21.902”N          106°51'21.392”E
+         TS814             10°53'43.978”N          107°04'21.443”E
+         TS816             11°01'42.451”N          107°09'15.652”E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V2\VVTS_SID RNAV RWY 25LR ANTRI
+2F_TABULAR_V2.docx

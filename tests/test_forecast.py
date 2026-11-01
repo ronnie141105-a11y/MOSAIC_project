@@ -1,0 +1,499 @@
+"""
+Regression tests — Milestone 6 (4DARHAC forecast, `astra.forecast`).
+
+Run with:
+    python3 tests/test_forecast.py
+
+No BlueSky process and no third-party test framework required. Exits
+non-zero if any check fails (see `tests/_runner.py`).
+"""
+
+import math
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from astra.complexity.models import ComplexityRegion
+from astra.forecast.engine import ForecastEngine
+from astra.forecast.horizon_series import build_series
+from astra.forecast.projection import linear_crossing_time, predicted_peak
+from astra.hotspot.models import Cluster
+from astra.tracking.models import FourDArhac
+from astra.utils.config import ASTRAConfig
+from tests._runner import Runner
+
+
+def _cluster(callsigns, lat=47.0, lon=8.0, extent_nm=5.0, horizon_min=0, valid_at_s=0.0, label=0):
+    """Build a hand-controlled `Cluster` for direct series/engine tests."""
+    return Cluster(
+        cluster_id=f"{'observed' if horizon_min == 0 else 'predicted'}:{horizon_min}:{label}",
+        source="observed" if horizon_min == 0 else "predicted",
+        horizon_min=horizon_min,
+        valid_at_s=valid_at_s,
+        member_callsigns=frozenset(callsigns),
+        centroid_lat=lat,
+        centroid_lon=lon,
+        centroid_alt_ft=35000.0,
+        horizontal_extent_nm=extent_nm,
+    )
+
+
+def _region(callsigns, score, valid_at_s, horizon_min=0, lat=47.0, lon=8.0, label=0):
+    """Build a hand-controlled `ComplexityRegion` with a chosen score/time."""
+    cluster = _cluster(
+        callsigns, lat=lat, lon=lon, horizon_min=horizon_min, valid_at_s=valid_at_s, label=label
+    )
+    return ComplexityRegion(cluster=cluster, complexity_score=score, components={}, computed_at_s=valid_at_s)
+
+
+def _track(status, score, valid_at_s=0.0, confidence=1.0, callsigns=("A1", "A2"), peak_complexity=None):
+    """Build a minimal `FourDArhac` with one observed entry, ready to forecast."""
+    region = _region(list(callsigns), score, valid_at_s)
+    return FourDArhac(
+        arhac_id="T1",
+        status=status,
+        track=[region],
+        member_aircraft=frozenset(callsigns),
+        confidence=confidence,
+        peak_complexity=peak_complexity if peak_complexity is not None else score,
+        peak_time_s=valid_at_s,
+    )
+
+
+# ----------------------------------------------------------------------
+# astra.forecast.projection
+# ----------------------------------------------------------------------
+
+
+def test_linear_crossing_time_rising(r: Runner) -> None:
+    """A rising crossing interpolates linearly between the bracketing points."""
+    points = [(0.0, 40.0), (300.0, 45.0), (600.0, 55.0)]
+    t = linear_crossing_time(points, threshold=50.0, rising=True)
+    r.check_close("rising crossing interpolated at t=450", t, 450.0)
+
+
+def test_linear_crossing_time_falling(r: Runner) -> None:
+    """A falling crossing interpolates linearly between the bracketing points."""
+    points = [(0.0, 35.0), (300.0, 32.0), (600.0, 25.0)]
+    t = linear_crossing_time(points, threshold=30.0, rising=False)
+    r.check_close("falling crossing interpolated at t=385.714", t, 300.0 + (2.0 / 7.0) * 300.0)
+
+
+def test_linear_crossing_time_no_crossing(r: Runner) -> None:
+    """A series that never reaches the threshold returns None."""
+    points = [(0.0, 10.0), (300.0, 15.0), (600.0, 20.0)]
+    r.check("no rising crossing -> None", linear_crossing_time(points, 50.0, rising=True) is None)
+
+
+def test_predicted_peak_exceeds(r: Runner) -> None:
+    """The highest future point is returned when it exceeds the current peak."""
+    result = predicted_peak([(300.0, 60.0), (600.0, 85.0)], current_peak=70.0)
+    r.check("peak found", result is not None)
+    r.check_close("peak time", result[0], 600.0)
+    r.check_close("peak score", result[1], 85.0)
+
+
+def test_predicted_peak_does_not_exceed(r: Runner) -> None:
+    """No future point exceeding the current peak -> None."""
+    result = predicted_peak([(300.0, 60.0), (600.0, 65.0)], current_peak=70.0)
+    r.check("no higher future peak -> None", result is None)
+
+
+def test_predicted_peak_empty(r: Runner) -> None:
+    """No future points at all -> None."""
+    r.check("empty points -> None", predicted_peak([], current_peak=70.0) is None)
+
+
+# ----------------------------------------------------------------------
+# astra.forecast.horizon_series
+# ----------------------------------------------------------------------
+
+
+def test_build_series_matches_and_counts(r: Runner) -> None:
+    """Matched horizons are appended in time order; unmatched horizons are skipped."""
+    track = _track("CONFIRMED", score=40.0, valid_at_s=0.0)
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 45.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 55.0, 600.0, horizon_min=10)],
+        15: [_region(["B1", "B2"], 90.0, 900.0, horizon_min=15, lat=10.0, lon=10.0)],
+    }
+    series, matched_count, total_horizons = build_series(track, regions_by_horizon, jaccard_threshold=0.5)
+
+    r.check_close("anchor + every evaluated horizon", float(len(series)), 4.0)
+    r.check("series sorted ascending by time", [p[0] for p in series] == sorted(p[0] for p in series))
+    r.check("matched_count excludes the non-overlapping horizon", matched_count == 2)
+    r.check("total_horizons counts every non-zero horizon key present", total_horizons == 3)
+
+
+def test_build_series_ignores_horizon_zero(r: Runner) -> None:
+    """Horizon 0 in regions_by_horizon (already folded into track) is not re-matched."""
+    track = _track("CONFIRMED", score=40.0, valid_at_s=0.0)
+    regions_by_horizon = {0: [_region(["A1", "A2"], 999.0, 0.0)]}
+    series, matched_count, total_horizons = build_series(track, regions_by_horizon, jaccard_threshold=0.5)
+
+    r.check("only the anchor point present", len(series) == 1)
+    r.check("horizon 0 not counted as a predicted horizon", total_horizons == 0)
+    r.check("nothing matched", matched_count == 0)
+
+
+# ----------------------------------------------------------------------
+# astra.forecast.engine.ForecastEngine
+# ----------------------------------------------------------------------
+
+
+def test_forecast_skips_candidate(r: Runner) -> None:
+    """CANDIDATE tracks are never forecast."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("CANDIDATE", score=40.0)
+    regions_by_horizon = {5: [_region(["A1", "A2"], 90.0, 300.0, horizon_min=5)]}
+    result = engine.forecast(track, regions_by_horizon)
+    r.check("predicted_onset_s stays None", result.predicted_onset_s is None)
+    r.check("forecast_urgency_rank stays None", result.forecast_urgency_rank is None)
+
+
+def test_forecast_skips_closed(r: Runner) -> None:
+    """CLOSED tracks are never forecast."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("CLOSED", score=40.0)
+    regions_by_horizon = {5: [_region(["A1", "A2"], 90.0, 300.0, horizon_min=5)]}
+    result = engine.forecast(track, regions_by_horizon)
+    r.check("predicted_onset_s stays None", result.predicted_onset_s is None)
+
+
+def test_forecast_insufficient_matched_horizons(r: Runner) -> None:
+    """Fewer than forecast_min_matched_horizons matches -> None fields, capped confidence."""
+    config = ASTRAConfig(forecast_min_matched_horizons=2)
+    engine = ForecastEngine(config)
+    track = _track("CONFIRMED", score=40.0, confidence=1.0)
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 90.0, 300.0, horizon_min=5)],
+        10: [_region(["B1", "B2"], 90.0, 600.0, horizon_min=10, lat=10.0, lon=10.0)],
+    }
+    result = engine.forecast(track, regions_by_horizon)
+    r.check("short-lived onset supported by evaluated disappearance", result.predicted_onset_s is not None)
+    r.check("disappearance supplies dissipation", result.predicted_dissipation_s is not None)
+    r.check("short-lived peak estimated", result.predicted_peak_time_s is not None)
+    r.check_close("confidence capped by coverage (1 matched / 2 total)", result.confidence, (1 / config.tracking_confirm_cycles) * 0.5 * math.exp(-60 / config.forecast_confidence_decay_s))
+
+
+def test_forecast_onset_crossing(r: Runner) -> None:
+    """A rising series crossing forecast_onset_threshold sets predicted_onset_s."""
+    config = ASTRAConfig()
+    engine = ForecastEngine(config)
+    track = _track("GROWING", score=40.0, valid_at_s=0.0, confidence=1.0, peak_complexity=40.0)
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 45.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 55.0, 600.0, horizon_min=10)],
+        15: [],
+        30: [],
+        60: [],
+    }
+    result = engine.forecast(track, regions_by_horizon)
+
+    r.check("predicted_onset_s is set", result.predicted_onset_s is not None)
+    r.check_close("interpolated onset time", result.predicted_onset_s, 450.0)
+
+    coverage = 2 / 5
+    lead_time_s = 450.0
+    decay = 1.0 - math.exp(-lead_time_s / config.forecast_confidence_decay_s)
+    expected_confidence = (1 / config.tracking_confirm_cycles) * coverage * (1.0 - decay)
+    r.check_close("confidence matches detection_ramp*coverage*(1-decay)", result.confidence, expected_confidence)
+
+
+def test_forecast_onset_already_active(r: Runner) -> None:
+    """A track already above the onset threshold has no onset left to predict."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("GROWING", score=60.0, confidence=1.0, peak_complexity=60.0)
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 65.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 70.0, 600.0, horizon_min=10)],
+    }
+    result = engine.forecast(track, regions_by_horizon)
+    r.check("already active -> predicted_onset_s stays None", result.predicted_onset_s is None)
+
+
+def test_forecast_dissipation_crossing(r: Runner) -> None:
+    """A falling series crossing forecast_dissipation_threshold sets predicted_dissipation_s."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("DISSIPATING", score=35.0, confidence=1.0, peak_complexity=70.0)
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 32.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 25.0, 600.0, horizon_min=10)],
+    }
+    result = engine.forecast(track, regions_by_horizon)
+    r.check("predicted_dissipation_s is set", result.predicted_dissipation_s is not None)
+    r.check_close(
+        "interpolated dissipation time", result.predicted_dissipation_s, 300.0 + (2.0 / 7.0) * 300.0
+    )
+
+
+def test_forecast_dissipation_already_below(r: Runner) -> None:
+    """A track already below the dissipation threshold has already dissipated."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("DISSIPATING", score=20.0, confidence=1.0, peak_complexity=70.0)
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 15.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 10.0, 600.0, horizon_min=10)],
+    }
+    result = engine.forecast(track, regions_by_horizon)
+    r.check("already dissipated -> predicted_dissipation_s stays None", result.predicted_dissipation_s is None)
+
+
+def test_forecast_peak_raised(r: Runner) -> None:
+    """A future matched horizon exceeding the current peak raises peak_complexity."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("GROWING", score=40.0, confidence=1.0, peak_complexity=70.0)
+    track.peak_time_s = 0.0
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 60.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 85.0, 600.0, horizon_min=10)],
+    }
+    result = engine.forecast(track, regions_by_horizon)
+    r.check_close("future peak separate from history", result.predicted_peak_complexity, 85.0)
+    r.check_close("historical peak time unchanged", result.peak_time_s, 0.0)
+    r.check_close("predicted_peak_time_s recorded", result.predicted_peak_time_s, 600.0)
+
+
+def test_forecast_peak_not_raised(r: Runner) -> None:
+    """No future point exceeds the current peak -> peak fields untouched."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("GROWING", score=40.0, confidence=1.0, peak_complexity=90.0)
+    track.peak_time_s = 0.0
+    regions_by_horizon = {
+        5: [_region(["A1", "A2"], 45.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 55.0, 600.0, horizon_min=10)],
+    }
+    result = engine.forecast(track, regions_by_horizon)
+    r.check("future peak refreshed even below historical peak", result.predicted_peak_time_s == 600.0)
+    r.check_close("peak_complexity unchanged", result.peak_complexity, 90.0)
+    r.check_close("peak_time_s unchanged", result.peak_time_s, 0.0)
+
+
+def test_forecast_peak_time_persists_across_cycles_once_found(r: Runner) -> None:
+    """Bug fix regression: once a genuine `predicted_peak_time_s` is
+    found, it must NOT be erased on a later cycle just because that
+    cycle's own future horizons don't happen to beat the recorded
+    peak again -- that is the ordinary, expected case once a peak has
+    actually been found (`predicted_peak` only reports a *new* peak
+    when something exceeds the one already on record). Losing the
+    estimate here was exactly why the dashboard's hotspot shape (which
+    anchors on `predicted_peak_time_s`) would disappear the cycle
+    after it was first predicted, only reappearing once the track
+    reached `PEAK` status for real."""
+    engine = ForecastEngine(ASTRAConfig())
+    track = _track("GROWING", score=40.0, confidence=1.0, peak_complexity=40.0)
+
+    # Cycle 1: a future horizon genuinely beats the current peak.
+    regions_cycle1 = {
+        5: [_region(["A1", "A2"], 60.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 85.0, 600.0, horizon_min=10)],
+    }
+    engine.forecast(track, regions_cycle1)
+    r.check_close("peak found on cycle 1", track.predicted_peak_time_s, 600.0)
+    r.check_close("future peak estimated", track.predicted_peak_complexity, 85.0)
+
+    # Cycle 2: nothing beats the now-85.0 peak (the ordinary case once
+    # a peak has been found) -- the earlier estimate must survive.
+    regions_cycle2 = {
+        5: [_region(["A1", "A2"], 70.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 80.0, 600.0, horizon_min=10)],
+    }
+    engine.forecast(track, regions_cycle2)
+    r.check_close(
+        "predicted_peak_time_s survives a cycle that doesn't beat it again",
+        track.predicted_peak_time_s,
+        600.0,
+    )
+    r.check_close("future peak revised downward", track.predicted_peak_complexity, 80.0)
+
+
+def test_forecast_many_assigns_urgency_rank(r: Runner) -> None:
+    """forecast_many ranks already_critical tracks first (by descending
+    current score), then remaining tracks by soonest predicted_onset_s;
+    genuinely not-yet-forecastable tracks (insufficient matched horizons,
+    not already critical either) get None."""
+    engine = ForecastEngine(ASTRAConfig())
+
+    soon = _track("GROWING", score=40.0, confidence=1.0, peak_complexity=40.0)
+    soon.arhac_id = "SOON"
+    later = _track("GROWING", score=40.0, confidence=1.0, peak_complexity=40.0)
+    later.arhac_id = "LATER"
+    # Already above forecast_onset_threshold (50) right now -- no future
+    # onset left to predict, but this is the *most* urgent case, not an
+    # unranked one (see `already_critical`'s docstring on `FourDArhac`).
+    already_critical = _track("GROWING", score=60.0, confidence=1.0, peak_complexity=60.0)
+    already_critical.arhac_id = "ALREADY_CRITICAL"
+    # Genuinely too new: below threshold AND only one matched horizon
+    # (< forecast_min_matched_horizons=2 by default) -- nothing to rank
+    # by either way.
+    too_new = _track("CANDIDATE", score=20.0, confidence=0.5)
+    too_new.arhac_id = "TOO_NEW"
+
+    # Each track has its own distinctly-located cluster/matching regions so
+    # they associate independently, mimicking how each track is matched
+    # against the same cycle's horizons in the real pipeline.
+    soon_regions = {
+        5: [_region(["A1", "A2"], 55.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 60.0, 600.0, horizon_min=10)],
+    }
+    later_regions = {
+        5: [_region(["A1", "A2"], 42.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 51.0, 3600.0, horizon_min=10)],
+    }
+    engine.forecast(soon, soon_regions)
+    engine.forecast(later, later_regions)
+    engine.forecast(already_critical, {5: [_region(["A1", "A2"], 65.0, 300.0, horizon_min=5)]})
+    engine.forecast(too_new, {5: [_region(["A1", "A2"], 22.0, 300.0, horizon_min=5)]})
+
+    r.check("already_critical flagged True", already_critical.already_critical is True)
+    r.check("soon/later not already_critical", not soon.already_critical and not later.already_critical)
+    r.check("too_new not already_critical either", too_new.already_critical is False)
+
+    tracks = [later, already_critical, soon, too_new]
+    ForecastEngine._assign_urgency_rank(tracks)
+
+    r.check("already-critical track ranked 1 (most urgent)", already_critical.forecast_urgency_rank == 1)
+    r.check("soonest onset ranked 2", soon.forecast_urgency_rank == 2)
+    r.check("later onset ranked 3", later.forecast_urgency_rank == 3)
+    r.check("genuinely not-yet-forecastable track -> rank None", too_new.forecast_urgency_rank is None)
+
+
+def test_forecast_many_end_to_end(r: Runner) -> None:
+    """forecast_many() forecasts every track and assigns urgency ranks in one call."""
+    engine = ForecastEngine(ASTRAConfig())
+    fast = _track("GROWING", score=40.0, confidence=1.0, peak_complexity=40.0)
+    fast.arhac_id = "FAST"
+    fast_regions = {
+        5: [_region(["A1", "A2"], 55.0, 300.0, horizon_min=5)],
+        10: [_region(["A1", "A2"], 60.0, 600.0, horizon_min=10)],
+    }
+    candidate = _track("CANDIDATE", score=40.0, confidence=0.5)
+    candidate.arhac_id = "CAND"
+
+    # forecast_many shares one regions_by_horizon across all tracks in the
+    # real pipeline; here both tracks reuse fast_regions since only `fast`
+    # is eligible to be forecast at all.
+    result = engine.forecast_many([fast, candidate], fast_regions)
+
+    r.check("eligible track forecast", result[0].predicted_onset_s is not None)
+    r.check("eligible track ranked", result[0].forecast_urgency_rank == 1)
+    r.check("CANDIDATE track left untouched", result[1].predicted_onset_s is None)
+    r.check("CANDIDATE track has no urgency rank", result[1].forecast_urgency_rank is None)
+
+
+# ----------------------------------------------------------------------
+# ASTRAConfig — Phase 6 validation
+# ----------------------------------------------------------------------
+
+
+def test_config_forecast_validation(r: Runner) -> None:
+    """`ASTRAConfig` rejects out-of-range forecast thresholds."""
+    r.check_raises(
+        "forecast_onset_threshold > 100 raises ValueError",
+        lambda: ASTRAConfig(forecast_onset_threshold=150.0),
+        ValueError,
+    )
+    r.check_raises(
+        "forecast_dissipation_threshold < 0 raises ValueError",
+        lambda: ASTRAConfig(forecast_dissipation_threshold=-1.0),
+        ValueError,
+    )
+    r.check_raises(
+        "dissipation >= onset raises ValueError (hysteresis)",
+        lambda: ASTRAConfig(forecast_onset_threshold=30.0, forecast_dissipation_threshold=30.0),
+        ValueError,
+    )
+    r.check_raises(
+        "forecast_min_matched_horizons < 1 raises ValueError",
+        lambda: ASTRAConfig(forecast_min_matched_horizons=0),
+        ValueError,
+    )
+    r.check_raises(
+        "forecast_confidence_decay_s <= 0 raises ValueError",
+        lambda: ASTRAConfig(forecast_confidence_decay_s=0.0),
+        ValueError,
+    )
+
+
+def test_forecast_provisional_track_gets_onset(r: Runner) -> None:
+    """A PROVISIONAL track (no real observations at all) still gets a real
+    predicted_onset_s from ForecastEngine -- the actual point of Milestone 5's
+    provisional-track extension (see astra.tracking.engine's module docstring)."""
+    config = ASTRAConfig(forecast_onset_threshold=50.0, forecast_min_matched_horizons=2)
+    anchor_region = _region(["A1", "A2"], score=30.0, valid_at_s=0.0, horizon_min=30)
+    track = FourDArhac(
+        arhac_id="PROV1",
+        status="PROVISIONAL",
+        track=[],
+        provisional_track=[anchor_region],
+        member_aircraft=frozenset({"A1", "A2"}),
+        confidence=0.5,
+        peak_complexity=30.0,
+        peak_time_s=0.0,
+    )
+    regions_by_horizon = {
+        30: [anchor_region],
+        40: [_region(["A1", "A2"], score=45.0, valid_at_s=600.0, horizon_min=40)],
+        50: [_region(["A1", "A2"], score=60.0, valid_at_s=1200.0, horizon_min=50)],
+    }
+    engine = ForecastEngine(config)
+    result = engine.forecast(track, regions_by_horizon)
+
+    r.check("provisional track was forecast at all", result.predicted_onset_s is not None)
+    r.check(
+        "onset crossing interpolated between the 45 and 60 points",
+        result.predicted_onset_s is not None and 600.0 < result.predicted_onset_s < 1200.0,
+    )
+    r.check("confidence remains > 0 (not silently zeroed)", result.confidence > 0.0)
+
+
+def test_forecast_provisional_uses_provisional_track_as_anchor(r: Runner) -> None:
+    """build_series anchors on provisional_track's last entry when track.track is empty."""
+    anchor_region = _region(["A1", "A2"], score=20.0, valid_at_s=100.0, horizon_min=20)
+    track = FourDArhac(
+        arhac_id="PROV2",
+        status="PROVISIONAL",
+        track=[],
+        provisional_track=[anchor_region],
+        member_aircraft=frozenset({"A1", "A2"}),
+    )
+    series, matched_count, total_horizons = build_series(track, {20: [anchor_region]}, jaccard_threshold=0.5)
+    r.check("series anchored at current time with no observed cluster", series[0] == (-1100.0, 0.0))
+    r.check(
+        "the anchor's own source horizon matches itself (self-consistent)",
+        matched_count == 1,
+    )
+    r.check("total_horizons counts the non-zero horizon key", total_horizons == 1)
+
+
+def main() -> None:
+    r = Runner("Milestone 6 — 4DARHAC forecast (astra.forecast)")
+    test_linear_crossing_time_rising(r)
+    test_linear_crossing_time_falling(r)
+    test_linear_crossing_time_no_crossing(r)
+    test_predicted_peak_exceeds(r)
+    test_predicted_peak_does_not_exceed(r)
+    test_predicted_peak_empty(r)
+    test_build_series_matches_and_counts(r)
+    test_build_series_ignores_horizon_zero(r)
+    test_forecast_skips_candidate(r)
+    test_forecast_skips_closed(r)
+    test_forecast_insufficient_matched_horizons(r)
+    test_forecast_onset_crossing(r)
+    test_forecast_onset_already_active(r)
+    test_forecast_dissipation_crossing(r)
+    test_forecast_dissipation_already_below(r)
+    test_forecast_peak_raised(r)
+    test_forecast_peak_not_raised(r)
+    test_forecast_peak_time_persists_across_cycles_once_found(r)
+    test_forecast_many_assigns_urgency_rank(r)
+    test_forecast_many_end_to_end(r)
+    test_config_forecast_validation(r)
+    test_forecast_provisional_track_gets_onset(r)
+    test_forecast_provisional_uses_provisional_track_as_anchor(r)
+    r.summary()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,3 @@
+﻿flight_id,callsign,aircraft_type,adep,ades,time_utc,lat,lon,altitude_ft,ground_speed_kt,heading_deg,vertical_speed_fpm,on_ground,source
+TEST01,TEST01,A320,,VVTS,2026-02-22T03:00:00+00:00,10.9,106.9,6000,200,90,,,Flightradar24 track CSV
+TEST01,TEST01,A320,,VVTS,2026-02-22T03:00:20+00:00,10.9,106.9,5900,200,90,,,Flightradar24 track CSV

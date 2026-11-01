@@ -1,0 +1,99 @@
+{
+  "id": "TANOS2D",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "83853.pdf",
+  "legs": [
+    {
+      "fix": "TS612",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 450
+    },
+    {
+      "fix": "TS626",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 1200,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 1200
+    },
+    {
+      "fix": "TS628",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 2750,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2200
+    },
+    {
+      "fix": "TS632",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3050,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3050
+    },
+    {
+      "fix": "TANOS",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4500
+    }
+  ],
+  "coordination_required": true,
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "nominal_chart_route",
+  "limitations": [
+    "Nominal altitude and speed assumptions; no wind or aircraft performance model."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {},
+  "display_fixes": [
+    "TS612",
+    "TS626",
+    "TS628",
+    "TS632",
+    "TANOS"
+  ],
+  "transitions": {
+    "DOVIN": {
+      "fixes": [
+        "TANOS",
+        "DOVIN"
+      ],
+      "source": "83853.pdf"
+    },
+    "BIXEX": {
+      "fixes": [
+        "TANOS",
+        "BIXEX"
+      ],
+      "source": "83853.pdf"
+    },
+    "PTH": {
+      "fixes": [
+        "TANOS",
+        "PTH"
+      ],
+      "source": "83853.pdf"
+    }
+  }
+}

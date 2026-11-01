@@ -1,0 +1,3 @@
+﻿report_type,observation_utc,issue_utc,valid_from_utc,valid_to_utc,raw,source
+METAR,2026-10-07T10:00:00+00:00,,,,METAR OBSERVED,https://aviationweather.gov/api/data/metar
+METAR,2026-10-07T10:00:00+00:00,,,,METAR REVISED,NOAA

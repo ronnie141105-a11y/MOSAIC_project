@@ -1,0 +1,67 @@
+STANDARD DEPARTURE CHART -                                 TRANSITION LVL        FL190               HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                   TRANSITION  ALT 5500 m                                                     RNAV RWY 25L/R
+                                                                                                                BACHU 2D, KADUM 2D, ENPAS 2D
+                                                                                                                 XOBAV 2D, MISAN 2D, SAPEN 2D
+
+
+    MISAN 2D DEPARTURE
+     Serial         Path        Waypoint       Fly-          Course         Magnetic      Distance        Turn        Altitude     Speed
+    number      Descriptor      Identifier     over          °M(°T)         Variation       (km)       Direction        (m)         limit     N av Spec
+                                                                                                                                   (km/h)
+    INITIAL C LIMB R WY 25L
+       010           CF           TS616          -             250              +1          11.7            -             -           -        RNAV 1
+    INITIAL C LIMB R WY 25R
+       010           CF           TS616          -             248              +1          10.8            -             -           -        RNAV 1
+    FROM TS616
+       010           IF           TS616          -              -               +1            -             -             -           -        RNAV 1
+       020           TF           TS618          -       250     (249.0)        +1          26.5            -          -3350          -        RNAV 1
+       030           TF          MISAN           -       232     (231.2)        +1          36.3            -             -           -        RNAV 1
+    TRN  TRANSITION
+     Serial         Path        Waypoint        Fly-         Course         Magnetic      Distance        Turn                     Speed
+    number       Descriptor     Identifier     over          °M(°T)         Variation       (km)       Direction    Altitude (m)    limit     Nav Spec
+                                                                                                                                   (km/h)
+       010           IF          MISAN           -              -               +1            -             -             -           -        RNAV 1
+       020           TF            TRN           -       222     (220.7)        +1          57.9            -             -           -        RNAV 1
+
+
+
+    SAPEN 2D DEPARTURE
+     Serial         Path        Waypoint       Fly-          Course         Magnetic      Distance        Turn        Altitude     Speed
+    number      Descriptor      Identifier     over          °M(°T)         Variation       (km)       Direction        (m)         limit     N av Spec
+                                                                                                                                   (km/h)
+    INITIAL C LIMB R WY 25L
+       010           CF           TS616          -             250              +1          11.7            -             -           -        RNAV 1
+    INITIAL C LIMB R WY 25R
+       010           CF           TS616          -             248              +1          10.8            -             -           -        RNAV 1
+    FROM TS616
+       010           IF           TS616          -              -               +1            -             -             -           -        RNAV 1
+       020           TF          SAPEN           -       307     (305.9)        +1          47.2            -          -4250          -        RNAV 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V1\VVTS_SID RNAV RWY 25LR BACHU 2D KADUM
+2D ENPAS 2D XOBAV 2D MISAN 2D SAPEN 2D_TABULAR_V1.docx

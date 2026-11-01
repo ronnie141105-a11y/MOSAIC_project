@@ -1,0 +1,23 @@
+{
+  "source_url": "https://tgftp.nws.noaa.gov/data/forecasts/taf/stations/VVTS.TXT",
+  "retrieved_at_utc": "2026-10-07T11:34:21.383493+00:00",
+  "headers": {
+    "Date": "Wed, 07 Oct 2026 11:34:21 GMT",
+    "Server": "Apache",
+    "Set-Cookie": "session=expiry=1791373461400742;Max-Age=600;path=/; HttpOnly; Secure;",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Content-Security-Policy": "script-src 'self'",
+    "Referrer-Policy": "no-referrer",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Cache-Control": "no-cache, private",
+    "Last-Modified": "Wed, 07 Oct 2026 05:36:07 GMT",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "368",
+    "Vary": "Accept-Encoding",
+    "Connection": "close",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "body": "2026/10/07 06:36\nTAF TAF VVTS 070500Z 0706/0812 31008KT 9999 SCT015 SCT040 \n      TEMPO 0706/0709 5000 TSRA BKN015 FEW017CB BKN040 \n      TEMPO 0709/0713 05015G26KT 2000 +TSRA BKN013 SCT015CB BKN040 \n      TEMPO 0718/0721 4000 TSRA BKN015 FEW017CB BKN040 \n      TEMPO 0721/0801 4000 RA BR BKN015 FEW017CB BKN040 \n      TEMPO 0807/0812 3000 TSRA BKN013 SCT015CB BKN040\n"
+}

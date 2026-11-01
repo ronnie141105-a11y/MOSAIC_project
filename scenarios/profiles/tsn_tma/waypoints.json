@@ -1,0 +1,2350 @@
+{
+  "ANHOA": {
+    "name": "ANHOA",
+    "lat": 9.78722222,
+    "lon": 105.90833333,
+    "latitude_dms": "094714.000N",
+    "longitude_dms": "1055430.000E",
+    "type": "named_fix"
+  },
+  "ANSUP": {
+    "name": "ANSUP",
+    "lat": 10.98074778,
+    "lon": 107.23113306,
+    "latitude_dms": "105850.692N",
+    "longitude_dms": "1071352.079E",
+    "type": "named_fix"
+  },
+  "ANTRI": {
+    "name": "ANTRI",
+    "lat": 11.16150639,
+    "lon": 107.23624583,
+    "latitude_dms": "110941.423N",
+    "longitude_dms": "1071410.485E",
+    "type": "named_fix"
+  },
+  "BACHU": {
+    "name": "BACHU",
+    "lat": 10.58416667,
+    "lon": 106.00694444,
+    "latitude_dms": "103503.000N",
+    "longitude_dms": "1060025.000E",
+    "type": "named_fix"
+  },
+  "BITIS": {
+    "name": "BITIS",
+    "lat": 10.26638889,
+    "lon": 106.24833333,
+    "latitude_dms": "101559.000N",
+    "longitude_dms": "1061454.000E",
+    "type": "named_fix"
+  },
+  "BOMSU": {
+    "name": "BOMSU",
+    "lat": 10.91052083,
+    "lon": 106.89980861,
+    "latitude_dms": "105437.875N",
+    "longitude_dms": "1065359.311E",
+    "type": "named_fix"
+  },
+  "BUTGA": {
+    "name": "BUTGA",
+    "lat": 11.28952389,
+    "lon": 106.73269639,
+    "latitude_dms": "111722.286N",
+    "longitude_dms": "1064357.707E",
+    "type": "named_fix"
+  },
+  "DALAP": {
+    "name": "DALAP",
+    "lat": 11.01415417,
+    "lon": 107.38939639,
+    "latitude_dms": "110050.955N",
+    "longitude_dms": "1072321.827E",
+    "type": "named_fix"
+  },
+  "BIXEX": {
+    "name": "BIXEX",
+    "lat": 11.60368806,
+    "lon": 108.1386975,
+    "latitude_dms": "113613.277N",
+    "longitude_dms": "1080819.311E",
+    "type": "named_fix"
+  },
+  "DOVIN": {
+    "name": "DOVIN",
+    "lat": 11.91694444,
+    "lon": 108.10805556,
+    "latitude_dms": "115501.000N",
+    "longitude_dms": "1080629.000E",
+    "type": "named_fix"
+  },
+  "ELSAS": {
+    "name": "ELSAS",
+    "lat": 10.13666667,
+    "lon": 107.54833333,
+    "latitude_dms": "100812.000N",
+    "longitude_dms": "1073254.000E",
+    "type": "named_fix"
+  },
+  "ENROP": {
+    "name": "ENROP",
+    "lat": 10.57682083,
+    "lon": 106.64424917,
+    "latitude_dms": "103436.555N",
+    "longitude_dms": "1063839.297E",
+    "type": "named_fix"
+  },
+  "GOMIN": {
+    "name": "GOMIN",
+    "lat": 10.48479694,
+    "lon": 107.24345778,
+    "latitude_dms": "102905.269N",
+    "longitude_dms": "1071436.448E",
+    "type": "named_fix"
+  },
+  "KADUM": {
+    "name": "KADUM",
+    "lat": 11.35722222,
+    "lon": 107.05944444,
+    "latitude_dms": "112126.000N",
+    "longitude_dms": "1070334.000E",
+    "type": "named_fix"
+  },
+  "ENPAS": {
+    "name": "ENPAS",
+    "lat": 10.39972222,
+    "lon": 106.11138889,
+    "latitude_dms": "102359.000N",
+    "longitude_dms": "1060641.000E",
+    "type": "named_fix"
+  },
+  "LANHI": {
+    "name": "LANHI",
+    "lat": 10.40611111,
+    "lon": 107.19138889,
+    "latitude_dms": "102422.000N",
+    "longitude_dms": "1071129.000E",
+    "type": "named_fix"
+  },
+  "XOBAV": {
+    "name": "XOBAV",
+    "lat": 10.14027778,
+    "lon": 106.6425,
+    "latitude_dms": "100825.000N",
+    "longitude_dms": "1063833.000E",
+    "type": "named_fix"
+  },
+  "LETRO": {
+    "name": "LETRO",
+    "lat": 10.47707167,
+    "lon": 106.84817139,
+    "latitude_dms": "102837.458N",
+    "longitude_dms": "1065053.417E",
+    "type": "named_fix"
+  },
+  "LOTVU": {
+    "name": "LOTVU",
+    "lat": 10.69794278,
+    "lon": 106.19790306,
+    "latitude_dms": "104152.594N",
+    "longitude_dms": "1061152.451E",
+    "type": "named_fix"
+  },
+  "MALAY": {
+    "name": "MALAY",
+    "lat": 10.17977278,
+    "lon": 106.40972444,
+    "latitude_dms": "101047.182N",
+    "longitude_dms": "1062435.008E",
+    "type": "named_fix"
+  },
+  "MISAN": {
+    "name": "MISAN",
+    "lat": 10.48055556,
+    "lon": 106.05,
+    "latitude_dms": "102850.000N",
+    "longitude_dms": "1060300.000E",
+    "type": "named_fix"
+  },
+  "NIXIV": {
+    "name": "NIXIV",
+    "lat": 9.39333333,
+    "lon": 106.63388889,
+    "latitude_dms": "092336.000N",
+    "longitude_dms": "1063802.000E",
+    "type": "named_fix"
+  },
+  "NOKUM": {
+    "name": "NOKUM",
+    "lat": 10.58217583,
+    "lon": 106.58450667,
+    "latitude_dms": "103455.833N",
+    "longitude_dms": "1063504.224E",
+    "type": "named_fix"
+  },
+  "NUNGO": {
+    "name": "NUNGO",
+    "lat": 11.28192611,
+    "lon": 106.84371778,
+    "latitude_dms": "111654.934N",
+    "longitude_dms": "1065037.384E",
+    "type": "named_fix"
+  },
+  "PATMA": {
+    "name": "PATMA",
+    "lat": 12.33638889,
+    "lon": 107.81,
+    "latitude_dms": "122011.000N",
+    "longitude_dms": "1074836.000E",
+    "type": "named_fix"
+  },
+  "POTIX": {
+    "name": "POTIX",
+    "lat": 10.23472222,
+    "lon": 105.61666667,
+    "latitude_dms": "101405.000N",
+    "longitude_dms": "1053700.000E",
+    "type": "named_fix"
+  },
+  "PTH": {
+    "name": "PTH",
+    "lat": 10.92805556,
+    "lon": 108.07194444,
+    "latitude_dms": "105541.000N",
+    "longitude_dms": "1080419.000E",
+    "type": "named_fix"
+  },
+  "RINKU": {
+    "name": "RINKU",
+    "lat": 10.86790833,
+    "lon": 108.54151167,
+    "latitude_dms": "105204.470N",
+    "longitude_dms": "1083229.442E",
+    "type": "named_fix"
+  },
+  "RUNSI": {
+    "name": "RUNSI",
+    "lat": 10.59228389,
+    "lon": 107.14913611,
+    "latitude_dms": "103532.222N",
+    "longitude_dms": "1070856.890E",
+    "type": "named_fix"
+  },
+  "RW07L": {
+    "name": "RW07L",
+    "lat": 10.81502056,
+    "lon": 106.63712444,
+    "latitude_dms": "104854.074N",
+    "longitude_dms": "1063813.648E",
+    "type": "runway_threshold"
+  },
+  "RW07R": {
+    "name": "RW07R",
+    "lat": 10.81384889,
+    "lon": 106.64339528,
+    "latitude_dms": "104849.856N",
+    "longitude_dms": "1063836.223E",
+    "type": "runway_threshold"
+  },
+  "RW25L": {
+    "name": "RW25L",
+    "lat": 10.82371417,
+    "lon": 106.66953056,
+    "latitude_dms": "104925.371N",
+    "longitude_dms": "1064010.310E",
+    "type": "runway_threshold"
+  },
+  "RW25R": {
+    "name": "RW25R",
+    "lat": 10.82485556,
+    "lon": 106.66317556,
+    "latitude_dms": "104929.480N",
+    "longitude_dms": "1063947.432E",
+    "type": "runway_threshold"
+  },
+  "SAMDU": {
+    "name": "SAMDU",
+    "lat": 10.68140139,
+    "lon": 106.45128167,
+    "latitude_dms": "104053.045N",
+    "longitude_dms": "1062704.614E",
+    "type": "named_fix"
+  },
+  "SAPEN": {
+    "name": "SAPEN",
+    "lat": 11.02,
+    "lon": 106.18333333,
+    "latitude_dms": "110112.000N",
+    "longitude_dms": "1061100.000E",
+    "type": "named_fix"
+  },
+  "SOKAN": {
+    "name": "SOKAN",
+    "lat": 10.87027917,
+    "lon": 106.90476556,
+    "latitude_dms": "105213.005N",
+    "longitude_dms": "1065417.156E",
+    "type": "named_fix"
+  },
+  "TANOS": {
+    "name": "TANOS",
+    "lat": 10.7151725,
+    "lon": 107.32359944,
+    "latitude_dms": "104254.621N",
+    "longitude_dms": "1071924.958E",
+    "type": "named_fix"
+  },
+  "TRN": {
+    "name": "TRN",
+    "lat": 10.08333333,
+    "lon": 105.70555556,
+    "latitude_dms": "100500.000N",
+    "longitude_dms": "1054220.000E",
+    "type": "named_fix"
+  },
+  "TS414": {
+    "name": "TS414",
+    "lat": 10.8596175,
+    "lon": 106.76470194,
+    "latitude_dms": "105134.623N",
+    "longitude_dms": "1064552.927E",
+    "type": "sequence_fix"
+  },
+  "TS416": {
+    "name": "TS416",
+    "lat": 10.8804975,
+    "lon": 106.82009667,
+    "latitude_dms": "105249.791N",
+    "longitude_dms": "1064912.348E",
+    "type": "sequence_fix"
+  },
+  "TS424": {
+    "name": "TS424",
+    "lat": 10.86076806,
+    "lon": 106.75836778,
+    "latitude_dms": "105138.765N",
+    "longitude_dms": "1064530.124E",
+    "type": "sequence_fix"
+  },
+  "TS426": {
+    "name": "TS426",
+    "lat": 10.88403417,
+    "lon": 106.82009361,
+    "latitude_dms": "105302.523N",
+    "longitude_dms": "1064912.337E",
+    "type": "sequence_fix"
+  },
+  "TS432": {
+    "name": "TS432",
+    "lat": 10.54159889,
+    "lon": 106.9695275,
+    "latitude_dms": "103229.756N",
+    "longitude_dms": "1065810.299E",
+    "type": "sequence_fix"
+  },
+  "TS434": {
+    "name": "TS434",
+    "lat": 10.58635,
+    "lon": 107.08428556,
+    "latitude_dms": "103510.860N",
+    "longitude_dms": "1070503.428E",
+    "type": "sequence_fix"
+  },
+  "TS436": {
+    "name": "TS436",
+    "lat": 10.66878972,
+    "lon": 107.17526,
+    "latitude_dms": "104007.643N",
+    "longitude_dms": "1071030.936E",
+    "type": "sequence_fix"
+  },
+  "TS438": {
+    "name": "TS438",
+    "lat": 10.76210361,
+    "lon": 107.22531917,
+    "latitude_dms": "104543.573N",
+    "longitude_dms": "1071331.149E",
+    "type": "sequence_fix"
+  },
+  "TS442": {
+    "name": "TS442",
+    "lat": 11.24081694,
+    "lon": 106.95555583,
+    "latitude_dms": "111426.941N",
+    "longitude_dms": "1065720.001E",
+    "type": "sequence_fix"
+  },
+  "TS444": {
+    "name": "TS444",
+    "lat": 11.21026194,
+    "lon": 107.05092777777777,
+    "latitude_dms": "111236.943N",
+    "longitude_dms": "1070303.340E",
+    "type": "sequence_fix",
+    "source": "56092.pdf; corrected against adjacent chart courses/distances"
+  },
+  "TS446": {
+    "name": "TS446",
+    "lat": 11.15349,
+    "lon": 107.13305417,
+    "latitude_dms": "110912.564N",
+    "longitude_dms": "1070758.995E",
+    "type": "sequence_fix"
+  },
+  "TS448": {
+    "name": "TS448",
+    "lat": 11.07547556,
+    "lon": 107.19474833,
+    "latitude_dms": "110431.712N",
+    "longitude_dms": "1071141.094E",
+    "type": "sequence_fix"
+  },
+  "TS452": {
+    "name": "TS452",
+    "lat": 10.86619333,
+    "lon": 107.24351333,
+    "latitude_dms": "105158.296N",
+    "longitude_dms": "1071436.648E",
+    "type": "sequence_fix"
+  },
+  "TS454": {
+    "name": "TS454",
+    "lat": 10.86576417,
+    "lon": 107.2773875,
+    "latitude_dms": "105156.751N",
+    "longitude_dms": "1071638.595E",
+    "type": "sequence_fix"
+  },
+  "TS456": {
+    "name": "TS456",
+    "lat": 10.75126778,
+    "lon": 107.25736167,
+    "latitude_dms": "104504.564N",
+    "longitude_dms": "1071526.502E",
+    "type": "sequence_fix"
+  },
+  "TS458": {
+    "name": "TS458",
+    "lat": 10.64862778,
+    "lon": 107.20228972,
+    "latitude_dms": "103855.060N",
+    "longitude_dms": "1071208.243E",
+    "type": "sequence_fix"
+  },
+  "TS462": {
+    "name": "TS462",
+    "lat": 11.10848806,
+    "lon": 107.21421056,
+    "latitude_dms": "110630.557N",
+    "longitude_dms": "1071251.158E",
+    "type": "sequence_fix"
+  },
+  "TS464": {
+    "name": "TS464",
+    "lat": 11.17777667,
+    "lon": 107.1564,
+    "latitude_dms": "111039.996N",
+    "longitude_dms": "1070923.040E",
+    "type": "sequence_fix"
+  },
+  "TS466": {
+    "name": "TS466",
+    "lat": 11.24023139,
+    "lon": 107.06605667,
+    "latitude_dms": "111424.833N",
+    "longitude_dms": "1070357.804E",
+    "type": "sequence_fix"
+  },
+  "TS468": {
+    "name": "TS468",
+    "lat": 11.27384528,
+    "lon": 106.9611375,
+    "latitude_dms": "111625.843N",
+    "longitude_dms": "1065740.095E",
+    "type": "sequence_fix"
+  },
+  "TS482": {
+    "name": "TS482",
+    "lat": 11.06086472,
+    "lon": 106.47896861,
+    "latitude_dms": "110339.113N",
+    "longitude_dms": "1062844.287E",
+    "type": "sequence_fix"
+  },
+  "TS484": {
+    "name": "TS484",
+    "lat": 10.85972361,
+    "lon": 106.42045806,
+    "latitude_dms": "105135.005N",
+    "longitude_dms": "1062513.649E",
+    "type": "sequence_fix"
+  },
+  "TS488": {
+    "name": "TS488",
+    "lat": 10.55795111,
+    "lon": 107.10221917,
+    "latitude_dms": "103328.624N",
+    "longitude_dms": "1070607.989E",
+    "type": "sequence_fix"
+  },
+  "TS492": {
+    "name": "TS492",
+    "lat": 10.53840917,
+    "lon": 106.69438861,
+    "latitude_dms": "103218.273N",
+    "longitude_dms": "1064139.799E",
+    "type": "sequence_fix"
+  },
+  "TS496": {
+    "name": "TS496",
+    "lat": 10.68149028,
+    "lon": 106.49365,
+    "latitude_dms": "104053.365N",
+    "longitude_dms": "1062937.140E",
+    "type": "sequence_fix"
+  },
+  "TS498": {
+    "name": "TS498",
+    "lat": 10.73113722,
+    "lon": 106.44819972,
+    "latitude_dms": "104352.094N",
+    "longitude_dms": "1062653.519E",
+    "type": "sequence_fix"
+  },
+  "TS514": {
+    "name": "TS514",
+    "lat": 10.77778472,
+    "lon": 106.5479175,
+    "latitude_dms": "104640.025N",
+    "longitude_dms": "1063252.503E",
+    "type": "sequence_fix"
+  },
+  "TS516": {
+    "name": "TS516",
+    "lat": 10.75566111,
+    "lon": 106.48939694,
+    "latitude_dms": "104520.380N",
+    "longitude_dms": "1062921.829E",
+    "type": "sequence_fix"
+  },
+  "TS524": {
+    "name": "TS524",
+    "lat": 10.77876944,
+    "lon": 106.54115889,
+    "latitude_dms": "104643.570N",
+    "longitude_dms": "1063228.172E",
+    "type": "sequence_fix"
+  },
+  "TS526": {
+    "name": "TS526",
+    "lat": 10.75784,
+    "lon": 106.48580194,
+    "latitude_dms": "104528.224N",
+    "longitude_dms": "1062908.887E",
+    "type": "sequence_fix"
+  },
+  "TS534": {
+    "name": "TS534",
+    "lat": 10.56859,
+    "lon": 106.26311361,
+    "latitude_dms": "103406.924N",
+    "longitude_dms": "1061547.209E",
+    "type": "sequence_fix"
+  },
+  "TS536": {
+    "name": "TS536",
+    "lat": 10.48223639,
+    "lon": 106.36253222,
+    "latitude_dms": "102856.051N",
+    "longitude_dms": "1062145.116E",
+    "type": "sequence_fix"
+  },
+  "TS538": {
+    "name": "TS538",
+    "lat": 10.46788139,
+    "lon": 106.49399667,
+    "latitude_dms": "102804.373N",
+    "longitude_dms": "1062938.388E",
+    "type": "sequence_fix"
+  },
+  "TS542": {
+    "name": "TS542",
+    "lat": 10.53070806,
+    "lon": 106.61003917,
+    "latitude_dms": "103150.549N",
+    "longitude_dms": "1063636.141E",
+    "type": "sequence_fix"
+  },
+  "TS544": {
+    "name": "TS544",
+    "lat": 10.68494083,
+    "lon": 106.76536806,
+    "latitude_dms": "104105.787N",
+    "longitude_dms": "1064555.325E",
+    "type": "sequence_fix"
+  },
+  "TS546": {
+    "name": "TS546",
+    "lat": 10.71858222,
+    "lon": 106.80308222,
+    "latitude_dms": "104306.896N",
+    "longitude_dms": "1064811.096E",
+    "type": "sequence_fix"
+  },
+  "TS548": {
+    "name": "TS548",
+    "lat": 10.77155333,
+    "lon": 107.19727722,
+    "latitude_dms": "104617.592N",
+    "longitude_dms": "1071150.198E",
+    "type": "sequence_fix"
+  },
+  "TS562": {
+    "name": "TS562",
+    "lat": 10.50751722,
+    "lon": 106.63444972,
+    "latitude_dms": "103027.062N",
+    "longitude_dms": "1063804.019E",
+    "type": "sequence_fix"
+  },
+  "TS564": {
+    "name": "TS564",
+    "lat": 10.43503139,
+    "lon": 106.50056306,
+    "latitude_dms": "102606.113N",
+    "longitude_dms": "1063002.027E",
+    "type": "sequence_fix"
+  },
+  "TS566": {
+    "name": "TS566",
+    "lat": 10.45159361,
+    "lon": 106.34888861,
+    "latitude_dms": "102705.737N",
+    "longitude_dms": "1062055.999E",
+    "type": "sequence_fix"
+  },
+  "TS568": {
+    "name": "TS568",
+    "lat": 10.55122444,
+    "lon": 106.23417722,
+    "latitude_dms": "103304.408N",
+    "longitude_dms": "1061403.038E",
+    "type": "sequence_fix"
+  },
+  "TS582": {
+    "name": "TS582",
+    "lat": 10.83014833,
+    "lon": 106.25560139,
+    "latitude_dms": "104948.534N",
+    "longitude_dms": "1061520.165E",
+    "type": "sequence_fix"
+  },
+  "TS584": {
+    "name": "TS584",
+    "lat": 10.96420611,
+    "lon": 106.31416528,
+    "latitude_dms": "105751.142N",
+    "longitude_dms": "1061850.995E",
+    "type": "sequence_fix"
+  },
+  "TS592": {
+    "name": "TS592",
+    "lat": 10.86692861,
+    "lon": 106.78409472,
+    "latitude_dms": "105200.943N",
+    "longitude_dms": "1064702.741E",
+    "type": "sequence_fix"
+  },
+  "TS594": {
+    "name": "TS594",
+    "lat": 10.87001778,
+    "lon": 106.78290278,
+    "latitude_dms": "105212.064N",
+    "longitude_dms": "1064658.450E",
+    "type": "sequence_fix"
+  },
+  "TS596": {
+    "name": "TS596",
+    "lat": 10.75741806,
+    "lon": 106.82633028,
+    "latitude_dms": "104526.705N",
+    "longitude_dms": "1064934.789E",
+    "type": "sequence_fix"
+  },
+  "TS612": {
+    "name": "TS612",
+    "lat": 10.78769417,
+    "lon": 106.57415167,
+    "latitude_dms": "104715.699N",
+    "longitude_dms": "1063426.946E",
+    "type": "sequence_fix"
+  },
+  "TS614": {
+    "name": "TS614",
+    "lat": 10.79078583,
+    "lon": 106.57295667,
+    "latitude_dms": "104726.829N",
+    "longitude_dms": "1063422.644E",
+    "type": "sequence_fix"
+  },
+  "TS616": {
+    "name": "TS616",
+    "lat": 10.77254028,
+    "lon": 106.53467472,
+    "latitude_dms": "104621.145N",
+    "longitude_dms": "1063204.829E",
+    "type": "sequence_fix"
+  },
+  "TS618": {
+    "name": "TS618",
+    "lat": 10.68665528,
+    "lon": 106.30867611,
+    "latitude_dms": "104111.959N",
+    "longitude_dms": "1061831.234E",
+    "type": "sequence_fix"
+  },
+  "TS622": {
+    "name": "TS622",
+    "lat": 10.6070925,
+    "lon": 106.06785889,
+    "latitude_dms": "103625.533N",
+    "longitude_dms": "1060404.292E",
+    "type": "sequence_fix"
+  },
+  "TS624": {
+    "name": "TS624",
+    "lat": 10.41653944,
+    "lon": 106.13223194,
+    "latitude_dms": "102459.542N",
+    "longitude_dms": "1060756.035E",
+    "type": "sequence_fix"
+  },
+  "TS626": {
+    "name": "TS626",
+    "lat": 10.63598111,
+    "lon": 106.63276056,
+    "latitude_dms": "103809.532N",
+    "longitude_dms": "1063757.938E",
+    "type": "sequence_fix"
+  },
+  "TS628": {
+    "name": "TS628",
+    "lat": 10.66763222,
+    "lon": 106.71657083,
+    "latitude_dms": "104003.476N",
+    "longitude_dms": "1064259.655E",
+    "type": "sequence_fix"
+  },
+  "TS632": {
+    "name": "TS632",
+    "lat": 10.715365,
+    "lon": 106.84310972,
+    "latitude_dms": "104255.314N",
+    "longitude_dms": "1065035.195E",
+    "type": "sequence_fix"
+  },
+  "TS636": {
+    "name": "TS636",
+    "lat": 10.91321361,
+    "lon": 106.48003444,
+    "latitude_dms": "105447.569N",
+    "longitude_dms": "1062848.124E",
+    "type": "sequence_fix"
+  },
+  "TS638": {
+    "name": "TS638",
+    "lat": 10.99181667,
+    "lon": 106.58237333,
+    "latitude_dms": "105930.540N",
+    "longitude_dms": "1063456.544E",
+    "type": "sequence_fix"
+  },
+  "TS641": {
+    "name": "TS641",
+    "lat": 10.52374722,
+    "lon": 106.57367194,
+    "latitude_dms": "103125.490N",
+    "longitude_dms": "1063425.219E",
+    "type": "sequence_fix"
+  },
+  "TS642": {
+    "name": "TS642",
+    "lat": 10.40792583,
+    "lon": 106.59180472,
+    "latitude_dms": "102428.533N",
+    "longitude_dms": "1063530.497E",
+    "type": "sequence_fix"
+  },
+  "TS644": {
+    "name": "TS644",
+    "lat": 10.21230333,
+    "lon": 106.6221475,
+    "latitude_dms": "101244.292N",
+    "longitude_dms": "1063719.731E",
+    "type": "sequence_fix"
+  },
+  "TS652": {
+    "name": "TS652",
+    "lat": 10.79964639,
+    "lon": 106.60578944,
+    "latitude_dms": "104758.727N",
+    "longitude_dms": "1063620.842E",
+    "type": "sequence_fix"
+  },
+  "TS654": {
+    "name": "TS654",
+    "lat": 10.80245306,
+    "lon": 106.60384167,
+    "latitude_dms": "104808.831N",
+    "longitude_dms": "1063613.830E",
+    "type": "sequence_fix"
+  },
+  "TS658": {
+    "name": "TS658",
+    "lat": 10.88556583,
+    "lon": 106.54618361,
+    "latitude_dms": "105308.037N",
+    "longitude_dms": "1063246.261E",
+    "type": "sequence_fix"
+  },
+  "TS662": {
+    "name": "TS662",
+    "lat": 10.90284389,
+    "lon": 106.5932875,
+    "latitude_dms": "105410.238N",
+    "longitude_dms": "1063535.835E",
+    "type": "sequence_fix"
+  },
+  "TS664": {
+    "name": "TS664",
+    "lat": 10.89634472,
+    "lon": 106.64492944,
+    "latitude_dms": "105346.841N",
+    "longitude_dms": "1063841.746E",
+    "type": "sequence_fix"
+  },
+  "TS666": {
+    "name": "TS666",
+    "lat": 10.88575167,
+    "lon": 106.72894833,
+    "latitude_dms": "105308.706N",
+    "longitude_dms": "1064344.214E",
+    "type": "sequence_fix"
+  },
+  "TS668": {
+    "name": "TS668",
+    "lat": 10.88941722,
+    "lon": 106.85594222,
+    "latitude_dms": "105321.902N",
+    "longitude_dms": "1065121.392E",
+    "type": "sequence_fix"
+  },
+  "TS682": {
+    "name": "TS682",
+    "lat": 10.78697361,
+    "lon": 106.44199306,
+    "latitude_dms": "104713.105N",
+    "longitude_dms": "1062631.175E",
+    "type": "sequence_fix"
+  },
+  "TS684": {
+    "name": "TS684",
+    "lat": 10.80082139,
+    "lon": 106.35289583,
+    "latitude_dms": "104802.957N",
+    "longitude_dms": "1062110.425E",
+    "type": "sequence_fix"
+  },
+  "TS686": {
+    "name": "TS686",
+    "lat": 11.14737806,
+    "lon": 106.785205,
+    "latitude_dms": "110850.561N",
+    "longitude_dms": "1064706.738E",
+    "type": "sequence_fix"
+  },
+  "TS812": {
+    "name": "TS812",
+    "lat": 10.86385056,
+    "lon": 106.76600056,
+    "latitude_dms": "105149.862N",
+    "longitude_dms": "1064557.602E",
+    "type": "sequence_fix"
+  },
+  "TS814": {
+    "name": "TS814",
+    "lat": 10.89554944,
+    "lon": 107.07262306,
+    "latitude_dms": "105343.978N",
+    "longitude_dms": "1070421.443E",
+    "type": "sequence_fix"
+  },
+  "TS816": {
+    "name": "TS816",
+    "lat": 11.02845861,
+    "lon": 107.15434778,
+    "latitude_dms": "110142.451N",
+    "longitude_dms": "1070915.652E",
+    "type": "sequence_fix"
+  },
+  "TS822": {
+    "name": "TS822",
+    "lat": 10.67829333,
+    "lon": 106.93488083,
+    "latitude_dms": "104041.856N",
+    "longitude_dms": "1065605.571E",
+    "type": "sequence_fix"
+  },
+  "TS824": {
+    "name": "TS824",
+    "lat": 10.59790333,
+    "lon": 106.84471639,
+    "latitude_dms": "103552.452N",
+    "longitude_dms": "1065040.979E",
+    "type": "sequence_fix"
+  },
+  "TS826": {
+    "name": "TS826",
+    "lat": 10.50780861,
+    "lon": 106.74375778,
+    "latitude_dms": "103028.111N",
+    "longitude_dms": "1064437.528E",
+    "type": "sequence_fix"
+  },
+  "TS828": {
+    "name": "TS828",
+    "lat": 10.45172444,
+    "lon": 106.68095889,
+    "latitude_dms": "102706.208N",
+    "longitude_dms": "1064051.452E",
+    "type": "sequence_fix"
+  },
+  "TS834": {
+    "name": "TS834",
+    "lat": 11.0201525,
+    "lon": 106.70526722,
+    "latitude_dms": "110112.549N",
+    "longitude_dms": "1064218.962E",
+    "type": "sequence_fix"
+  },
+  "TS836": {
+    "name": "TS836",
+    "lat": 10.96011056,
+    "lon": 106.54708278,
+    "latitude_dms": "105736.398N",
+    "longitude_dms": "1063249.498E",
+    "type": "sequence_fix"
+  },
+  "TS842": {
+    "name": "TS842",
+    "lat": 10.62463222,
+    "lon": 106.98366472,
+    "latitude_dms": "103728.676N",
+    "longitude_dms": "1065901.193E",
+    "type": "sequence_fix"
+  },
+  "TS844": {
+    "name": "TS844",
+    "lat": 10.65540833,
+    "lon": 107.21315667,
+    "latitude_dms": "103919.470N",
+    "longitude_dms": "1071247.364E",
+    "type": "sequence_fix"
+  },
+  "TS852": {
+    "name": "TS852",
+    "lat": 10.83542972,
+    "lon": 106.70057472,
+    "latitude_dms": "105007.547N",
+    "longitude_dms": "1064202.069E",
+    "type": "sequence_fix"
+  },
+  "TS854": {
+    "name": "TS854",
+    "lat": 10.83857083,
+    "lon": 106.69951722,
+    "latitude_dms": "105018.855N",
+    "longitude_dms": "1064158.262E",
+    "type": "sequence_fix"
+  },
+  "TS856": {
+    "name": "TS856",
+    "lat": 10.92430861,
+    "lon": 106.67064639,
+    "latitude_dms": "105527.511N",
+    "longitude_dms": "1064014.327E",
+    "type": "sequence_fix"
+  },
+  "TS858": {
+    "name": "TS858",
+    "lat": 10.84541139,
+    "lon": 106.391415,
+    "latitude_dms": "105043.481N",
+    "longitude_dms": "1062329.094E",
+    "type": "sequence_fix"
+  },
+  "TS862": {
+    "name": "TS862",
+    "lat": 10.82404611,
+    "lon": 106.20307333,
+    "latitude_dms": "104926.566N",
+    "longitude_dms": "1061211.064E",
+    "type": "sequence_fix"
+  },
+  "TS912": {
+    "name": "TS912",
+    "lat": 11.09063833,
+    "lon": 108.54883083,
+    "latitude_dms": "110526.298N",
+    "longitude_dms": "1083255.791E",
+    "type": "sequence_fix"
+  },
+  "TS914": {
+    "name": "TS914",
+    "lat": 11.32715056,
+    "lon": 108.50783056,
+    "latitude_dms": "111937.742N",
+    "longitude_dms": "1083028.190E",
+    "type": "sequence_fix"
+  },
+  "TS916": {
+    "name": "TS916",
+    "lat": 11.55005861,
+    "lon": 108.41780611,
+    "latitude_dms": "113300.211N",
+    "longitude_dms": "1082504.102E",
+    "type": "sequence_fix"
+  },
+  "TS918": {
+    "name": "TS918",
+    "lat": 11.74958167,
+    "lon": 108.28259611,
+    "latitude_dms": "114458.494N",
+    "longitude_dms": "1081657.346E",
+    "type": "sequence_fix"
+  },
+  "TSC01": {
+    "name": "TSC01",
+    "lat": 10.87922778,
+    "lon": 106.68366194,
+    "latitude_dms": "105245.220N",
+    "longitude_dms": "1064101.183E",
+    "type": "sequence_fix"
+  },
+  "TSC02": {
+    "name": "TSC02",
+    "lat": 10.88082111,
+    "lon": 106.68320194,
+    "latitude_dms": "105250.956N",
+    "longitude_dms": "1064059.527E",
+    "type": "sequence_fix"
+  },
+  "TSC03": {
+    "name": "TSC03",
+    "lat": 10.849695,
+    "lon": 106.58644583,
+    "latitude_dms": "105058.902N",
+    "longitude_dms": "1063511.205E",
+    "type": "sequence_fix"
+  },
+  "TSC04": {
+    "name": "TSC04",
+    "lat": 10.85086694,
+    "lon": 106.58513056,
+    "latitude_dms": "105103.121N",
+    "longitude_dms": "1063506.470E",
+    "type": "sequence_fix"
+  },
+  "TUNBI": {
+    "name": "TUNBI",
+    "lat": 10.52896222,
+    "lon": 106.7906275,
+    "latitude_dms": "103144.264N",
+    "longitude_dms": "1064726.259E",
+    "type": "named_fix"
+  },
+  "VANLI": {
+    "name": "VANLI",
+    "lat": 10.50873,
+    "lon": 106.97599611,
+    "latitude_dms": "103031.428N",
+    "longitude_dms": "1065833.586E",
+    "type": "named_fix"
+  },
+  "VETOM": {
+    "name": "VETOM",
+    "lat": 11.23305556,
+    "lon": 107.6075,
+    "latitude_dms": "111359.000N",
+    "longitude_dms": "1073627.000E",
+    "type": "named_fix"
+  },
+  "VICAL": {
+    "name": "VICAL",
+    "lat": 10.14634806,
+    "lon": 106.75055222,
+    "latitude_dms": "100846.853N",
+    "longitude_dms": "1064501.988E",
+    "type": "named_fix"
+  },
+  "VIKEP": {
+    "name": "VIKEP",
+    "lat": 10.96670889,
+    "lon": 107.22924194,
+    "latitude_dms": "105800.152N",
+    "longitude_dms": "1071345.271E",
+    "type": "named_fix"
+  },
+  "ATGAS": {
+    "name": "ATGAS",
+    "lat": 10.40472222,
+    "lon": 105.51722222,
+    "latitude_dms": "102417.000N",
+    "longitude_dms": "1053102.000E",
+    "type": "named_fix"
+  },
+  "TS512": {
+    "name": "TS512",
+    "lat": 10.77846194,
+    "lon": 106.54969056,
+    "latitude_dms": "104642.463N",
+    "longitude_dms": "1063258.886E",
+    "type": "sequence_fix"
+  },
+  "TS410": {
+    "name": "TS410",
+    "lat": 10.81525,
+    "lon": 106.64708333,
+    "latitude_dms": "104854.900N",
+    "longitude_dms": "1063849.500E",
+    "type": "sequence_fix"
+  },
+  "TS412": {
+    "name": "TS412",
+    "lat": 10.82988889,
+    "lon": 106.68591667,
+    "latitude_dms": "104947.600N",
+    "longitude_dms": "1064109.300E",
+    "type": "sequence_fix"
+  },
+  "TS420": {
+    "name": "TS420",
+    "lat": 10.81716667,
+    "lon": 106.64277778,
+    "latitude_dms": "104901.800N",
+    "longitude_dms": "1063834.000E",
+    "type": "sequence_fix"
+  },
+  "TS422": {
+    "name": "TS422",
+    "lat": 10.83161111,
+    "lon": 106.68105556,
+    "latitude_dms": "104953.800N",
+    "longitude_dms": "1064051.800E",
+    "type": "sequence_fix"
+  },
+  "TS500": {
+    "name": "TS500",
+    "lat": 10.95388889,
+    "lon": 106.33333333,
+    "latitude_dms": "105714.000N",
+    "longitude_dms": "1062000.000E",
+    "type": "sequence_fix"
+  },
+  "TS510": {
+    "name": "TS510",
+    "lat": 10.80825,
+    "lon": 106.62858333,
+    "latitude_dms": "104829.700N",
+    "longitude_dms": "1063742.900E",
+    "type": "sequence_fix"
+  },
+  "TS520": {
+    "name": "TS520",
+    "lat": 10.81066667,
+    "lon": 106.62555556,
+    "latitude_dms": "104838.400N",
+    "longitude_dms": "1063732.000E",
+    "type": "sequence_fix"
+  },
+  "TS552": {
+    "name": "TS552",
+    "lat": 10.83150833,
+    "lon": 106.68075556,
+    "latitude_dms": "104953.430N",
+    "longitude_dms": "1064050.720E",
+    "type": "sequence_fix"
+  },
+  "TS554": {
+    "name": "TS554",
+    "lat": 10.83206389,
+    "lon": 106.69166389,
+    "latitude_dms": "104955.430N",
+    "longitude_dms": "1064129.990E",
+    "type": "sequence_fix"
+  },
+  "TS556": {
+    "name": "TS556",
+    "lat": 10.91653333,
+    "lon": 106.65904444,
+    "latitude_dms": "105459.520N",
+    "longitude_dms": "1063932.560E",
+    "type": "sequence_fix"
+  },
+  "TSH": {
+    "name": "TSH",
+    "lat": 10.818333333333333,
+    "lon": 106.65055555555556,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "navaid"
+  },
+  "AC": {
+    "name": "AC",
+    "lat": 10.939166666666667,
+    "lon": 107.18833333333333,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "navaid"
+  },
+  "VTV": {
+    "name": "VTV",
+    "lat": 10.372777777777777,
+    "lon": 107.09444444444443,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "navaid"
+  },
+  "BAOMY": {
+    "name": "BAOMY",
+    "lat": 10.870833333333334,
+    "lon": 107.32916666666667,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "DONXO": {
+    "name": "DONXO",
+    "lat": 11.423333333333332,
+    "lon": 106.95166666666667,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "POPET": {
+    "name": "POPET",
+    "lat": 11.1,
+    "lon": 105.95,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "BIHON": {
+    "name": "BIHON",
+    "lat": 10.991666666666665,
+    "lon": 106.54861111111111,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "RUNOP": {
+    "name": "RUNOP",
+    "lat": 11.088055555555556,
+    "lon": 106.63833333333334,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "MOXEB": {
+    "name": "MOXEB",
+    "lat": 10.899444444444445,
+    "lon": 106.46277777777777,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "ANRAN": {
+    "name": "ANRAN",
+    "lat": 11.35,
+    "lon": 107.06916666666666,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "ENRIN": {
+    "name": "ENRIN",
+    "lat": 11.190833333333334,
+    "lon": 107.32388888888889,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "ESDOB": {
+    "name": "ESDOB",
+    "lat": 10.88861111111111,
+    "lon": 106.95138888888889,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "VEPMA": {
+    "name": "VEPMA",
+    "lat": 10.933333333333334,
+    "lon": 107.67166666666667,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "MATGI": {
+    "name": "MATGI",
+    "lat": 10.895555555555555,
+    "lon": 107.64666666666668,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "BUKMA": {
+    "name": "BUKMA",
+    "lat": 10.847222222222223,
+    "lon": 107.03083333333333,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "LEDUP": {
+    "name": "LEDUP",
+    "lat": 10.775833333333335,
+    "lon": 107.14694444444446,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "LOSON": {
+    "name": "LOSON",
+    "lat": 10.493333333333332,
+    "lon": 107.07555555555555,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "RUTIT": {
+    "name": "RUTIT",
+    "lat": 10.454166666666666,
+    "lon": 107.7575,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "ASEBO": {
+    "name": "ASEBO",
+    "lat": 10.331666666666667,
+    "lon": 107.28999999999999,
+    "source": "10430.pdf / supplied area-chart image",
+    "type": "named_fix"
+  },
+  "HCM_GP": {
+    "name": "HCM_GP",
+    "lat": 10.824861111111112,
+    "lon": 106.66011111111112,
+    "source": "123982.pdf waypoint table",
+    "type": "navaid"
+  },
+  "HCM_LLZ": {
+    "name": "HCM_LLZ",
+    "lat": 10.813861111111112,
+    "lon": 106.63408333333334,
+    "source": "123982.pdf waypoint table",
+    "type": "navaid"
+  },
+  "NDB_RG": {
+    "name": "NDB_RG",
+    "lat": 9.959444,
+    "lon": 105.133056,
+    "source": "VV-ENR-2_1-en.pdf / VV-ENR-3_1-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "TULTU": {
+    "name": "TULTU",
+    "lat": 9.683056,
+    "lon": 106.897778,
+    "source": "VV-ENR-2_1-en.pdf / VV-ENR-3_1-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "MULAD": {
+    "name": "MULAD",
+    "lat": 12.548056,
+    "lon": 107.574722,
+    "source": "VV-ENR-2_1-en.pdf / VV-ENR-3_1-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "BODOD": {
+    "name": "BODOD",
+    "lat": 9.639444,
+    "lon": 106.858056,
+    "source": "VV-ENR-2_1-en.pdf / VV-ENR-3_1-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "LKH": {
+    "name": "LKH",
+    "lat": 11.754167,
+    "lon": 108.355278,
+    "source": "VV-ENR-2_1-en.pdf / VV-ENR-3_1-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "ONEBI": {
+    "name": "ONEBI",
+    "lat": 11.938056,
+    "lon": 108.308611,
+    "source": "VV-ENR-2_1-en.pdf / VV-ENR-3_1-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "CONDA": {
+    "name": "CONDA",
+    "lat": 8.957222,
+    "lon": 106.474722,
+    "source": "VV-ENR-4_4-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "DADEM": {
+    "name": "DADEM",
+    "lat": 10.895556,
+    "lon": 105.228056,
+    "source": "VV-ENR-4_4-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "KISAN": {
+    "name": "KISAN",
+    "lat": 10.538889,
+    "lon": 104.675,
+    "source": "VV-ENR-4_4-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "LITAM": {
+    "name": "LITAM",
+    "lat": 8.993611,
+    "lon": 106.701667,
+    "source": "VV-ENR-4_4-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "VEPKI": {
+    "name": "VEPKI",
+    "lat": 9.105833,
+    "lon": 106.373611,
+    "source": "VV-ENR-4_4-en.pdf (AIP Viet Nam)",
+    "type": "named_fix"
+  },
+  "RG": {
+    "name": "RG",
+    "lat": 9.959444,
+    "lon": 105.133056,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 / VV-ENR-3_3-en.pdf ENR 3.3 (frequency/channel/hours/elevation not given in these sections -- see ENR 4.1 if added later)",
+    "type": "navaid"
+  },
+  "BMT": {
+    "name": "BMT",
+    "lat": 12.666389,
+    "lon": 108.123056,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "type": "named_fix"
+  },
+  "IBUNU": {
+    "name": "IBUNU",
+    "lat": 11.668889,
+    "lon": 108.868056,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "type": "named_fix"
+  },
+  "CN": {
+    "name": "CN",
+    "lat": 8.732778,
+    "lon": 106.626389,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "type": "named_fix"
+  },
+  "BIBAN": {
+    "name": "BIBAN",
+    "lat": 8.5,
+    "lon": 105.0,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "type": "named_fix"
+  },
+  "SOSPA": {
+    "name": "SOSPA",
+    "lat": 11.833889,
+    "lon": 108.640833,
+    "source": "VV-ENR-3_3-en.pdf ENR 3.3 (Area Navigation (RNAV) Routes)",
+    "type": "named_fix"
+  },
+  "DAGAG": {
+    "name": "DAGAG",
+    "lat": 9.463333,
+    "lon": 108.441667,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "type": "named_fix"
+  },
+  "AGSIS": {
+    "name": "AGSIS",
+    "lat": 11.021944,
+    "lon": 108.831111,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "type": "named_fix"
+  },
+  "TUNPO": {
+    "name": "TUNPO",
+    "lat": 10.062222,
+    "lon": 104.589444,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "type": "named_fix"
+  },
+  "QL": {
+    "name": "QL",
+    "lat": 9.176111,
+    "lon": 105.176667,
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "type": "named_fix"
+  },
+  "_ANTRI2F_TS658_1": {
+    "name": "_ANTRI2F_TS658_1",
+    "lat": 10.798737149041626,
+    "lon": 106.60314845103552,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_2": {
+    "name": "_ANTRI2F_TS658_2",
+    "lat": 10.797962252633154,
+    "lon": 106.60046344284363,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_3": {
+    "name": "_ANTRI2F_TS658_3",
+    "lat": 10.797323742983249,
+    "lon": 106.59774149196278,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_4": {
+    "name": "_ANTRI2F_TS658_4",
+    "lat": 10.79682330284692,
+    "lon": 106.59498977214173,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_5": {
+    "name": "_ANTRI2F_TS658_5",
+    "lat": 10.796462251097589,
+    "lon": 106.59221553546082,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_6": {
+    "name": "_ANTRI2F_TS658_6",
+    "lat": 10.796241539256705,
+    "lon": 106.5894260932482,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_7": {
+    "name": "_ANTRI2F_TS658_7",
+    "lat": 10.796161748990047,
+    "lon": 106.58662879684127,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_8": {
+    "name": "_ANTRI2F_TS658_8",
+    "lat": 10.796223090577218,
+    "lon": 106.58383101824337,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_9": {
+    "name": "_ANTRI2F_TS658_9",
+    "lat": 10.796425402358356,
+    "lon": 106.58104013072663,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_10": {
+    "name": "_ANTRI2F_TS658_10",
+    "lat": 10.796768151159498,
+    "lon": 106.57826348943132,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_11": {
+    "name": "_ANTRI2F_TS658_11",
+    "lat": 10.797250433695478,
+    "lon": 106.57550841201272,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_12": {
+    "name": "_ANTRI2F_TS658_12",
+    "lat": 10.797870978946715,
+    "lon": 106.57278215938594,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_13": {
+    "name": "_ANTRI2F_TS658_13",
+    "lat": 10.79862815150366,
+    "lon": 106.57009191661915,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_14": {
+    "name": "_ANTRI2F_TS658_14",
+    "lat": 10.799519955870128,
+    "lon": 106.56744477402509,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_15": {
+    "name": "_ANTRI2F_TS658_15",
+    "lat": 10.800544041714334,
+    "lon": 106.5648477085005,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_16": {
+    "name": "_ANTRI2F_TS658_16",
+    "lat": 10.801697710053816,
+    "lon": 106.56230756516203,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_17": {
+    "name": "_ANTRI2F_TS658_17",
+    "lat": 10.802977920358126,
+    "lon": 106.55983103932705,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_18": {
+    "name": "_ANTRI2F_TS658_18",
+    "lat": 10.804381298550675,
+    "lon": 106.55742465888625,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_19": {
+    "name": "_ANTRI2F_TS658_19",
+    "lat": 10.805904145888798,
+    "lon": 106.5550947671144,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_20": {
+    "name": "_ANTRI2F_TS658_20",
+    "lat": 10.807542448698813,
+    "lon": 106.55284750596438,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_21": {
+    "name": "_ANTRI2F_TS658_21",
+    "lat": 10.809291888940573,
+    "lon": 106.55068879988816,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_22": {
+    "name": "_ANTRI2F_TS658_22",
+    "lat": 10.81114785557386,
+    "lon": 106.54862434022733,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_23": {
+    "name": "_ANTRI2F_TS658_23",
+    "lat": 10.813105456696848,
+    "lon": 106.5466595702142,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_24": {
+    "name": "_ANTRI2F_TS658_24",
+    "lat": 10.815159532424829,
+    "lon": 106.54479967062294,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_25": {
+    "name": "_ANTRI2F_TS658_25",
+    "lat": 10.817304668475485,
+    "lon": 106.54304954610843,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_26": {
+    "name": "_ANTRI2F_TS658_26",
+    "lat": 10.819535210425066,
+    "lon": 106.54141381226911,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_27": {
+    "name": "_ANTRI2F_TS658_27",
+    "lat": 10.821845278598095,
+    "lon": 106.53989678346767,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_28": {
+    "name": "_ANTRI2F_TS658_28",
+    "lat": 10.824228783551582,
+    "lon": 106.53850246144201,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_29": {
+    "name": "_ANTRI2F_TS658_29",
+    "lat": 10.82667944211309,
+    "lon": 106.53723452473646,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_30": {
+    "name": "_ANTRI2F_TS658_30",
+    "lat": 10.82919079393055,
+    "lon": 106.53609631898163,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_31": {
+    "name": "_ANTRI2F_TS658_31",
+    "lat": 10.831756218490433,
+    "lon": 106.53509084804818,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_32": {
+    "name": "_ANTRI2F_TS658_32",
+    "lat": 10.834368952559503,
+    "lon": 106.53422076609867,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_33": {
+    "name": "_ANTRI2F_TS658_33",
+    "lat": 10.837022108004367,
+    "lon": 106.53348837055833,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_34": {
+    "name": "_ANTRI2F_TS658_34",
+    "lat": 10.83970868994199,
+    "lon": 106.53289559602374,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_35": {
+    "name": "_ANTRI2F_TS658_35",
+    "lat": 10.842421615173407,
+    "lon": 106.532444009126,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_36": {
+    "name": "_ANTRI2F_TS658_36",
+    "lat": 10.84515373085217,
+    "lon": 106.53213480436195,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_37": {
+    "name": "_ANTRI2F_TS658_37",
+    "lat": 10.847897833338394,
+    "lon": 106.53196880090505,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_38": {
+    "name": "_ANTRI2F_TS658_38",
+    "lat": 10.850646687188725,
+    "lon": 106.53194644040491,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_39": {
+    "name": "_ANTRI2F_TS658_39",
+    "lat": 10.853393044232275,
+    "lon": 106.53206778578117,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_40": {
+    "name": "_ANTRI2F_TS658_40",
+    "lat": 10.856129662682184,
+    "lon": 106.53233252101604,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_41": {
+    "name": "_ANTRI2F_TS658_41",
+    "lat": 10.85884932623245,
+    "lon": 106.53273995194587,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_42": {
+    "name": "_ANTRI2F_TS658_42",
+    "lat": 10.861544863089701,
+    "lon": 106.53328900805039,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_43": {
+    "name": "_ANTRI2F_TS658_43",
+    "lat": 10.86420916488959,
+    "lon": 106.53397824523546,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_44": {
+    "name": "_ANTRI2F_TS658_44",
+    "lat": 10.866835205447982,
+    "lon": 106.53480584960205,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_45": {
+    "name": "_ANTRI2F_TS658_45",
+    "lat": 10.869416059297329,
+    "lon": 106.53576964219236,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_46": {
+    "name": "_ANTRI2F_TS658_46",
+    "lat": 10.871944919959315,
+    "lon": 106.5368670847005,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_47": {
+    "name": "_ANTRI2F_TS658_47",
+    "lat": 10.87441511790542,
+    "lon": 106.53809528613347,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_48": {
+    "name": "_ANTRI2F_TS658_48",
+    "lat": 10.876820138157932,
+    "lon": 106.53945101040483,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_49": {
+    "name": "_ANTRI2F_TS658_49",
+    "lat": 10.879153637484858,
+    "lon": 106.54093068484178,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_50": {
+    "name": "_ANTRI2F_TS658_50",
+    "lat": 10.881409461143193,
+    "lon": 106.54253040958305,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS658_51": {
+    "name": "_ANTRI2F_TS658_51",
+    "lat": 10.88358165912621,
+    "lon": 106.54424596784331,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_1": {
+    "name": "_ANTRI2F_TS662_1",
+    "lat": 10.887516515970159,
+    "lon": 106.54807908623935,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_2": {
+    "name": "_ANTRI2F_TS662_2",
+    "lat": 10.889370724427385,
+    "lon": 106.55007246175956,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_3": {
+    "name": "_ANTRI2F_TS662_3",
+    "lat": 10.891123723997188,
+    "lon": 106.55215865186007,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_4": {
+    "name": "_ANTRI2F_TS662_4",
+    "lat": 10.892771041477591,
+    "lon": 106.55433233472014,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_5": {
+    "name": "_ANTRI2F_TS662_5",
+    "lat": 10.894308473267614,
+    "lon": 106.5565879649788,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_6": {
+    "name": "_ANTRI2F_TS662_6",
+    "lat": 10.895732096107682,
+    "lon": 106.5589197878891,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_7": {
+    "name": "_ANTRI2F_TS662_7",
+    "lat": 10.897038277104413,
+    "lon": 106.5613218540099,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_8": {
+    "name": "_ANTRI2F_TS662_8",
+    "lat": 10.898223683014024,
+    "lon": 106.56378803439819,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_9": {
+    "name": "_ANTRI2F_TS662_9",
+    "lat": 10.899285288760488,
+    "lon": 106.56631203626232,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_10": {
+    "name": "_ANTRI2F_TS662_10",
+    "lat": 10.900220385166572,
+    "lon": 106.56888741903664,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_11": {
+    "name": "_ANTRI2F_TS662_11",
+    "lat": 10.901026585877853,
+    "lon": 106.57150761083588,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_12": {
+    "name": "_ANTRI2F_TS662_12",
+    "lat": 10.901701833461928,
+    "lon": 106.57416592524729,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_13": {
+    "name": "_ANTRI2F_TS662_13",
+    "lat": 10.902244404667151,
+    "lon": 106.57685557841722,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_14": {
+    "name": "_ANTRI2F_TS662_14",
+    "lat": 10.902652914827321,
+    "lon": 106.57956970638834,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_15": {
+    "name": "_ANTRI2F_TS662_15",
+    "lat": 10.902926321401036,
+    "lon": 106.58230138264298,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_16": {
+    "name": "_ANTRI2F_TS662_16",
+    "lat": 10.903063926636598,
+    "lon": 106.5850436358073,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_17": {
+    "name": "_ANTRI2F_TS662_17",
+    "lat": 10.903065379355587,
+    "lon": 106.58778946747091,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_ANTRI2F_TS662_18": {
+    "name": "_ANTRI2F_TS662_18",
+    "lat": 10.902930675850557,
+    "lon": 106.59053187007609,
+    "type": "rf_sample",
+    "source": "83868.pdf"
+  },
+  "_KADUM2F_TS658_1": {
+    "name": "_KADUM2F_TS658_1",
+    "lat": 10.798737149041626,
+    "lon": 106.60314845103552,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_2": {
+    "name": "_KADUM2F_TS658_2",
+    "lat": 10.797962252633154,
+    "lon": 106.60046344284363,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_3": {
+    "name": "_KADUM2F_TS658_3",
+    "lat": 10.797323742983249,
+    "lon": 106.59774149196278,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_4": {
+    "name": "_KADUM2F_TS658_4",
+    "lat": 10.79682330284692,
+    "lon": 106.59498977214173,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_5": {
+    "name": "_KADUM2F_TS658_5",
+    "lat": 10.796462251097589,
+    "lon": 106.59221553546082,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_6": {
+    "name": "_KADUM2F_TS658_6",
+    "lat": 10.796241539256705,
+    "lon": 106.5894260932482,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_7": {
+    "name": "_KADUM2F_TS658_7",
+    "lat": 10.796161748990047,
+    "lon": 106.58662879684127,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_8": {
+    "name": "_KADUM2F_TS658_8",
+    "lat": 10.796223090577218,
+    "lon": 106.58383101824337,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_9": {
+    "name": "_KADUM2F_TS658_9",
+    "lat": 10.796425402358356,
+    "lon": 106.58104013072663,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_10": {
+    "name": "_KADUM2F_TS658_10",
+    "lat": 10.796768151159498,
+    "lon": 106.57826348943132,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_11": {
+    "name": "_KADUM2F_TS658_11",
+    "lat": 10.797250433695478,
+    "lon": 106.57550841201272,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_12": {
+    "name": "_KADUM2F_TS658_12",
+    "lat": 10.797870978946715,
+    "lon": 106.57278215938594,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_13": {
+    "name": "_KADUM2F_TS658_13",
+    "lat": 10.79862815150366,
+    "lon": 106.57009191661915,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_14": {
+    "name": "_KADUM2F_TS658_14",
+    "lat": 10.799519955870128,
+    "lon": 106.56744477402509,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_15": {
+    "name": "_KADUM2F_TS658_15",
+    "lat": 10.800544041714334,
+    "lon": 106.5648477085005,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_16": {
+    "name": "_KADUM2F_TS658_16",
+    "lat": 10.801697710053816,
+    "lon": 106.56230756516203,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_17": {
+    "name": "_KADUM2F_TS658_17",
+    "lat": 10.802977920358126,
+    "lon": 106.55983103932705,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_18": {
+    "name": "_KADUM2F_TS658_18",
+    "lat": 10.804381298550675,
+    "lon": 106.55742465888625,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_19": {
+    "name": "_KADUM2F_TS658_19",
+    "lat": 10.805904145888798,
+    "lon": 106.5550947671144,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_20": {
+    "name": "_KADUM2F_TS658_20",
+    "lat": 10.807542448698813,
+    "lon": 106.55284750596438,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_21": {
+    "name": "_KADUM2F_TS658_21",
+    "lat": 10.809291888940573,
+    "lon": 106.55068879988816,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_22": {
+    "name": "_KADUM2F_TS658_22",
+    "lat": 10.81114785557386,
+    "lon": 106.54862434022733,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_23": {
+    "name": "_KADUM2F_TS658_23",
+    "lat": 10.813105456696848,
+    "lon": 106.5466595702142,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_24": {
+    "name": "_KADUM2F_TS658_24",
+    "lat": 10.815159532424829,
+    "lon": 106.54479967062294,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_25": {
+    "name": "_KADUM2F_TS658_25",
+    "lat": 10.817304668475485,
+    "lon": 106.54304954610843,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_26": {
+    "name": "_KADUM2F_TS658_26",
+    "lat": 10.819535210425066,
+    "lon": 106.54141381226911,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_27": {
+    "name": "_KADUM2F_TS658_27",
+    "lat": 10.821845278598095,
+    "lon": 106.53989678346767,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_28": {
+    "name": "_KADUM2F_TS658_28",
+    "lat": 10.824228783551582,
+    "lon": 106.53850246144201,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_29": {
+    "name": "_KADUM2F_TS658_29",
+    "lat": 10.82667944211309,
+    "lon": 106.53723452473646,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_30": {
+    "name": "_KADUM2F_TS658_30",
+    "lat": 10.82919079393055,
+    "lon": 106.53609631898163,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_31": {
+    "name": "_KADUM2F_TS658_31",
+    "lat": 10.831756218490433,
+    "lon": 106.53509084804818,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_32": {
+    "name": "_KADUM2F_TS658_32",
+    "lat": 10.834368952559503,
+    "lon": 106.53422076609867,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_33": {
+    "name": "_KADUM2F_TS658_33",
+    "lat": 10.837022108004367,
+    "lon": 106.53348837055833,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_34": {
+    "name": "_KADUM2F_TS658_34",
+    "lat": 10.83970868994199,
+    "lon": 106.53289559602374,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_35": {
+    "name": "_KADUM2F_TS658_35",
+    "lat": 10.842421615173407,
+    "lon": 106.532444009126,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_36": {
+    "name": "_KADUM2F_TS658_36",
+    "lat": 10.84515373085217,
+    "lon": 106.53213480436195,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_37": {
+    "name": "_KADUM2F_TS658_37",
+    "lat": 10.847897833338394,
+    "lon": 106.53196880090505,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_38": {
+    "name": "_KADUM2F_TS658_38",
+    "lat": 10.850646687188725,
+    "lon": 106.53194644040491,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_39": {
+    "name": "_KADUM2F_TS658_39",
+    "lat": 10.853393044232275,
+    "lon": 106.53206778578117,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_40": {
+    "name": "_KADUM2F_TS658_40",
+    "lat": 10.856129662682184,
+    "lon": 106.53233252101604,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_41": {
+    "name": "_KADUM2F_TS658_41",
+    "lat": 10.85884932623245,
+    "lon": 106.53273995194587,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_42": {
+    "name": "_KADUM2F_TS658_42",
+    "lat": 10.861544863089701,
+    "lon": 106.53328900805039,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_43": {
+    "name": "_KADUM2F_TS658_43",
+    "lat": 10.86420916488959,
+    "lon": 106.53397824523546,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_44": {
+    "name": "_KADUM2F_TS658_44",
+    "lat": 10.866835205447982,
+    "lon": 106.53480584960205,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_45": {
+    "name": "_KADUM2F_TS658_45",
+    "lat": 10.869416059297329,
+    "lon": 106.53576964219236,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_46": {
+    "name": "_KADUM2F_TS658_46",
+    "lat": 10.871944919959315,
+    "lon": 106.5368670847005,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_47": {
+    "name": "_KADUM2F_TS658_47",
+    "lat": 10.87441511790542,
+    "lon": 106.53809528613347,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_48": {
+    "name": "_KADUM2F_TS658_48",
+    "lat": 10.876820138157932,
+    "lon": 106.53945101040483,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_49": {
+    "name": "_KADUM2F_TS658_49",
+    "lat": 10.879153637484858,
+    "lon": 106.54093068484178,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_50": {
+    "name": "_KADUM2F_TS658_50",
+    "lat": 10.881409461143193,
+    "lon": 106.54253040958305,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2F_TS658_51": {
+    "name": "_KADUM2F_TS658_51",
+    "lat": 10.88358165912621,
+    "lon": 106.54424596784331,
+    "type": "rf_sample",
+    "source": "83872.pdf"
+  },
+  "_KADUM2G_CA": {
+    "name": "_KADUM2G_CA",
+    "lat": 10.814730226188164,
+    "lon": 106.64558098665555,
+    "type": "nominal_ca_endpoint",
+    "source": "5 percent nominal climb assumption"
+  },
+  "_KADUM2K_CA": {
+    "name": "_KADUM2K_CA",
+    "lat": 10.766570582075103,
+    "lon": 106.51730410804355,
+    "type": "nominal_ca_endpoint",
+    "source": "5 percent nominal climb assumption"
+  },
+  "_SAPEN2K_CA": {
+    "name": "_SAPEN2K_CA",
+    "lat": 10.766570582075103,
+    "lon": 106.51730410804355,
+    "type": "nominal_ca_endpoint",
+    "source": "5 percent nominal climb assumption"
+  }
+}

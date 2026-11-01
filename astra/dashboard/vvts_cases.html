@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MOSAIC · Ba kịch bản VVTS</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='airnav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='vvts_cases.css') }}">
+  <script defer src="{{ url_for('static',filename='vvts_cases.js') }}"></script>
+</head>
+<body>
+<header><div><a class="brand" href="/">MOSAIC</a><span>Ba kịch bản VVTS</span></div><nav><a href="/airnav">Mẫu VN243</a><a href="/">Radar</a></nav></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">NGHIÊN CỨU THEO ĐƠN XIN DỮ LIỆU</p><h1>Ba khung giờ, dữ liệu có nguồn</h1><p>Thời tiết xấu, điều kiện bình thường và cao điểm Tết. Chỉ phát lại dữ liệu đã có; các phần chưa đủ bằng chứng được để trống và ghi rõ cần bổ sung.</p></div><button id="refresh">Đọc lại báo cáo</button></section>
+  <div id="error" role="alert" hidden></div>
+  <section class="case-cards" id="case-cards" aria-label="Tình trạng ba kịch bản"></section>
+  <section class="replay-grid">
+    <div class="card"><div class="card-title"><div><h2>Traffic đã ghi nhận</h2><p id="case-note"></p></div><select id="case-select" aria-label="Chọn kịch bản"></select></div><canvas id="case-map" aria-label="Vị trí các chuyến bay ghi nhận trong khung giờ"></canvas><div class="legend"><span>Vòng 40 NM: vùng TMA nghiên cứu</span><span>120 NM: bối cảnh upstream</span><span>Khoảng trống được giữ nguyên</span></div><div class="playback"><button id="play" disabled>Phát</button><select id="speed" aria-label="Tốc độ phát"><option value="30">30×</option><option value="60">60×</option></select><input type="range" id="timeline" min="0" max="7200" value="0" step="30" aria-label="Thời gian phát lại"><output id="clock"></output></div><p id="frame-note" class="muted"></p></div>
+    <aside class="card"><h2>Dữ liệu cần bổ sung</h2><ul id="missing"></ul><h3>Giới hạn đối chiếu ATFM</h3><p id="ctot-note"></p><p class="muted">Flight track không thay thế FPL, CTOT hay capacity công bố. EOBT và giờ block không được thay cho giờ takeoff/landing.</p></aside>
+  </section>
+  <section class="card"><div class="card-title"><div><h2>Độ phủ từng 15 phút</h2><p>Số track là một tập con đã thu thập. Khung chưa có quan trắc không được xem là airport không có traffic.</p></div><a href="/api/vvts-cases/export/coverage_15min.csv">Tải CSV độ phủ</a></div><div class="table-scroll"><table><thead><tr><th>Bắt đầu (ICT)</th><th>Frames có dữ liệu</th><th>Peak track trong tập con</th><th>Planned demand</th><th>Observed throughput</th><th>Declared capacity</th></tr></thead><tbody id="coverage-rows"></tbody></table></div></section>
+  <section class="card"><div class="card-title"><div><h2>Sai số dự báo trajectory</h2><p>Constant velocity so với vị trí quan trắc sau đó. ±15 giây quanh horizon yêu cầu; chỉ chấm điểm tại elapsed time thực tế.</p></div><a href="/api/vvts-cases/export/prediction_errors.csv">Tải CSV sai số</a></div><div class="table-scroll"><table><thead><tr><th>Horizon</th><th>Cặp quan trắc</th><th>Sai số ngang TB</th><th>Sai số độ cao TB</th></tr></thead><tbody id="error-rows"></tbody></table></div></section>
+  <section class="card"><h2>Thời tiết trong khung</h2><p class="muted">METAR/SPECI là quan trắc; TAF là dự báo. Chưa có báo cáo cuối khung thì chưa xác định được toàn bộ diễn biến phục hồi.</p><div id="weather"></div></section>
+  <details class="card"><summary>Phương pháp, nguồn và phạm vi kết luận</summary><ul id="limits"></ul><p class="hash" id="hash"></p><p><a href="/api/vvts-cases/export/report.md">Tải báo cáo nghiên cứu</a> · <a href="/api/vvts-cases/export/report.json">Tải JSON đầy đủ</a></p></details>
+</main>
+</body></html>

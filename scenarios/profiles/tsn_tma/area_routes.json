@@ -1,0 +1,476 @@
+[
+  {
+    "id": "W1",
+    "segments": [
+      [
+        "BMT",
+        "ENRIN"
+      ],
+      [
+        "ENRIN",
+        "AC"
+      ],
+      [
+        "AC",
+        "ESDOB"
+      ],
+      [
+        "ESDOB",
+        "TSH"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W2",
+    "segments": [
+      [
+        "IBUNU",
+        "PTH"
+      ],
+      [
+        "PTH",
+        "VEPMA"
+      ],
+      [
+        "VEPMA",
+        "AC"
+      ],
+      [
+        "AC",
+        "TSH"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W15",
+    "segments": [
+      [
+        "AC",
+        "VETOM"
+      ],
+      [
+        "VETOM",
+        "LKH"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W12",
+    "segments": [
+      [
+        "PATMA",
+        "DONXO"
+      ],
+      [
+        "DONXO",
+        "RUNOP"
+      ],
+      [
+        "RUNOP",
+        "MOXEB"
+      ],
+      [
+        "MOXEB",
+        "MISAN"
+      ],
+      [
+        "MISAN",
+        "TRN"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W9",
+    "segments": [
+      [
+        "TSH",
+        "XOBAV"
+      ],
+      [
+        "XOBAV",
+        "NIXIV"
+      ],
+      [
+        "NIXIV",
+        "CN"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W16",
+    "segments": [
+      [
+        "TSH",
+        "ENPAS"
+      ],
+      [
+        "ENPAS",
+        "TRN"
+      ],
+      [
+        "TRN",
+        "RG"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "L637",
+    "segments": [
+      [
+        "BIBAN",
+        "ANHOA"
+      ],
+      [
+        "ANHOA",
+        "BITIS"
+      ],
+      [
+        "BITIS",
+        "TSH"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W19",
+    "segments": [
+      [
+        "TSH",
+        "VTV"
+      ],
+      [
+        "VTV",
+        "TULTU"
+      ],
+      [
+        "TULTU",
+        "LITAM"
+      ],
+      [
+        "LITAM",
+        "CN"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "L642",
+    "segments": [
+      [
+        "SOSPA",
+        "PTH"
+      ],
+      [
+        "PTH",
+        "RUTIT"
+      ],
+      [
+        "RUTIT",
+        "ELSAS"
+      ],
+      [
+        "ELSAS",
+        "CN"
+      ]
+    ],
+    "source": "VV-ENR-3_3-en.pdf ENR 3.3 (Area Navigation (RNAV) Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "L643",
+    "segments": [
+      [
+        "TSH",
+        "XOBAV"
+      ],
+      [
+        "XOBAV",
+        "NIXIV"
+      ],
+      [
+        "NIXIV",
+        "CN"
+      ]
+    ],
+    "source": "VV-ENR-3_3-en.pdf ENR 3.3 (Area Navigation (RNAV) Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "M510",
+    "segments": [
+      [
+        "TRN",
+        "POTIX"
+      ],
+      [
+        "POTIX",
+        "ATGAS"
+      ],
+      [
+        "ATGAS",
+        "DADEM"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "M768",
+    "segments": [
+      [
+        "DAGAG",
+        "ELSAS"
+      ],
+      [
+        "ELSAS",
+        "ASEBO"
+      ],
+      [
+        "ASEBO",
+        "LOSON"
+      ],
+      [
+        "LOSON",
+        "TSH"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "N500",
+    "segments": [
+      [
+        "TSH",
+        "BUKMA"
+      ],
+      [
+        "BUKMA",
+        "BAOMY"
+      ],
+      [
+        "BAOMY",
+        "MATGI"
+      ],
+      [
+        "MATGI",
+        "PTH"
+      ],
+      [
+        "PTH",
+        "AGSIS"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "Q1",
+    "segments": [
+      [
+        "BMT",
+        "DOVIN"
+      ],
+      [
+        "DOVIN",
+        "AC"
+      ]
+    ],
+    "source": "VV-ENR-3_3-en.pdf ENR 3.3 (Area Navigation (RNAV) Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "Q2",
+    "segments": [
+      [
+        "TSH",
+        "KADUM"
+      ],
+      [
+        "KADUM",
+        "PATMA"
+      ]
+    ],
+    "source": "VV-ENR-3_3-en.pdf ENR 3.3 (Area Navigation (RNAV) Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "R468",
+    "segments": [
+      [
+        "SAPEN",
+        "MOXEB"
+      ],
+      [
+        "MOXEB",
+        "TSH"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W17",
+    "segments": [
+      [
+        "TSH",
+        "BACHU"
+      ],
+      [
+        "BACHU",
+        "ATGAS"
+      ],
+      [
+        "ATGAS",
+        "TUNPO"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W18",
+    "segments": [
+      [
+        "TRN",
+        "QL"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W23",
+    "segments": [
+      [
+        "TRN",
+        "ANHOA"
+      ],
+      [
+        "ANHOA",
+        "VEPKI"
+      ],
+      [
+        "VEPKI",
+        "CONDA"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "W8",
+    "segments": [
+      [
+        "TSH",
+        "POTIX"
+      ],
+      [
+        "POTIX",
+        "RG"
+      ],
+      [
+        "RG",
+        "TUNPO"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "L644",
+    "segments": [
+      [
+        "TSH",
+        "AC"
+      ],
+      [
+        "AC",
+        "LEDUP"
+      ],
+      [
+        "LEDUP",
+        "LOSON"
+      ],
+      [
+        "LOSON",
+        "BODOD"
+      ],
+      [
+        "BODOD",
+        "CN"
+      ]
+    ],
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 (Lower ATS Routes)",
+    "kind": "centre_airway"
+  },
+  {
+    "id": "R468",
+    "segments": [
+      [
+        "POPET",
+        "SAPEN"
+      ]
+    ],
+    "source": "10430.pdf",
+    "kind": "area_route"
+  },
+  {
+    "id": "AREA-RUNOP",
+    "segments": [
+      [
+        "TSH",
+        "RUNOP"
+      ]
+    ],
+    "source": "10430.pdf",
+    "kind": "area_departure_arrival_routing"
+  },
+  {
+    "id": "AREA-KADUM",
+    "segments": [
+      [
+        "TSH",
+        "KADUM"
+      ]
+    ],
+    "source": "10430.pdf",
+    "kind": "area_departure_arrival_routing"
+  },
+  {
+    "id": "AREA-ANRAN",
+    "segments": [
+      [
+        "TSH",
+        "ANRAN"
+      ]
+    ],
+    "source": "10430.pdf",
+    "kind": "area_departure_arrival_routing"
+  },
+  {
+    "id": "AREA-LANHI",
+    "segments": [
+      [
+        "TSH",
+        "LANHI"
+      ]
+    ],
+    "source": "10430.pdf",
+    "kind": "area_departure_arrival_routing"
+  }
+]

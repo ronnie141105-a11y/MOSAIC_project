@@ -1,0 +1,3 @@
+﻿flight_id,callsign,aircraft_type,adep,ades,time_utc,lat,lon,altitude_ft,ground_speed_kt,heading_deg,vertical_speed_fpm,on_ground,source
+NEW01,NEW01,A321,VVNB,VVTS,2026-10-07T10:00:00Z,10.9,106.9,7000,200,90,0,,test
+NEW01,NEW01,A321,VVNB,VVTS,2026-10-07T10:00:20Z,10.9,106.9,7000,200,90,0,,test

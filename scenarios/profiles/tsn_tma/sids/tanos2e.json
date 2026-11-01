@@ -1,0 +1,114 @@
+{
+  "id": "TANOS2E",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "83864.pdf",
+  "legs": [
+    {
+      "fix": "TS616",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 600
+    },
+    {
+      "fix": "TS618",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 3350,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2500
+    },
+    {
+      "fix": "TS622",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3300
+    },
+    {
+      "fix": "TS624",
+      "altitude_constraints": [],
+      "max_ias_kmh": 500,
+      "simulation_target_altitude_m": 4000
+    },
+    {
+      "fix": "TS626",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 5000
+    },
+    {
+      "fix": "TS628",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 6096,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 6096
+    },
+    {
+      "fix": "TS632",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 6096
+    },
+    {
+      "fix": "TANOS",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 6096
+    }
+  ],
+  "coordination_required": true,
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "nominal_chart_route",
+  "limitations": [
+    "Nominal altitude and speed assumptions; no wind or aircraft performance model."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {},
+  "display_fixes": [
+    "TS616",
+    "TS618",
+    "TS622",
+    "TS624",
+    "TS626",
+    "TS628",
+    "TS632",
+    "TANOS"
+  ],
+  "transitions": {
+    "DOVIN": {
+      "fixes": [
+        "TANOS",
+        "DOVIN"
+      ],
+      "source": "83864.pdf"
+    },
+    "BIXEX": {
+      "fixes": [
+        "TANOS",
+        "BIXEX"
+      ],
+      "source": "83864.pdf"
+    },
+    "PTH": {
+      "fixes": [
+        "TANOS",
+        "PTH"
+      ],
+      "source": "83864.pdf"
+    }
+  }
+}

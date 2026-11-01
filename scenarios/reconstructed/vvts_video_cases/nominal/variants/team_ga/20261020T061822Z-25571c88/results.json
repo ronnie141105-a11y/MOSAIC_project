@@ -1,0 +1,3415 @@
+{
+  "version": "teammate-ga-1",
+  "run_id": "20261020T061822Z-25571c88",
+  "case_id": "nominal",
+  "case_counts": {
+    "total": 55,
+    "arrivals": 23,
+    "departures": 32,
+    "video_identities": 32,
+    "synthetic_identities": 23,
+    "departures_already_airborne": 2
+  },
+  "input_sha256": {
+    "manifest.json": "cd4587dba7fccfc409b5fc3e459c2212e78d40bec29a93adeae0e677d3ee7efa",
+    "tracks.csv": "eef02e96ea05f393813b8e76a2a3586582e45e5927fb72a2b41d88a6fd1614af",
+    "flights.csv": "f41bbaabb846a2cd01f92e2546888e51a570210037c91deff8fc366dba3cefda"
+  },
+  "code_sha256": {
+    "astra/optimization/teammate_ga.py": "cb5df17540d47e599c4dbec59ba00bd34e69b8e695e625c100729632b3356956",
+    "astra/optimization/teammate_cases.py": "e87f52c5c5486f63f1c1996997df2009c56859642a18487cd0317ce96f0bc128",
+    "astra/optimization/video_cases.py": "9430e349837c4b75cbc4f6c1653d64933f23ccafd72f52db638073ed2eef6f7f",
+    "astra/optimization/formulation.py": "8b21e20a92c2131f8fce06acd3352d602260b2ea6acca5a6c7b6577694b07ae7",
+    "reference/teammate_ga/atfm_genetic_algorithm_model.py": "ad511347d21ce21b4eff1cf728e8ace090771989f9fa449dd90bc12a3089acbb"
+  },
+  "settings": {
+    "seeds": [
+      11
+    ],
+    "population": 4,
+    "generations": 1,
+    "max_evaluations": 50,
+    "compare_legacy": false,
+    "crossover_probability": 0.8,
+    "mutation_probability": 0.1,
+    "elitism_fraction": 0.1,
+    "tournament_k": 3,
+    "team_stagnation": 30,
+    "legacy_stagnation": 40,
+    "budget_basis": "Unique objective calls including shared GDP greedy preparation and initialization",
+    "objective": "C + 1000 * (capacity excess + violating pairs + new violating pairs)",
+    "ground_cost_per_min": 1,
+    "speed_cost_per_delay_min": 2,
+    "capacity_combined_per_hour": 42,
+    "capacity_bins": "Fixed 60 minute bins relative to case start; includes delayed tail",
+    "planning_min": -60,
+    "origin_lead_assumption_min": 95,
+    "upstream_segment_min": 20,
+    "speed_delay_formula": "20 * reduction_pct / (100 - reduction_pct)",
+    "ground_levels_min": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "speed_levels_pct": [
+      5,
+      10,
+      15
+    ],
+    "sample_s": 20,
+    "arrival_spacing_nm": 10,
+    "arrival_same_heading_spacing_nm": 20,
+    "same_heading_tolerance_deg": 25,
+    "arrival_departure_nm": 5,
+    "arrival_departure_vertical_ft": 1000,
+    "separation_scope": "40 NM, 3000–16570 ft; arrival pairs use horizontal spacing regardless of altitude"
+  },
+  "baseline": {
+    "objective": 15000.0,
+    "converted_cost": 0.0,
+    "penalty": 15,
+    "capacity_excess_flights": 0,
+    "arrival_conflict_pairs": 15,
+    "arrival_departure_conflict_pairs": 0,
+    "new_conflict_pairs": 0,
+    "feasible_sampled": false,
+    "total_delay_min": 0.0,
+    "mean_delay_min": 0.0,
+    "max_delay_min": 0.0,
+    "ground_delay_min": 0,
+    "speed_delay_min": 0,
+    "no_action_flights": 23,
+    "ground_flights": 0,
+    "speed_flights": 0,
+    "optimized_arrivals": 23,
+    "fixed_departures": 32
+  },
+  "runs": {
+    "NO_CONTROL": {
+      "plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "metrics": {
+        "objective": 15000.0,
+        "converted_cost": 0.0,
+        "penalty": 15,
+        "capacity_excess_flights": 0,
+        "arrival_conflict_pairs": 15,
+        "arrival_departure_conflict_pairs": 0,
+        "new_conflict_pairs": 0,
+        "feasible_sampled": false,
+        "total_delay_min": 0.0,
+        "mean_delay_min": 0.0,
+        "max_delay_min": 0.0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "no_action_flights": 23,
+        "ground_flights": 0,
+        "speed_flights": 0,
+        "optimized_arrivals": 23,
+        "fixed_departures": 32
+      },
+      "flights": [
+        {
+          "id": "MOSN0001",
+          "eta_min": 2.316666666666667,
+          "reference_takeoff_min": -92.68333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 2.316666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0002",
+          "eta_min": 7.0,
+          "reference_takeoff_min": -88.0,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 7.0,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0003",
+          "eta_min": 13.066666666666666,
+          "reference_takeoff_min": -81.93333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 13.066666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0004",
+          "eta_min": 17.85,
+          "reference_takeoff_min": -77.15,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 17.85,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0005",
+          "eta_min": 22.883333333333333,
+          "reference_takeoff_min": -72.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 22.883333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0006",
+          "eta_min": 28.366666666666667,
+          "reference_takeoff_min": -66.63333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 28.366666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0007",
+          "eta_min": 33.18333333333333,
+          "reference_takeoff_min": -61.81666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 33.18333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0008",
+          "eta_min": 39.733333333333334,
+          "reference_takeoff_min": -55.266666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 39.733333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0009",
+          "eta_min": 43.88333333333333,
+          "reference_takeoff_min": -51.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 43.88333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0010",
+          "eta_min": 49.3,
+          "reference_takeoff_min": -45.7,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 49.3,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0011",
+          "eta_min": 55.53333333333333,
+          "reference_takeoff_min": -39.46666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 55.53333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0012",
+          "eta_min": 60.516666666666666,
+          "reference_takeoff_min": -34.483333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 60.516666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0013",
+          "eta_min": 65.8,
+          "reference_takeoff_min": -29.200000000000003,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 65.8,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0014",
+          "eta_min": 69.96666666666667,
+          "reference_takeoff_min": -25.03333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 69.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0015",
+          "eta_min": 75.6,
+          "reference_takeoff_min": -19.400000000000006,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 75.6,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0016",
+          "eta_min": 80.2,
+          "reference_takeoff_min": -14.799999999999997,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 80.2,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0017",
+          "eta_min": 86.36666666666666,
+          "reference_takeoff_min": -8.63333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 86.36666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0018",
+          "eta_min": 91.96666666666667,
+          "reference_takeoff_min": -3.0333333333333314,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 91.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0019",
+          "eta_min": 96.58333333333333,
+          "reference_takeoff_min": 1.5833333333333286,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 96.58333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0020",
+          "eta_min": 100.86666666666666,
+          "reference_takeoff_min": 5.86666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 100.86666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0021",
+          "eta_min": 106.88333333333334,
+          "reference_takeoff_min": 11.88333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 106.88333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0022",
+          "eta_min": 112.01666666666667,
+          "reference_takeoff_min": 17.016666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 112.01666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0023",
+          "eta_min": 116.93333333333334,
+          "reference_takeoff_min": 21.933333333333337,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 116.93333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        }
+      ],
+      "audit": {
+        "arrival_pairs": [
+          [
+            "MOSN0001",
+            "MOSN0002"
+          ],
+          [
+            "MOSN0003",
+            "MOSN0004"
+          ],
+          [
+            "MOSN0006",
+            "MOSN0007"
+          ],
+          [
+            "MOSN0007",
+            "MOSN0010"
+          ],
+          [
+            "MOSN0008",
+            "MOSN0009"
+          ],
+          [
+            "MOSN0010",
+            "MOSN0011"
+          ],
+          [
+            "MOSN0011",
+            "MOSN0012"
+          ],
+          [
+            "MOSN0012",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0013",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0015",
+            "MOSN0016"
+          ],
+          [
+            "MOSN0016",
+            "MOSN0017"
+          ],
+          [
+            "MOSN0017",
+            "MOSN0018"
+          ],
+          [
+            "MOSN0018",
+            "MOSN0019"
+          ],
+          [
+            "MOSN0020",
+            "MOSN0021"
+          ],
+          [
+            "MOSN0021",
+            "MOSN0022"
+          ]
+        ],
+        "arrival_departure_pairs": [],
+        "capacity_bins": [
+          {
+            "start_min": 0,
+            "count": 25,
+            "capacity": 42
+          },
+          {
+            "start_min": 60,
+            "count": 27,
+            "capacity": 42
+          },
+          {
+            "start_min": 120,
+            "count": 1,
+            "capacity": 42
+          }
+        ]
+      },
+      "history": [],
+      "search": {}
+    },
+    "GREEDY_GROUND": {
+      "plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "metrics": {
+        "objective": 13015.0,
+        "converted_cost": 15.0,
+        "penalty": 13,
+        "capacity_excess_flights": 0,
+        "arrival_conflict_pairs": 13,
+        "arrival_departure_conflict_pairs": 0,
+        "new_conflict_pairs": 0,
+        "feasible_sampled": false,
+        "total_delay_min": 15.0,
+        "mean_delay_min": 0.6521739130434783,
+        "max_delay_min": 10.0,
+        "ground_delay_min": 15.0,
+        "speed_delay_min": 0,
+        "no_action_flights": 21,
+        "ground_flights": 2,
+        "speed_flights": 0,
+        "optimized_arrivals": 23,
+        "fixed_departures": 32
+      },
+      "flights": [
+        {
+          "id": "MOSN0001",
+          "eta_min": 2.316666666666667,
+          "reference_takeoff_min": -92.68333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 2.316666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0002",
+          "eta_min": 7.0,
+          "reference_takeoff_min": -88.0,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 7.0,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0003",
+          "eta_min": 13.066666666666666,
+          "reference_takeoff_min": -81.93333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 13.066666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0004",
+          "eta_min": 17.85,
+          "reference_takeoff_min": -77.15,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 17.85,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0005",
+          "eta_min": 22.883333333333333,
+          "reference_takeoff_min": -72.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 22.883333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0006",
+          "eta_min": 28.366666666666667,
+          "reference_takeoff_min": -66.63333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 28.366666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0007",
+          "eta_min": 33.18333333333333,
+          "reference_takeoff_min": -61.81666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 33.18333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0008",
+          "eta_min": 39.733333333333334,
+          "reference_takeoff_min": -55.266666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 39.733333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0009",
+          "eta_min": 43.88333333333333,
+          "reference_takeoff_min": -51.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 43.88333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0010",
+          "eta_min": 49.3,
+          "reference_takeoff_min": -45.7,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 1,
+          "level": 5,
+          "ground_delay_min": 5.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 5.0,
+          "adjusted_landing_min": 54.3,
+          "converted_cost": 5.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0011",
+          "eta_min": 55.53333333333333,
+          "reference_takeoff_min": -39.46666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 55.53333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0012",
+          "eta_min": 60.516666666666666,
+          "reference_takeoff_min": -34.483333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 1,
+          "level": 10,
+          "ground_delay_min": 10.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 10.0,
+          "adjusted_landing_min": 70.51666666666667,
+          "converted_cost": 10.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0013",
+          "eta_min": 65.8,
+          "reference_takeoff_min": -29.200000000000003,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 65.8,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0014",
+          "eta_min": 69.96666666666667,
+          "reference_takeoff_min": -25.03333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 69.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0015",
+          "eta_min": 75.6,
+          "reference_takeoff_min": -19.400000000000006,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 75.6,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0016",
+          "eta_min": 80.2,
+          "reference_takeoff_min": -14.799999999999997,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 80.2,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0017",
+          "eta_min": 86.36666666666666,
+          "reference_takeoff_min": -8.63333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 86.36666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0018",
+          "eta_min": 91.96666666666667,
+          "reference_takeoff_min": -3.0333333333333314,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 91.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0019",
+          "eta_min": 96.58333333333333,
+          "reference_takeoff_min": 1.5833333333333286,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 96.58333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0020",
+          "eta_min": 100.86666666666666,
+          "reference_takeoff_min": 5.86666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 100.86666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0021",
+          "eta_min": 106.88333333333334,
+          "reference_takeoff_min": 11.88333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 106.88333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0022",
+          "eta_min": 112.01666666666667,
+          "reference_takeoff_min": 17.016666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 112.01666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0023",
+          "eta_min": 116.93333333333334,
+          "reference_takeoff_min": 21.933333333333337,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 116.93333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        }
+      ],
+      "audit": {
+        "arrival_pairs": [
+          [
+            "MOSN0001",
+            "MOSN0002"
+          ],
+          [
+            "MOSN0003",
+            "MOSN0004"
+          ],
+          [
+            "MOSN0006",
+            "MOSN0007"
+          ],
+          [
+            "MOSN0008",
+            "MOSN0009"
+          ],
+          [
+            "MOSN0010",
+            "MOSN0011"
+          ],
+          [
+            "MOSN0012",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0013",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0015",
+            "MOSN0016"
+          ],
+          [
+            "MOSN0016",
+            "MOSN0017"
+          ],
+          [
+            "MOSN0017",
+            "MOSN0018"
+          ],
+          [
+            "MOSN0018",
+            "MOSN0019"
+          ],
+          [
+            "MOSN0020",
+            "MOSN0021"
+          ],
+          [
+            "MOSN0021",
+            "MOSN0022"
+          ]
+        ],
+        "arrival_departure_pairs": [],
+        "capacity_bins": [
+          {
+            "start_min": 0,
+            "count": 25,
+            "capacity": 42
+          },
+          {
+            "start_min": 60,
+            "count": 27,
+            "capacity": 42
+          },
+          {
+            "start_min": 120,
+            "count": 1,
+            "capacity": 42
+          }
+        ]
+      },
+      "history": [],
+      "search": {
+        "total_evaluations": 25,
+        "total_elapsed_s": 0.004195099987555295,
+        "stop_reason": "evaluation_budget"
+      }
+    },
+    "GREEDY_MIXED": {
+      "plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "metrics": {
+        "objective": 12017.105263157895,
+        "converted_cost": 17.105263157894736,
+        "penalty": 12,
+        "capacity_excess_flights": 0,
+        "arrival_conflict_pairs": 12,
+        "arrival_departure_conflict_pairs": 0,
+        "new_conflict_pairs": 0,
+        "feasible_sampled": false,
+        "total_delay_min": 16.05263157894737,
+        "mean_delay_min": 0.6979405034324944,
+        "max_delay_min": 10.0,
+        "ground_delay_min": 15.0,
+        "speed_delay_min": 1.0526315789473684,
+        "no_action_flights": 20,
+        "ground_flights": 2,
+        "speed_flights": 1,
+        "optimized_arrivals": 23,
+        "fixed_departures": 32
+      },
+      "flights": [
+        {
+          "id": "MOSN0001",
+          "eta_min": 2.316666666666667,
+          "reference_takeoff_min": -92.68333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 2.316666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0002",
+          "eta_min": 7.0,
+          "reference_takeoff_min": -88.0,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 7.0,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0003",
+          "eta_min": 13.066666666666666,
+          "reference_takeoff_min": -81.93333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 13.066666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0004",
+          "eta_min": 17.85,
+          "reference_takeoff_min": -77.15,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A320",
+          "measure": 2,
+          "level": 5,
+          "ground_delay_min": 0,
+          "speed_delay_min": 1.0526315789473684,
+          "total_delay_min": 1.0526315789473684,
+          "adjusted_landing_min": 18.90263157894737,
+          "converted_cost": 2.1052631578947367,
+          "upstream_speed_kt": 228.0
+        },
+        {
+          "id": "MOSN0005",
+          "eta_min": 22.883333333333333,
+          "reference_takeoff_min": -72.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 22.883333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0006",
+          "eta_min": 28.366666666666667,
+          "reference_takeoff_min": -66.63333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 28.366666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0007",
+          "eta_min": 33.18333333333333,
+          "reference_takeoff_min": -61.81666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 33.18333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0008",
+          "eta_min": 39.733333333333334,
+          "reference_takeoff_min": -55.266666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 39.733333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0009",
+          "eta_min": 43.88333333333333,
+          "reference_takeoff_min": -51.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 43.88333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0010",
+          "eta_min": 49.3,
+          "reference_takeoff_min": -45.7,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 1,
+          "level": 5,
+          "ground_delay_min": 5.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 5.0,
+          "adjusted_landing_min": 54.3,
+          "converted_cost": 5.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0011",
+          "eta_min": 55.53333333333333,
+          "reference_takeoff_min": -39.46666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 55.53333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0012",
+          "eta_min": 60.516666666666666,
+          "reference_takeoff_min": -34.483333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 1,
+          "level": 10,
+          "ground_delay_min": 10.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 10.0,
+          "adjusted_landing_min": 70.51666666666667,
+          "converted_cost": 10.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0013",
+          "eta_min": 65.8,
+          "reference_takeoff_min": -29.200000000000003,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 65.8,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0014",
+          "eta_min": 69.96666666666667,
+          "reference_takeoff_min": -25.03333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 69.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0015",
+          "eta_min": 75.6,
+          "reference_takeoff_min": -19.400000000000006,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 75.6,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0016",
+          "eta_min": 80.2,
+          "reference_takeoff_min": -14.799999999999997,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 80.2,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0017",
+          "eta_min": 86.36666666666666,
+          "reference_takeoff_min": -8.63333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 86.36666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0018",
+          "eta_min": 91.96666666666667,
+          "reference_takeoff_min": -3.0333333333333314,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 91.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0019",
+          "eta_min": 96.58333333333333,
+          "reference_takeoff_min": 1.5833333333333286,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 96.58333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0020",
+          "eta_min": 100.86666666666666,
+          "reference_takeoff_min": 5.86666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 100.86666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0021",
+          "eta_min": 106.88333333333334,
+          "reference_takeoff_min": 11.88333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 106.88333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0022",
+          "eta_min": 112.01666666666667,
+          "reference_takeoff_min": 17.016666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 112.01666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0023",
+          "eta_min": 116.93333333333334,
+          "reference_takeoff_min": 21.933333333333337,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 116.93333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        }
+      ],
+      "audit": {
+        "arrival_pairs": [
+          [
+            "MOSN0001",
+            "MOSN0002"
+          ],
+          [
+            "MOSN0006",
+            "MOSN0007"
+          ],
+          [
+            "MOSN0008",
+            "MOSN0009"
+          ],
+          [
+            "MOSN0010",
+            "MOSN0011"
+          ],
+          [
+            "MOSN0012",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0013",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0015",
+            "MOSN0016"
+          ],
+          [
+            "MOSN0016",
+            "MOSN0017"
+          ],
+          [
+            "MOSN0017",
+            "MOSN0018"
+          ],
+          [
+            "MOSN0018",
+            "MOSN0019"
+          ],
+          [
+            "MOSN0020",
+            "MOSN0021"
+          ],
+          [
+            "MOSN0021",
+            "MOSN0022"
+          ]
+        ],
+        "arrival_departure_pairs": [],
+        "capacity_bins": [
+          {
+            "start_min": 0,
+            "count": 25,
+            "capacity": 42
+          },
+          {
+            "start_min": 60,
+            "count": 27,
+            "capacity": 42
+          },
+          {
+            "start_min": 120,
+            "count": 1,
+            "capacity": 42
+          }
+        ]
+      },
+      "history": [],
+      "search": {
+        "total_evaluations": 50,
+        "total_elapsed_s": 0.008520199975464493,
+        "stop_reason": "evaluation_budget"
+      }
+    },
+    "TEAM_GROUND_11": {
+      "plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "metrics": {
+        "objective": 12020.0,
+        "converted_cost": 20.0,
+        "penalty": 12,
+        "capacity_excess_flights": 0,
+        "arrival_conflict_pairs": 12,
+        "arrival_departure_conflict_pairs": 0,
+        "new_conflict_pairs": 0,
+        "feasible_sampled": false,
+        "total_delay_min": 20.0,
+        "mean_delay_min": 0.8695652173913043,
+        "max_delay_min": 10.0,
+        "ground_delay_min": 20.0,
+        "speed_delay_min": 0,
+        "no_action_flights": 20,
+        "ground_flights": 3,
+        "speed_flights": 0,
+        "optimized_arrivals": 23,
+        "fixed_departures": 32
+      },
+      "flights": [
+        {
+          "id": "MOSN0001",
+          "eta_min": 2.316666666666667,
+          "reference_takeoff_min": -92.68333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 2.316666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0002",
+          "eta_min": 7.0,
+          "reference_takeoff_min": -88.0,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 7.0,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0003",
+          "eta_min": 13.066666666666666,
+          "reference_takeoff_min": -81.93333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 13.066666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0004",
+          "eta_min": 17.85,
+          "reference_takeoff_min": -77.15,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 17.85,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0005",
+          "eta_min": 22.883333333333333,
+          "reference_takeoff_min": -72.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 22.883333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0006",
+          "eta_min": 28.366666666666667,
+          "reference_takeoff_min": -66.63333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 28.366666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0007",
+          "eta_min": 33.18333333333333,
+          "reference_takeoff_min": -61.81666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 33.18333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0008",
+          "eta_min": 39.733333333333334,
+          "reference_takeoff_min": -55.266666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 39.733333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0009",
+          "eta_min": 43.88333333333333,
+          "reference_takeoff_min": -51.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 1,
+          "level": 5,
+          "ground_delay_min": 5.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 5.0,
+          "adjusted_landing_min": 48.88333333333333,
+          "converted_cost": 5.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0010",
+          "eta_min": 49.3,
+          "reference_takeoff_min": -45.7,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 1,
+          "level": 5,
+          "ground_delay_min": 5.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 5.0,
+          "adjusted_landing_min": 54.3,
+          "converted_cost": 5.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0011",
+          "eta_min": 55.53333333333333,
+          "reference_takeoff_min": -39.46666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 55.53333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0012",
+          "eta_min": 60.516666666666666,
+          "reference_takeoff_min": -34.483333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 1,
+          "level": 10,
+          "ground_delay_min": 10.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 10.0,
+          "adjusted_landing_min": 70.51666666666667,
+          "converted_cost": 10.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0013",
+          "eta_min": 65.8,
+          "reference_takeoff_min": -29.200000000000003,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 65.8,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0014",
+          "eta_min": 69.96666666666667,
+          "reference_takeoff_min": -25.03333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 69.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0015",
+          "eta_min": 75.6,
+          "reference_takeoff_min": -19.400000000000006,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 75.6,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0016",
+          "eta_min": 80.2,
+          "reference_takeoff_min": -14.799999999999997,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 80.2,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0017",
+          "eta_min": 86.36666666666666,
+          "reference_takeoff_min": -8.63333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 86.36666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0018",
+          "eta_min": 91.96666666666667,
+          "reference_takeoff_min": -3.0333333333333314,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 91.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0019",
+          "eta_min": 96.58333333333333,
+          "reference_takeoff_min": 1.5833333333333286,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 96.58333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0020",
+          "eta_min": 100.86666666666666,
+          "reference_takeoff_min": 5.86666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 100.86666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0021",
+          "eta_min": 106.88333333333334,
+          "reference_takeoff_min": 11.88333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 106.88333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0022",
+          "eta_min": 112.01666666666667,
+          "reference_takeoff_min": 17.016666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 112.01666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0023",
+          "eta_min": 116.93333333333334,
+          "reference_takeoff_min": 21.933333333333337,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 116.93333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        }
+      ],
+      "audit": {
+        "arrival_pairs": [
+          [
+            "MOSN0001",
+            "MOSN0002"
+          ],
+          [
+            "MOSN0003",
+            "MOSN0004"
+          ],
+          [
+            "MOSN0006",
+            "MOSN0007"
+          ],
+          [
+            "MOSN0010",
+            "MOSN0011"
+          ],
+          [
+            "MOSN0012",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0013",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0015",
+            "MOSN0016"
+          ],
+          [
+            "MOSN0016",
+            "MOSN0017"
+          ],
+          [
+            "MOSN0017",
+            "MOSN0018"
+          ],
+          [
+            "MOSN0018",
+            "MOSN0019"
+          ],
+          [
+            "MOSN0020",
+            "MOSN0021"
+          ],
+          [
+            "MOSN0021",
+            "MOSN0022"
+          ]
+        ],
+        "arrival_departure_pairs": [],
+        "capacity_bins": [
+          {
+            "start_min": 0,
+            "count": 25,
+            "capacity": 42
+          },
+          {
+            "start_min": 60,
+            "count": 27,
+            "capacity": 42
+          },
+          {
+            "start_min": 120,
+            "count": 1,
+            "capacity": 42
+          }
+        ]
+      },
+      "history": [
+        {
+          "generation": 0,
+          "objective": 12020.0,
+          "fitness": 8.318775476249896e-05,
+          "evaluations": 25
+        }
+      ],
+      "search": {
+        "optimizer_version": "teammate-ga-1",
+        "search_evaluations": 25,
+        "total_evaluations": 50,
+        "preparation_evaluations": 25,
+        "total_budget": 50,
+        "search_elapsed_s": 0.0042428000015206635,
+        "total_elapsed_s": 0.008437899989075959,
+        "stop_reason": "evaluation_budget",
+        "generations_completed": 0
+      }
+    },
+    "TEAM_MIXED_11": {
+      "plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "metrics": {
+        "objective": 12017.105263157895,
+        "converted_cost": 17.105263157894736,
+        "penalty": 12,
+        "capacity_excess_flights": 0,
+        "arrival_conflict_pairs": 12,
+        "arrival_departure_conflict_pairs": 0,
+        "new_conflict_pairs": 0,
+        "feasible_sampled": false,
+        "total_delay_min": 16.05263157894737,
+        "mean_delay_min": 0.6979405034324944,
+        "max_delay_min": 10.0,
+        "ground_delay_min": 15.0,
+        "speed_delay_min": 1.0526315789473684,
+        "no_action_flights": 20,
+        "ground_flights": 2,
+        "speed_flights": 1,
+        "optimized_arrivals": 23,
+        "fixed_departures": 32
+      },
+      "flights": [
+        {
+          "id": "MOSN0001",
+          "eta_min": 2.316666666666667,
+          "reference_takeoff_min": -92.68333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 2.316666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0002",
+          "eta_min": 7.0,
+          "reference_takeoff_min": -88.0,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 7.0,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0003",
+          "eta_min": 13.066666666666666,
+          "reference_takeoff_min": -81.93333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 13.066666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0004",
+          "eta_min": 17.85,
+          "reference_takeoff_min": -77.15,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "A320",
+          "measure": 2,
+          "level": 5,
+          "ground_delay_min": 0,
+          "speed_delay_min": 1.0526315789473684,
+          "total_delay_min": 1.0526315789473684,
+          "adjusted_landing_min": 18.90263157894737,
+          "converted_cost": 2.1052631578947367,
+          "upstream_speed_kt": 228.0
+        },
+        {
+          "id": "MOSN0005",
+          "eta_min": 22.883333333333333,
+          "reference_takeoff_min": -72.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 22.883333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0006",
+          "eta_min": 28.366666666666667,
+          "reference_takeoff_min": -66.63333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 28.366666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0007",
+          "eta_min": 33.18333333333333,
+          "reference_takeoff_min": -61.81666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": false,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 33.18333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0008",
+          "eta_min": 39.733333333333334,
+          "reference_takeoff_min": -55.266666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 39.733333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0009",
+          "eta_min": 43.88333333333333,
+          "reference_takeoff_min": -51.11666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 43.88333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0010",
+          "eta_min": 49.3,
+          "reference_takeoff_min": -45.7,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 1,
+          "level": 5,
+          "ground_delay_min": 5.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 5.0,
+          "adjusted_landing_min": 54.3,
+          "converted_cost": 5.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0011",
+          "eta_min": 55.53333333333333,
+          "reference_takeoff_min": -39.46666666666667,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 55.53333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0012",
+          "eta_min": 60.516666666666666,
+          "reference_takeoff_min": -34.483333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 1,
+          "level": 10,
+          "ground_delay_min": 10.0,
+          "speed_delay_min": 0,
+          "total_delay_min": 10.0,
+          "adjusted_landing_min": 70.51666666666667,
+          "converted_cost": 10.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0013",
+          "eta_min": 65.8,
+          "reference_takeoff_min": -29.200000000000003,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 65.8,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0014",
+          "eta_min": 69.96666666666667,
+          "reference_takeoff_min": -25.03333333333333,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 69.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0015",
+          "eta_min": 75.6,
+          "reference_takeoff_min": -19.400000000000006,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B38M",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 75.6,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0016",
+          "eta_min": 80.2,
+          "reference_takeoff_min": -14.799999999999997,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B78X",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 80.2,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0017",
+          "eta_min": 86.36666666666666,
+          "reference_takeoff_min": -8.63333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A359",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 86.36666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0018",
+          "eta_min": 91.96666666666667,
+          "reference_takeoff_min": -3.0333333333333314,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "AT72",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 91.96666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0019",
+          "eta_min": 96.58333333333333,
+          "reference_takeoff_min": 1.5833333333333286,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A321",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 96.58333333333333,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0020",
+          "eta_min": 100.86666666666666,
+          "reference_takeoff_min": 5.86666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A20N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 100.86666666666666,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0021",
+          "eta_min": 106.88333333333334,
+          "reference_takeoff_min": 11.88333333333334,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A21N",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 106.88333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0022",
+          "eta_min": 112.01666666666667,
+          "reference_takeoff_min": 17.016666666666666,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "A320",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 112.01666666666667,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        },
+        {
+          "id": "MOSN0023",
+          "eta_min": 116.93333333333334,
+          "reference_takeoff_min": 21.933333333333337,
+          "travel_to_entry_min": 95,
+          "ground_eligible": true,
+          "aircraft_type": "B738",
+          "measure": 0,
+          "level": 0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "total_delay_min": 0.0,
+          "adjusted_landing_min": 116.93333333333334,
+          "converted_cost": 0.0,
+          "upstream_speed_kt": 240
+        }
+      ],
+      "audit": {
+        "arrival_pairs": [
+          [
+            "MOSN0001",
+            "MOSN0002"
+          ],
+          [
+            "MOSN0006",
+            "MOSN0007"
+          ],
+          [
+            "MOSN0008",
+            "MOSN0009"
+          ],
+          [
+            "MOSN0010",
+            "MOSN0011"
+          ],
+          [
+            "MOSN0012",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0013",
+            "MOSN0014"
+          ],
+          [
+            "MOSN0015",
+            "MOSN0016"
+          ],
+          [
+            "MOSN0016",
+            "MOSN0017"
+          ],
+          [
+            "MOSN0017",
+            "MOSN0018"
+          ],
+          [
+            "MOSN0018",
+            "MOSN0019"
+          ],
+          [
+            "MOSN0020",
+            "MOSN0021"
+          ],
+          [
+            "MOSN0021",
+            "MOSN0022"
+          ]
+        ],
+        "arrival_departure_pairs": [],
+        "capacity_bins": [
+          {
+            "start_min": 0,
+            "count": 25,
+            "capacity": 42
+          },
+          {
+            "start_min": 60,
+            "count": 27,
+            "capacity": 42
+          },
+          {
+            "start_min": 120,
+            "count": 1,
+            "capacity": 42
+          }
+        ]
+      },
+      "history": [
+        {
+          "generation": 0,
+          "objective": 12017.105263157895,
+          "fitness": 8.320779175279403e-05,
+          "evaluations": 25
+        }
+      ],
+      "search": {
+        "optimizer_version": "teammate-ga-1",
+        "search_evaluations": 25,
+        "total_evaluations": 50,
+        "preparation_evaluations": 25,
+        "total_budget": 50,
+        "search_elapsed_s": 0.0050069999997504056,
+        "total_elapsed_s": 0.0092020999873057,
+        "stop_reason": "evaluation_budget",
+        "generations_completed": 0
+      }
+    }
+  },
+  "summary": [
+    {
+      "method": "TEAM_GROUND",
+      "seeds": 1,
+      "feasible_runs": 0,
+      "mean_objective": 12020.0,
+      "std_objective": 0,
+      "mean_converted_cost": 20.0,
+      "std_converted_cost": 0,
+      "mean_penalty": 12,
+      "std_penalty": 0,
+      "mean_total_delay_min": 20.0,
+      "std_total_delay_min": 0,
+      "mean_arrival_conflict_pairs": 12,
+      "std_arrival_conflict_pairs": 0,
+      "mean_arrival_departure_conflict_pairs": 0,
+      "std_arrival_departure_conflict_pairs": 0,
+      "mean_capacity_excess_flights": 0,
+      "std_capacity_excess_flights": 0,
+      "mean_new_conflict_pairs": 0,
+      "std_new_conflict_pairs": 0,
+      "mean_runtime_s": 0.008437899989075959
+    },
+    {
+      "method": "TEAM_MIXED",
+      "seeds": 1,
+      "feasible_runs": 0,
+      "mean_objective": 12017.105263157895,
+      "std_objective": 0,
+      "mean_converted_cost": 17.105263157894736,
+      "std_converted_cost": 0,
+      "mean_penalty": 12,
+      "std_penalty": 0,
+      "mean_total_delay_min": 16.05263157894737,
+      "std_total_delay_min": 0,
+      "mean_arrival_conflict_pairs": 12,
+      "std_arrival_conflict_pairs": 0,
+      "mean_arrival_departure_conflict_pairs": 0,
+      "std_arrival_departure_conflict_pairs": 0,
+      "mean_capacity_excess_flights": 0,
+      "std_capacity_excess_flights": 0,
+      "mean_new_conflict_pairs": 0,
+      "std_new_conflict_pairs": 0,
+      "mean_runtime_s": 0.0092020999873057
+    }
+  ],
+  "best_methods": {
+    "TEAM_GROUND": "TEAM_GROUND_11",
+    "TEAM_MIXED": "TEAM_MIXED_11"
+  },
+  "domain_diagnostics": {
+    "ground": {
+      "unavoidable_arrival_pairs": [
+        [
+          "MOSN0001",
+          "MOSN0002"
+        ],
+        [
+          "MOSN0003",
+          "MOSN0004"
+        ],
+        [
+          "MOSN0006",
+          "MOSN0007"
+        ]
+      ]
+    },
+    "mixed": {
+      "unavoidable_arrival_pairs": [
+        [
+          "MOSN0001",
+          "MOSN0002"
+        ]
+      ]
+    }
+  },
+  "post_validation": {
+    "sample_s": 5,
+    "scope": "Selected best TEAM plans, baseline and greedy mixed only",
+    "checks": {
+      "NO_CONTROL": {
+        "selected_run": "NO_CONTROL",
+        "metrics": {
+          "objective": 15000.0,
+          "converted_cost": 0.0,
+          "penalty": 15,
+          "capacity_excess_flights": 0,
+          "arrival_conflict_pairs": 15,
+          "arrival_departure_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "feasible_sampled": false,
+          "total_delay_min": 0.0,
+          "mean_delay_min": 0.0,
+          "max_delay_min": 0.0,
+          "ground_delay_min": 0,
+          "speed_delay_min": 0,
+          "no_action_flights": 23,
+          "ground_flights": 0,
+          "speed_flights": 0,
+          "optimized_arrivals": 23,
+          "fixed_departures": 32
+        },
+        "audit": {
+          "arrival_pairs": [
+            [
+              "MOSN0001",
+              "MOSN0002"
+            ],
+            [
+              "MOSN0003",
+              "MOSN0004"
+            ],
+            [
+              "MOSN0006",
+              "MOSN0007"
+            ],
+            [
+              "MOSN0007",
+              "MOSN0010"
+            ],
+            [
+              "MOSN0008",
+              "MOSN0009"
+            ],
+            [
+              "MOSN0010",
+              "MOSN0011"
+            ],
+            [
+              "MOSN0011",
+              "MOSN0012"
+            ],
+            [
+              "MOSN0012",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0013",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0015",
+              "MOSN0016"
+            ],
+            [
+              "MOSN0016",
+              "MOSN0017"
+            ],
+            [
+              "MOSN0017",
+              "MOSN0018"
+            ],
+            [
+              "MOSN0018",
+              "MOSN0019"
+            ],
+            [
+              "MOSN0020",
+              "MOSN0021"
+            ],
+            [
+              "MOSN0021",
+              "MOSN0022"
+            ]
+          ],
+          "arrival_departure_pairs": [],
+          "capacity_bins": [
+            {
+              "start_min": 0,
+              "count": 25,
+              "capacity": 42
+            },
+            {
+              "start_min": 60,
+              "count": 27,
+              "capacity": 42
+            },
+            {
+              "start_min": 120,
+              "count": 1,
+              "capacity": 42
+            }
+          ]
+        }
+      },
+      "GREEDY_MIXED": {
+        "selected_run": "GREEDY_MIXED",
+        "metrics": {
+          "objective": 12017.105263157895,
+          "converted_cost": 17.105263157894736,
+          "penalty": 12,
+          "capacity_excess_flights": 0,
+          "arrival_conflict_pairs": 12,
+          "arrival_departure_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "feasible_sampled": false,
+          "total_delay_min": 16.05263157894737,
+          "mean_delay_min": 0.6979405034324944,
+          "max_delay_min": 10.0,
+          "ground_delay_min": 15.0,
+          "speed_delay_min": 1.0526315789473684,
+          "no_action_flights": 20,
+          "ground_flights": 2,
+          "speed_flights": 1,
+          "optimized_arrivals": 23,
+          "fixed_departures": 32
+        },
+        "audit": {
+          "arrival_pairs": [
+            [
+              "MOSN0001",
+              "MOSN0002"
+            ],
+            [
+              "MOSN0006",
+              "MOSN0007"
+            ],
+            [
+              "MOSN0008",
+              "MOSN0009"
+            ],
+            [
+              "MOSN0010",
+              "MOSN0011"
+            ],
+            [
+              "MOSN0012",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0013",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0015",
+              "MOSN0016"
+            ],
+            [
+              "MOSN0016",
+              "MOSN0017"
+            ],
+            [
+              "MOSN0017",
+              "MOSN0018"
+            ],
+            [
+              "MOSN0018",
+              "MOSN0019"
+            ],
+            [
+              "MOSN0020",
+              "MOSN0021"
+            ],
+            [
+              "MOSN0021",
+              "MOSN0022"
+            ]
+          ],
+          "arrival_departure_pairs": [],
+          "capacity_bins": [
+            {
+              "start_min": 0,
+              "count": 25,
+              "capacity": 42
+            },
+            {
+              "start_min": 60,
+              "count": 27,
+              "capacity": 42
+            },
+            {
+              "start_min": 120,
+              "count": 1,
+              "capacity": 42
+            }
+          ]
+        }
+      },
+      "TEAM_GROUND": {
+        "selected_run": "TEAM_GROUND_11",
+        "metrics": {
+          "objective": 12020.0,
+          "converted_cost": 20.0,
+          "penalty": 12,
+          "capacity_excess_flights": 0,
+          "arrival_conflict_pairs": 12,
+          "arrival_departure_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "feasible_sampled": false,
+          "total_delay_min": 20.0,
+          "mean_delay_min": 0.8695652173913043,
+          "max_delay_min": 10.0,
+          "ground_delay_min": 20.0,
+          "speed_delay_min": 0,
+          "no_action_flights": 20,
+          "ground_flights": 3,
+          "speed_flights": 0,
+          "optimized_arrivals": 23,
+          "fixed_departures": 32
+        },
+        "audit": {
+          "arrival_pairs": [
+            [
+              "MOSN0001",
+              "MOSN0002"
+            ],
+            [
+              "MOSN0003",
+              "MOSN0004"
+            ],
+            [
+              "MOSN0006",
+              "MOSN0007"
+            ],
+            [
+              "MOSN0010",
+              "MOSN0011"
+            ],
+            [
+              "MOSN0012",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0013",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0015",
+              "MOSN0016"
+            ],
+            [
+              "MOSN0016",
+              "MOSN0017"
+            ],
+            [
+              "MOSN0017",
+              "MOSN0018"
+            ],
+            [
+              "MOSN0018",
+              "MOSN0019"
+            ],
+            [
+              "MOSN0020",
+              "MOSN0021"
+            ],
+            [
+              "MOSN0021",
+              "MOSN0022"
+            ]
+          ],
+          "arrival_departure_pairs": [],
+          "capacity_bins": [
+            {
+              "start_min": 0,
+              "count": 25,
+              "capacity": 42
+            },
+            {
+              "start_min": 60,
+              "count": 27,
+              "capacity": 42
+            },
+            {
+              "start_min": 120,
+              "count": 1,
+              "capacity": 42
+            }
+          ]
+        }
+      },
+      "TEAM_MIXED": {
+        "selected_run": "TEAM_MIXED_11",
+        "metrics": {
+          "objective": 12017.105263157895,
+          "converted_cost": 17.105263157894736,
+          "penalty": 12,
+          "capacity_excess_flights": 0,
+          "arrival_conflict_pairs": 12,
+          "arrival_departure_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "feasible_sampled": false,
+          "total_delay_min": 16.05263157894737,
+          "mean_delay_min": 0.6979405034324944,
+          "max_delay_min": 10.0,
+          "ground_delay_min": 15.0,
+          "speed_delay_min": 1.0526315789473684,
+          "no_action_flights": 20,
+          "ground_flights": 2,
+          "speed_flights": 1,
+          "optimized_arrivals": 23,
+          "fixed_departures": 32
+        },
+        "audit": {
+          "arrival_pairs": [
+            [
+              "MOSN0001",
+              "MOSN0002"
+            ],
+            [
+              "MOSN0006",
+              "MOSN0007"
+            ],
+            [
+              "MOSN0008",
+              "MOSN0009"
+            ],
+            [
+              "MOSN0010",
+              "MOSN0011"
+            ],
+            [
+              "MOSN0012",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0013",
+              "MOSN0014"
+            ],
+            [
+              "MOSN0015",
+              "MOSN0016"
+            ],
+            [
+              "MOSN0016",
+              "MOSN0017"
+            ],
+            [
+              "MOSN0017",
+              "MOSN0018"
+            ],
+            [
+              "MOSN0018",
+              "MOSN0019"
+            ],
+            [
+              "MOSN0020",
+              "MOSN0021"
+            ],
+            [
+              "MOSN0021",
+              "MOSN0022"
+            ]
+          ],
+          "arrival_departure_pairs": [],
+          "capacity_bins": [
+            {
+              "start_min": 0,
+              "count": 25,
+              "capacity": 42
+            },
+            {
+              "start_min": 60,
+              "count": 27,
+              "capacity": 42
+            },
+            {
+              "start_min": 120,
+              "count": 1,
+              "capacity": 42
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Video labels plus synthetic paths/times, including 23 synthetic nominal arrivals; not actual FPL/ADS-B.",
+    "Only arrivals receive controls; local departures remain fixed. No GDP for already airborne arrivals.",
+    "Costs and capacity are study assumptions; costs retain the existing MOSAIC scale for fair comparison.",
+    "Capacity alone does not establish feasibility. Residual separation violations are retained.",
+    "Sampled separation is not continuous or operational validation. The finer 5 s check may find additional pairs.",
+    "Speed delay shifts terminal timestamps; it assumes an upstream 20 minute segment, not a physically simulated speed change.",
+    "Centre/FIR extensions are visual context and are outside this terminal optimizer.",
+    "Team and legacy GA share model, incumbent and evaluation budget; stochastic operators and stagnation limits differ."
+  ],
+  "elapsed_s": 12.940520100004505
+}

@@ -1,0 +1,76 @@
+AIP Viet Nam                                                                                            AIRAC AIP SUP A45/23-14
+                                                                                                                       28 DEC 2023
+
+STANDARD ARRIVAL CHART -                        TRANSITION LVL      FL190             HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (STAR)                              TRANSITION ALT 5500 m                                              RNAV RWY 25L/R
+                                                                                                                            DALAP 2H
+
+
+ 2.   HOLDING PROCEDURES
+                     Inbound         Magnetic                            Turn           Altitude      Speed limit
+   Holding Fix        Course         Variation        Time (s)        Direction           (m)            (km/h)        Nav Spec
+                      °M(°T)
+     DALAP         237 (236.0)           +1               60               L             -4250            -405          RNAV 1
+                                                                                        +3350
+
+ 3.   WAYPOINT LIST
+     Waypoint                Coordinates (WGS–84)
+     Identifier
+      DALAP         11°00'50.955”N         107°23'21.827”E
+      DOVIN         11°55'01.000”N         108°06'29.000”E
+        PTH         10°55'41.000”N         108°04'19.000”E
+      RINKU         10°52'04.470”N         108°32'29.442”E
+      SOKAN         10°52'13.005”N         106°54'17.156”E
+      TS432         10°32'29.756”N         106°58'10.299”E
+      TS434         10°35'10.860”N         107°05'03.428”E
+      TS436         10°40'07.643”N         107°10'30.936”E
+      TS438         10°45'43.573”N         107°13'31.149”E
+      TS452         10°51'58.296”N         107°14'36.648”E
+      TS912         11°05'26.298”N         108°32'55.791”E
+      TS914         11°19'37.742”N         108°30'28.190”E
+      TS916         11°33'00.211”N         108°25'04.102”E
+      TS918         11°44'58.494”N         108°16'57.346”E
+      VETOM         11°13'59.000”N         107°36'27.000”E
+      VIKEP         10°58'00.152”N         107°13'45.271”E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2023 Civil Aviation Authority of Viet Nam
+

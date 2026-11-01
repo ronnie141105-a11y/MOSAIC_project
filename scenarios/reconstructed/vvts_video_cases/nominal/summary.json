@@ -1,0 +1,39 @@
+{
+  "counts": {
+    "total": 55,
+    "arrivals": 23,
+    "departures": 32,
+    "video_identities": 32,
+    "synthetic_identities": 23,
+    "departures_already_airborne": 2
+  },
+  "window_start_utc": "2026-10-08T02:00:00+00:00",
+  "window_end_utc": "2026-10-08T04:00:00+00:00",
+  "replay_end_utc": "2026-10-08T04:34:46+00:00",
+  "flights_resequenced_after_window": 7,
+  "separation_audit": {
+    "method": "one sample per minute; airborne 3,000-16,570 ft within 40 NM of TSH",
+    "units": "aircraft-pair-minutes, not distinct conflicts or clearances",
+    "horizontal_under_10_nm": 79,
+    "same_heading_under_20_nm": 40,
+    "arrival_arrival_under_10_nm": 0,
+    "arrival_arrival_same_heading_under_20_nm": 0,
+    "horizontal_under_10_nm_and_vertical_under_1000_ft": 1,
+    "same_heading_under_20_nm_and_vertical_under_1000_ft": 1,
+    "close_pair_minutes_by_type": {
+      "arrival_departure": 1
+    },
+    "close_pair_examples": [
+      {
+        "time_utc": "2026-10-08T02:55:00+00:00",
+        "left": "TR503",
+        "right": "MOSN0012",
+        "pair_type": "arrival_departure",
+        "distance_nm": 2.79,
+        "vertical_difference_ft": 910
+      }
+    ],
+    "closest_nm": 1.88,
+    "caveat": "No controller clearance, surveillance error, wake category, or actual runway confirmed."
+  }
+}

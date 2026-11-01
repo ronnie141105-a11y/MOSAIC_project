@@ -1,0 +1,10 @@
+﻿method,objective,converted_cost,penalty,capacity_excess_flights,rolling_hour_excess,peak_rolling_hour_movements,arrival_conflict_pairs,departure_conflict_pairs,arrival_departure_conflict_pairs,separation_conflict_pairs,new_conflict_pairs,runway_spacing_pairs,arrival_transfer_spacing_pairs,feasible_sampled,sample_s,total_delay_min,ground_delay_min,speed_delay_min,mean_delay_min,max_delay_min,no_action_flights,ground_flights,speed_flights,optimized_movements,completed_in_original_window
+NO_CONTROL,300000.0,0.0,30,0,0,20,3,0,20,23,0,5,2,False,20,0.0,0,0,0.0,0.0,20,0,0,20,20
+GREEDY_GROUND,10510.0,510.0,1,0,0,16,0,0,1,1,0,0,0,False,20,510.0,510,0,25.5,60.0,7,13,0,20,9
+GREEDY_MIXED,374.63742074285125,374.63742074285125,0,0,0,18,0,0,0,0,0,0,0,True,20,372.3187103714256,370,2.318710371425618,18.61593551857128,60.0,7,12,1,20,12
+TEAM_GROUND_11,410.0,410.0,0,0,0,17,0,0,0,0,0,0,0,True,20,410.0,410,0,20.5,60.0,7,13,0,20,11
+TEAM_MIXED_11,374.63742074285125,374.63742074285125,0,0,0,18,0,0,0,0,0,0,0,True,20,372.3187103714256,370,2.318710371425618,18.61593551857128,60.0,7,12,1,20,12
+TEAM_GROUND_22,410.0,410.0,0,0,0,17,0,0,0,0,0,0,0,True,20,410.0,410,0,20.5,60.0,7,13,0,20,11
+TEAM_MIXED_22,374.63742074285125,374.63742074285125,0,0,0,18,0,0,0,0,0,0,0,True,20,372.3187103714256,370,2.318710371425618,18.61593551857128,60.0,7,12,1,20,12
+TEAM_GROUND_33,410.0,410.0,0,0,0,17,0,0,0,0,0,0,0,True,20,410.0,410,0,20.5,60.0,7,13,0,20,11
+TEAM_MIXED_33,374.63742074285125,374.63742074285125,0,0,0,18,0,0,0,0,0,0,0,True,20,372.3187103714256,370,2.318710371425618,18.61593551857128,60.0,7,12,1,20,12

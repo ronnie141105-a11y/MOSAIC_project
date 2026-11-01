@@ -1,0 +1,59 @@
+STANDARD DEPARTURE CHART -                                   TRANSITION LVL         FL190                 HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                     TRANSITION ALT 5500 m                                                          RNAV RWY 25L/R
+                                                                                                                                        ANTRI 2E, LANHI 2E
+
+
+
+ 1.    TABULAR DESCRIPTION
+
+    ANTRI 2E D EPARTURE
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance        Turn         Altitude     Speed
+    number       Descriptor      Identifier      over          °M(°T)           Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+    INITIAL CLIMB R W Y 25L
+      010            C F           TS616           -             250               +1            11.7            -             -            -        RNAV 1
+    INITIAL CLIMB R W Y 25R
+      010            C F           TS616           -             248               +1            10.8            -             -            -        RNAV 1
+    FROM TS616
+      010             IF          TS616            -               -               +1              -             -             -            -        RN AV 1
+      020            TF            TS618           -       250     (249.0)         +1            26.5            -          -3350           -        RNAV 1
+      030            TF            TS622           -       253     (251.6)         +1            27.8            -             -            -        RNAV 1
+      040            TF            TS624           -       163     (161.5)         +1            22.2            -             -          -500       RNAV 1
+      050            TF            TS626           -       067     (066.1)         +1            59.9            -             -            -        RNAV 1
+      060            TF            TS628           -       070     (069.1)         +1            9.8             -         +FL200           -        RNAV 1
+      070            TF            TS632           -       070     (069.1)         +1            14.8            -             -            -        RNAV 1
+      080            TF            TS814           -       053     (051.5)         +1            32.1            -             -            -        RNAV 1
+      090            TF            TS816           -       032     (031.3)         +1            17.2            -             -            -        RNAV 1
+      100            TF            AN TRI          -       032     (031.3)         +1            17.2            -             -            -        RNAV 1
+    DOVIN TRANSITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance        Turn         Altitude     Speed
+    number       Descriptor      Identifier      over          °M(°T)           Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF          AN TRI           -               -               +1              -             -             -            -        RN AV 1
+      020            TF           D OVIN           -       050     (048.6)         +1           126.6            -             -            -        RNAV 1
+    BIXEX TRANSITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance        Turn         Altitude     Speed
+    number       Descriptor      Identifier      over          °M(°T)           Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF          AN TRI           -               -               +1              -             -             -            -        RN AV 1
+      020            TF            BIXEX           -       065     (063.5)         +1           110.0            -             -            -        RNAV 1
+    PTH TRANSITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance        Turn         Altitude     Speed
+    number       Descriptor      Identifier      over          °M(°T)           Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF           AN TRI          -               -               +1              -             -             -            -        RNAV 1
+      020            TF             PTH            -       107     (105.7)         +1            94.9            -             -            -        RNAV 1
+    PATMA TRANSITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance        Turn         Altitude     Speed
+    number       Descriptor      Identifier      over          °M(°T)           Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF           AN TRI          -               -               +1              -             -             -            -             -
+      020            TF           PATMA            -       027     (025.6)         +1           144.2            -             -            -        RNAV 1
+
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V2\VVTS_SID RNAV RWY 25LR ANTRI 2E LANHI
+2E_TABULAR_V2.docx

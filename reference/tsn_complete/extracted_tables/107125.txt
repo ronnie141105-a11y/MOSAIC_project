@@ -1,0 +1,52 @@
+CHANGE: NEW CHART.
+ Tan Son Nhat DLV           GND         TWR         TMC          ATIS      ELEV, ALT AND HGT IN METRES                                    PATMA                                           DOVIN
+         121.8              121.9      118.7      125.5         128.0      DISTANCES IN KILOMETRES                                        12°20'11''N                                     11°55'01''N
+         123.6              121.6      130.0      124.075                  BRG ARE MAG                                     850 m          107°48'36''E                                    108°06'29''E
+                                                                           VAR 1° W                                                                       .7         130
+  TA 5500      AD Elev 10                                                                                                                              135   2°                        120.9           BIXEX
+                                                                                                                                                    38°    06         078°
+                                                                                                                        MSA 46  Km                 0                                                   11°36'13''N
+  RNAV1 required                                                                                                            ARP                                                                        108°08'19''E
+  GNSS only                                                                                                         TS686                      KADUM         114°                                                      ●▬ ▬●  ▬  ●●●●
+   RADAR surveillance required                                                                                        3050        37.9                                                                                 Phan Thiet
+                                                                                                 VVR19                       53°                                                                                      D114.1 PTH
+                                                                                                  7 000                     0                                                      120.
+                                                                                                  GND                                                                                   4                              10°55'41''N
+                Phnom Penh                                                                                          .1                                                                                                 108°04'19''E
+                    FIR                                                                                           28
+               (CAMBODIA)                                                       TS638                       53°
+                                                                           MAX IAS 500 km/h               0
+                                                                                                                                                                                 Not to scale
+                                                                                 3350
+                                                                                              VVD26                   VVD23
+                                                                                              1 000                    1 000
+                                                                                               300                      50
+                                                                                                      250°           VVP4
+               Ho Chi Minh                                                                                0°         3 000
+                                                                                                        25           GND
+                    FIR                                                                        150                      VVD24
+               (VIET NAM)                                                                                               1 000
+                                                                                                                          50
+                                                                                                                                                                                      VVD32
+                                                                                                      VVD25                                                                           Unspecified
+                                                                                                      1 000                                                                           Unspecified
+                                                                              VVR36                    300
+                                                                              6 000                                                                                              INITIAL CLIMB
+                                                                               600
+                                                                                                                                                                                         2G                             VVD1 00023
+                         Notes:                                                                                                                                                        M            VVD26                  50
+                         - MNM PDG       4.0% until   150 m.                                                                                                                          DU             1 000
+                         - MNM       climb       gradient5.0%  until 3050    m                                                                                                       A                300    24
+                         due to altitude restriction at    TS686.                                                                                                                   K               67   28
+                                                                                                                                                                                              250°            23
+                                                                                                                                                                                                       47
+                        Usage condition:                                                                                                                                                            250°  39       VVP4
+                        KADUM 2G is        only  used  when  there is  no  military  flight  operation  at                                                                                 150                     3 000
+                        Bien      Hoa      and       approved      by      Regional       Air       Command       Centre      III. In                                                                              GND
+                        case of air defense combat situations, aircraft must vacate Bien Hoa
+        1300            airspace (VVR19) within 8 minutes.                                                                                                           Not to scale
+         800                                                                                                                                                          VVR36                                                   VVD24
+                                                                                                                                                                      6 000                                                    1 000
+         300                                                                                                       Scale                                               600                       VVD25                          50
+       Contour                                                                                                                      Kilometres                                                    1 000
+      Intervals                                                                                                                                                                                    300

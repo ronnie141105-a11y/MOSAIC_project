@@ -1,0 +1,3 @@
+﻿method,seeds,feasible_runs,mean_objective,std_objective,mean_converted_cost,std_converted_cost,mean_penalty,std_penalty,mean_total_delay_min,std_total_delay_min,mean_arrival_conflict_pairs,std_arrival_conflict_pairs,mean_arrival_departure_conflict_pairs,std_arrival_departure_conflict_pairs,mean_capacity_excess_flights,std_capacity_excess_flights,mean_new_conflict_pairs,std_new_conflict_pairs,mean_runtime_s
+TEAM_GROUND,1,0,12020.0,0,20.0,0,12,0,20.0,0,12,0,0,0,0,0,0,0,0.008437899989075959
+TEAM_MIXED,1,0,12017.105263157895,0,17.105263157894736,0,12,0,16.05263157894737,0,12,0,0,0,0,0,0,0,0.0092020999873057

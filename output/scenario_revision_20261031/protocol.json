@@ -1,0 +1,35 @@
+{
+  "version": "controllable-bank-1",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77,
+    88,
+    99,
+    110
+  ],
+  "population": 60,
+  "generations": 120,
+  "max_evaluations": 6000,
+  "native_checks_per_seed": 4,
+  "nominal": "Preserve nominal demand, requested clocks, routes and initial airborne geometry; revalidate surface execution after the common intersection fix.",
+  "overload_counts": {
+    "arrivals": 36,
+    "departures": 24
+  },
+  "routes": "Retain the existing route-family distributions and capacities.",
+  "arrival_initial_state": "All moving upstream; minimum 20 min additional upstream lead; no circular holds.",
+  "arrival_capacity": "Arrival-only paths must remain within sector capacities.",
+  "departure_ready_bank": "Physical rank 0: 180 s; ranks 1..12: 1200+(rank-1)*90 s; ranks 13..23: 3000+(rank-13)*180 s.",
+  "acceptance": "One-second physical safety, unchanged limits, arrival-only excess zero, combined reference excess positive. No acceptance criterion depends on GA results.",
+  "control_clock": "Parked departure target CTOT = fixed requested ready-event + 0..60 min; no action retains reference. Committed surface aircraft cannot advance.",
+  "delay_clock": "Departure: fixed requested ready-event; arrival: uncontrolled touchdown from the identical initial airborne state.",
+  "fcfs": "Report both 1-min and 5-min action grids and use the lower native objective as the main FCFS comparator.",
+  "reporting": "All 10 seeds, mean and sample SD; initialization gains separated from subsequent evolution; native 1-s execution determines final comparisons.",
+  "surface_correction": "A failed FCFS benchmark exposed a shared taxi-junction deadlock before overload GA runs. Apply the same intersection reservation to all methods; revalidate both references, preserving requested clocks, route mix and initial airborne geometry.",
+  "decoder_correction": "Before the final ten-seed study, correct the parked-departure swap decoder to transfer the earlier CTOT slot to the swapped ready aircraft, distinguish explicit zero-hold from no action, and avoid duplicate warm-start checkpoints. Frozen traffic inputs and budgets are unchanged. Interrupted development runs are retained separately."
+}

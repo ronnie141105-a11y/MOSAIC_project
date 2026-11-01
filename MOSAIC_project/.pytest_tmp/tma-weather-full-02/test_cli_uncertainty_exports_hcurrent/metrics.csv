@@ -1,0 +1,2 @@
+﻿method,objective,total_delay_min,search_evaluations,simulation_evaluations,preparation_evaluations,total_evaluations,total_budget,search_elapsed_s,total_elapsed_s,stop_reason
+GA_UNCERTAINTY_11,12,7,5,,2,7,,,,

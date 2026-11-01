@@ -1,0 +1,86 @@
+{
+  "id": "XOBAV2D",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "83854.pdf",
+  "coordination_required": false,
+  "legs": [
+    {
+      "fix": "TS616",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 600
+    },
+    {
+      "fix": "TS641",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 2750,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2500
+    },
+    {
+      "fix": "TS642",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 3350,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3000
+    },
+    {
+      "fix": "TS644",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 4250,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4000
+    },
+    {
+      "fix": "XOBAV",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4250
+    }
+  ],
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "piecewise_linear_altitude_on_fix_centrelines",
+  "limitations": [
+    "Nominal altitudes are scenario assumptions within extracted fix constraints, not ATC clearances.",
+    "No fly-by turn radius, wind or automatic holding; procedure extensions beyond the named SID terminus are not included."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {},
+  "transitions": {
+    "NIXIV": {
+      "fixes": [
+        "XOBAV",
+        "NIXIV"
+      ],
+      "source": "83856.pdf"
+    }
+  },
+  "display_fixes": [
+    "TS616",
+    "TS641",
+    "TS642",
+    "TS644",
+    "XOBAV"
+  ]
+}

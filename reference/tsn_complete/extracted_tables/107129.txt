@@ -1,0 +1,65 @@
+STANDARD DEPARTURE CHART -                                                                        HO CHI MINH/TAN SON NHAT  INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                    TRANSITION LVL FL190                                                     RNAV RWY 25L/R
+                                                           TRANSITION ALT 5500                                                 KADUM 2K   SAPEN 2K
+
+
+ 1.    TABULAR DESCRIPTION
+
+   KADUM 2K DEPARTURE
+     Serial         Path       Waypoint         Fly-        Course        Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor    Identifier      over          °M(°T)       Variation       (km)       Direction        (m)          limit      Nav Spec
+                                                                                                                                  (km/h)
+       010           CA            –             –        250 (249.1)         +1            –             –          +900            –         R NAV 1
+       020           CF         TS638            –        053 (052.0)         +1            –             –          -3350           –         R NAV 1
+       030           TF         TS686            –        053 (052.2)         +1          28.1            –         +3050            –         R NAV 1
+       040           TF        KADU M            –        053 (052.2)         +1          37.9            –            –             –         R NAV 1
+   DOVIN TRANSITION
+     Serial         Path       Waypoint         Fly-        Course        Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor    Identifier      over          °M(°T)       Variation       (km)       Direction        (m)          limit      Nav Spec
+                                                                                                                                  (km/h)
+       010           IF        KADU M            –              –             +1            –             –            –             –         R NAV 1
+       020           TF         D OVIN           –        062 (061.5)         +1          130.0           –            –             –         R NAV 1
+   BIXEX TRANSITION
+     Serial         Path       Waypoint         Fly-        Course        Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor    Identifier      over          °M(°T)       Variation       (km)       Direction        (m)          limit      Nav Spec
+                                                                                                                                  (km/h)
+       010           IF        KADU M            –              –             +1            –             –            –             –         R NAV 1
+       020           TF         BIXEX            –        078 (076.9)         +1          120.9           –            –             –         R NAV 1
+   PTH TRAN SITION
+     Serial         Path       Waypoint         Fly-        Course        Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor    Identifier      over          °M(°T)       Variation       (km)       Direction        (m)          limit      Nav Spec
+                                                                                                                                  (km/h)
+       010           IF        KADU M            –              –             +1            –             –            –             –         R NAV 1
+       020           TF           PTH            –        114 (113.1)         +1          120.4           –            –             –         R NAV 1
+   PATMA TRAN SITION
+     Serial         Path       Waypoint         Fly-        Course        Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor    Identifier      over          °M(°T)       Variation       (km)       Direction        (m)          limit      Nav Spec
+                                                                                                                                  (km/h)
+       010           IF        KADU M            –              –             +1            –             –            –             –         R NAV 1
+       020           TF         PATMA            –        038 (037.0)         +1          135.7           –            –             –         R NAV 1
+
+
+   SAPEN 2K DEPARTURE
+     Serial         Path       Waypoint         Fly-        Course        Magnetic      Distance        Turn        Altitude      Speed
+    number       Descriptor    Identifier      over          °M(°T)       Variation       (km)       Direction        (m)          limit      Nav Spec
+                                                                                                                                  (km/h)
+       010           CA            –             –        250 (249.1)         +1            –             –          +900            –         R NAV 1
+       020           DF         SAPEN            –              –             +1            –             –          -4250           –         R NAV 1
+
+ 2.    WAYPOINT LIST
+
+    WAYPOINT ID                COORDINATES (WGS-84)                              WAYPOINT ID                 COORDINATES (WGS-84)
+         BIXE X            11°36'13.277”N         108°08'19.311”E                       PTH            10°55'41.000”N          108°04'19.000”E
+         DOVIN             11°55'01.000”N         108°06'29.000”E                     SAP EN           11°01'12.000”N          106°11'00.000”E
+        KADU M             11°21'26.000”N         107°03'34.000”E                     TS638            10°59'30.540”N          106°34'56.544”E
+         PATMA             12°20'11.000”N         107°48'36.000”E                     TS686            11°08'50.561”N          106°47'06.738”E
+
+
+
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 05.24\DRAFT\V2\VVTS_SID RNAV RWY 25LR KADUM 2K, SAPEN 2K_TABULAR_V1.doc
+

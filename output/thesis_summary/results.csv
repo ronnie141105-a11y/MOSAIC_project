@@ -1,0 +1,5 @@
+﻿case_id,scenario,method,aircraft,arrivals,departures,runs,event_delay_mean_min,event_delay_sd_min,sector_excess_mean_aircraft_min,sector_excess_sd_aircraft_min,spacing_runway_check
+workbook_low_20,Nominal,FCFS,20,11,9,1,187.0,0.0,0.0,0.0,Passed
+workbook_low_20,Nominal,GA ground,20,11,9,10,187.0,0.0,0.0,0.0,Passed
+workbook_peak_50,Overload,FCFS,60,36,24,1,2468.3333333333335,0.0,55.88333333333333,0.0,Passed
+workbook_peak_50,Overload,GA ground,60,36,24,10,2533.931666666667,44.6841366126147,43.385,4.981883537402988,Passed

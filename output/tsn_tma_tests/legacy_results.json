@@ -1,0 +1,58 @@
+[
+  {
+    "file": "tests\\test_complexity.py",
+    "exit_code": 0,
+    "seconds": 2.01
+  },
+  {
+    "file": "tests\\test_dashboard.py",
+    "exit_code": 0,
+    "seconds": 3.67,
+    "retest_note": "Rerun after correcting stale expected keys/default: 90/90 checks passed"
+  },
+  {
+    "file": "tests\\test_distance.py",
+    "exit_code": 0,
+    "seconds": 0.18
+  },
+  {
+    "file": "tests\\test_forecast.py",
+    "exit_code": 0,
+    "seconds": 0.15
+  },
+  {
+    "file": "tests\\test_hotspot.py",
+    "exit_code": 0,
+    "seconds": 2.08
+  },
+  {
+    "file": "tests\\test_hotspot_spatial_box.py",
+    "exit_code": 0,
+    "seconds": 0.25
+  },
+  {
+    "file": "tests\\test_interface.py",
+    "exit_code": 0,
+    "seconds": 2.61
+  },
+  {
+    "file": "tests\\test_pipeline_reset.py",
+    "exit_code": 0,
+    "seconds": 2.09
+  },
+  {
+    "file": "tests\\test_resolution.py",
+    "exit_code": 0,
+    "seconds": 3.44
+  },
+  {
+    "file": "tests\\test_tracking.py",
+    "exit_code": 0,
+    "seconds": 2.24
+  },
+  {
+    "file": "tests\\test_trajectory.py",
+    "exit_code": 0,
+    "seconds": 0.21
+  }
+]

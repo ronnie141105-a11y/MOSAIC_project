@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MOSAIC · AirNav case study</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='airnav.css') }}">
+  <script defer src="{{ url_for('static',filename='airnav.js') }}"></script>
+</head>
+<body>
+<header><div><a class="brand" href="/">MOSAIC</a><span>AirNav case study</span></div><nav><a href="/">Radar</a><a href="/scenario">Scenario Builder</a></nav></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">RECORDED TRAFFIC / VVTS</p><h1>One arrival, three study cases</h1><p>Replay VN243 into Tan Son Nhat. Compare the recorded flight with hypothetical arrival waves and measure prediction error against later observations.</p></div><div class="run"><button id="run-study">Run case study</button><p id="job-status" role="status">Checking saved results…</p></div></section>
+  <div id="error" role="alert" hidden></div>
+  <div id="results" hidden>
+    <section class="source-bar"><div><span class="label">SOURCE FLIGHT</span><strong id="flight-label"></strong></div><div><span class="label">RECORDING</span><strong id="recording-label"></strong></div><div><span class="label">RAW POSITIONS</span><strong id="raw-count"></strong></div><div><span class="label">DATA HANDLING</span><strong>Past observations, bounded recovery</strong></div></section>
+    <section class="replay-grid">
+      <div class="card track-card"><div class="card-title"><div><h2>Arrival replay</h2><p id="case-kind"></p></div><select id="case-select" aria-label="Select case"></select></div><canvas id="track-map" aria-label="Recorded arrival and reconstructed aircraft positions"></canvas><div class="legend"><span class="observed-line">Recorded track</span><span class="gap-line">Coverage gap</span><span>Dashed ring: 40 NM assessment area</span></div><div class="playback"><button id="play">Play</button><select id="play-speed" aria-label="Playback speed"><option value="1">1×</option><option value="10">10×</option><option value="30" selected>30×</option><option value="60">60×</option></select><input id="timeline" type="range" min="0" max="1" step="0.001" value="0" aria-label="Replay time"><output id="clock"></output></div><p id="frame-info"></p></div>
+      <aside class="card"><h2>Source and coverage</h2><p id="quality-note"></p><dl id="quality"></dl><h3>Snapshot context</h3><p id="context"></p><p class="muted">Weather was captured separately. It does not change the replay.</p><h3>Aircraft at this frame</h3><div id="aircraft-list"></div></aside>
+    </section>
+    <section class="card"><div class="card-title"><div><h2>Arrival-wave comparison</h2><p>The four-aircraft cases reuse one track at different time offsets. They are hypothetical traffic, with no clearances applied.</p></div><a href="/api/airnav/export/cycles.csv">Export cycles CSV</a></div><div class="table-scroll"><table><thead><tr><th>Case</th><th>Evidence</th><th>Peak aircraft in area</th><th>Peak complexity</th><th>Pair exposure / coverage (s)</th><th>Minimum horizontal distance*</th><th>Manual-review frames</th><th>Frames with candidate clearances</th></tr></thead><tbody id="case-rows"></tbody></table></div><p class="muted" id="threshold-note"></p><canvas id="complexity-chart" aria-label="Observed and predicted complexity through the selected case"></canvas><p class="muted">Solid: current complexity. Dashed: highest forecast complexity across 1–5 minutes.</p></section>
+    <section class="card"><div class="card-title"><div><h2>Prediction versus recorded flight</h2><p>Constant-velocity forecasts matched to later reported observations within ±15 seconds of each requested horizon. Forecasts use the actual elapsed time; future observations are used only for scoring.</p></div><a href="/api/airnav/export/forecast_errors.csv">Export prediction errors CSV</a></div><div class="table-scroll"><table><thead><tr><th>Requested horizon</th><th>Matched pairs</th><th>Mean horizontal error</th><th>95th percentile</th><th>Mean altitude error</th></tr></thead><tbody id="forecast-rows"></tbody></table></div></section>
+    <details class="card"><summary>Method, provenance and limits</summary><ul id="limitations"></ul><p class="hash">Source SHA-256: <code id="source-hash"></code></p><a href="/api/airnav/export/report.json">Export complete study JSON</a></details>
+  </div>
+</main>
+</body>
+</html>

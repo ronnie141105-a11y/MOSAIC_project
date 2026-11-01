@@ -1,0 +1,60 @@
+{
+  "id": "ENPAS2D",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "83854.pdf",
+  "coordination_required": false,
+  "legs": [
+    {
+      "fix": "TS616",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 600
+    },
+    {
+      "fix": "TS618",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 3350,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2500
+    },
+    {
+      "fix": "ENPAS",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4000
+    }
+  ],
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "piecewise_linear_altitude_on_fix_centrelines",
+  "limitations": [
+    "Nominal altitudes are scenario assumptions within extracted fix constraints, not ATC clearances.",
+    "No fly-by turn radius, wind or automatic holding; procedure extensions beyond the named SID terminus are not included."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {},
+  "transitions": {
+    "ANHOA": {
+      "fixes": [
+        "ENPAS",
+        "ANHOA"
+      ],
+      "source": "83856.pdf"
+    }
+  },
+  "display_fixes": [
+    "TS616",
+    "TS618",
+    "ENPAS"
+  ]
+}

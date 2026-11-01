@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "airport": "VVTS",
+  "timezone": "UTC+07:00",
+  "source_request": "D:/VVTS_ATFM_data_request.pdf",
+  "holiday_window_confirmed_by_user": true,
+  "windows": [
+    {
+      "id": "bad_weather",
+      "label": "Thời tiết xấu",
+      "local_start": "2026-10-07T17:00:00+07:00",
+      "local_end": "2026-10-07T19:00:00+07:00",
+      "target": "TSRA / +TSRA; kiểm tra gió từ báo cáo quan trắc"
+    },
+    {
+      "id": "nominal",
+      "label": "Điều kiện bình thường",
+      "local_start": "2026-10-08T09:00:00+07:00",
+      "local_end": "2026-10-08T11:00:00+07:00",
+      "target": "Thời tiết tốt và cấu hình đường băng phù hợp; cần xác minh"
+    },
+    {
+      "id": "holiday_peak",
+      "label": "Cao điểm Tết",
+      "local_start": "2026-02-22T10:00:00+07:00",
+      "local_end": "2026-02-22T12:00:00+07:00",
+      "target": "Planned demand > declared capacity; cần xác minh"
+    }
+  ],
+  "scenario_kind": "synthetic_reconstruction",
+  "recorded_source_package": "scenarios/recorded/vvts_cases",
+  "source_context": {
+    "caav_holiday_daily": "https://caa.gov.vn/hoat-dong-nganh/cang-hkqt-noi-bai-va-tan-son-nhat-san-sang-phuong-an-phuc-vu-hanh-khach-dip-cao-diem-tet-nguyen-dan-2026-20260209144210927.htm",
+    "caav_holiday_slots": "https://caa.gov.vn/hoat-dong-nganh/dieu-chinh-tham-so-dieu-phoi-slot-tai-cang-hang-khong-quoc-te-tan-son-nhat-20251023163405728.htm",
+    "caav_august_2026": "https://caa.gov.vn/hoat-dong-nganh/cang-hkqt-noi-bai-tan-son-nhat-trien-khai-dong-bo-cac-phuong-an-khai-thac-san-sang-phuc-vu-le-quoc-khanh-02-9-20260828093847766.htm",
+    "caav_april_2026": "https://caa.gov.vn/hoat-dong-nganh/dieu-chinh-tham-so-dieu-phoi-gio-ha-cat-canh-tai-cang-hang-khong-quoc-te-tan-son-nhat-dip-nghi-le-30-4-1-5-2026-20260414082347431.htm",
+    "vatm_storm_context_report": "https://baoxaydung.vn/mua-dong-phuc-tap-tai-tan-son-nhat-quan-ly-bay-tang-cuong-ung-truc-192261009182310606.htm"
+  }
+}

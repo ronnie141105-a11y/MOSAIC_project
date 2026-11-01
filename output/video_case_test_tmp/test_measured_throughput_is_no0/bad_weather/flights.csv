@@ -1,0 +1,2 @@
+﻿flight_id,callsign,aircraft_type,adep,ades,status,scheduled_departure_utc,scheduled_arrival_utc,actual_takeoff_utc,actual_landing_utc,actual_offblock_utc,actual_inblock_utc,runway,source
+,TEST01,,,VVTS,,,,,2026-10-07T10:05:00Z,,2026-10-07T10:20:00Z,,reported

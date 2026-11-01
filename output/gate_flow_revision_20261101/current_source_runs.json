@@ -1,0 +1,26 @@
+{
+  "workbook_low_20": {
+    "run_id": "20261101T091158Z-01b86d13",
+    "version": "fixed-order-regional-gate-ga-10",
+    "input_sha256": {
+      "manifest.json": "64481e30e9cad2eaa5d48727d2b8668ba626642ad50cf8ecd7ce80426c47df3b",
+      "tracks.csv": "f12d029510012fa9d2fcb8357c3ede8e59310a2132056b32829f86ad1cdfee66",
+      "ground_tracks.json.gz": "abab4d2072860dfa6b3fc3bbdaf58d8071e76506b5b64431f4c121b4fcab3576",
+      "planning.csv": "781d22b8603e392583ceba02bb9de05f1902641005d601f562ec7b7d6b0c4c50",
+      "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+      "fpl.csv": "781d22b8603e392583ceba02bb9de05f1902641005d601f562ec7b7d6b0c4c50"
+    }
+  },
+  "workbook_peak_50": {
+    "run_id": "20261101T092015Z-2cd7a0ae",
+    "version": "fixed-order-regional-gate-ga-10",
+    "input_sha256": {
+      "manifest.json": "c086251ffb0021b442320d4498e4fd5d2ccde63ebbbc2cdd90ebcad0c66f80de",
+      "tracks.csv": "ad4df521d834526aaf4b8341a84a01184cf0231ea4c722d97f80f3808c0d0937",
+      "ground_tracks.json.gz": "92bcc1d30885c3ed0d7ce976a23468505ad17952f0f9935a3dc512ab1e319cf6",
+      "planning.csv": "1367dfb1f25e2d39e7ded67d01422eb03b4d131a4c88837972a72aca1cd8a07a",
+      "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+      "fpl.csv": "1367dfb1f25e2d39e7ded67d01422eb03b4d131a4c88837972a72aca1cd8a07a"
+    }
+  }
+}

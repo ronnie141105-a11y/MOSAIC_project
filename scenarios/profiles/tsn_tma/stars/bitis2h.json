@@ -1,0 +1,145 @@
+{
+  "id": "BITIS2H",
+  "kind": "star",
+  "direction": "inbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "56080.pdf",
+  "coordination_required": true,
+  "legs": [
+    {
+      "fix": "BITIS",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3650
+    },
+    {
+      "fix": "NOKUM",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3650,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3650
+    },
+    {
+      "fix": "TS492",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3050,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3050
+    },
+    {
+      "fix": "LETRO",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 2150,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": 460,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "VANLI",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS488",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "RUNSI",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 2150,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": 460,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS458",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS456",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS454",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 2150,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "SOKAN",
+      "altitude_constraints": [
+        {
+          "type": "window",
+          "minimum": 730,
+          "maximum": 1500,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": 425,
+      "simulation_target_altitude_m": 1200
+    }
+  ],
+  "nominal_ground_speed_kt": 240,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "piecewise_linear_altitude_on_fix_centrelines",
+  "limitations": [
+    "Nominal altitudes are scenario assumptions within extracted fix constraints, not ATC clearances.",
+    "No fly-by turn radius, wind or automatic holding; procedure extensions beyond the named SID terminus are not included."
+  ],
+  "transitions": {
+    "TRN": {
+      "fixes": [
+        "TRN",
+        "BITIS"
+      ],
+      "source": "56081.pdf"
+    }
+  },
+  "display_fixes": [
+    "BITIS",
+    "NOKUM",
+    "TS492",
+    "LETRO",
+    "VANLI",
+    "TS488",
+    "RUNSI",
+    "TS458",
+    "TS456",
+    "TS454",
+    "SOKAN"
+  ]
+}

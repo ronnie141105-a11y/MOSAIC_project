@@ -1,0 +1,775 @@
+{
+  "name": "weather-program",
+  "airspace_profile": "tsn_tma",
+  "aircraft": [],
+  "airport": {
+    "fpl": {
+      "DEP901": {
+        "callsign": "DEP901",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 240,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "SAPEN2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-01"
+      },
+      "DEP902": {
+        "callsign": "DEP902",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 250,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "ANTRI2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-02"
+      },
+      "DEP903": {
+        "callsign": "DEP903",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 260,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "KADUM2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-03"
+      },
+      "DEP904": {
+        "callsign": "DEP904",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 270,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "LANHI2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-09"
+      },
+      "DEP905": {
+        "callsign": "DEP905",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 280,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "XOBAV2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-04"
+      },
+      "DEP906": {
+        "callsign": "DEP906",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 290,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "SAPEN2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-10"
+      },
+      "DEP907": {
+        "callsign": "DEP907",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 300,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "ANTRI2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-05"
+      },
+      "DEP908": {
+        "callsign": "DEP908",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 310,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "KADUM2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-11"
+      },
+      "DEP909": {
+        "callsign": "DEP909",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 320,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "LANHI2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-06"
+      },
+      "DEP910": {
+        "callsign": "DEP910",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 330,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "XOBAV2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-12"
+      }
+    },
+    "departures": {
+      "DEP901": {
+        "stage": "ground"
+      },
+      "DEP902": {
+        "stage": "ground"
+      },
+      "DEP903": {
+        "stage": "ground"
+      },
+      "DEP904": {
+        "stage": "ground"
+      },
+      "DEP905": {
+        "stage": "ground"
+      },
+      "DEP906": {
+        "stage": "ground"
+      },
+      "DEP907": {
+        "stage": "ground"
+      },
+      "DEP908": {
+        "stage": "ground"
+      },
+      "DEP909": {
+        "stage": "ground"
+      },
+      "DEP910": {
+        "stage": "ground"
+      }
+    },
+    "sim_time_s": 40.0,
+    "events": [
+      {
+        "callsign": "DEP901",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP902",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP903",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP904",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP905",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP906",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP907",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP908",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP909",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      },
+      {
+        "callsign": "DEP910",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      }
+    ],
+    "milestones": {
+      "DEP901": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP902": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP903": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP904": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP905": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP906": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP907": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP908": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP909": {
+        "takeoff_clearance": 0.0
+      },
+      "DEP910": {
+        "takeoff_clearance": 0.0
+      }
+    },
+    "study_key": "vvts_weather_capacity",
+    "rollout_tracks": [],
+    "flow_management": {
+      "weather": {
+        "raw": "METAR VVTS 071034Z 24018G28KT 2000 +RA BKN008 OVC015 26/25 Q1006",
+        "station": "VVTS",
+        "observation_time": "071034Z",
+        "wind_direction_deg": 240,
+        "wind_speed_kt": 18,
+        "gust_kt": 28,
+        "visibility_m": 2000,
+        "visibility_at_least": false,
+        "weather": [
+          "+RA"
+        ],
+        "clouds": [
+          {
+            "cover": "BKN",
+            "height_ft": 800,
+            "kind": ""
+          },
+          {
+            "cover": "OVC",
+            "height_ft": 1500,
+            "kind": ""
+          }
+        ],
+        "ceiling_ft": 800,
+        "temperature_c": 26,
+        "dewpoint_c": 25,
+        "qnh_hpa": 1006,
+        "preset": "heavy_rain",
+        "label": "Heavy rain",
+        "capacity_factor": 0.4,
+        "taxi_factor": 0.6,
+        "source": "SIMULATED"
+      },
+      "nominal_departures_per_hour": 60.0,
+      "nominal_arrivals_per_hour": 40.0,
+      "recovery_at_s": null,
+      "program": {
+        "type": "ground_stop",
+        "reason": "Test capacity coordination",
+        "duration_min": 30.0,
+        "rate_per_hour": 12.0,
+        "minit_min": 3.0,
+        "starts_at_s": 0.0,
+        "ends_at_s": 1800.0,
+        "status": "ACTIVE"
+      },
+      "slots": [
+        {
+          "callsign": "DEP901",
+          "estimated_time_s": 110.69665108242668,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP902",
+          "estimated_time_s": 119.76140147270937,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP903",
+          "estimated_time_s": 129.2263656440448,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP905",
+          "estimated_time_s": 158.64394527407322,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP904",
+          "estimated_time_s": 158.75660213283362,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP906",
+          "estimated_time_s": 169.05763230878586,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP907",
+          "estimated_time_s": 172.0324871845929,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP908",
+          "estimated_time_s": 185.15338354734243,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP909",
+          "estimated_time_s": 186.99606983092312,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        },
+        {
+          "callsign": "DEP910",
+          "estimated_time_s": 197.09984899817385,
+          "target_time_s": null,
+          "off_block_time_s": null,
+          "delay_s": null,
+          "status": "GROUND_STOP"
+        }
+      ],
+      "history": [
+        {
+          "event": "WEATHER_CHANGED",
+          "reason": "Heavy rain",
+          "time_s": 0.0
+        },
+        {
+          "event": "PROGRAM_APPLIED",
+          "reason": "Test capacity coordination",
+          "time_s": 0.0
+        }
+      ],
+      "last_entry_s": null
+    },
+    "rollout_origins": {},
+    "aircraft": [
+      {
+        "callsign": "DEP901",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n273",
+        "state": "PARKED",
+        "route": [
+          "n273",
+          "n146",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1276.2654400987833,
+        "y": 420.0614950261456,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP902",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n274",
+        "state": "PARKED",
+        "route": [
+          "n274",
+          "n147",
+          "n146",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1253.5213542244326,
+        "y": 420.2542415166062,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP903",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n275",
+        "state": "PARKED",
+        "route": [
+          "n275",
+          "n148",
+          "n147",
+          "n146",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1230.1990288787,
+        "y": 420.0614950261456,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP904",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n9",
+        "state": "PARKED",
+        "route": [
+          "n9",
+          "n260",
+          "n261",
+          "n262",
+          "n263",
+          "n136",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1178.9634203198775,
+        "y": 469.4621730993835,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP905",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n276",
+        "state": "PARKED",
+        "route": [
+          "n276",
+          "n150",
+          "n149",
+          "n148",
+          "n147",
+          "n146",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1156.9553625036722,
+        "y": 420.2542415166062,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP906",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n10",
+        "state": "PARKED",
+        "route": [
+          "n10",
+          "n259",
+          "n260",
+          "n261",
+          "n262",
+          "n263",
+          "n136",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1153.0968073150018,
+        "y": 470.32439353287936,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP907",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n277",
+        "state": "PARKED",
+        "route": [
+          "n277",
+          "n151",
+          "n150",
+          "n149",
+          "n148",
+          "n147",
+          "n146",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1123.9957126349095,
+        "y": 420.2542415166062,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP908",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n11",
+        "state": "PARKED",
+        "route": [
+          "n11",
+          "n258",
+          "n259",
+          "n260",
+          "n261",
+          "n262",
+          "n263",
+          "n136",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1123.781312576143,
+        "y": 481.53325916832546,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP909",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n278",
+        "state": "PARKED",
+        "route": [
+          "n278",
+          "n152",
+          "n151",
+          "n150",
+          "n149",
+          "n148",
+          "n147",
+          "n146",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1087.3738794473954,
+        "y": 420.832480987988,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      },
+      {
+        "callsign": "DEP910",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n12",
+        "state": "PARKED",
+        "route": [
+          "n12",
+          "n257",
+          "n258",
+          "n259",
+          "n260",
+          "n261",
+          "n262",
+          "n263",
+          "n136",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1097.9146995712672,
+        "y": 483.25770003531716,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0,
+        "atfm_ctot_s": 0,
+        "current_speed_mps": 0.0
+      }
+    ]
+  }
+}

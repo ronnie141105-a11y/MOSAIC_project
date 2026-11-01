@@ -1,0 +1,131 @@
+{
+  "id": "ANTRI2D",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "83847.pdf",
+  "coordination_required": true,
+  "legs": [
+    {
+      "fix": "TS612",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 450
+    },
+    {
+      "fix": "TS626",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 1200,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 1200
+    },
+    {
+      "fix": "TS628",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 2750,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2200
+    },
+    {
+      "fix": "TS632",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3050,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3050
+    },
+    {
+      "fix": "TS814",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3800
+    },
+    {
+      "fix": "TS816",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4200
+    },
+    {
+      "fix": "ANTRI",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4500
+    }
+  ],
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "piecewise_linear_altitude_on_fix_centrelines",
+  "limitations": [
+    "Nominal altitudes are scenario assumptions within extracted fix constraints, not ATC clearances.",
+    "No fly-by turn radius, wind or automatic holding; procedure extensions beyond the named SID terminus are not included."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {
+    "25R": {
+      "TS612": "TS614"
+    }
+  },
+  "climb_gradient": {
+    "minimum_percent": 6.2,
+    "until_altitude_m": 3050,
+    "thereafter_percent": 3.3,
+    "enforcement": "metadata_only_pending_aircraft_performance_model"
+  },
+  "transitions": {
+    "DOVIN": {
+      "fixes": [
+        "ANTRI",
+        "DOVIN"
+      ],
+      "source": "83848.pdf"
+    },
+    "BIXEX": {
+      "fixes": [
+        "ANTRI",
+        "BIXEX"
+      ],
+      "source": "83848.pdf"
+    },
+    "PTH": {
+      "fixes": [
+        "ANTRI",
+        "PTH"
+      ],
+      "source": "83848.pdf"
+    },
+    "PATMA": {
+      "fixes": [
+        "ANTRI",
+        "PATMA"
+      ],
+      "source": "83848.pdf"
+    }
+  },
+  "display_fixes": [
+    "TS612",
+    "TS626",
+    "TS628",
+    "TS632",
+    "TS814",
+    "TS816",
+    "ANTRI"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "AC": {
+    "ident": "AC",
+    "name": "AN LOC",
+    "type": "NDB",
+    "frequency": "320 KHZ",
+    "channel": null,
+    "hours_of_operation": "H24",
+    "elevation_m": 20,
+    "layer_kind": "navaid",
+    "source": "VV-ENR-4_1-en.pdf ENR 4.1, Radio Navigation Aids - En-Route"
+  },
+  "VTV": {
+    "ident": "VTV",
+    "name": "VUNG TAU",
+    "type": "DVOR/DME",
+    "frequency": "114.700 MHZ",
+    "channel": "94X",
+    "hours_of_operation": "HS",
+    "elevation_m": null,
+    "layer_kind": "navaid",
+    "source": "VV-ENR-4_1-en.pdf ENR 4.1, Radio Navigation Aids - En-Route"
+  },
+  "TRN": {
+    "ident": "TRN",
+    "name": "CAN THO",
+    "type": "DVOR/DME",
+    "frequency": "113.200 MHZ",
+    "channel": "79X",
+    "hours_of_operation": "H24",
+    "elevation_m": 7,
+    "layer_kind": "navaid",
+    "source": "VV-ENR-4_1-en.pdf ENR 4.1, Radio Navigation Aids - En-Route"
+  },
+  "LKH": {
+    "ident": "LKH",
+    "name": "LIEN KHUONG",
+    "type": "DVOR/DME",
+    "frequency": "112.300 MHZ",
+    "channel": "70X",
+    "hours_of_operation": "H24",
+    "elevation_m": null,
+    "layer_kind": "navaid",
+    "source": "VV-ENR-4_1-en.pdf ENR 4.1, Radio Navigation Aids - En-Route"
+  },
+  "PTH": {
+    "ident": "PTH",
+    "name": "PHAN THIET",
+    "type": "CVOR/DME",
+    "frequency": "114.100 MHZ",
+    "channel": "88X",
+    "hours_of_operation": "H24",
+    "elevation_m": null,
+    "layer_kind": "navaid",
+    "source": "VV-ENR-4_1-en.pdf ENR 4.1, Radio Navigation Aids - En-Route"
+  },
+  "TSH": {
+    "ident": "TSH",
+    "name": "TAN SON NHAT",
+    "type": "DVOR/DME",
+    "frequency": "116.800 MHZ",
+    "channel": "115X",
+    "hours_of_operation": "H24",
+    "elevation_m": 16,
+    "layer_kind": "navaid",
+    "source": "VV-ENR-4_1-en.pdf ENR 4.1, Radio Navigation Aids - En-Route"
+  },
+  "RG": {
+    "ident": "RG",
+    "name": "RACH GIA",
+    "type": "NDB",
+    "frequency": null,
+    "channel": null,
+    "hours_of_operation": null,
+    "elevation_m": null,
+    "layer_kind": "navaid",
+    "source": "VV-ENR-3_1-en.pdf ENR 3.1 / VV-ENR-3_3-en.pdf ENR 3.3 (frequency/channel/hours/elevation not given in these sections -- see ENR 4.1 if added later)"
+  }
+}

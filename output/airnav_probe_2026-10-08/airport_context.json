@@ -1,0 +1,13 @@
+{
+  "source": "https://www.airnavradar.com/airport-view",
+  "observed_local_date": "2026-10-08",
+  "observed_local_time_approximate": "08:28",
+  "timezone": "Asia/Saigon",
+  "airport_icao": "VVTS",
+  "airport_iata": "SGN",
+  "airport_name": "Tan Son Nhat Intl. Airport",
+  "weather_header_text": "26°C; QNH 29.91 inHg; 1 kts; 27°C; Cloud Base: 800 ft; Visibility: 3.78 NM; Weather Conditions: MVFR; Weather updated 27m ago",
+  "observed_landing_runway_percentages": {"25R": 76, "25L": 24},
+  "observed_takeoff_runway_percentages": {"25L": 100},
+  "note": "Transcribed from the signed-in Airport View screen. These are displayed weather and observed runway-use statistics; the aggregation window was not exposed in the inspected screen. The two temperature-like values retain the screen's text because their labels were not accessible."
+}

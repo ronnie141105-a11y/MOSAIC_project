@@ -1,0 +1,104 @@
+/* Use the same monitor palette and type as Centre and Approach. */
+.split-stand{fill:var(--chart-muted);opacity:.55}
+.tower-split{
+  --chart-bg:#07111d;
+  --chart-surface:linear-gradient(180deg,#081018,#04080d);
+  --chart-panel:#101c2b;
+  --chart-edge:#304656;
+  --chart-button:#192a3c;
+  --chart-text:#d7e2ea;
+  --chart-muted:#8b9eae;
+  --chart-taxiway:#405361;
+  --chart-runway:#92a9b9;
+  --chart-threshold:#172630;
+  --chart-label:#b0c0cd;
+  --chart-hold:#ffbf69;
+  --chart-route:#5ab6ff;
+  --chart-tag:rgba(6,10,15,.9);
+  display:none;height:100%;min-height:0;grid-template-rows:minmax(0,1fr) minmax(0,1fr);gap:4px;
+  background:var(--chart-bg);color:var(--chart-text);
+  font-family:Consolas,Menlo,"Courier New",monospace;
+}
+.split-mode #airport-map{display:none}
+.split-mode .tower-split{display:grid}
+.tower-split[data-layout="full"]{grid-template-rows:minmax(0,1fr)}
+.split-pane[hidden]{display:none}
+.split-pane{min-height:0;min-width:0;display:flex;flex-direction:column;overflow:hidden;background:var(--chart-surface);border:1px solid var(--chart-edge)}
+.split-heading{height:44px;min-height:44px;display:flex;align-items:center;gap:10px;padding:4px 10px;background:var(--chart-panel);color:var(--chart-text);font-size:11px;border-bottom:1px solid var(--chart-edge)}
+.chart-identity{display:flex;flex-direction:column;gap:3px;min-width:0}
+.split-heading strong{font:inherit;letter-spacing:.04em}
+.chart-identity small{color:var(--chart-muted);font-size:10px}
+.split-schematic{font-size:9px;color:var(--chart-muted)}
+.split-controls{margin-left:auto;display:flex;align-items:center;gap:4px}
+.split-controls button{border:1px solid var(--chart-edge);border-radius:3px;background:var(--chart-button);color:var(--chart-text);font:11px Consolas,monospace;min-width:24px;padding:3px 6px;cursor:pointer}
+.split-controls button:hover{border-color:var(--chart-route)}
+.split-controls select,.split-controls input[type="number"]{border:1px solid var(--chart-edge);border-radius:3px;background:var(--chart-button);color:var(--chart-text);font:10px Consolas,monospace;padding:3px;min-width:0}
+.split-controls input[type="number"]{width:43px}
+.split-controls select{width:58px}
+.pane-bearing,.pane-ils-toggle{display:flex;align-items:center;gap:2px;white-space:nowrap;font-size:10px}
+.pane-ils-toggle input{margin:0;accent-color:#56acff}
+.ils-fan{fill:#247bd4;fill-opacity:.22;stroke:#477cbd;stroke-opacity:.6;stroke-width:.7}
+.split-map .ils-axis{stroke:#7faee5;stroke-width:1;stroke-dasharray:5 5}
+.split-map .ils-tick{stroke:#74a7e0;stroke-width:1}
+.tower-compass text,.tower-reference{fill:var(--chart-label);font:9px Consolas,monospace;paint-order:stroke;stroke:var(--chart-bg);stroke-width:3px}
+.compass-needle{fill:var(--chart-text)}
+.split-map .compass-stem,.split-map .radar-scale{stroke:var(--chart-text);stroke-width:1}
+.tower-compass,.tower-reference{pointer-events:none}
+.split-pane[data-pane="ils"] .split-runway{stroke-width:2}
+.split-pane[data-pane="ils"] .split-taxi-edge{stroke-width:.7}
+.split-pane[data-pane="ils"] .split-threshold{stroke-width:.6}
+.split-pane[data-pane="ils"] .split-hold{display:none}
+.split-pane[data-pane="ils"] .split-runway-label{font-size:10px}
+.split-pane[data-pane="apron"] .split-runway{stroke-width:7}
+.split-pane[data-pane="apron"] .split-taxi-edge{stroke-width:3}
+.split-map{width:100%;flex:1;min-height:0;display:block;touch-action:none}
+.split-map polyline,.split-map line{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.split-taxi-edge{fill:none;stroke:var(--chart-taxiway);stroke-width:7.5;stroke-linecap:round;stroke-linejoin:round}
+.split-junction{fill:var(--chart-taxiway);stroke:var(--chart-taxiway);stroke-width:2;stroke-linejoin:round}
+.split-taxi-centre{display:none}
+.split-map .split-runway{stroke:var(--chart-runway);stroke-width:13;stroke-linecap:butt}
+.split-runway-centre{display:none}
+.split-map .split-threshold{stroke:var(--chart-threshold);stroke-width:1.1}
+.split-map .split-final,.split-map .split-departure{stroke:var(--chart-muted);stroke-width:1;stroke-dasharray:4 5;opacity:.65}
+.split-map .split-hold{stroke:var(--chart-hold);stroke-width:2;stroke-linecap:butt}
+.split-nav-label,.split-hold-label,.split-runway-label,.split-stand-label,.split-distance{font:10px Consolas,Menlo,"Courier New",monospace;fill:var(--chart-label);paint-order:stroke;stroke:var(--chart-bg);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.split-hold-label{fill:var(--chart-hold);font-size:9px}
+.split-runway-label{fill:var(--chart-text);font-size:13px;font-weight:bold;stroke-width:4}
+.split-distance{fill:var(--chart-muted);font-size:9px}
+.split-stand{fill:var(--chart-taxiway);stroke:none}
+.split-stand-label{fill:var(--chart-label)}
+.split-route{stroke:var(--chart-route);stroke-width:1;stroke-dasharray:5 5;opacity:.4;pointer-events:none}
+.split-selected-route{stroke:var(--chart-route);stroke-width:2.5;marker-mid:url(#chart-route-arrow);marker-end:url(#chart-route-arrow);pointer-events:none}
+.chart-route-arrow{fill:var(--chart-route)}
+.chart-legend{min-height:31px;display:flex;justify-content:center;gap:20px;align-items:center;border-top:1px solid var(--chart-edge);background:var(--chart-bg);color:var(--chart-muted);font-size:10px}
+.chart-legend span{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.chart-legend i{display:block;width:18px;height:4px;background:var(--chart-runway);border-radius:1px}
+.chart-legend i.taxiway{background:var(--chart-taxiway);height:5px;border-radius:3px}
+.chart-legend i.route{background:var(--chart-route);height:2px}
+.split-tag .tag-name{fill:var(--chart-text);font-size:11px;font-weight:normal}
+.split-tag .tag-data{fill:var(--chart-label);font-size:10px}
+.split-tag .tag-plate{fill:var(--chart-tag);stroke:var(--chart-edge);stroke-width:1;filter:none}
+.split-aircraft .aircraft-circle{stroke-width:1;filter:none}
+.split-aircraft .aircraft-plane{stroke-width:.5}
+[data-theme="light"] .tower-split{
+  --chart-bg:#eff3f4;--chart-surface:#eff3f4;--chart-panel:#ffffff;
+  --chart-edge:#c8d6dc;--chart-button:#e9f0f3;--chart-text:#1d3745;
+  --chart-muted:#58717e;--chart-taxiway:#b0c2cc;--chart-runway:#476271;
+  --chart-threshold:#e9f0f3;--chart-label:#355365;--chart-hold:#a36a23;
+  --chart-route:#176f9d;--chart-tag:rgba(255,255,255,.94);
+}
+.map-toolbar.split-toolbar #map-orientation{display:none}
+.map-view-controls #tower-layout{max-width:160px}
+/* One toolbar in Supervisor, aligned with the radar monitor headers. */
+.embedded-control-view .split-heading{display:flex;height:auto;min-height:32px;flex-wrap:wrap;padding:3px 6px;gap:3px;font-size:10px}
+.embedded-control-view .split-controls{gap:3px;flex-wrap:wrap}
+.embedded-control-view .split-controls button{height:24px;padding:2px 4px;font-size:10px;min-width:21px}
+.embedded-control-view .chart-legend{display:none}
+.embedded-control-view .split-pane{border:0}
+.embedded-control-view .map-toolbar.split-toolbar{height:44px;min-height:44px;padding:4px 8px;flex-wrap:nowrap;gap:6px}
+.embedded-control-view .map-toolbar.split-toolbar .map-view-controls{flex-wrap:nowrap;gap:5px}
+.embedded-control-view .map-toolbar button,.embedded-control-view .map-toolbar select{height:32px;padding:5px 8px;font-size:11px;font-weight:normal}
+.embedded-control-view .map-toolbar #zoom-in,.embedded-control-view .map-toolbar #zoom-out{width:28px;min-width:28px;padding:5px}
+[data-theme="light"] .embedded-control-view .map-toolbar{background:#ffffff;border-color:#c8d6dc}
+[data-theme="light"] .embedded-control-view .map-toolbar button,[data-theme="light"] .embedded-control-view .map-toolbar select{background:#e9f0f3;border-color:#c8d6dc;color:#1d3745}
+@media(max-width:380px){.split-heading{gap:5px;padding:4px 9px}.split-schematic{display:none}.chart-legend{gap:12px;font-size:9px}.embedded-control-view .map-toolbar button,.embedded-control-view .map-toolbar select{padding-left:5px;padding-right:5px}}

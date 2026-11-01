@@ -1,0 +1,611 @@
+"""Scenario Builder routes for the standalone simulator."""
+
+import json
+import os
+import re
+from typing import Dict, Optional
+
+from flask import Blueprint, Response, jsonify, render_template, request
+
+from astra.dashboard import scenario_presets
+from astra.interface.mock_connector import VALID_FLIGHT_TYPES
+from astra.interface.state_reader import StateReader
+from astra.pipeline import Pipeline
+from astra.utils.logger import get_logger
+
+_LOG = get_logger(__name__)
+
+#: Only these characters may appear in a saved scenario's file-safe name.
+_NAME_RE = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
+
+#: Always required to spawn an aircraft, regardless of how its position
+#: is determined (free-standing lat/lon, or an airway spawn).
+_REQUIRED_CREATE_FIELDS_BASE = ("callsign", "aircraft_type", "altitude_ft", "speed_kt")
+
+#: Required only for a free-standing spawn (no `airway_designator`).
+_REQUIRED_POSITION_FIELDS = ("lat", "lon", "heading_deg")
+
+#: Path to the static airways GeoJSON also used by the map's airway layer.
+_AIRWAYS_PATH = os.path.join(os.path.dirname(__file__), "geo", "airways.json")
+
+#: Lazily-populated cache of `_load_airways()`'s result -- the file never
+#: changes at runtime, so there's no need to re-read/re-parse it per request.
+_airways_cache = None
+
+
+def _load_airways() -> list:
+    """Read the static airways GeoJSON, reshaped for the Scenario Builder.
+
+    Returns:
+        `[{"designator", "waypoint_names", "coordinates": [{"lat", "lon"}, ...]}, ...]`,
+        one entry per airway `LineString` feature.
+    """
+    global _airways_cache
+    if _airways_cache is None:
+        with open(_AIRWAYS_PATH, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        _airways_cache = [
+            {
+                "designator": feature.get("properties", {}).get("designator", "?"),
+                "waypoint_names": feature.get("properties", {}).get("waypoints", []),
+                "coordinates": [
+                    {"lat": lat, "lon": lon}
+                    for lon, lat in feature.get("geometry", {}).get("coordinates", [])
+                ],
+            }
+            for feature in data.get("features", [])
+        ]
+    return _airways_cache
+
+
+def _error(message: str, status: int = 400) -> Response:
+    response = jsonify({"ok": False, "error": message})
+    response.status_code = status
+    return response
+
+
+def _ok(payload: Dict) -> Response:
+    payload = dict(payload)
+    payload["ok"] = True
+    return jsonify(payload)
+
+
+def _scenario_path(scenarios_dir: str, name: str) -> str:
+    return os.path.join(scenarios_dir, f"{name}.json")
+
+
+def build_scenario_blueprint(
+    reader: StateReader, scenarios_dir: str, pipeline: Optional[Pipeline] = None, config=None
+) -> Blueprint:
+    """Build the Scenario Builder's Flask `Blueprint`.
+
+    Args:
+        reader: The same `StateReader` `main.py`'s poll loop reads from.
+            Must be mock-backed (`reader.is_mock`) for any of these
+            routes to succeed -- checked per-request, not at startup,
+            so a helpful JSON error is returned rather than a crash if
+            the simulation is unavailable.
+        scenarios_dir: Directory saved scenarios are written to/read
+            from as `<name>.json`. Created if it does not exist.
+        pipeline: The same `Pipeline`/`AsyncPipeline` the poll loop is
+            running cycles through, if any. When given, every action
+            that replaces the traffic wholesale (loading a saved
+            scenario, clearing the sim, loading an operational preset)
+            also calls `pipeline.reset()` right after
+            `reader.reset_simulation()` -- see `Pipeline.reset`'s own
+            docstring for the stale-track bug this fixes. When
+            omitted, those routes still work exactly as before (the
+            aircraft themselves reset correctly either way); only the
+            pipeline's own leftover tracking state would persist.
+
+    Returns:
+        A `flask.Blueprint` ready to register on the dashboard's app.
+    """
+    os.makedirs(scenarios_dir, exist_ok=True)
+    blueprint = Blueprint("scenario", __name__)
+    profile_name = config.airspace_profile if config is not None else 'hcm_fir'
+    from astra.airspace import profile_presets, procedure_aircraft, load_profile
+    selected_presets = profile_presets(profile_name)
+
+    @blueprint.before_request
+    def protect_case_tracks():
+        replay = getattr(reader._connector, 'case_replay', None)
+        if (getattr(replay, 'active', False) and request.method in ('POST','PATCH','DELETE')
+                and request.path != '/scenario/control' and not request.path.endswith('/load')):
+            return _error('This case follows saved baseline tracks. End it before editing aircraft or saving a builder scene.',409)
+
+    def airway_options():
+        if selected_presets is not None:
+            from astra.airspace import profile_airways
+            return profile_airways(profile_name)
+        return _load_airways()
+
+    def _require_mock() -> bool:
+        return reader.is_mock
+
+    # ------------------------------------------------------------------
+    # Page
+    # ------------------------------------------------------------------
+
+    @blueprint.route("/scenario")
+    def scenario_page() -> str:
+        """Serve the Scenario Builder page shell."""
+        return render_template("scenario_builder.html", is_mock=reader.is_mock, airspace_profile=profile_name,
+                               procedures=list(load_profile(profile_name)['procedure_data']) if selected_presets else [],
+                               procedure_transitions={p['id']:list(p.get('transitions',{})) for p in load_profile(profile_name)['procedure_data'].values()} if selected_presets else {},
+                               procedure_runways={p['id']:('25L' if p['kind']=='sid' else '25R') for p in load_profile(profile_name)['procedure_data'].values()} if selected_presets else {})
+
+    @blueprint.route('/scenario/procedure-aircraft', methods=['POST'])
+    def spawn_procedure():
+        if not _require_mock() or selected_presets is None:
+            return _error('Select a terminal mock profile to spawn procedure traffic.',409)
+        body=request.get_json(silent=True) or {}
+        callsign=str(body.get('callsign','')).upper()
+        if not re.fullmatch(r'[A-Z0-9_-]{1,16}',callsign):return _error('Enter a callsign using 1-16 letters, digits, underscore or hyphen.')
+        if any(ac['callsign']==callsign for ac in reader.list_aircraft()):return _error('Callsign already exists.',409)
+        try:
+            ac=procedure_aircraft(profile_name,body.get('procedure_id'),callsign,body.get('runway'),transition=body.get('transition'))
+            reader.create_aircraft(**ac)
+        except (ValueError,TypeError) as exc:return _error(str(exc))
+        return _ok({'callsign':callsign,'procedure_id':body['procedure_id']})
+
+    @blueprint.route('/scenario/random-aircraft', methods=['POST'])
+    def spawn_random_aircraft():
+        if not _require_mock():return _error('Random traffic requires mock mode.',409)
+        import random
+        import uuid
+        mode=(request.get_json(silent=True) or {}).get('kind','mixed')
+        if mode not in ('mixed','arrival','departure'):return _error('Choose mixed, arrival or departure.')
+        used={a['callsign'] for a in reader.list_aircraft()}
+        callsign='RND'+uuid.uuid4().hex[:8].upper()
+        while callsign in used:callsign='RND'+uuid.uuid4().hex[:8].upper()
+        if selected_presets is not None:
+            kind=random.choice(['sid','star']) if mode=='mixed' else ('star' if mode=='arrival' else 'sid')
+            procedures=[p for p in load_profile(profile_name)['procedure_data'].values() if p['kind']==kind]
+            proc=random.choice(procedures)
+            # Place demo traffic at a named route fix, never a sampled RF point.
+            starts=[i+(1 if kind=='sid' else 0) for i,l in enumerate(proc['legs'][:-1]) if not l['fix'].startswith('_')]
+            if kind=='sid':starts.insert(0,0)
+            spec=procedure_aircraft(profile_name,proc['id'],callsign,start_index=random.choice(starts))
+            reader.create_aircraft(**spec)
+            return _ok({'callsign':callsign,'procedure_id':proc['id'],'runway':spec['procedure_profile']['runway']})
+        if mode!='mixed':return _error('Arrival/departure selection requires the TMA profile.')
+        routes=[a for a in airway_options() if len(a['coordinates'])>=2]
+        if not routes:return _error('No routes available.',409)
+        route=random.choice(routes);coords=route['coordinates'];start=random.randrange(len(coords)-1)
+        reader.create_aircraft(callsign=callsign,aircraft_type='A320',lat=coords[start]['lat'],lon=coords[start]['lon'],
+            heading_deg=0,altitude_ft=random.choice([28000,30000,32000,34000]),speed_kt=random.choice([420,440,460]),
+            route_waypoints=[(p['lat'],p['lon']) for p in coords[start+1:]],flight_type='OVERFLIGHT')
+        return _ok({'callsign':callsign,'airway':route['designator']})
+
+    # ------------------------------------------------------------------
+    # Live state: current aircraft + sim clock/run status
+    # ------------------------------------------------------------------
+
+    @blueprint.route("/scenario/state")
+    def scenario_state() -> Response:
+        """Current aircraft + sim clock, read directly (bypasses the pipeline)."""
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        aircraft = sorted(reader.list_aircraft(), key=lambda a: a["callsign"])
+        replay=getattr(reader._connector,'case_replay',None)
+        status=replay.status() if replay else None
+        ground=[]
+        if status and status['active'] and replay.ground_replay:
+            airport=getattr(reader._connector,'airport_integration',None)
+            ground=replay.ground_replay.frame_at(reader.simulation_time_s(),airport.fpl)['aircraft']
+        plans=[]
+        if status and status['active']:
+            plans=[{k:f.get(k) for k in ('callsign','adep','origin_name','ades','procedure','origin_pending',
+                'origin_tobt_s','origin_ctot_s','flow_gate','transfer_time_s')} for f in replay.metadata.values()]
+        for f in plans:
+            original=replay.metadata[f['callsign']]
+            if original['direction']=='departure':
+                f['origin_tobt_s']=original.get('tobt_s')
+                f['origin_ctot_s']=original.get('ctot_s')
+                f['startup_airborne_departure']=original.get('startup_airborne_departure',False)
+        return _ok(
+            {
+                "aircraft": aircraft,
+                "running": reader.is_simulation_running(),
+                "sim_time_s": reader.simulation_time_s(),
+                "case_replay":status,"ground_aircraft":ground,"flight_plans":plans,
+            }
+        )
+
+    # ------------------------------------------------------------------
+    # Aircraft CRUD
+    # ------------------------------------------------------------------
+
+    @blueprint.route("/scenario/airways")
+    def airways() -> Response:
+        """List airways aircraft can be spawned onto and follow."""
+        return _ok({"airways": airway_options()})
+
+    @blueprint.route("/scenario/aircraft", methods=["POST"])
+    def create_aircraft() -> Response:
+        """Spawn one aircraft.
+
+        Body: callsign, aircraft_type, altitude_ft, speed_kt, plus either
+        lat/lon/heading_deg (free-standing spawn) or airway_designator
+        (+ optional start_index, optional reverse_route) to spawn onto
+        and follow a named airway. `reverse_route: true` flies the
+        airway's filed waypoint order backwards (e.g. a filed
+        `ACT -> ... -> CRA` airway becomes `CRA -> ... -> ACT`) --
+        `start_index` is still applied afterwards, against the reversed
+        list, so "start at index 0" always means "start at whichever
+        end the aircraft is now flying from". For an airway spawn, an
+        optional `flight_type` of "LANDING" or "OVERFLIGHT" applies a
+        profile relative to the airway's final waypoint (the reversed
+        one, when `reverse_route` is set) -- see
+        `MockConnector.create_aircraft`'s docstring. Ignored (with a
+        warning, not an error) for a free-standing spawn, since there's
+        no "final waypoint" to profile against.
+        """
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        body = request.get_json(silent=True) or {}
+        missing = [f for f in _REQUIRED_CREATE_FIELDS_BASE if f not in body]
+        if missing:
+            return _error(f"Missing field(s): {', '.join(missing)}")
+
+        flight_type = body.get("flight_type") or None
+        if selected_presets is not None and flight_type=='LANDING':
+            return _error('Use the terminal procedure form for a STAR and ILS landing.',409)
+        if flight_type is not None and flight_type not in VALID_FLIGHT_TYPES:
+            return _error(f"flight_type must be one of {VALID_FLIGHT_TYPES}.")
+
+        route_waypoints = None
+        airway_designator = body.get("airway_designator")
+        if airway_designator:
+            airway = next(
+                (a for a in airway_options() if a["designator"] == airway_designator), None
+            )
+            if airway is None:
+                return _error(f"Unknown airway '{airway_designator}'.", 404)
+            coords = airway["coordinates"]
+            if len(coords) < 2:
+                return _error(f"Airway '{airway_designator}' has too few points to follow.")
+            # Reverse Route Direction toggle (Scenario Builder Spawn panel):
+            # flip the filed waypoint order before anything below reads
+            # `coords` -- start_index, the spawn position, and the
+            # follow-route waypoints all then fall out of the normal
+            # forward logic, just against the flipped list.
+            if body.get("reverse_route"):
+                coords = list(reversed(coords))
+            try:
+                start_index = int(body.get("start_index", 0))
+            except (TypeError, ValueError):
+                return _error("start_index must be an integer.")
+            start_index = max(0, min(start_index, len(coords) - 2))
+            lat, lon = coords[start_index]["lat"], coords[start_index]["lon"]
+            route_waypoints = [(p["lat"], p["lon"]) for p in coords[start_index + 1:]]
+            heading_deg = body.get("heading_deg", 0.0)  # MockConnector overrides from the route
+        else:
+            missing_pos = [f for f in _REQUIRED_POSITION_FIELDS if f not in body]
+            if missing_pos:
+                return _error(f"Missing field(s): {', '.join(missing_pos)}")
+            lat, lon, heading_deg = body["lat"], body["lon"], body["heading_deg"]
+            if flight_type is not None:
+                _LOG.warning("flight_type given without an airway spawn; ignoring.")
+                flight_type = None
+
+        try:
+            reader.create_aircraft(
+                callsign=str(body["callsign"]).strip().upper(),
+                aircraft_type=str(body["aircraft_type"]).strip().upper(),
+                lat=float(lat),
+                lon=float(lon),
+                heading_deg=float(heading_deg),
+                altitude_ft=float(body["altitude_ft"]),
+                speed_kt=float(body["speed_kt"]),
+                route_waypoints=route_waypoints,
+                flight_type=flight_type,
+            )
+        except (TypeError, ValueError) as exc:
+            return _error(f"Invalid aircraft field: {exc}")
+        return _ok(
+            {
+                "callsign": body["callsign"],
+                "on_route": route_waypoints is not None,
+                "reversed": bool(body.get("reverse_route")) if airway_designator else False,
+            }
+        )
+
+    @blueprint.route("/scenario/aircraft/<callsign>", methods=["PATCH"])
+    def edit_aircraft(callsign: str) -> Response:
+        """Edit one or more fields of an existing aircraft. Body: partial fields."""
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        body = request.get_json(silent=True) or {}
+        profile=reader.get_flight_profile(callsign) or {}
+        if profile.get('flight_type')=='PROCEDURE':
+            return _error('Procedure traffic follows its fixed nominal profile. Delete and respawn it to change the procedure.',409)
+        editable = {
+            "aircraft_type",
+            "lat",
+            "lon",
+            "heading_deg",
+            "altitude_ft",
+            "ground_speed_kt",
+            "vertical_speed_fpm",
+        }
+        fields = {k: v for k, v in body.items() if k in editable}
+        if not fields:
+            return _error("No editable fields in request body.")
+        try:
+            for key in ("lat", "lon", "heading_deg", "altitude_ft", "ground_speed_kt", "vertical_speed_fpm"):
+                if key in fields:
+                    fields[key] = float(fields[key])
+        except (TypeError, ValueError) as exc:
+            return _error(f"Invalid field value: {exc}")
+        found = reader.update_aircraft(callsign, **fields)
+        if not found:
+            return _error(f"Unknown callsign '{callsign}'.", 404)
+        return _ok({"callsign": callsign.upper()})
+
+    @blueprint.route("/scenario/aircraft/<callsign>", methods=["DELETE"])
+    def delete_aircraft(callsign: str) -> Response:
+        """Delete one aircraft by callsign."""
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        reader.remove_aircraft(callsign)
+        return _ok({"callsign": callsign.upper()})
+
+    # ------------------------------------------------------------------
+    # Simulation control: pause / resume / single-step / reset
+    # ------------------------------------------------------------------
+
+    @blueprint.route("/scenario/control", methods=["POST"])
+    def control() -> Response:
+        """Body: `{"action": "pause"|"resume"|"step"|"reset"|"speed"}`
+        (optional `"ticks"` for step, required `"multiplier"` for speed)."""
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        body = request.get_json(silent=True) or {}
+        action = body.get("action")
+        if action == "pause":
+            reader.send_command("HOLD")
+        elif action == "resume":
+            reader.send_command("OP")
+        elif action == "step":
+            ticks = int(body.get("ticks", 1))
+            reader.step_simulation(ticks)
+        elif action == "reset":
+            reader.reset_simulation()
+            if pipeline is not None:
+                pipeline.reset()
+        elif action == "speed":
+            try:
+                multiplier = float(body.get("multiplier", 1.0))
+            except (TypeError, ValueError):
+                return _error(f"multiplier must be numeric, got: {body.get('multiplier')!r}")
+            if multiplier <= 0:
+                return _error("multiplier must be > 0.")
+            reader.set_speed_multiplier(multiplier)
+        else:
+            return _error(f"Unknown action '{action}'. Expected pause/resume/step/reset/speed.")
+        return _ok({"action": action, "running": reader.is_simulation_running()})
+
+    _CLEARANCE_STACK_COMMAND = {"HEADING": "HDG", "FLIGHT_LEVEL": "ALT", "SPEED": "SPD"}
+
+    @blueprint.route("/scenario/clearance", methods=["POST"])
+    def issue_clearance() -> Response:
+        """Body: `{"callsign": str, "clearance_type": "HEADING"|"FLIGHT_LEVEL"|"SPEED", "value": number}`.
+
+        Issues a clearance directly, bypassing `ResolutionEngine` entirely --
+        lets the person play ATCO themselves (turn/climb/descend/speed any
+        aircraft on demand) rather than only ever previewing the engine's
+        own ranked candidates. `value` is the new absolute target (heading
+        in degrees 0-360, altitude in feet, speed in knots), matching this
+        connector's own HDG/ALT/SPD stack-command semantics -- not a delta.
+
+        Deliberately mock-only, same as every other endpoint in this
+        blueprint: this reaches into the simulator directly, which only
+        makes sense against the offline MockConnector used for scenario
+        testing. It does not touch `ResolutionEngine`/`ForecastEngine` in
+        any way -- next poll cycle just observes whatever the aircraft's
+        new state is and reassesses complexity/tracks/forecasts normally,
+        exactly as if the aircraft had always been on this heading/level/
+        speed.
+        """
+        if not _require_mock():
+            return _error("Manual clearances require --mock mode.", 409)
+        body = request.get_json(silent=True) or {}
+        callsign = body.get("callsign")
+        clearance_type = body.get("clearance_type")
+        if callsign and (reader.get_flight_profile(callsign) or {}).get('flight_type')=='PROCEDURE':
+            return _error('Manual tactical clearances are not supported for fixed procedure profiles.',409)
+        value = body.get("value")
+        if not callsign or clearance_type not in _CLEARANCE_STACK_COMMAND or value is None:
+            return _error(
+                "Body must include callsign, clearance_type "
+                "(HEADING/FLIGHT_LEVEL/SPEED), and a numeric value."
+            )
+        try:
+            value = float(value)
+        except (TypeError, ValueError):
+            return _error(f"value must be numeric, got: {value!r}")
+        if clearance_type == "HEADING" and not (0.0 <= value < 360.0):
+            return _error("HEADING value must be in [0, 360).")
+        if clearance_type == "FLIGHT_LEVEL" and value < 0:
+            return _error("FLIGHT_LEVEL value (feet) must be >= 0.")
+        if clearance_type == "SPEED" and value <= 0:
+            return _error("SPEED value (knots) must be > 0.")
+        command = _CLEARANCE_STACK_COMMAND[clearance_type]
+        reader.send_command(f"{command} {callsign.upper()} {value}")
+        return _ok({"callsign": callsign.upper(), "clearance_type": clearance_type, "value": value})
+
+    # ------------------------------------------------------------------
+    # Predefined traffic situations
+    # ------------------------------------------------------------------
+
+    @blueprint.route("/scenario/presets")
+    def presets() -> Response:
+        """List predefined traffic situations (crossing, sector overload, arrival sequencing, ...)."""
+        airport = getattr(reader._connector, 'airport_integration', None)
+        if profile_name == 'tsn_tma' and airport:
+            from astra.studies.operational_cases import catalog
+            return _ok({'presets': catalog()+[dict(key=key, label=label, description=description,
+                aircraft_count=count) for key, (label, description, count)
+                in airport.STUDY_SCENARIOS.items()]})
+        items = [dict(key=p['key'],label=p['label'],description=p['description'],aircraft_count=len(p['aircraft'])) for p in selected_presets.values()] if selected_presets is not None else scenario_presets.list_presets()
+        return _ok({"presets": items})
+
+    @blueprint.route("/scenario/presets/<key>/load", methods=["POST"])
+    def load_preset(key: str) -> Response:
+        """Reset the sim, then spawn a preset's aircraft. Leaves the sim paused."""
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        airport = getattr(reader._connector, 'airport_integration', None)
+        if profile_name == 'tsn_tma' and airport:
+            from astra.studies.workbook_cases import CASES as STUDY_CASES
+            if key in STUDY_CASES:
+                replay=getattr(reader._connector,'case_replay',None)
+                if replay is None:return _error('Standalone case runtime required',409)
+                try:
+                    body=request.get_json(silent=True) or {}
+                    if not isinstance(body,dict):return _error('Expected a JSON object',400)
+                    status=replay.load(key,method=body.get('method','RECONSTRUCTED'),run_id=body.get('run_id'))
+                    return _ok(dict(key=key,aircraft_count=status['total'],case_replay=status))
+                except (ValueError,OSError) as exc:return _error(str(exc),400)
+            if key not in airport.STUDY_SCENARIOS:
+                return _error(f"Unknown preset '{key}'.", 404)
+            airport.load_study_scenario(key)
+            if pipeline is not None:
+                pipeline.reset()
+            return _ok({'key': key, 'aircraft_count': airport.STUDY_SCENARIOS[key][2]})
+        try:
+            preset = selected_presets[key] if selected_presets is not None else scenario_presets.get_preset(key)
+        except KeyError:
+            return _error(f"Unknown preset '{key}'.", 404)
+        reader.reset_simulation()
+        if pipeline is not None:
+            pipeline.reset()
+        for ac in preset["aircraft"]:
+            reader.create_aircraft(
+                callsign=ac["callsign"],
+                aircraft_type=ac["aircraft_type"],
+                lat=ac["lat"],
+                lon=ac["lon"],
+                heading_deg=ac["heading_deg"],
+                altitude_ft=ac["altitude_ft"],
+                speed_kt=ac["speed_kt"],
+                route_waypoints=ac.get("route_waypoints"),
+                flight_type=ac.get("flight_type"),
+                procedure_profile=ac.get('procedure_profile'),
+            )
+        return _ok({"key": key, "aircraft_count": len(preset["aircraft"])})
+
+    # ------------------------------------------------------------------
+    # Save / load / list / delete user scenarios (JSON files on disk)
+    # ------------------------------------------------------------------
+
+    @blueprint.route("/scenario/scenarios")
+    def list_scenarios() -> Response:
+        """List saved scenario names (without the `.json` extension)."""
+        names = sorted(
+            os.path.splitext(f)[0]
+            for f in os.listdir(scenarios_dir)
+            if f.endswith(".json")
+        )
+        return _ok({"scenarios": names})
+
+    @blueprint.route("/scenario/scenarios", methods=["POST"])
+    def save_scenario() -> Response:
+        """Save the current aircraft set. Body: `{"name": "..."}`."""
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        body = request.get_json(silent=True) or {}
+        name = str(body.get("name", "")).strip()
+        if not _NAME_RE.match(name):
+            return _error(
+                "Scenario name must be 1-64 characters, letters/digits/underscore/hyphen only."
+            )
+        aircraft = []
+        for ac in reader.list_aircraft():
+            ac = dict(ac)  # don't mutate whatever list_aircraft() handed back
+            # list_aircraft() already gives us the correct raw `flight_type`
+            # string (rec.flight_type) -- only `route_waypoints` is missing,
+            # since list_aircraft() never included it. get_route() is the
+            # dedicated accessor for that (get_flight_profile() is NOT the
+            # equivalent for flight_type: it returns None for "OVERFLIGHT"
+            # and a {"flight_type": ..., "vertical_rate_fpm": ...} dict for
+            # "LANDING" -- it's a prediction-engine helper, not a round-trip
+            # accessor, so it must not be used to overwrite flight_type here).
+            try:
+                route = reader.get_route(ac["callsign"])
+            except Exception:
+                route = None
+            ac["route_waypoints"] = [(float(lat), float(lon)) for lat, lon in route] if route else None
+            profile=reader.get_flight_profile(ac['callsign'])
+            if profile and profile.get('flight_type')=='PROCEDURE':ac['procedure_profile']=profile
+            aircraft.append(ac)
+        airport = getattr(reader._connector, 'airport_integration', None)
+        with open(_scenario_path(scenarios_dir, name), "w", encoding="utf-8") as fh:
+            json.dump({"name": name, "airspace_profile": profile_name, "aircraft": aircraft,
+                "airport": airport.export_scenario() if airport else None}, fh, indent=2)
+        return _ok({"name": name, "aircraft_count": len(aircraft)})
+
+    @blueprint.route("/scenario/scenarios/<name>/load", methods=["POST"])
+    def load_scenario(name: str) -> Response:
+        """Reset the sim, then spawn a saved scenario's aircraft."""
+        if not _require_mock():
+            return _error("Scenario Builder requires --mock mode.", 409)
+        if not _NAME_RE.match(name):
+            return _error("Invalid scenario name.")
+        path = _scenario_path(scenarios_dir, name)
+        if not os.path.isfile(path):
+            return _error(f"No saved scenario named '{name}'.", 404)
+        with open(path, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        if data.get('airspace_profile','hcm_fir') != profile_name:
+            return _error('Saved scenario belongs to a different airspace profile.',409)
+        if selected_presets is not None:
+            for ac in data.get('aircraft',[]):
+                p=ac.get('procedure_profile') or {}
+                if p and p.get('runway') != ('25L' if p.get('direction')=='outbound' else '25R'):
+                    return _error('Saved scenario conflicts with 25L departures / 25R arrivals. Reload a current preset.',409)
+        reader.reset_simulation()
+        if pipeline is not None:
+            pipeline.reset()
+        if (data.get('airport') or {}).get('sim_time_s') is not None:
+            try:
+                reader._connector.restore_clock(data['airport']['sim_time_s'])
+            except ValueError as exc:
+                return _error(str(exc))
+        for ac in data.get("aircraft", []):
+            try:
+                route_waypoints = ac.get("route_waypoints")
+                if route_waypoints is not None:
+                    route_waypoints = [(float(lat), float(lon)) for lat, lon in route_waypoints]
+                reader.create_aircraft(
+                    callsign=ac["callsign"],
+                    aircraft_type=ac["aircraft_type"],
+                    lat=float(ac["lat"]),
+                    lon=float(ac["lon"]),
+                    heading_deg=float(ac["heading_deg"]),
+                    altitude_ft=float(ac["altitude_ft"]),
+                    speed_kt=float(ac["ground_speed_kt"]),
+                    route_waypoints=route_waypoints,
+                    flight_type=ac.get("flight_type"),
+                    procedure_profile=ac.get('procedure_profile'),
+                )
+            except (KeyError, TypeError, ValueError):
+                continue
+        airport = getattr(reader._connector, 'airport_integration', None)
+        if airport and data.get('airport'):
+            airport.import_scenario(data['airport'])
+        return _ok({"name": name, "aircraft_count": len(data.get("aircraft", []))})
+
+    @blueprint.route("/scenario/scenarios/<name>", methods=["DELETE"])
+    def delete_scenario(name: str) -> Response:
+        """Delete a saved scenario file."""
+        if not _NAME_RE.match(name):
+            return _error("Invalid scenario name.")
+        path = _scenario_path(scenarios_dir, name)
+        if os.path.isfile(path):
+            os.remove(path)
+        return _ok({"name": name})
+
+    return blueprint

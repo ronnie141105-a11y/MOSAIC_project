@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='operations.css') }}">
+<script defer src="{{ url_for('static', filename='weather_radar.js') }}"></script>
+<script defer src="{{ url_for('static', filename='operations.js') }}"></script>
+<aside id="wx-strip" hidden aria-label="Current VVTS METAR and TMA weather">
+  <div class="wx-strip-top"><strong id="wx-condition">VVTS weather</strong><span id="wx-source" class="wx-tag">SIM METAR</span><span id="wx-summary"></span><button type="button" data-open-operations>Change weather</button></div>
+  <code id="wx-metar">Waiting for METAR…</code>
+</aside>
+<button type="button" id="operations-open" class="operations-launch">Weather &amp; ATFM <span id="operations-badge">VVTS</span></button>
+<dialog id="operations-dialog" aria-labelledby="operations-title">
+  <header class="ops-header"><div><small>VVTS airport &amp; TMA</small><h2 id="operations-title">Weather &amp; ATFM</h2></div><button id="operations-close" type="button" aria-label="Close weather and ATFM">×</button></header>
+  <div class="ops-content">
+    <p id="ops-unavailable" hidden>Start the VVTS mock simulation to use weather and ATFM: <code>python main.py --mock --profile tsn_tma</code>.</p>
+    <div id="ops-controls">
+      <section class="ops-section">
+        <div class="ops-section-title"><h3>Weather</h3><span id="ops-source" class="ops-pill">Simulated</span></div>
+        <form id="ops-weather-form">
+          <div class="ops-inline"><label class="ops-grow">Situation<select id="ops-preset" name="preset"></select></label><button type="submit" class="ops-primary">Set weather</button></div>
+          <p id="ops-weather-effect" class="ops-summary"></p>
+          <details class="ops-details"><summary>Weather settings</summary>
+            <div class="ops-form">
+              <label>Return to fair weather after (min)<input name="duration_min" type="number" min="0" max="180" value="0"><small>0 = until you change it</small></label>
+              <label>Normal departures / hour<input id="ops-nominal-dep" name="nominal_departures_per_hour" type="number" min="1" max="120" value="60"></label>
+              <label>Normal arrivals / hour<input id="ops-nominal-arr" name="nominal_arrivals_per_hour" type="number" min="1" max="120" value="40"></label>
+            </div>
+          </details>
+        </form>
+        <details class="ops-details"><summary>Paste a VVTS METAR</summary><form id="ops-metar-form"><label>Report<textarea id="ops-metar-input" maxlength="500" required placeholder="METAR VVTS 070000Z 25006KT 9999 FEW020 31/24 Q1010"></textarea></label><button type="submit">Use this METAR</button></form><p class="ops-help">User-supplied observation. TMA coverage is simulated; METAR is not a radar image.</p></details>
+      </section>
+      <section class="ops-section">
+        <div class="ops-section-title"><h3>Traffic &amp; capacity</h3><span id="ops-trigger" class="ops-pill"></span></div>
+        <div id="ops-capacity" class="ops-capacity"></div>
+        <p id="ops-recommendation" class="ops-summary"></p>
+        <button id="ops-use-recommendation" type="button" hidden>Use suggested measure</button>
+      </section>
+      <section class="ops-section">
+        <div class="ops-section-title"><h3>ATFM measure</h3><span id="ops-program-status" class="ops-pill">Off</span></div>
+        <form id="ops-program-form">
+          <label>Action<select name="type" id="ops-measure"><option value="departure_slots">Manage departure slots · CTOT</option><option value="minit">Space departures · MINIT</option><option value="ground_stop">Pause departures · ground stop</option><option value="arrival_metering">Meter TMA arrivals</option></select></label>
+          <p id="ops-measure-help" class="ops-summary"></p>
+          <div class="ops-inline"><label class="ops-grow">Keep active for<select name="duration_min"><option value="15">15 minutes</option><option value="30" selected>30 minutes</option><option value="60">1 hour</option></select></label><label id="ops-minit-field" class="ops-grow" hidden>Departure interval (min)<input name="minit_min" type="number" value="3" min="1" max="30"></label></div>
+          <details class="ops-details"><summary>Adjust rate &amp; reason</summary><div class="ops-form">
+            <label id="ops-rate-field">Target flights / hour<input name="rate_per_hour" id="ops-rate" type="number" value="20" min="1" max="120"></label>
+            <label>Reason<input id="ops-reason" name="reason" maxlength="200" placeholder="Filled automatically from the situation"></label>
+          </div></details>
+          <div class="ops-actions"><button type="submit">Preview changes</button><button id="ops-apply" type="button" class="ops-primary" disabled>Start measure</button><button id="ops-cancel" type="button" hidden>Stop measure</button></div>
+        </form>
+        <p id="ops-program-description" class="ops-summary">Preview the flights affected, then start the measure.</p>
+        <details id="ops-flight-details" class="ops-details"><summary id="ops-flight-summary">Flight schedule</summary><div class="ops-table-wrap"><table><thead><tr><th>Flight</th><th>Expected</th><th>Target</th><th>Delay</th><th>Action</th></tr></thead><tbody id="ops-slots"></tbody></table></div></details>
+      </section>
+      <details class="ops-section ops-details"><summary>Results &amp; activity</summary><p id="ops-results"></p><div id="ops-log"></div><p id="ops-note" class="ops-help"></p></details>
+    </div>
+    <p id="ops-error" role="alert" aria-live="polite"></p>
+  </div>
+</dialog>

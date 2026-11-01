@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MOSAIC · GA / FCFS / Reference</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='airnav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='case_scenarios.css') }}">
+  <script defer src="{{ url_for('static',filename='case_scenarios.js') }}"></script>
+</head>
+<body>
+<header><div><a class="brand" href="/">MOSAIC</a><span>Case study</span></div><nav><a href="/supervisor">Supervisor</a><a href="/scenario">Scenario Builder</a></nav></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">VVTS · CENTRE / APPROACH / TOWER</p><h1>GA · FCFS · Reference</h1><p>Two scenarios. Compare event delay and sector overload.</p></div></section>
+  <section class="card" id="optimizer">
+    <div class="study-toolbar"><label for="opt-case">Scenario<select id="opt-case"><option value="workbook_low_20">Nominal · 20 aircraft</option><option value="workbook_peak_50">Overload · 60 aircraft</option></select></label><p id="case-description" class="muted"></p><button id="opt-saved" class="quiet">Refresh results</button></div>
+    <p id="opt-error" role="alert" hidden></p>
+    <div id="opt-results" hidden>
+      <div class="optimizer-table"><table aria-label="GA, FCFS and Reference executed results"><thead><tr><th>Method</th><th>Event delay<br><span>aircraft-min</span></th><th>Sector overload<br><span>aircraft-min</span></th><th>Spacing &amp; runway</th></tr></thead><tbody id="native-rows"></tbody></table></div>
+      <p id="study-takeaway" class="takeaway"></p>
+      <p class="muted metric-note">Lower is better. <span id="study-sampling">GA values are mean ± sample SD across the saved runs.</span> Regional GDP and airborne delay are counted separately. FCFS is the better native result of the 5-minute and 10-minute grids. Both methods preserve origin departure queues and the same AC–BAOMY programme.</p>
+      <div class="downloads"><a href="/case-scenarios/model-guide">Current ATFM model guide ↓</a><span class="muted">Previous thesis figures need regeneration for this fixed-order model.</span></div>
+    </div>
+    <p id="results-loading" class="muted" role="status">Loading saved results…</p>
+  </section>
+
+  <section class="card replay-card">
+    <div class="replay-heading"><h2>Replay</h2><p id="status" class="muted">No scenario loaded.</p></div>
+    <p id="error" role="alert" hidden></p>
+    <div class="playback"><label class="sr-only" for="method">Replay plan</label><select id="method"><option value="TEAM_MIXED">GA</option><option value="FCFS">FCFS</option><option value="RECONSTRUCTED">Reference</option></select><button id="load-replay">Load replay</button><a href="/supervisor">Open Supervisor ↗</a></div>
+    <div id="playback-controls" hidden><div class="playback"><button id="play">Play</button><select id="speed" aria-label="Replay speed"><option value="1">1×</option><option value="5">5×</option><option value="10">10×</option><option value="30" selected>30×</option><option value="60">60×</option></select><button id="restart" class="quiet">Restart</button><button id="stop" class="quiet">Unload</button></div><div class="playback timeline"><input id="timeline" type="range" min="0" max="10800" step="20" value="0" aria-label="Replay time"><output id="clock"></output></div></div>
+  </section>
+
+  <details class="card technical" id="technical-details"><summary>Details &amp; study settings</summary>
+    <h2>How to explain the study</h2>
+    <p><strong>GA</strong> coordinates GDP/CTOT, crossing-time targets, speeds, short rejoining vectors and regional level caps. <strong>FCFS</strong> assigns CTOTs in fixed origin queues. <strong>Reference</strong> is the constructed schedule with the shared gate safety programme. All methods preserve departure queue order.</p>
+    <p>Both use the same initial traffic, routes, sector limits and safety rules. A sector is overloaded when its aircraft count exceeds its capacity. One extra aircraft for ten minutes is ten aircraft-minutes of overload.</p>
+    <p>Two synthetic scenarios. The saved run count is shown above. Passing spacing and runway checks does not mean sector overload is eliminated.</p>
+    <p id="opt-model" class="muted"></p>
+    <h2>GA, FCFS and Reference</h2>
+    <div class="optimizer-table"><table aria-label="Detailed executed results"><thead><tr><th>Method</th><th>Runs</th><th>Event delay<br>aircraft-min</th><th>Sector overload<br>aircraft-min</th><th>Cost units</th><th>Runway events in 3 h</th><th>Within capacity</th></tr></thead><tbody id="detail-rows"></tbody></table></div>
+    <p class="muted">Reference includes the shared gate safety programme before additional optimization. Ground Stop, rerouting and slot swapping are excluded. Costs are assumed units, not measured fuel or money.</p>
+    <p id="opt-native-feedback" class="muted"></p><p id="opt-run-info" class="muted hash"></p>
+    <div class="downloads"><a id="opt-download" href="#">Current raw results JSON ↓</a><a href="/case-scenarios/model-guide">Current ATFM model guide ↓</a></div>
+    <h2>Re-run the experiment</h2><p class="muted">This creates a new saved run and can take several minutes.</p>
+    <div class="optimizer-controls"><label>GA runs<select id="opt-seeds"><option value="1">1</option><option value="3">3</option><option value="10" selected>10</option></select></label><label>Population<input id="opt-population" type="number" min="4" max="150" value="60"></label><label>Generations<input id="opt-generations" type="number" min="1" max="300" value="120"></label><label>Fast evaluations / run<input id="opt-budget" type="number" min="50" max="20000" value="6000"></label><button id="opt-run">Re-run study</button></div>
+    <p id="opt-status" class="muted" role="status">Ready.</p>
+    <h2>Scenario assumptions</h2><ul id="notes"></ul>
+  </details>
+</main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "risk_weight": 0.25,
+  "eta_jitter_min": 2,
+  "capacity_drop": 1,
+  "training_count": 5,
+  "test_count": 12,
+  "training_seeds": [
+    101,
+    102,
+    103,
+    104
+  ],
+  "test_seeds": [
+    201
+  ],
+  "training_realizations": [
+    {
+      "nominal": true
+    }
+  ],
+  "test_realizations": [
+    {
+      "noise_seed": 201
+    }
+  ]
+}

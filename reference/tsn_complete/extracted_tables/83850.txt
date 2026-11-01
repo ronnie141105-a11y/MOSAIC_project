@@ -1,0 +1,61 @@
+STANDARD DEPARTURE CHART -                                TRANSITION LVL        FL190                HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                  TR ANSITION ALT 5500 m                                                      RNAV RWY 25L/R
+                                                                                                                                  ANTRI 2D, LANHI 2D
+
+
+
+    LANHI 2D DEPARTURE
+     Serial        Path        Waypoint        Fly-          Course         Magnetic      Distance        Turn       Altitude     Speed
+    number      D escriptor     Identifier     over          °M(°T)         Variation       (km)       Direction        (m)         limit     N av Spec
+                                                                                                                                  (km/h)
+    INITIAL C LIMB R WY 25L
+       010           CF          TS612           Y             250              +1           7.1            -            -          -445       RNAV 1
+       020           DF          TS626           -              -               +1            -             -         +1200           -        RNAV 1
+    INITIAL C LIMB R WY 25R
+       010           CF          TS614           Y             250              +1           7.2            -            -          -445       RNAV 1
+       020           DF          TS626           -              -               +1            -             -         +1200           -        RNAV 1
+    FROM TS626
+       010           IF          TS626           -              -               +1            -             -         +1200           -        RNAV 1
+       020           TF          TS628           -       070     (069.1)        +1           9.8            -         -2750           -        RNAV 1
+       030           TF          TS632           -       070     (069.1)        +1          14.8            -         +3050           -        RNAV 1
+       040           TF          LANHI           -       133     (131.9)        +1          51.2            -            -            -        RNAV 1
+    ELSAS TRANSITION
+     Serial        Path        Waypoint        Fly-          Course         Magnetic      Distance        Turn       Altitude     Speed
+    number      D escriptor     Identifier     over          °M(°T)         Variation       (km)       Direction        (m)         limit     N av Spec
+                                                                                                                                  (km/h)
+       010           IF          LANHI           -              -               +1            -             -            -            -        RNAV 1
+       020           TF          ELSAS           -       128     (127.3)        +1          49.2            -            -            -        RNAV 1
+
+ 2.    WAYPOINT LIST
+
+    WAYPOINT ID                  COORD INATES (W GS-84)
+         AN TRI            11°09'41.423”N          107°14'10.485”E
+         BIXE X            11°36'13.277”N          108°08'19.311”E
+         DOVIN             11°55'01.000”N          108°06'29.000”E
+         ELSAS             10°08'12.000”N          107°32'54.000”E
+         LANHI             10°24'22.000”N          107°11'29.000”E
+        PATMA              12°20'11.000”N          107°48'36.000”E
+          PTH              10°55'41.000”N          108°04'19.000”E
+         TS612             10°47'15.699”N          106°34'26.946”E
+         TS614             10°47'26.829”N          106°34'22.644”E
+         TS626             10°38'09.532”N          106°37'57.938”E
+         TS628             10°40'03.476”N          106°42'59.655”E
+         TS632             10°42'55.314”N          106°50'35.195”E
+         TS814             10°53'43.978”N          107°04'21.443”E
+         TS816             11°01'42.451”N          107°09'15.652”E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V2\VVTS_SID RNAV RWY 25LR ANTRI 2D LANHI
+2D_TABULAR_V2.docx

@@ -1,0 +1,2165 @@
+{
+  "case_id": "test_full_cycle",
+  "label": "T4 \u00b7 Full cycle \u00b7 10 departures + 10 arrivals",
+  "basis": "Stand \u2192 taxi \u2192 25L \u2192 SID \u2192 Centre, and Centre \u2192 STAR \u2192 25R \u2192 taxi \u2192 stand.",
+  "synthetic": true,
+  "system_test_version": "full-cycle-1",
+  "local_start": "2026-10-20T02:00:00+00:00",
+  "local_end": "2026-10-20T04:11:07+00:00",
+  "duration_s": 7867,
+  "connected_fir": true,
+  "counts": {
+    "total": 20,
+    "arrivals": 10,
+    "departures": 10
+  },
+  "flights": [
+    {
+      "callsign": "TDEP01",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "procedure": "SAPEN2D",
+      "stand_id": "n275",
+      "adep": "VVTS",
+      "ades": "VVNB",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "SYNTHETIC CONNECTOR",
+      "stand": "S-03",
+      "start_s": 0,
+      "off_block_time_s": 30,
+      "completed_s": 2318.0,
+      "simulated_slot_utc": "2026-10-20T02:02:24+00:00",
+      "planned_event_utc": "2026-10-20T02:02:24+00:00",
+      "first_track_utc": "2026-10-20T02:03:08+00:00",
+      "last_track_utc": "2026-10-20T02:38:37+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR01",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "procedure": "BITIS2H",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "stand": "S-86",
+      "start_s": 0,
+      "off_block_time_s": null,
+      "completed_s": 3025.0,
+      "simulated_slot_utc": "2026-10-20T02:47:54+00:00",
+      "planned_event_utc": "2026-10-20T02:47:54+00:00",
+      "first_track_utc": "2026-10-20T02:00:00+00:00",
+      "last_track_utc": "2026-10-20T02:48:55+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP02",
+      "aircraft_type": "A321",
+      "direction": "departure",
+      "procedure": "XOBAV2D",
+      "stand_id": "n273",
+      "adep": "VVTS",
+      "ades": "VVCR",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "W9 / M765",
+      "stand": "S-01",
+      "start_s": 150,
+      "off_block_time_s": 180,
+      "completed_s": 3720.0,
+      "simulated_slot_utc": "2026-10-20T02:04:42+00:00",
+      "planned_event_utc": "2026-10-20T02:04:42+00:00",
+      "first_track_utc": "2026-10-20T02:05:26+00:00",
+      "last_track_utc": "2026-10-20T03:01:59+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR02",
+      "aircraft_type": "A321",
+      "direction": "arrival",
+      "procedure": "DALAP2H",
+      "adep": "VVDN",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "DALAP2H transition / N500",
+      "stand": "S-85",
+      "start_s": 900,
+      "off_block_time_s": null,
+      "completed_s": 3232.0,
+      "simulated_slot_utc": "2026-10-20T02:51:16+00:00",
+      "planned_event_utc": "2026-10-20T02:51:16+00:00",
+      "first_track_utc": "2026-10-20T02:15:00+00:00",
+      "last_track_utc": "2026-10-20T02:52:17+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP03",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "procedure": "ANTRI2D",
+      "stand_id": "n277",
+      "adep": "VVTS",
+      "ades": "VVDN",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "W1 / B202",
+      "stand": "S-05",
+      "start_s": 240,
+      "off_block_time_s": 270,
+      "completed_s": 3345.0,
+      "simulated_slot_utc": "2026-10-20T02:06:52+00:00",
+      "planned_event_utc": "2026-10-20T02:06:52+00:00",
+      "first_track_utc": "2026-10-20T02:07:36+00:00",
+      "last_track_utc": "2026-10-20T02:55:44+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR03",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "procedure": "VICAL3H",
+      "adep": "VVCR",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "VICAL3H transition / W9",
+      "stand": "S-84",
+      "start_s": 1470,
+      "off_block_time_s": null,
+      "completed_s": 4082.0,
+      "simulated_slot_utc": "2026-10-20T03:05:21+00:00",
+      "planned_event_utc": "2026-10-20T03:05:21+00:00",
+      "first_track_utc": "2026-10-20T02:24:30+00:00",
+      "last_track_utc": "2026-10-20T03:06:22+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP04",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "procedure": "KADUM2D",
+      "stand_id": "n279",
+      "adep": "VVTS",
+      "ades": "VVPQ",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "Q2 / W12 / W1 / B202",
+      "stand": "S-07",
+      "start_s": 540,
+      "off_block_time_s": 570,
+      "completed_s": 3548.0,
+      "simulated_slot_utc": "2026-10-20T02:12:15+00:00",
+      "planned_event_utc": "2026-10-20T02:12:15+00:00",
+      "first_track_utc": "2026-10-20T02:12:59+00:00",
+      "last_track_utc": "2026-10-20T02:59:07+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR04",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "procedure": "BITIS2H",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "stand": "S-M3",
+      "start_s": 1590,
+      "off_block_time_s": null,
+      "completed_s": 4627.0,
+      "simulated_slot_utc": "2026-10-20T03:14:24+00:00",
+      "planned_event_utc": "2026-10-20T03:14:24+00:00",
+      "first_track_utc": "2026-10-20T02:26:30+00:00",
+      "last_track_utc": "2026-10-20T03:15:25+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP05",
+      "aircraft_type": "A321",
+      "direction": "departure",
+      "procedure": "SAPEN2D",
+      "stand_id": "n86",
+      "adep": "VVTS",
+      "ades": "VVNB",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "SYNTHETIC CONNECTOR",
+      "stand": "S-85",
+      "start_s": 630,
+      "off_block_time_s": 660,
+      "completed_s": 3144.0,
+      "simulated_slot_utc": "2026-10-20T02:16:10+00:00",
+      "planned_event_utc": "2026-10-20T02:16:10+00:00",
+      "first_track_utc": "2026-10-20T02:16:54+00:00",
+      "last_track_utc": "2026-10-20T02:52:23+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR05",
+      "aircraft_type": "A321",
+      "direction": "arrival",
+      "procedure": "DALAP2H",
+      "adep": "VVDN",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "DALAP2H transition / N500",
+      "stand": "S-M2",
+      "start_s": 2490,
+      "off_block_time_s": null,
+      "completed_s": 4831.0,
+      "simulated_slot_utc": "2026-10-20T03:17:46+00:00",
+      "planned_event_utc": "2026-10-20T03:17:46+00:00",
+      "first_track_utc": "2026-10-20T02:41:30+00:00",
+      "last_track_utc": "2026-10-20T03:18:47+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP06",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "procedure": "XOBAV2D",
+      "stand_id": "n78",
+      "adep": "VVTS",
+      "ades": "VVCR",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "W9 / M765",
+      "stand": "S-77",
+      "start_s": 1050,
+      "off_block_time_s": 1080,
+      "completed_s": 4779.0,
+      "simulated_slot_utc": "2026-10-20T02:22:21+00:00",
+      "planned_event_utc": "2026-10-20T02:22:21+00:00",
+      "first_track_utc": "2026-10-20T02:23:05+00:00",
+      "last_track_utc": "2026-10-20T03:19:38+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR06",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "procedure": "VICAL3H",
+      "adep": "VVCR",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "VICAL3H transition / W9",
+      "stand": "S-83",
+      "start_s": 3060,
+      "off_block_time_s": null,
+      "completed_s": 5695.0,
+      "simulated_slot_utc": "2026-10-20T03:31:51+00:00",
+      "planned_event_utc": "2026-10-20T03:31:51+00:00",
+      "first_track_utc": "2026-10-20T02:51:00+00:00",
+      "last_track_utc": "2026-10-20T03:32:52+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP07",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "procedure": "ANTRI2D",
+      "stand_id": "n84",
+      "adep": "VVTS",
+      "ades": "VVDN",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "W1 / B202",
+      "stand": "S-83",
+      "start_s": 1170,
+      "off_block_time_s": 1200,
+      "completed_s": 4420.0,
+      "simulated_slot_utc": "2026-10-20T02:24:47+00:00",
+      "planned_event_utc": "2026-10-20T02:24:47+00:00",
+      "first_track_utc": "2026-10-20T02:25:31+00:00",
+      "last_track_utc": "2026-10-20T03:13:39+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR07",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "procedure": "BITIS2H",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "stand": "S-M1",
+      "start_s": 3180,
+      "off_block_time_s": null,
+      "completed_s": 6223.0,
+      "simulated_slot_utc": "2026-10-20T03:40:54+00:00",
+      "planned_event_utc": "2026-10-20T03:40:54+00:00",
+      "first_track_utc": "2026-10-20T02:53:00+00:00",
+      "last_track_utc": "2026-10-20T03:41:55+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP08",
+      "aircraft_type": "A321",
+      "direction": "departure",
+      "procedure": "KADUM2D",
+      "stand_id": "n81",
+      "adep": "VVTS",
+      "ades": "VVPQ",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "Q2 / W12 / W1 / B202",
+      "stand": "S-80",
+      "start_s": 840,
+      "off_block_time_s": 870,
+      "completed_s": 3958.0,
+      "simulated_slot_utc": "2026-10-20T02:19:05+00:00",
+      "planned_event_utc": "2026-10-20T02:19:05+00:00",
+      "first_track_utc": "2026-10-20T02:19:49+00:00",
+      "last_track_utc": "2026-10-20T03:05:57+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR08",
+      "aircraft_type": "A321",
+      "direction": "arrival",
+      "procedure": "DALAP2H",
+      "adep": "VVDN",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "DALAP2H transition / N500",
+      "stand": "S-82",
+      "start_s": 4080,
+      "off_block_time_s": null,
+      "completed_s": 6440.0,
+      "simulated_slot_utc": "2026-10-20T03:44:16+00:00",
+      "planned_event_utc": "2026-10-20T03:44:16+00:00",
+      "first_track_utc": "2026-10-20T03:08:00+00:00",
+      "last_track_utc": "2026-10-20T03:45:17+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP09",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "procedure": "SAPEN2D",
+      "stand_id": "n56",
+      "adep": "VVTS",
+      "ades": "VVNB",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "SYNTHETIC CONNECTOR",
+      "stand": "S-71",
+      "start_s": 1380,
+      "off_block_time_s": 1410,
+      "completed_s": 3815.0,
+      "simulated_slot_utc": "2026-10-20T02:27:21+00:00",
+      "planned_event_utc": "2026-10-20T02:27:21+00:00",
+      "first_track_utc": "2026-10-20T02:28:05+00:00",
+      "last_track_utc": "2026-10-20T03:03:34+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR09",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "procedure": "VICAL3H",
+      "adep": "VVCR",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "VICAL3H transition / W9",
+      "stand": "S-104",
+      "start_s": 4650,
+      "off_block_time_s": null,
+      "completed_s": 7282.0,
+      "simulated_slot_utc": "2026-10-20T03:58:21+00:00",
+      "planned_event_utc": "2026-10-20T03:58:21+00:00",
+      "first_track_utc": "2026-10-20T03:17:30+00:00",
+      "last_track_utc": "2026-10-20T03:59:22+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TDEP10",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "procedure": "XOBAV2D",
+      "stand_id": "n77",
+      "adep": "VVTS",
+      "ades": "VVCR",
+      "requested_fl": 300,
+      "runway": "25L",
+      "centre_route": "W9 / M765",
+      "stand": "S-76",
+      "start_s": 1500,
+      "off_block_time_s": 1530,
+      "completed_s": 5220.0,
+      "simulated_slot_utc": "2026-10-20T02:29:42+00:00",
+      "planned_event_utc": "2026-10-20T02:29:42+00:00",
+      "first_track_utc": "2026-10-20T02:30:26+00:00",
+      "last_track_utc": "2026-10-20T03:26:59+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    },
+    {
+      "callsign": "TARR10",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "procedure": "BITIS2H",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "requested_fl": 300,
+      "runway": "25R",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "stand": "S-81",
+      "start_s": 4770,
+      "off_block_time_s": null,
+      "completed_s": 7832.0,
+      "simulated_slot_utc": "2026-10-20T04:07:24+00:00",
+      "planned_event_utc": "2026-10-20T04:07:24+00:00",
+      "first_track_utc": "2026-10-20T03:19:30+00:00",
+      "last_track_utc": "2026-10-20T04:08:25+00:00",
+      "evidence": "synthetic_full_cycle_native_simulation",
+      "synthetic": true
+    }
+  ],
+  "ground_replay_file": "ground_tracks.json.gz",
+  "lifecycle_events": {
+    "TDEP01": {
+      "off_block": 30.0,
+      "takeoff_clearance": 86.0,
+      "runway_entry": 95.0,
+      "takeoff": 144.0,
+      "tma_handoff": 188.0,
+      "sid_exit": 668.0,
+      "centre_handoff": 811.0,
+      "fir_route_exit": 2318.0
+    },
+    "TDEP02": {
+      "off_block": 180.0,
+      "takeoff_clearance": 224.0,
+      "runway_entry": 233.0,
+      "takeoff": 282.0,
+      "tma_handoff": 326.0,
+      "centre_handoff": 1021.0,
+      "sid_exit": 1032.0,
+      "fir_route_exit": 3720.0
+    },
+    "TDEP03": {
+      "off_block": 270.0,
+      "takeoff_clearance": 354.0,
+      "runway_entry": 363.0,
+      "takeoff": 412.0,
+      "tma_handoff": 456.0,
+      "centre_handoff": 1416.0,
+      "sid_exit": 1419.0,
+      "fir_route_exit": 3345.0
+    },
+    "TDEP04": {
+      "off_block": 570.0,
+      "takeoff_clearance": 677.0,
+      "runway_entry": 686.0,
+      "takeoff": 735.0,
+      "tma_handoff": 779.0,
+      "centre_handoff": 1680.0,
+      "sid_exit": 1685.0,
+      "fir_route_exit": 3548.0
+    },
+    "TDEP05": {
+      "off_block": 660.0,
+      "takeoff_clearance": 912.0,
+      "runway_entry": 921.0,
+      "takeoff": 970.0,
+      "tma_handoff": 1014.0,
+      "sid_exit": 1494.0,
+      "centre_handoff": 1637.0,
+      "fir_route_exit": 3144.0
+    },
+    "TDEP08": {
+      "off_block": 870.0,
+      "takeoff_clearance": 1087.0,
+      "runway_entry": 1096.0,
+      "takeoff": 1145.0,
+      "tma_handoff": 1189.0,
+      "centre_handoff": 2090.0,
+      "sid_exit": 2095.0,
+      "fir_route_exit": 3958.0
+    },
+    "TARR01": {
+      "approach_handoff": 983.0,
+      "approach_visible": 2671.0,
+      "touchdown": 2874.0,
+      "runway_exit": 2936.0,
+      "stand_arrival": 3025.0
+    },
+    "TDEP06": {
+      "off_block": 1080.0,
+      "takeoff_clearance": 1283.0,
+      "runway_entry": 1292.0,
+      "takeoff": 1341.0,
+      "tma_handoff": 1385.0,
+      "centre_handoff": 2080.0,
+      "sid_exit": 2091.0,
+      "fir_route_exit": 4779.0
+    },
+    "TDEP07": {
+      "off_block": 1200.0,
+      "takeoff_clearance": 1429.0,
+      "runway_entry": 1438.0,
+      "takeoff": 1487.0,
+      "tma_handoff": 1531.0,
+      "centre_handoff": 2491.0,
+      "sid_exit": 2494.0,
+      "fir_route_exit": 4420.0
+    },
+    "TDEP09": {
+      "off_block": 1410.0,
+      "takeoff_clearance": 1583.0,
+      "runway_entry": 1592.0,
+      "takeoff": 1641.0,
+      "tma_handoff": 1685.0,
+      "sid_exit": 2165.0,
+      "centre_handoff": 2308.0,
+      "fir_route_exit": 3815.0
+    },
+    "TDEP10": {
+      "off_block": 1530.0,
+      "takeoff_clearance": 1724.0,
+      "runway_entry": 1733.0,
+      "takeoff": 1782.0,
+      "tma_handoff": 1826.0,
+      "centre_handoff": 2521.0,
+      "sid_exit": 2532.0,
+      "fir_route_exit": 5220.0
+    },
+    "TARR02": {
+      "approach_handoff": 1842.0,
+      "approach_visible": 2873.0,
+      "touchdown": 3076.0,
+      "runway_exit": 3138.0,
+      "stand_arrival": 3232.0
+    },
+    "TARR03": {
+      "approach_handoff": 2364.0,
+      "approach_visible": 3718.0,
+      "touchdown": 3921.0,
+      "runway_exit": 3983.0,
+      "stand_arrival": 4082.0
+    },
+    "TARR04": {
+      "approach_handoff": 2573.0,
+      "approach_visible": 4261.0,
+      "touchdown": 4464.0,
+      "runway_exit": 4526.0,
+      "stand_arrival": 4627.0
+    },
+    "TARR05": {
+      "approach_handoff": 3432.0,
+      "approach_visible": 4463.0,
+      "touchdown": 4666.0,
+      "runway_exit": 4728.0,
+      "stand_arrival": 4831.0
+    },
+    "TARR06": {
+      "approach_handoff": 3954.0,
+      "approach_visible": 5308.0,
+      "touchdown": 5511.0,
+      "runway_exit": 5573.0,
+      "stand_arrival": 5695.0
+    },
+    "TARR07": {
+      "approach_handoff": 4163.0,
+      "approach_visible": 5851.0,
+      "touchdown": 6054.0,
+      "runway_exit": 6116.0,
+      "stand_arrival": 6223.0
+    },
+    "TARR08": {
+      "approach_handoff": 5022.0,
+      "approach_visible": 6053.0,
+      "touchdown": 6256.0,
+      "runway_exit": 6318.0,
+      "stand_arrival": 6440.0
+    },
+    "TARR09": {
+      "approach_handoff": 5544.0,
+      "approach_visible": 6898.0,
+      "touchdown": 7101.0,
+      "runway_exit": 7163.0,
+      "stand_arrival": 7282.0
+    },
+    "TARR10": {
+      "approach_handoff": 5753.0,
+      "approach_visible": 7441.0,
+      "touchdown": 7644.0,
+      "runway_exit": 7706.0,
+      "stand_arrival": 7832.0
+    }
+  },
+  "separation_audit": {
+    "sample_s": 1,
+    "horizontal_nm": 10,
+    "same_heading_horizontal_nm": 20,
+    "same_heading_tolerance_deg": 25,
+    "vertical_ft": 1000,
+    "separation_logic": "horizontal >= threshold OR vertical >= 1000 ft; airborne paths only",
+    "transfer_minimum_s": 120,
+    "minimum_arrival_transfer_gap_s": 208.568,
+    "violating_pairs": 0,
+    "pair_checks": [
+      {
+        "left": "TDEP01",
+        "right": "TARR01",
+        "violations": 0,
+        "minimum_horizontal_nm": 53.56203597377559,
+        "minimum_vertical_ft": 7.951387893153878
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP02",
+        "violations": 0,
+        "minimum_horizontal_nm": 7.7154003955896675,
+        "minimum_vertical_ft": 4.222686301836802
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR02",
+        "violations": 0,
+        "minimum_horizontal_nm": 174.18803502844807,
+        "minimum_vertical_ft": 12.097737654930825
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP03",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.45055492629605,
+        "minimum_vertical_ft": 99.6160819177785
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR03",
+        "violations": 0,
+        "minimum_horizontal_nm": 203.6509579922135,
+        "minimum_vertical_ft": 8.088173629952507
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP04",
+        "violations": 0,
+        "minimum_horizontal_nm": 36.89270879852611,
+        "minimum_vertical_ft": 5.299369558397302
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR04",
+        "violations": 0,
+        "minimum_horizontal_nm": 98.76988030867122,
+        "minimum_vertical_ft": 6.717069658559922
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 63.37145608532077,
+        "minimum_vertical_ft": 8055.153686540783
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 107.68198893125243,
+        "minimum_vertical_ft": 10100.231995916969
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 125.11739974095903,
+        "minimum_vertical_ft": 16444.607631035204
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 84.272211152568,
+        "minimum_vertical_ft": 9722.598620805278
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 143.51412368693516,
+        "minimum_vertical_ft": 14598.74705660909
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP01",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 160.35541198678936,
+        "minimum_vertical_ft": 19580.958478628305
+      },
+      {
+        "left": "TDEP01",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP02",
+        "violations": 0,
+        "minimum_horizontal_nm": 22.359467591922172,
+        "minimum_vertical_ft": 16.955685200160588
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR02",
+        "violations": 0,
+        "minimum_horizontal_nm": 1.972886495556883,
+        "minimum_vertical_ft": 1417.2000088849359
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP03",
+        "violations": 0,
+        "minimum_horizontal_nm": 48.51555566730552,
+        "minimum_vertical_ft": 2.911864913210593
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR03",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.753728734865458,
+        "minimum_vertical_ft": 1536.1059153856959
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP04",
+        "violations": 0,
+        "minimum_horizontal_nm": 35.324255302711194,
+        "minimum_vertical_ft": 14.742532913003743
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR04",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.80557449205641,
+        "minimum_vertical_ft": 8616.980713964822
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 22.70227525083913,
+        "minimum_vertical_ft": 9.655251551974288
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 79.01536415380767,
+        "minimum_vertical_ft": 18340.16672185002
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 14.105524091839394,
+        "minimum_vertical_ft": 8.77576534120999
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 6.499124178280122,
+        "minimum_vertical_ft": 9.87539203952474
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.291212152522276,
+        "minimum_vertical_ft": 8.060077153206294
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 25.647613860950074,
+        "minimum_vertical_ft": 2.6770356990236905
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR01",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 30.664343886977758,
+        "minimum_vertical_ft": 8.77576534120999
+      },
+      {
+        "left": "TARR01",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR02",
+        "violations": 0,
+        "minimum_horizontal_nm": 92.70157370834609,
+        "minimum_vertical_ft": 23.446174526830873
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP03",
+        "violations": 0,
+        "minimum_horizontal_nm": 6.1947576772638975,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR03",
+        "violations": 0,
+        "minimum_horizontal_nm": 0.10367408525255346,
+        "minimum_vertical_ft": 20.49223382432683
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP04",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.723802422120723,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR04",
+        "violations": 0,
+        "minimum_horizontal_nm": 118.08939607975641,
+        "minimum_vertical_ft": 14.59981075286123
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 38.98418949259407,
+        "minimum_vertical_ft": 6.568248734114604
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 88.18202293178413,
+        "minimum_vertical_ft": 526.1086877545495
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 69.84878955987918,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 157.77021810562817,
+        "minimum_vertical_ft": 4367.209652946152
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 99.7628318676168,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 276.15560706102883,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 58.914578728490696,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 118.15238919581402,
+        "minimum_vertical_ft": 933.0084427042748
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP02",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 97.14133597522574,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP02",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP03",
+        "violations": 0,
+        "minimum_horizontal_nm": 26.483502358672524,
+        "minimum_vertical_ft": 15.90061218855044
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR03",
+        "violations": 0,
+        "minimum_horizontal_nm": 19.86237596231012,
+        "minimum_vertical_ft": 4.245061696323319
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP04",
+        "violations": 0,
+        "minimum_horizontal_nm": 31.339253951716127,
+        "minimum_vertical_ft": 0.012064869493769947
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR04",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.11586219183465,
+        "minimum_vertical_ft": 5346.922199318158
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 90.88150607576031,
+        "minimum_vertical_ft": 4.4554289944044285
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 62.69095539913192,
+        "minimum_vertical_ft": 14783.970373999655
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 51.24403734501259,
+        "minimum_vertical_ft": 11.932757752061661
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 115.96655314555824,
+        "minimum_vertical_ft": 23576.401507316732
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 13.613332998078867,
+        "minimum_vertical_ft": 9.811517168178398
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 25.29260380382491,
+        "minimum_vertical_ft": 2.7589043258558377
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 48.42549489524231,
+        "minimum_vertical_ft": 11.277689803308022
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR02",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 26.668184143882623,
+        "minimum_vertical_ft": 6.740767506618795
+      },
+      {
+        "left": "TARR02",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR03",
+        "violations": 0,
+        "minimum_horizontal_nm": 151.62977443339247,
+        "minimum_vertical_ft": 13.869263279102597
+      },
+      {
+        "left": "TDEP03",
+        "right": "TDEP04",
+        "violations": 0,
+        "minimum_horizontal_nm": 10.232069608331617,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR04",
+        "violations": 0,
+        "minimum_horizontal_nm": 184.93758179281016,
+        "minimum_vertical_ft": 14.380484182151122
+      },
+      {
+        "left": "TDEP03",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 19.66835772486438,
+        "minimum_vertical_ft": 6.568248734114604
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 126.14299843297826,
+        "minimum_vertical_ft": 526.1086877545495
+      },
+      {
+        "left": "TDEP03",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 39.64931788114969,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 305.6631767262633,
+        "minimum_vertical_ft": 4367.209652946152
+      },
+      {
+        "left": "TDEP03",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 51.76154864718666,
+        "minimum_vertical_ft": 910.1315445408181
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 298.2101618056022,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP03",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 29.045721176283266,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP03",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 68.3672440369752,
+        "minimum_vertical_ft": 4590.00920838536
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP03",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 84.22503479598808,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP03",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR03",
+        "right": "TDEP04",
+        "violations": 0,
+        "minimum_horizontal_nm": 133.43327757825116,
+        "minimum_vertical_ft": 3.395152217162831
+      },
+      {
+        "left": "TARR03",
+        "right": "TARR04",
+        "violations": 0,
+        "minimum_horizontal_nm": 18.721096223061313,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TARR03",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 122.11423008866541,
+        "minimum_vertical_ft": 7.428676424573496
+      },
+      {
+        "left": "TARR03",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.756599964263106,
+        "minimum_vertical_ft": 4448.143865760691
+      },
+      {
+        "left": "TARR03",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 4.559784835045167,
+        "minimum_vertical_ft": 3.5928451861000212
+      },
+      {
+        "left": "TARR03",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 38.31859240792441,
+        "minimum_vertical_ft": 7020.805774278215
+      },
+      {
+        "left": "TARR03",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 57.76542653084762,
+        "minimum_vertical_ft": 2.431862936944526
+      },
+      {
+        "left": "TARR03",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 52.516917696931934,
+        "minimum_vertical_ft": 14718.039203909651
+      },
+      {
+        "left": "TARR03",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 96.24410770089803,
+        "minimum_vertical_ft": 12.484984966149568
+      },
+      {
+        "left": "TARR03",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR03",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 73.25509466172014,
+        "minimum_vertical_ft": 0.0336853939370485
+      },
+      {
+        "left": "TARR03",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR03",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 9.456573020066555,
+        "minimum_vertical_ft": 13.231827252757284
+      },
+      {
+        "left": "TARR03",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP04",
+        "right": "TARR04",
+        "violations": 0,
+        "minimum_horizontal_nm": 156.56468328635125,
+        "minimum_vertical_ft": 1.2089514238505217
+      },
+      {
+        "left": "TDEP04",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 9.717629102031289,
+        "minimum_vertical_ft": 2.2170449247496435
+      },
+      {
+        "left": "TDEP04",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 105.44923180597432,
+        "minimum_vertical_ft": 526.1086877545495
+      },
+      {
+        "left": "TDEP04",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 22.79320905314619,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP04",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 287.07868756367424,
+        "minimum_vertical_ft": 4367.209652946152
+      },
+      {
+        "left": "TDEP04",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 31.768442493006454,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP04",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 287.5056970222246,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP04",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 12.642795441518103,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP04",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP04",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 41.63186308490788,
+        "minimum_vertical_ft": 2610.3527938960797
+      },
+      {
+        "left": "TDEP04",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP04",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 58.47229628047496,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP04",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR04",
+        "right": "TDEP05",
+        "violations": 0,
+        "minimum_horizontal_nm": 80.94337098688635,
+        "minimum_vertical_ft": 11.626775777520379
+      },
+      {
+        "left": "TARR04",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 1.972886495556883,
+        "minimum_vertical_ft": 1417.2000088849359
+      },
+      {
+        "left": "TARR04",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 50.52876878677409,
+        "minimum_vertical_ft": 17.924998509723082
+      },
+      {
+        "left": "TARR04",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.753728734865458,
+        "minimum_vertical_ft": 1536.1059153856959
+      },
+      {
+        "left": "TARR04",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 84.45485203476292,
+        "minimum_vertical_ft": 2.8223254996937612
+      },
+      {
+        "left": "TARR04",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.80557449205641,
+        "minimum_vertical_ft": 8616.980713964822
+      },
+      {
+        "left": "TARR04",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 116.71046403883011,
+        "minimum_vertical_ft": 4.9016712043230655
+      },
+      {
+        "left": "TARR04",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": 79.01536415380767,
+        "minimum_vertical_ft": 18340.16672185002
+      },
+      {
+        "left": "TARR04",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 56.511146257715176,
+        "minimum_vertical_ft": 12.194250924192602
+      },
+      {
+        "left": "TARR04",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR04",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 25.76287741758799,
+        "minimum_vertical_ft": 9.255546690106712
+      },
+      {
+        "left": "TARR04",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP05",
+        "right": "TARR05",
+        "violations": 0,
+        "minimum_horizontal_nm": 262.1472508259699,
+        "minimum_vertical_ft": 15.222335781098081
+      },
+      {
+        "left": "TDEP05",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 22.063346121878048,
+        "minimum_vertical_ft": 4.117814288740192
+      },
+      {
+        "left": "TDEP05",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 283.6928791369349,
+        "minimum_vertical_ft": 3551.2252347435387
+      },
+      {
+        "left": "TDEP05",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 31.75321245482336,
+        "minimum_vertical_ft": 4270.092253962619
+      },
+      {
+        "left": "TDEP05",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP05",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 9.792270017357424,
+        "minimum_vertical_ft": 1.285868741102604
+      },
+      {
+        "left": "TDEP05",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP05",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 44.860932578846395,
+        "minimum_vertical_ft": 6543.593370057726
+      },
+      {
+        "left": "TDEP05",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP05",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 61.699454874800075,
+        "minimum_vertical_ft": 1785.306322889308
+      },
+      {
+        "left": "TDEP05",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR05",
+        "right": "TDEP06",
+        "violations": 0,
+        "minimum_horizontal_nm": 103.02580915444916,
+        "minimum_vertical_ft": 9.48470466101935
+      },
+      {
+        "left": "TARR05",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 19.86237596231012,
+        "minimum_vertical_ft": 4.245061696323319
+      },
+      {
+        "left": "TARR05",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 55.02381037639366,
+        "minimum_vertical_ft": 20.088453610074794
+      },
+      {
+        "left": "TARR05",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.11586219183465,
+        "minimum_vertical_ft": 5346.922199318158
+      },
+      {
+        "left": "TARR05",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 88.17478152773994,
+        "minimum_vertical_ft": 21.385776228140458
+      },
+      {
+        "left": "TARR05",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": 62.69095539913192,
+        "minimum_vertical_ft": 14783.970373999655
+      },
+      {
+        "left": "TARR05",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 184.88212023636945,
+        "minimum_vertical_ft": 5.361325309753738
+      },
+      {
+        "left": "TARR05",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": 115.96655314555824,
+        "minimum_vertical_ft": 23576.401507316732
+      },
+      {
+        "left": "TARR05",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 93.33370475198822,
+        "minimum_vertical_ft": 22.465706755891006
+      },
+      {
+        "left": "TARR05",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP06",
+        "right": "TARR06",
+        "violations": 0,
+        "minimum_horizontal_nm": 31.27867408529026,
+        "minimum_vertical_ft": 4367.209652946152
+      },
+      {
+        "left": "TDEP06",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 6.956153602779908,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP06",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 163.50071496523722,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP06",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 8.450493720763207,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP06",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": 79.89519795999725,
+        "minimum_vertical_ft": 526.1086877545495
+      },
+      {
+        "left": "TDEP06",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 14.838735863951152,
+        "minimum_vertical_ft": 6.568248734114604
+      },
+      {
+        "left": "TDEP06",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": 221.19511304433902,
+        "minimum_vertical_ft": 4367.209652946152
+      },
+      {
+        "left": "TDEP06",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.01362471814969,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP06",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": 338.2492700181516,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TARR06",
+        "right": "TDEP07",
+        "violations": 0,
+        "minimum_horizontal_nm": 212.11853306741756,
+        "minimum_vertical_ft": 8.80925090162782
+      },
+      {
+        "left": "TARR06",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 18.721096223061313,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TARR06",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 253.1902917547813,
+        "minimum_vertical_ft": 4367.209652946152
+      },
+      {
+        "left": "TARR06",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.756599964263106,
+        "minimum_vertical_ft": 4448.143865760691
+      },
+      {
+        "left": "TARR06",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 212.9392648163778,
+        "minimum_vertical_ft": 1.8964632719143992
+      },
+      {
+        "left": "TARR06",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": 38.31859240792441,
+        "minimum_vertical_ft": 7020.805774278215
+      },
+      {
+        "left": "TARR06",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 0.10367408525212403,
+        "minimum_vertical_ft": 1028.2379480319214
+      },
+      {
+        "left": "TARR06",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": 52.516917696931934,
+        "minimum_vertical_ft": 14718.039203909651
+      },
+      {
+        "left": "TDEP07",
+        "right": "TARR07",
+        "violations": 0,
+        "minimum_horizontal_nm": 236.9067563757517,
+        "minimum_vertical_ft": 13.017315243148914
+      },
+      {
+        "left": "TDEP07",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 10.75366636833699,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP07",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": 185.83700648202355,
+        "minimum_vertical_ft": 526.1086877545495
+      },
+      {
+        "left": "TDEP07",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 6.891943590297388,
+        "minimum_vertical_ft": 0.4908143413995276
+      },
+      {
+        "left": "TDEP07",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP07",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 9.827356284381828,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP07",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR07",
+        "right": "TDEP08",
+        "violations": 0,
+        "minimum_horizontal_nm": 262.7801690348735,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TARR07",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": 1.972886495556883,
+        "minimum_vertical_ft": 1417.2000088849359
+      },
+      {
+        "left": "TARR07",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 103.74756913903343,
+        "minimum_vertical_ft": 3.013013852527365
+      },
+      {
+        "left": "TARR07",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.753728734865458,
+        "minimum_vertical_ft": 1536.1059153856959
+      },
+      {
+        "left": "TARR07",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 124.68499415372332,
+        "minimum_vertical_ft": 9.787912184900051
+      },
+      {
+        "left": "TARR07",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.80557449205641,
+        "minimum_vertical_ft": 8616.980713964822
+      },
+      {
+        "left": "TDEP08",
+        "right": "TARR08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP08",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": 16.601782681676116,
+        "minimum_vertical_ft": 6.568248734114604
+      },
+      {
+        "left": "TDEP08",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP08",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 24.651479028460933,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP08",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR08",
+        "right": "TDEP09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR08",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": 19.86237596231012,
+        "minimum_vertical_ft": 4.245061696323319
+      },
+      {
+        "left": "TARR08",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 86.77796237536532,
+        "minimum_vertical_ft": 526.1086877545495
+      },
+      {
+        "left": "TARR08",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.11586219183465,
+        "minimum_vertical_ft": 5346.922199318158
+      },
+      {
+        "left": "TDEP09",
+        "right": "TARR09",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TDEP09",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 7.883114482724615,
+        "minimum_vertical_ft": 0.4271420456425403
+      },
+      {
+        "left": "TDEP09",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TARR09",
+        "right": "TDEP10",
+        "violations": 0,
+        "minimum_horizontal_nm": 168.52019614019542,
+        "minimum_vertical_ft": 4367.209652946152
+      },
+      {
+        "left": "TARR09",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": 18.721096223061313,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TDEP10",
+        "right": "TARR10",
+        "violations": 0,
+        "minimum_horizontal_nm": 286.7429720068043,
+        "minimum_vertical_ft": 0.0
+      }
+    ],
+    "transfer_events": [
+      {
+        "callsign": "TDEP01",
+        "direction": "departure",
+        "procedure": "SAPEN2D",
+        "time_s": 810.572,
+        "fix": "VVTS_40NM",
+        "lat": 11.08651171545135,
+        "lon": 106.02938300003515
+      },
+      {
+        "callsign": "TARR01",
+        "direction": "arrival",
+        "procedure": "BITIS2H",
+        "time_s": 982.266,
+        "fix": "VVTS_40NM",
+        "lat": 10.275365015852213,
+        "lon": 106.25787444050154
+      },
+      {
+        "callsign": "TDEP02",
+        "direction": "departure",
+        "procedure": "XOBAV2D",
+        "time_s": 1020.432,
+        "fix": "VVTS_40NM",
+        "lat": 10.152210701119426,
+        "lon": 106.6391287332002
+      },
+      {
+        "callsign": "TARR02",
+        "direction": "arrival",
+        "procedure": "DALAP2H",
+        "time_s": 1841.122,
+        "fix": "VVTS_40NM",
+        "lat": 10.989531456358664,
+        "lon": 107.30623918520577
+      },
+      {
+        "callsign": "TDEP03",
+        "direction": "departure",
+        "procedure": "ANTRI2D",
+        "time_s": 1415.05,
+        "fix": "VVTS_40NM",
+        "lat": 11.158245117987187,
+        "lon": 107.23423728543301
+      },
+      {
+        "callsign": "TARR03",
+        "direction": "arrival",
+        "procedure": "VICAL3H",
+        "time_s": 2363.698,
+        "fix": "VVTS_40NM",
+        "lat": 10.160015143970735,
+        "lon": 106.75458210183584
+      },
+      {
+        "callsign": "TDEP04",
+        "direction": "departure",
+        "procedure": "KADUM2D",
+        "time_s": 1679.326,
+        "fix": "VVTS_40NM",
+        "lat": 11.353618707894638,
+        "lon": 107.05472894578983
+      },
+      {
+        "callsign": "TARR04",
+        "direction": "arrival",
+        "procedure": "BITIS2H",
+        "time_s": 2572.266,
+        "fix": "VVTS_40NM",
+        "lat": 10.275365015852213,
+        "lon": 106.25787444050154
+      },
+      {
+        "callsign": "TDEP05",
+        "direction": "departure",
+        "procedure": "SAPEN2D",
+        "time_s": 1636.572,
+        "fix": "VVTS_40NM",
+        "lat": 11.08651171545135,
+        "lon": 106.02938300003515
+      },
+      {
+        "callsign": "TARR05",
+        "direction": "arrival",
+        "procedure": "DALAP2H",
+        "time_s": 3431.122,
+        "fix": "VVTS_40NM",
+        "lat": 10.989531456358664,
+        "lon": 107.30623918520577
+      },
+      {
+        "callsign": "TDEP06",
+        "direction": "departure",
+        "procedure": "XOBAV2D",
+        "time_s": 2079.432,
+        "fix": "VVTS_40NM",
+        "lat": 10.152210701119426,
+        "lon": 106.6391287332002
+      },
+      {
+        "callsign": "TARR06",
+        "direction": "arrival",
+        "procedure": "VICAL3H",
+        "time_s": 3953.698,
+        "fix": "VVTS_40NM",
+        "lat": 10.160015143970735,
+        "lon": 106.75458210183584
+      },
+      {
+        "callsign": "TDEP07",
+        "direction": "departure",
+        "procedure": "ANTRI2D",
+        "time_s": 2490.05,
+        "fix": "VVTS_40NM",
+        "lat": 11.158245117987187,
+        "lon": 107.23423728543301
+      },
+      {
+        "callsign": "TARR07",
+        "direction": "arrival",
+        "procedure": "BITIS2H",
+        "time_s": 4162.266,
+        "fix": "VVTS_40NM",
+        "lat": 10.275365015852213,
+        "lon": 106.25787444050154
+      },
+      {
+        "callsign": "TDEP08",
+        "direction": "departure",
+        "procedure": "KADUM2D",
+        "time_s": 2089.326,
+        "fix": "VVTS_40NM",
+        "lat": 11.353618707894638,
+        "lon": 107.05472894578983
+      },
+      {
+        "callsign": "TARR08",
+        "direction": "arrival",
+        "procedure": "DALAP2H",
+        "time_s": 5021.122,
+        "fix": "VVTS_40NM",
+        "lat": 10.989531456358664,
+        "lon": 107.30623918520577
+      },
+      {
+        "callsign": "TDEP09",
+        "direction": "departure",
+        "procedure": "SAPEN2D",
+        "time_s": 2307.572,
+        "fix": "VVTS_40NM",
+        "lat": 11.08651171545135,
+        "lon": 106.02938300003515
+      },
+      {
+        "callsign": "TARR09",
+        "direction": "arrival",
+        "procedure": "VICAL3H",
+        "time_s": 5543.698,
+        "fix": "VVTS_40NM",
+        "lat": 10.160015143970735,
+        "lon": 106.75458210183584
+      },
+      {
+        "callsign": "TDEP10",
+        "direction": "departure",
+        "procedure": "XOBAV2D",
+        "time_s": 2520.432,
+        "fix": "VVTS_40NM",
+        "lat": 10.152210701119426,
+        "lon": 106.6391287332002
+      },
+      {
+        "callsign": "TARR10",
+        "direction": "arrival",
+        "procedure": "BITIS2H",
+        "time_s": 5752.266,
+        "fix": "VVTS_40NM",
+        "lat": 10.275365015852213,
+        "lon": 106.25787444050154
+      }
+    ],
+    "arrival_transfer_gaps_s": [
+      858.856,
+      522.576,
+      208.568,
+      858.856,
+      522.576,
+      208.568,
+      858.856,
+      522.576,
+      208.568
+    ]
+  },
+  "limitations": [
+    "Synthetic functional traffic, not observed flights or real FPL data.",
+    "Generated with the native airport graph and connected SID/STAR procedure simulator at 1 s steps.",
+    "Ground uses native taxi spacing and runway occupancy; airborne 10/20 NM or 1000 ft criteria are audited separately.",
+    "A320/A321 share the current nominal performance model; this is not aircraft-type performance calibration.",
+    "Automatic test clearances, a 40 NM study handoff boundary and saved historical airway geometry are simulation assumptions.",
+    "Playback is read-only so pause, seek and restart preserve the audited traffic."
+  ]
+}

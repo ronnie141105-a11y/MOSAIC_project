@@ -1,0 +1,54 @@
+{
+  "python_tests": 48,
+  "javascript_tests": 22,
+  "syntax_checked": [
+    "case_scenarios.js",
+    "control_room.js",
+    "scenario_builder.js"
+  ],
+  "preview_url": "http://127.0.0.1:8051/case-scenarios",
+  "supervisor_url": "http://127.0.0.1:8051/supervisor",
+  "browser_verified": [
+    "overload FCFS from Supervisor",
+    "overload GA ground from Scenario Builder",
+    "both-case native results in analysis interface"
+  ],
+  "scenarios": {
+    "workbook_low_20": {
+      "run_id": "20261030T060753Z-4f10acec",
+      "native_trials": 8,
+      "safe_trials": 8,
+      "counts": {
+        "total": 20,
+        "arrivals": 11,
+        "departures": 9
+      },
+      "input_sha256": {
+        "manifest.json": "2132729b2f4e3ef7450f34e4d020445c250717991c40e3352435df017b9c60c7",
+        "tracks.csv": "39a6e9d481563fe4aeee149a47c7d996b30ecb98be0c234ece57ea94357228e2",
+        "ground_tracks.json.gz": "8f0c91f0ca0a3559b1da6a2d630c5db3f193fd9afd59bf38b04fcaa7124af56f",
+        "planning.csv": "f744b63f0acae335739a6d4c6e77c5d199861de70b23b3a6f9e237413a31784a",
+        "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+        "fpl.csv": "f744b63f0acae335739a6d4c6e77c5d199861de70b23b3a6f9e237413a31784a"
+      }
+    },
+    "workbook_peak_50": {
+      "run_id": "20261030T060415Z-65de65fb",
+      "native_trials": 8,
+      "safe_trials": 8,
+      "counts": {
+        "total": 60,
+        "arrivals": 36,
+        "departures": 24
+      },
+      "input_sha256": {
+        "manifest.json": "673cd87f5fe797ea8e23dcf92a5b9f722bd1b80195f0991715e998cc827f93bc",
+        "tracks.csv": "91db1584defba674f90f509594f44ef993dd3d68510798188179eb917cbc2dee",
+        "ground_tracks.json.gz": "e98665db6b6408e8c50c9e82a4b7ed702cd44f0540e7a13e16ce2f434cc4705c",
+        "planning.csv": "de750975b031fb72a1c694feda6ec1ec93db6091200260fffd68a1bba1c21dea",
+        "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+        "fpl.csv": "de750975b031fb72a1c694feda6ec1ec93db6091200260fffd68a1bba1c21dea"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+sector_id,capacity_aircraft,basis
+APPROACH,6,simultaneous_airborne_in_sector
+CENTRE_NE,4,simultaneous_airborne_in_sector
+CENTRE_SE,3,simultaneous_airborne_in_sector
+CENTRE_SW,3,simultaneous_airborne_in_sector
+CENTRE_NW,3,simultaneous_airborne_in_sector

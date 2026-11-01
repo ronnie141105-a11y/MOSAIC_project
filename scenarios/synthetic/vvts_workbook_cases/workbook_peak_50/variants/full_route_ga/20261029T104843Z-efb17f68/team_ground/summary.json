@@ -1,0 +1,106 @@
+{
+  "counts": {
+    "total": 50,
+    "arrivals": 29,
+    "departures": 21
+  },
+  "separation_audit": {
+    "sample_s": 1,
+    "violating_pairs": 0,
+    "arrival_transfer_minimum_s": 120,
+    "minimum_arrival_transfer_gap_s": 140.6270000000004
+  },
+  "surface_audit": {
+    "landing_release_fraction": 0.6666666666666666,
+    "violations": [],
+    "violating_pairs": 0
+  },
+  "sector_occupancy": {
+    "basis": "Simultaneously airborne within each geographic sector; excludes ground and other sectors",
+    "sample_s": 1,
+    "sectors": [
+      {
+        "id": "APPROACH",
+        "label": "VVTS Approach",
+        "inner_nm": 0,
+        "outer_nm": 40,
+        "start_deg": 0,
+        "end_deg": 360,
+        "capacity": 6,
+        "peak": 7,
+        "excess_aircraft_seconds": 36,
+        "seconds_over_capacity": 36,
+        "first_exceedance_s": 13118.0
+      },
+      {
+        "id": "CENTRE_NE",
+        "label": "Centre NE · W1 / LKH / PTH",
+        "inner_nm": 40,
+        "outer_nm": 200,
+        "start_deg": 0,
+        "end_deg": 135,
+        "capacity": 4,
+        "peak": 5,
+        "excess_aircraft_seconds": 177,
+        "seconds_over_capacity": 177,
+        "first_exceedance_s": 1650.0
+      },
+      {
+        "id": "CENTRE_SE",
+        "label": "Centre SE · VTV",
+        "inner_nm": 40,
+        "outer_nm": 200,
+        "start_deg": 135,
+        "end_deg": 180,
+        "capacity": 3,
+        "peak": 1,
+        "excess_aircraft_seconds": 0,
+        "seconds_over_capacity": 0,
+        "first_exceedance_s": null
+      },
+      {
+        "id": "CENTRE_SW",
+        "label": "Centre SW · BIBAN / XOBAV",
+        "inner_nm": 40,
+        "outer_nm": 200,
+        "start_deg": 180,
+        "end_deg": 300,
+        "capacity": 3,
+        "peak": 3,
+        "excess_aircraft_seconds": 0,
+        "seconds_over_capacity": 0,
+        "first_exceedance_s": null
+      },
+      {
+        "id": "CENTRE_NW",
+        "label": "Centre NW",
+        "inner_nm": 40,
+        "outer_nm": 200,
+        "start_deg": 300,
+        "end_deg": 360,
+        "capacity": 3,
+        "peak": 0,
+        "excess_aircraft_seconds": 0,
+        "seconds_over_capacity": 0,
+        "first_exceedance_s": null
+      }
+    ],
+    "total_excess_aircraft_seconds": 213
+  },
+  "duration_s": 14931,
+  "all_departures_spawn_at_stands": true,
+  "all_arrivals_park_at_stands": true,
+  "route_distribution": {
+    "KADUM_BMT": 6,
+    "W1_AC": 12,
+    "W1_LKH": 6,
+    "ANTRI_DOVIN": 5,
+    "ANTRI_PTH": 3,
+    "XOBAV_NIXIV": 5,
+    "PTH_BAOMY": 3,
+    "BIBAN_BITIS": 5,
+    "VTV": 3,
+    "LANHI_ELSAS": 2
+  },
+  "source_sha256": "4199bdcb5a15fd8c33eab2959c75c9f51b8ff53fdb78b086864f0fcd89f7489b"
+}

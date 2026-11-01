@@ -1,0 +1,188 @@
+{
+  "case_id": "test_arrival_stream",
+  "label": "T1 \u00b7 Arrival handoff stream",
+  "basis": "Four BITIS2H arrivals: Centre \u2192 Approach \u2192 Tower.",
+  "synthetic": true,
+  "system_test_version": "system-tests-1",
+  "local_start": "2026-10-20T02:00:00+00:00",
+  "local_end": "2026-10-20T03:13:30+00:00",
+  "duration_s": 4410,
+  "connected_fir": true,
+  "counts": {
+    "total": 4,
+    "arrivals": 4,
+    "departures": 0
+  },
+  "flights": [
+    {
+      "callsign": "TSTST01",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "BITIS2H",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "simulated_slot_utc": "2026-10-20T02:47:55+00:00",
+      "planned_event_utc": "2026-10-20T02:47:55+00:00",
+      "first_track_utc": "2026-10-20T02:00:00+00:00",
+      "last_track_utc": "2026-10-20T02:47:55+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTST02",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "BITIS2H",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "simulated_slot_utc": "2026-10-20T02:56:15+00:00",
+      "planned_event_utc": "2026-10-20T02:56:15+00:00",
+      "first_track_utc": "2026-10-20T02:08:20+00:00",
+      "last_track_utc": "2026-10-20T02:56:15+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTST03",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "BITIS2H",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "simulated_slot_utc": "2026-10-20T03:04:35+00:00",
+      "planned_event_utc": "2026-10-20T03:04:35+00:00",
+      "first_track_utc": "2026-10-20T02:16:40+00:00",
+      "last_track_utc": "2026-10-20T03:04:35+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTST04",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "BITIS2H",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "simulated_slot_utc": "2026-10-20T03:12:55+00:00",
+      "planned_event_utc": "2026-10-20T03:12:55+00:00",
+      "first_track_utc": "2026-10-20T02:25:00+00:00",
+      "last_track_utc": "2026-10-20T03:12:55+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    }
+  ],
+  "separation_audit": {
+    "sample_s": 1,
+    "horizontal_nm": 10,
+    "same_heading_horizontal_nm": 20,
+    "same_heading_tolerance_deg": 25,
+    "vertical_ft": 1000,
+    "separation_logic": "horizontal >= threshold OR vertical >= 1000 ft",
+    "admission_buffer_horizontal_nm": 0.3,
+    "admission_buffer_vertical_ft": 100,
+    "transfer_minimum_s": 120,
+    "minimum_arrival_transfer_gap_s": 500.0,
+    "violating_pairs": 0,
+    "pair_checks": [
+      {
+        "left": "TSTST01",
+        "right": "TSTST02",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.822985170974587,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TSTST01",
+        "right": "TSTST03",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.017048527464546,
+        "minimum_vertical_ft": 4809.249704287802
+      },
+      {
+        "left": "TSTST01",
+        "right": "TSTST04",
+        "violations": 0,
+        "minimum_horizontal_nm": 15.25263969547152,
+        "minimum_vertical_ft": 7550.3955854433325
+      },
+      {
+        "left": "TSTST02",
+        "right": "TSTST03",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.822985170974587,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TSTST02",
+        "right": "TSTST04",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.017048527464546,
+        "minimum_vertical_ft": 4809.249704287802
+      },
+      {
+        "left": "TSTST03",
+        "right": "TSTST04",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.822985170974587,
+        "minimum_vertical_ft": 0.0
+      }
+    ],
+    "transfer_events": [
+      {
+        "callsign": "TSTST01",
+        "direction": "arrival",
+        "time_s": 982.267,
+        "procedure": "BITIS2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.275365161194115,
+        "lon": 106.25787461494359
+      },
+      {
+        "callsign": "TSTST02",
+        "direction": "arrival",
+        "time_s": 1482.267,
+        "procedure": "BITIS2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.275365161194115,
+        "lon": 106.25787461494359
+      },
+      {
+        "callsign": "TSTST03",
+        "direction": "arrival",
+        "time_s": 1982.267,
+        "procedure": "BITIS2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.275365161194115,
+        "lon": 106.25787461494359
+      },
+      {
+        "callsign": "TSTST04",
+        "direction": "arrival",
+        "time_s": 2482.267,
+        "procedure": "BITIS2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.275365161194115,
+        "lon": 106.25787461494359
+      }
+    ],
+    "arrival_transfer_gaps_s": [
+      500.0,
+      500.0,
+      500.0
+    ]
+  },
+  "limitations": [
+    "Synthetic functional test; not real FPL, observed traffic or an ATFM case study.",
+    "Paths are generated by the existing procedure propagator and checked on a one-second grid.",
+    "Departure tracks begin at the runway; taxi movements are not part of these fixtures.",
+    "40 NM transfer fixes are study boundary intersections, not published transfer agreements."
+  ]
+}

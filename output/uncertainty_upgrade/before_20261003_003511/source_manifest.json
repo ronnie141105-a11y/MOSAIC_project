@@ -1,0 +1,11 @@
+{
+  "astra/optimization/atfm.py": "2d363a7e7454f7afa9fed3fc0654e5ed183620e3ae1147ae3b1d680842829bce",
+  "astra/dashboard/atfm_routes.py": "9379d5277ff8471ef35fe5acf83319942fb38b947092a98205cbff6f5c5e5a65",
+  "astra/dashboard/atfm.html": "6c915b48e5626a08bdfd20d84505d82c5932283031ff74affba89406c4f02e6c",
+  "astra/dashboard/atfm.js": "5d597c1e596fd4a581ef561195ea7626f21e26d21ed84869993c5b4d8d83abbb",
+  "scripts/run_atfm_experiment.py": "f930a06848cf3dfd9447aad696ded6670ffb795a19fb0687c48e3cc1e5480cc2",
+  "astra/optimization/uncertainty.py": null,
+  "tests/pytest/test_atfm_uncertainty.py": null,
+  "docs/ATFM_Uncertainty_Optimization.md": null,
+  "tests/pytest/test_atfm_uncertainty_api.py": null
+}

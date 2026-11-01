@@ -1,0 +1,26 @@
+[
+  {
+    "fix": "ESDOB",
+    "retained_source": "existing TMA catalogue",
+    "incoming_source": "VV-ENR-4_4-en.pdf (AIP Viet Nam)",
+    "difference_nm": 0.7370004151442825
+  },
+  {
+    "fix": "ESDOB",
+    "retained_source": "existing TMA catalogue",
+    "incoming_source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "difference_nm": 0.7370004151442825
+  },
+  {
+    "fix": "ESDOB",
+    "retained_source": "existing TMA catalogue",
+    "incoming_source": "VV-ENR-3_1-en.pdf ENR 3.1",
+    "difference_nm": 0.7370004151442825
+  },
+  {
+    "fix": "BMT",
+    "retained_source": "existing TMA catalogue",
+    "incoming_source": "VV-ENR-3_3-en.pdf ENR 3.3 (Area Navigation (RNAV) Routes)",
+    "difference_nm": 0.016285038901994654
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "pageSize": 1,
+  "page": 1,
+  "fromDate": "2026-10-07T17:00:00Z",
+  "toDate": "2026-10-08T16:59:59Z",
+  "flightIds": ["VN243"],
+  "toAirports": ["VVTS"],
+  "includeFlightPaths": true,
+  "includeFlightUrls": true
+}

@@ -1,0 +1,60 @@
+AIP Viet Nam                                                                                              AIRAC AIP SUP A45/23-17
+                                                                                                                          28 DEC 2023
+
+STANDARD ARRIVAL CHART -                         TRANSITION LVL       FL190             HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (STAR)                               TRANSITION ALT 5500 m                                                RNAV RWY 25L/R
+                                                                                                                    BITIS 2J   SAPEN 2J
+                                                                                                                                VICAL 3J
+
+
+  VICAL 3J ARRIVAL
+    Serial      Path      Waypoint      Fly–      Course      Magnetic Distance        Turn      Altitude     Speed
+   number Descriptor      Identifier    over      °M(°T)      Variation     (km)     Direction      (m)         limit     Nav Spec
+                                                                                                              (km/h)
+     010         IF        VICAL          –           –           +1          –          –           –           –         RNAV 1
+     020         TF        TS484          –     336 (335.4)       +1        86.8         –        +4550          –         RNAV 1
+     030         TF        TS482          –     017 (016.0)       +1        23.2         –        +3650          –         RNAV 1
+     040         TF        BUTGA          –     049 (047.6)       +1        37.5         –        +2150        -460        RNAV 1
+     050         TF       NUNGO           –     095 (094.0)       +1        12.2         –       @2150           –         RNAV 1
+     060         TF        TS468          –     095 (094.0)       +1        12.9         –           –           –         RNAV 1
+     070         TF        TS466          –     109 (108.0)       +1        12.0         –           –           –         RNAV 1
+     080         TF        TS464          –     126 (125.0)       +1        12.0         –           –           –         RNAV 1
+     090         TF        TS462          –     142 (140.5)       +1         9.9         –       @2150           –         RNAV 1
+     100         TF       BOMSU           –     239 (237.5)       +1        40.7         –        -1500        -425        RNAV 1
+                                                                                                   +790
+  NIXIV TRANSITION
+    Serial      Path      Waypoint      Fly–      Course      Magnetic Distance        Turn      Altitude     Speed
+   number Descriptor      Identifier    over      °M(°T)      Variation     (km)     Direction      (m)         limit     Nav Spec
+                                                                                                              (km/h)
+     010         IF         NIXIV         –           –           +1          –          –           –           –         RNAV 1
+     020         TF        VICAL          –     010 (008.7)       +1        84.3         –           –           –         RNAV 1
+
+ 2.   HOLDING PROCEDURES
+                      Inbound         Magnetic                            Turn           Altitude       Speed limit
+   Holding Fix        Course          Variation        Time (s)         Direction           (m)            (km/h)         Nav Spec
+                       °M(°T)
+      BITIS         029 (028.0)           +1               90               L             -FL200            -425           RNAV 1
+                                                                                          +2450
+     BUTGA          095 (094.0)           +1               60               L              -2450            -405           RNAV 1
+                                                                                          +2150
+
+ 3.   WAYPOINT LIST
+     Waypoint                Coordinates (WGS–84)
+     Identifier
+       BITIS         10°15'59.000”N         106°14'54.000”E
+      BOMSU          10°54'37.875”N         106°53'59.311”E
+      BUTGA          11°17'22.286”N         106°43'57.707”E
+       NIXIV         09°23'36.000”N         106°38'02.000”E
+      NUNGO          11°16'54.934”N         106°50'37.384”E
+      SAPEN          11°01'12.000”N         106°11'00.000”E
+        TRN          10°05'00.000”N         105°42'20.000”E
+       TS462         11°06'30.557”N         107°12'51.158”E
+       TS464         11°10'39.996”N         107°09'23.040”E
+       TS466         11°14'24.833”N         107°03'57.804”E
+       TS468         11°16'25.843”N         106°57'40.095”E
+       TS482         11°03'39.113”N         106°28'44.287”E
+       TS484         10°51'35.005”N         106°25'13.649”E
+       VICAL         10°08'46.853”N         106°45'01.988”E
+
+
+© 2023 Civil Aviation Authority of Viet Nam

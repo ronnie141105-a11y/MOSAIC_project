@@ -1,0 +1,535 @@
+"""
+Pure serialization functions (Milestone 8).
+
+Per the design review's proposed module layout, this is the *only* new
+"logic" module the dashboard introduces: every function here is a pure,
+side-effect-free transform from an existing Milestone 1-7 domain object
+(`AircraftState`, `TrafficSnapshot`, `PredictionResult`, `Cluster`,
+`ComplexityRegion`, `FourDArhac`, `ResolutionSet`) to a JSON-safe
+`dict`/`list`. No prediction, clustering, complexity, tracking,
+forecasting, or resolution math is performed here -- the dashboard is a
+read-only consumer, never a recomputation of what the pipeline already
+produced.
+
+`astra.dashboard.routes` is the only caller of `serialize_cycle_result`;
+the smaller per-type functions are exposed individually because
+`tests/test_dashboard.py` exercises them directly against hand-built
+objects, following the Milestone 3-7 test pattern.
+"""
+
+from typing import Dict, List, Optional, Tuple
+
+from astra.complexity.models import ComplexityRegion
+from astra.complexity.sector import SectorComplexitySample
+from astra.dashboard import scenario_geo
+from astra.dashboard.models import DashboardSnapshot
+from astra.hotspot.models import Cluster
+from astra.hotspot.spatial_box import HotspotBox
+from astra.interface.traffic_state import AircraftState, TrafficSnapshot
+from astra.pipeline import CycleResult
+from astra.resolution.models import (
+    JointResolutionCandidate,
+    ResolutionCandidate,
+    ResolutionLeg,
+    ResolutionSet,
+)
+from astra.tracking.models import FourDArhac
+from astra.trajectory.models import PredictionResult
+from astra.utils.config import ASTRAConfig
+
+
+def serialize_aircraft(aircraft: AircraftState) -> Dict:
+    """One `AircraftState` -> a JSON-safe dict for the traffic-map panel."""
+    return {
+        "callsign": aircraft.callsign,
+        "lat": aircraft.lat,
+        "lon": aircraft.lon,
+        "altitude_ft": aircraft.altitude_ft,
+        "ground_speed_kt": aircraft.ground_speed_kt,
+        "heading_deg": aircraft.heading_deg,
+        "vertical_speed_fpm": aircraft.vertical_speed_fpm,
+        "aircraft_type": aircraft.aircraft_type,
+    }
+
+
+def serialize_snapshot(snapshot: TrafficSnapshot) -> Dict:
+    """The observed `TrafficSnapshot` -> the traffic-map panel's live layer."""
+    return {
+        "timestamp_s": snapshot.timestamp_s,
+        "aircraft": [serialize_aircraft(ac) for ac in snapshot.as_list()],
+    }
+
+
+def serialize_prediction(prediction: PredictionResult) -> Dict[str, List[Dict]]:
+    """`PredictionResult` -> one predicted-position path per aircraft.
+
+    Reshaped from the engine's own `{horizon_min: PredictedSnapshot}`
+    layout (grouped by horizon) into `{callsign: [points...]}` (grouped
+    by aircraft), because the map panel draws one predicted-trajectory
+    polyline per aircraft, not one marker layer per horizon. Each point
+    carries its own `horizon_min` so the frontend can still label
+    individual horizons along the line.
+
+    Returns:
+        `{callsign: [{"horizon_min", "lat", "lon", "altitude_ft"}, ...]}`,
+        each aircraft's points ordered by ascending `horizon_min`. An
+        aircraft absent from a given horizon (e.g. it left the area of
+        interest in a future scenario) simply has fewer points.
+    """
+    paths: Dict[str, List[Dict]] = {}
+    for horizon_min in prediction.horizon_list():
+        predicted_snapshot = prediction.at(horizon_min)
+        for aircraft in predicted_snapshot:
+            paths.setdefault(aircraft.callsign, []).append(
+                {
+                    "horizon_min": horizon_min,
+                    "lat": aircraft.lat,
+                    "lon": aircraft.lon,
+                    "altitude_ft": aircraft.altitude_ft,
+                }
+            )
+    for points in paths.values():
+        points.sort(key=lambda point: point["horizon_min"])
+    return paths
+
+
+def serialize_cluster(cluster: Cluster) -> Dict:
+    """One `Cluster` -> a JSON-safe dict (centroid + extent + membership)."""
+    return {
+        "cluster_id": cluster.cluster_id,
+        "source": cluster.source,
+        "horizon_min": cluster.horizon_min,
+        "valid_at_s": cluster.valid_at_s,
+        "member_callsigns": sorted(cluster.member_callsigns),
+        "centroid_lat": cluster.centroid_lat,
+        "centroid_lon": cluster.centroid_lon,
+        "centroid_alt_ft": cluster.centroid_alt_ft,
+        "horizontal_extent_nm": cluster.horizontal_extent_nm,
+    }
+
+
+def serialize_hotspot_box(box: HotspotBox) -> Dict:
+    """One `HotspotBox` -> a JSON-safe dict for the map's static hotspot overlay.
+
+    `polygon` is a variable-length list of `{"lat", "lon"}` points,
+    already in polygon order (draw a closed shape by connecting
+    consecutive points and wrapping the last back to the first) -- the
+    dashboard draws this directly rather than recomputing any geometry.
+    It traces the two outer routes' own shapes (see
+    `astra.hotspot.spatial_box`'s own docstring) -- a ribbon that bends
+    along however the routes actually move, not a fixed rectangle --
+    matching the "static spatial shape anchored to the predicted time
+    window, following the routes" visual spec.
+    """
+    return {
+        "arhac_id": box.arhac_id,
+        "start_time_s": box.start_time_s,
+        "end_time_s": box.end_time_s,
+        "polygon": [{"lat": lat, "lon": lon} for lat, lon in box.polygon],
+        "left_callsign": box.left_callsign,
+        "right_callsign": box.right_callsign,
+        "member_callsigns": sorted(box.member_callsigns),
+        "peak_complexity": box.peak_complexity,
+    }
+
+
+def serialize_hotspot_boxes(hotspot_boxes: Dict[str, HotspotBox]) -> Dict[str, Dict]:
+    """`{arhac_id: HotspotBox}` -> the same shape, JSON-safe."""
+    return {arhac_id: serialize_hotspot_box(box) for arhac_id, box in hotspot_boxes.items()}
+
+
+def serialize_region(
+    region: ComplexityRegion,
+    snapshot_at_horizon=None,
+) -> Dict:
+    """One `ComplexityRegion` -> its `Cluster` plus score/components, for the heatmap."""
+    member_positions = []
+    if snapshot_at_horizon is not None:
+        for cs in sorted(region.cluster.member_callsigns):
+            ac = snapshot_at_horizon.get(cs)
+            if ac is not None:
+                member_positions.append({
+                    "callsign": cs,
+                    "lat": ac.lat,
+                    "lon": ac.lon,
+                    "altitude_ft": ac.altitude_ft,
+                })
+    return {
+        "cluster": serialize_cluster(region.cluster),
+        "complexity_score": region.complexity_score,
+        "components": dict(region.components),
+        "computed_at_s": region.computed_at_s,
+        "member_positions": member_positions,
+    }
+
+
+def serialize_regions_by_horizon(
+    regions_by_horizon: Dict[int, List[ComplexityRegion]],
+    snapshot: Optional[TrafficSnapshot] = None,
+    prediction: Optional[PredictionResult] = None,
+) -> Dict[int, List[Dict]]:
+    """`{horizon_min: [ComplexityRegion, ...]}` -> the same shape, JSON-safe.
+
+    Horizon `0` (observed) is what the initial heatmap panel renders
+    (design review OQ-4(A)); the other horizons are included too since
+    they cost nothing extra to serialize and let the frontend offer a
+    "predicted hotspot" horizon selector later without any backend change.
+    """
+    serialized = {}
+    for horizon_min, regions in regions_by_horizon.items():
+        snap = None
+        if horizon_min == 0:
+            snap = snapshot
+        elif prediction is not None and horizon_min in prediction.snapshots:
+            snap = prediction.at(horizon_min)
+        serialized[horizon_min] = [
+            serialize_region(region, snapshot_at_horizon=snap) for region in regions
+        ]
+    return serialized
+
+
+
+def serialize_track(track: FourDArhac, config: ASTRAConfig | None = None) -> Dict:
+    """One `FourDArhac` -> the hotspot table/timeline panel's row.
+
+    Includes a `history` series (`[{time_s, complexity_score}]`, oldest
+    first) taken directly from `track.track` -- the same data the
+    Milestone 5/6 lifecycle is built from -- for the timeline panel's
+    onset/peak/dissipation plot. The most recent entry's `Cluster`
+    supplies the track's current centroid for the map/table panels.
+
+    A `"PROVISIONAL"` track (see astra.tracking.engine's module
+    docstring) has no real observations yet, so `track.track` is empty
+    and every field above stays at its existing "nothing observed"
+    default (`current_complexity_score`/`centroid`: `null`, `history`:
+    `[]`) -- unchanged, so this remains exactly backward compatible for
+    any consumer built before provisional tracks existed. The
+    `provisional_*` fields below are purely additive: predicted-only
+    equivalents of the same information, present whenever
+    `track.provisional_track` is non-empty (which includes *after*
+    promotion too -- it is kept as a historical record, see that
+    field's docstring -- so `provisional_lead_time_s` remains available
+    even once a track is fully real).
+
+    `display_complexity` is the event/alert box's number of record
+    (visual-spec update): always `track.peak_complexity` -- the
+    predicted peak, never `current_complexity_score` -- so the alert
+    table and Event panel show what the hotspot is forecast to reach,
+    not just its real-time-right-now reading. `current_complexity_score`
+    stays present too (unchanged) for any other consumer that
+    specifically wants the real-time value.
+    """
+    latest_region = track.track[-1] if track.track else None
+    latest_provisional = track.provisional_track[-1] if track.provisional_track else None
+    centroid_for_label = (
+        latest_region.cluster
+        if latest_region is not None
+        else (latest_provisional.cluster if latest_provisional is not None else None)
+    )
+    return {
+        "arhac_id": track.arhac_id,
+        "status": track.status,
+        "member_aircraft": sorted(track.member_aircraft),
+        "priority": track.priority,
+        "confidence": track.confidence,
+        "peak_complexity": track.peak_complexity,
+        "display_complexity": track.peak_complexity,
+        "peak_time_s": track.peak_time_s,
+        "predicted_onset_s": track.predicted_onset_s,
+        "predicted_dissipation_s": track.predicted_dissipation_s,
+        "predicted_peak_time_s": track.predicted_peak_time_s,
+        #: `True` once the anchor's own current (real-or-provisional)
+        #: complexity_score has crossed `forecast_onset_threshold` --
+        #: `predicted_onset_s` is correctly `None` for such a track
+        #: (there is no *future* onset left to predict; see that
+        #: field's own docstring on `FourDArhac`), but that is a very
+        #: different situation from a track that was never
+        #: forecastable in the first place, and the dashboard's own
+        #: Onset/"Act by" columns need to tell the two apart -- see
+        #: `onsetLabel`/`actByLabel` in dashboard.js.
+        "already_critical": track.already_critical,
+        "forecast_urgency_rank": track.forecast_urgency_rank,
+        "first_detected_cycle_s": track.first_detected_cycle_s,
+        "last_updated_cycle_s": track.last_updated_cycle_s,
+        "current_complexity_score": (
+            latest_region.complexity_score if latest_region is not None else None
+        ),
+        #: Canonical "HCM-S<number>" sector label (see
+        #: scenario_geo.hcm_sector_label's docstring for why this must
+        #: not be built from a sector polygon's raw per-vertical-layer
+        #: id/name) -- `None` when no sector geo data is loaded or the
+        #: track has no centroid yet (a still-provisional track with an
+        #: empty provisional_track too).
+        "sector_label": (
+            ('VVTS-40NM' if config is not None and config.airspace_profile == 'tsn_tma'
+             else scenario_geo.hcm_sector_label(centroid_for_label.centroid_lat, centroid_for_label.centroid_lon))
+            if centroid_for_label is not None
+            else None
+        ),
+        "centroid": (
+            {
+                "lat": latest_region.cluster.centroid_lat,
+                "lon": latest_region.cluster.centroid_lon,
+                "alt_ft": latest_region.cluster.centroid_alt_ft,
+            }
+            if latest_region is not None
+            else None
+        ),
+        "history": [
+            {"time_s": region.computed_at_s, "complexity_score": region.complexity_score}
+            for region in track.track
+        ],
+        "provisional_current_complexity_score": (
+            latest_provisional.complexity_score if latest_provisional is not None else None
+        ),
+        "provisional_centroid": (
+            {
+                "lat": latest_provisional.cluster.centroid_lat,
+                "lon": latest_provisional.cluster.centroid_lon,
+                "alt_ft": latest_provisional.cluster.centroid_alt_ft,
+            }
+            if latest_provisional is not None
+            else None
+        ),
+        "provisional_history": [
+            {"time_s": region.computed_at_s, "complexity_score": region.complexity_score}
+            for region in track.provisional_track
+        ],
+        "provisional_lead_time_s": (
+            (track.track[0].computed_at_s - track.first_detected_cycle_s)
+            if track.track and track.provisional_track
+            else None
+        ),
+    }
+
+
+def serialize_resolution_candidate(candidate: ResolutionCandidate) -> Dict:
+    """One `ResolutionCandidate` -> a JSON-safe dict for the resolution table."""
+    return {
+        "clearance_type": candidate.clearance_type,
+        "target_callsign": candidate.target_callsign,
+        "delta_value": candidate.delta_value,
+        "complexity_before": candidate.complexity_before,
+        "complexity_after": candidate.complexity_after,
+        "complexity_delta_norm": candidate.complexity_delta_norm,
+        "deviation_cost_norm": candidate.deviation_cost_norm,
+        "fuel_cost_proxy_norm": candidate.fuel_cost_proxy_norm,
+        "resolution_score": candidate.resolution_score,
+        "domino_cost_norm": candidate.domino_cost_norm,
+        "maneuver_kind": candidate.maneuver_kind,
+        "vector_duration_s": candidate.vector_duration_s,
+        "complexity_after_components": (
+            dict(candidate.complexity_after_components)
+            if candidate.complexity_after_components is not None
+            else None
+        ),
+        "complexity_before_components": (
+            dict(candidate.complexity_before_components)
+            if candidate.complexity_before_components is not None
+            else None
+        ),
+        "hypothetical_path": (
+            serialize_prediction(candidate.hypothetical_prediction).get(
+                candidate.target_callsign, []
+            )
+            if candidate.hypothetical_prediction is not None
+            else []
+        ),
+    }
+
+
+def serialize_resolution_leg(
+    leg: ResolutionLeg, hypothetical_prediction: Optional[PredictionResult] = None
+) -> Dict:
+    """One `ResolutionLeg` (a joint candidate's per-aircraft clearance) -> a JSON-safe dict.
+
+    ``hypothetical_path`` mirrors ``serialize_resolution_candidate``'s field
+    of the same name, sliced out of the *joint* candidate's one combined
+    ``hypothetical_prediction`` (every leg applied at once) for this leg's
+    own ``target_callsign`` -- so the dashboard can draw a pink solution
+    line for each leg of a joint candidate, not just a single-aircraft one.
+    Empty list if no joint prediction was supplied (or this callsign isn't
+    in it, which should not happen in practice).
+    """
+    return {
+        "target_callsign": leg.target_callsign,
+        "clearance_type": leg.clearance_type,
+        "delta_value": leg.delta_value,
+        "maneuver_kind": leg.maneuver_kind,
+        "vector_duration_s": leg.vector_duration_s,
+        "hypothetical_path": (
+            serialize_prediction(hypothetical_prediction).get(leg.target_callsign, [])
+            if hypothetical_prediction is not None
+            else []
+        ),
+    }
+
+
+def serialize_joint_resolution_candidate(candidate: JointResolutionCandidate) -> Dict:
+    """One `JointResolutionCandidate` -> a JSON-safe dict for the resolution table.
+
+    Same score/complexity fields as `serialize_resolution_candidate`, but
+    `legs` (2-3 simultaneous per-aircraft clearances) replaces the
+    single `clearance_type`/`target_callsign`/`delta_value` a
+    single-aircraft candidate has -- see
+    `ResolutionEngine._build_joint_candidate`. Each leg's own
+    `hypothetical_path` is sliced from `candidate.hypothetical_prediction`,
+    the one combined re-prediction with every leg's clearance applied
+    simultaneously.
+    """
+    return {
+        "legs": [
+            serialize_resolution_leg(leg, candidate.hypothetical_prediction)
+            for leg in candidate.legs
+        ],
+        "complexity_before": candidate.complexity_before,
+        "complexity_after": candidate.complexity_after,
+        "complexity_delta_norm": candidate.complexity_delta_norm,
+        "deviation_cost_norm": candidate.deviation_cost_norm,
+        "fuel_cost_proxy_norm": candidate.fuel_cost_proxy_norm,
+        "resolution_score": candidate.resolution_score,
+        "domino_cost_norm": candidate.domino_cost_norm,
+        "complexity_after_components": (
+            dict(candidate.complexity_after_components)
+            if candidate.complexity_after_components is not None
+            else None
+        ),
+        "complexity_before_components": (
+            dict(candidate.complexity_before_components)
+            if candidate.complexity_before_components is not None
+            else None
+        ),
+    }
+
+
+def serialize_resolution_set(resolution_set: ResolutionSet, max_candidates: int) -> Dict:
+    """One `ResolutionSet` -> its track id plus its top-ranked candidates."""
+    joints = getattr(resolution_set, "joint_candidates", None)
+    if joints is None and resolution_set.joint_candidate is not None:
+        joints = [resolution_set.joint_candidate]
+    elif joints is None:
+        joints = []
+
+    return {
+        "arhac_id": resolution_set.track.arhac_id,
+        "evaluated_horizon_min": resolution_set.evaluated_horizon_min,
+        "candidates": [
+            serialize_resolution_candidate(candidate)
+            for candidate in resolution_set.candidates[:max_candidates]
+        ],
+        "joint_candidate": (
+            serialize_joint_resolution_candidate(resolution_set.joint_candidate)
+            if resolution_set.joint_candidate is not None
+            else None
+        ),
+        "joint_candidates": [
+            serialize_joint_resolution_candidate(jc) for jc in joints
+        ],
+        "manual_intervention_required": resolution_set.manual_intervention_required,
+        "manual_intervention_reason": resolution_set.manual_intervention_reason,
+    }
+
+
+def serialize_sector_regions(sector_regions: Dict[str, ComplexityRegion]) -> Dict[str, Dict]:
+    """`{sector_name: ComplexityRegion}` -> the same shape, JSON-safe."""
+    return {name: serialize_region(region) for name, region in sector_regions.items()}
+
+
+def serialize_sector_history(
+    sector_history: Dict[str, List[SectorComplexitySample]]
+) -> Dict[str, List[Dict]]:
+    """`{sector_name: [SectorComplexitySample, ...]}` -> the complexity-charts series."""
+    return {
+        name: [
+            {
+                "bucket_start_s": sample.bucket_start_s,
+                "complexity_score": sample.complexity_score,
+                "aircraft_count": sample.aircraft_count,
+            }
+            for sample in samples
+        ]
+        for name, samples in sector_history.items()
+    }
+
+
+def serialize_routes(routes: Dict[str, List[Tuple[float, float]]]) -> Dict[str, List[Dict]]:
+    """`{callsign: [(lat, lon), ...]}` -> JSON-safe `{callsign: [{"lat":.., "lon":..}, ...]}`.
+
+    Each list is that aircraft's own real remaining waypoints, in order,
+    ending at its actual final route/flight-plan waypoint -- straight
+    from `route_provider`, independent of `prediction`'s fixed horizon
+    set. Lets the dashboard draw a hotspot member's full remaining
+    route (the white trajectory line) all the way to its real
+    destination, rather than only as far as the nearest configured
+    prediction horizon happens to reach.
+    """
+    return {
+        callsign: [{"lat": lat, "lon": lon} for lat, lon in waypoints]
+        for callsign, waypoints in routes.items()
+    }
+
+
+def serialize_cycle_result(result: CycleResult, config: ASTRAConfig) -> Dict:
+    """The full `CycleResult` -> the `/api/state` endpoint's payload body.
+
+    Args:
+        result: One pipeline cycle's output.
+        config: Only read for `dashboard_max_resolution_candidates_shown`
+            (OQ-3's display cap).
+    """
+    control_areas = {}
+    if config.airspace_profile == 'tsn_tma':
+        from astra.centre import control_area
+        control_areas = {ac.callsign:control_area(ac.lat,ac.lon,
+            result.flight_profiles.get(ac.callsign,{}).get('direction'),
+            result.flight_profiles.get(ac.callsign,{}).get('flight_type'),ac.altitude_ft,
+            result.flight_profiles.get(ac.callsign,{}).get('approach_transfer_complete')) for ac in result.snapshot}
+    return {
+        "snapshot": serialize_snapshot(result.snapshot),
+        "prediction": {
+            "source_time_s": result.prediction.source_time_s,
+            "horizons_min": list(result.prediction.horizons_min),
+            "paths": serialize_prediction(result.prediction),
+        },
+        "regions_by_horizon": serialize_regions_by_horizon(
+            result.regions_by_horizon,
+            snapshot=result.snapshot,
+            prediction=result.prediction,
+        ),
+        "tracks": [serialize_track(track, config) for track in result.tracks],
+        "resolution_sets": [
+            serialize_resolution_set(
+                resolution_set, config.dashboard_max_resolution_candidates_shown
+            )
+            for resolution_set in result.resolution_sets
+        ],
+        "sector_regions": serialize_sector_regions(result.sector_regions),
+        "sector_history": serialize_sector_history(result.sector_history),
+        "routes": serialize_routes(result.routes),
+        "hotspot_boxes": serialize_hotspot_boxes(result.hotspot_boxes),
+        "flight_profiles": result.flight_profiles,
+        "airspace_metrics": result.airspace_metrics,
+        "control_areas": control_areas,
+    }
+
+
+def serialize_dashboard_snapshot(snapshot: DashboardSnapshot, config: ASTRAConfig) -> Dict:
+    """A `DashboardSnapshot` (possibly empty) -> the `/api/state` payload.
+
+    This is the top-level function `astra.dashboard.routes` calls. It
+    handles the "no cycle has run yet" case that `serialize_cycle_result`
+    does not need to know about.
+    """
+    return {
+        "cycle_count": snapshot.cycle_count,
+        "updated_at_s": snapshot.updated_at_s,
+        "poll_interval_s": config.poll_interval_s,
+        "airspace_profile": config.airspace_profile,
+        "separation_horizontal_nm": config.separation_horizontal_nm,
+        "has_data": snapshot.cycle_result is not None,
+        "cycle": (
+            serialize_cycle_result(snapshot.cycle_result, config)
+            if snapshot.cycle_result is not None
+            else None
+        ),
+    }

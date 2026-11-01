@@ -1,0 +1,101 @@
+STANDARD DEPARTURE CHART -                                 TRANSITION LVL       FL190             HO CHI MINH/TAN SON NHAT INTL (VVTS)RNAV RWY 25L/R
+INSTRUMENT (SID) -       ICAO                             TRANSITION ALT      5500 m                           BACHU 2D, KADUM 2D, ENPAS 2D
+                                                                                                                 XOBAV 2D, MISAN 2D, SAPEN 2D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                    340°         XOBAV 2D
+                                     120.4                                                       KADUM 2D               307°
+
+
+                                                                                                            SAPEN 2D47.2
+
+
+
+                            114°
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                    165°
+                                                                                                                      8.3
+                                                                                                          21.9                   82.6
+                                                                                  27.8        13                                 182°
+                                                             340°          172°                   XOBAV 2D
+                                                              16.7
+
+                                                                307°
+
+
+                                                   SAPEN 2D47.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                               DT\\\192.168.121.254\8.Bản Đồ và Phương Thức Bay\01 THU MUC GUI FILE\AIRAC AIP
+                                                                                                        AMDT 03.24\VVTS\PL03 08.vsd

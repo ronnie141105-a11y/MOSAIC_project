@@ -1,0 +1,22 @@
+[
+  {
+    "file": "VVTS_ARR_FEB22_2026.mp4",
+    "size": 160322842,
+    "sha256": "bbffa818f0498614515e9dd6d52540962c78f0b2cdc43d7efd6fbd7f5716490a"
+  },
+  {
+    "file": "VVTS_ARR_OCT82026.mp4",
+    "size": 124629538,
+    "sha256": "27bc66209480b86d609013b39fd1a0c1a2c968c0c19e19dc368d06f107bbc728"
+  },
+  {
+    "file": "VVTS_DEP_FEB22_2026.mp4",
+    "size": 124629538,
+    "sha256": "27bc66209480b86d609013b39fd1a0c1a2c968c0c19e19dc368d06f107bbc728"
+  },
+  {
+    "file": "VVTS_DEP_OCT82026.mp4",
+    "size": 141864210,
+    "sha256": "9cd8397e6ed2612881731a9faa0e76283b67f52b7750ea7251514ad62aba3a0b"
+  }
+]

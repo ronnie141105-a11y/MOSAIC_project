@@ -1,0 +1,107 @@
+{
+  "id": "KADUM2D",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "83854.pdf",
+  "coordination_required": true,
+  "legs": [
+    {
+      "fix": "TS616",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 600
+    },
+    {
+      "fix": "TS636",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 1000
+    },
+    {
+      "fix": "TS638",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 3350,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 1800
+    },
+    {
+      "fix": "TS686",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3050,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3050
+    },
+    {
+      "fix": "KADUM",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4500
+    }
+  ],
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "piecewise_linear_altitude_on_fix_centrelines",
+  "limitations": [
+    "Nominal altitudes are scenario assumptions within extracted fix constraints, not ATC clearances.",
+    "No fly-by turn radius, wind or automatic holding; procedure extensions beyond the named SID terminus are not included."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {},
+  "climb_gradient": {
+    "minimum_percent": 4.6,
+    "until_altitude_m": 3050,
+    "thereafter_percent": 3.3,
+    "enforcement": "metadata_only_pending_aircraft_performance_model"
+  },
+  "transitions": {
+    "DOVIN": {
+      "fixes": [
+        "KADUM",
+        "DOVIN"
+      ],
+      "source": "83855.pdf"
+    },
+    "BIXEX": {
+      "fixes": [
+        "KADUM",
+        "BIXEX"
+      ],
+      "source": "83855.pdf"
+    },
+    "PTH": {
+      "fixes": [
+        "KADUM",
+        "PTH"
+      ],
+      "source": "83855.pdf"
+    },
+    "PATMA": {
+      "fixes": [
+        "KADUM",
+        "PATMA"
+      ],
+      "source": "83856.pdf"
+    }
+  },
+  "display_fixes": [
+    "TS616",
+    "TS636",
+    "TS638",
+    "TS686",
+    "KADUM"
+  ]
+}

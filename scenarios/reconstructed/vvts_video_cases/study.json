@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "nominal",
+      "label": "Thông thường · 08/10/2026",
+      "local_start": "2026-10-08T09:00:00+07:00",
+      "local_end": "2026-10-08T11:00:00+07:00"
+    },
+    {
+      "id": "holiday_peak",
+      "label": "Cao điểm Tết · 22/02/2026",
+      "local_start": "2026-02-22T10:00:00+07:00",
+      "local_end": "2026-02-22T12:00:00+07:00"
+    }
+  ],
+  "excluded_case": "2026-10-07",
+  "basis": "user recordings with synthetic procedure paths"
+}

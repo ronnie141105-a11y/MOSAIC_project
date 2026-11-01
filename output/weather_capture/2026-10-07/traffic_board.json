@@ -1,0 +1,971 @@
+{
+  "source_url": "https://www.flightaware.com/live/airport/VVTS",
+  "retrieved_at_utc": "2026-10-07T11:36:57.566663+00:00",
+  "notes": [
+    "Airport-board times retain displayed timezone and status. Estimated times can change.",
+    "En route/scheduled rows do not establish airborne position or holding.",
+    "This is a partial public board, not all airport demand or filed flight plans."
+  ],
+  "rows": [
+    {
+      "id": "Row_other_VJC326",
+      "cells": [
+        "VJC326",
+        "A321",
+        "Phu Quoc International (PQC)",
+        "04:35p +07",
+        "",
+        "06:36p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC326/history/20261007/0935Z/VVPQ/VVTS"
+    },
+    {
+      "id": "Row_other_HVN133",
+      "cells": [
+        "HVN133",
+        "A20N",
+        "Da Nang Int'l (DAD)",
+        "03:52p +07",
+        "",
+        "06:33p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN133/history/20261007/0830Z/VVDN/VVTS"
+    },
+    {
+      "id": "Row_other_SPQ1974",
+      "cells": [
+        "SPQ1974",
+        "A20N",
+        "Phu Quoc International (PQC)",
+        "04:37p +07",
+        "",
+        "06:30p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ1974/history/20261007/0940Z/VVPQ/VVTS"
+    },
+    {
+      "id": "Row_other_CPA769",
+      "cells": [
+        "CPA769",
+        "B77W",
+        "Hong Kong Int'l (HKG)",
+        "03:58p HKT",
+        "",
+        "06:26p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/CPA769/history/20261007/0745Z/VHHH/VVTS"
+    },
+    {
+      "id": "Row_other_VJC145",
+      "cells": [
+        "VJC145",
+        "A21N",
+        "Noi Bai Int'l (HAN)",
+        "03:01p +07",
+        "",
+        "05:55p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC145/history/20261007/0750Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_other_TGW516",
+      "cells": [
+        "TGW516",
+        "A21N",
+        "Singapore Changi (SIN)",
+        "04:27p +08",
+        "",
+        "05:51p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/TGW516/history/20261007/0810Z/WSSS/VVTS"
+    },
+    {
+      "id": "Row_other_VAG679",
+      "cells": [
+        "VAG679",
+        "A320",
+        "Da Nang Int'l (DAD)",
+        "03:46p +07",
+        "",
+        "05:44p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VAG679/history/20261007/0810Z/VVDN/VVTS"
+    },
+    {
+      "id": "Row_other_HVN7185",
+      "cells": [
+        "HVN7185",
+        "A20N",
+        "Cat Bi (HPH)",
+        "03:04p +07",
+        "",
+        "05:13p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN7185/history/20261007/0710Z/VVCI/VVTS"
+    },
+    {
+      "id": "Row_other_SJX713",
+      "cells": [
+        "SJX713",
+        "A339",
+        "Taiwan Taoyuan Int'l (TPE)",
+        "02:42p CST",
+        "",
+        "05:11p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SJX713/history/20261007/0630Z/RCTP/VVTS"
+    },
+    {
+      "id": "Row_other_VJC882",
+      "cells": [
+        "VJC882",
+        "A321",
+        "Singapore Changi (SIN)",
+        "03:57p +08",
+        "",
+        "05:11p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC882/history/20261007/0735Z/WSSS/VVTS"
+    },
+    {
+      "id": "Row_other_VAG130",
+      "cells": [
+        "VAG130",
+        "A321",
+        "Suvarnabhumi Bangkok Int'l (BKK)",
+        "03:30p +07",
+        "",
+        "04:55p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VAG130/history/20261007/0735Z/VTBS/VVTS"
+    },
+    {
+      "id": "Row_other_VJC848",
+      "cells": [
+        "VJC848",
+        "A321",
+        "Ngurah Rai/Bali Intl (DPS)",
+        "02:10p WITA",
+        "",
+        "04:54p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC848/history/20261007/0610Z/WADD/VVTS"
+    },
+    {
+      "id": "Row_other_SPQ975",
+      "cells": [
+        "SPQ975",
+        "A21N",
+        "Da Nang Int'l (DAD)",
+        "03:41p +07",
+        "",
+        "04:53p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ975/history/20261007/0825Z/VVDN/VVTS"
+    },
+    {
+      "id": "Row_other_VJC363",
+      "cells": [
+        "VJC363",
+        "A320",
+        "Lien Khuong (DLI)",
+        "04:11p +07",
+        "",
+        "04:50p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC363/history/20261007/0909Z/VVDL/VVTS"
+    },
+    {
+      "id": "Row_other_SQP1972",
+      "cells": [
+        "SQP1972",
+        "A20N",
+        "Near Phu Quoc",
+        "03:59p +07",
+        "",
+        "04:49p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SQP1972/history/20261007/0859Z"
+    },
+    {
+      "id": "Row_other_VJC854",
+      "cells": [
+        "VJC854",
+        "A21N",
+        "Jakarta-Soekarno-Hatta Int'l (CGK)",
+        "01:59p WIB",
+        "",
+        "04:48p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC854/history/20261007/0640Z/WIII/VVTS"
+    },
+    {
+      "id": "Row_other_HVN1395",
+      "cells": [
+        "HVN1395",
+        "A20N",
+        "Phu Cat (UIH)",
+        "03:45p +07",
+        "",
+        "04:44p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN1395/history/20261007/0845Z/VVPC/VVTS"
+    },
+    {
+      "id": "Row_other_VJC141",
+      "cells": [
+        "VJC141",
+        "A320",
+        "Noi Bai Int'l (HAN)",
+        "02:52p +07",
+        "",
+        "04:44p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC141/history/20261007/0740Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_other_VJC143",
+      "cells": [
+        "VJC143",
+        "A21N",
+        "Noi Bai Int'l (HAN)",
+        "02:32p +07",
+        "",
+        "04:32p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC143/history/20261007/0715Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_other_SPQ845",
+      "cells": [
+        "SPQ845",
+        "A332",
+        "Noi Bai Int'l (HAN)",
+        "02:42p +07",
+        "",
+        "04:29p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ845/history/20261007/0740Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_outbound_HVN580",
+      "cells": [
+        "HVN580",
+        "A320",
+        "Kaohsiung Int'l (KHH)",
+        "06:34p +07",
+        "",
+        "09:50p CST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN580/history/20261007/1100Z/VVTS/RCKH"
+    },
+    {
+      "id": "Row_outbound_HVN1186",
+      "cells": [
+        "HVN1186",
+        "A321",
+        "Cat Bi (HPH)",
+        "06:31p +07",
+        "",
+        "08:02p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN1186/history/20261007/1105Z/VVTS/VVCI"
+    },
+    {
+      "id": "Row_outbound_HVN1386",
+      "cells": [
+        "HVN1386",
+        "A321",
+        "Lien Khuong (DLI)",
+        "06:27p +07",
+        "",
+        "07:04p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN1386/history/20261007/1039Z/VVTS/VVDL"
+    },
+    {
+      "id": "Row_outbound_CAL784",
+      "cells": [
+        "CAL784",
+        "A359",
+        "Taiwan Taoyuan Int'l (TPE)",
+        "06:25p +07",
+        "",
+        "10:10p CST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/CAL784/history/20261007/1040Z/VVTS/RCTP"
+    },
+    {
+      "id": "Row_outbound_VJC150",
+      "cells": [
+        "VJC150",
+        "A333",
+        "Noi Bai Int'l (HAN)",
+        "06:22p +07",
+        "",
+        "08:01p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC150/history/20261007/1050Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_outbound_SPQ978",
+      "cells": [
+        "SPQ978",
+        "A21N",
+        "Da Nang Int'l (DAD)",
+        "06:21p +07",
+        "",
+        "07:26p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ978/history/20261007/1040Z/VVTS/VVDN"
+    },
+    {
+      "id": "Row_outbound_HVN813",
+      "cells": [
+        "HVN813",
+        "A321",
+        "Siem Reap\u2013Angkor International Airport (SAI)",
+        "06:19p +07",
+        "",
+        "07:06p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN813/history/20261007/1025Z/VVTS/VDSA"
+    },
+    {
+      "id": "Row_outbound_VJC148",
+      "cells": [
+        "VJC148",
+        "A320",
+        "Noi Bai Int'l (HAN)",
+        "06:05p +07",
+        "",
+        "07:45p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC148/history/20261007/0925Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_outbound_VAG780",
+      "cells": [
+        "VAG780",
+        "A321",
+        "Noi Bai Int'l (HAN)",
+        "06:03p +07",
+        "",
+        "07:53p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VAG780/history/20261007/1020Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_outbound_VJC384",
+      "cells": [
+        "VJC384",
+        "A321",
+        "Phu Cat (UIH)",
+        "06:00p +07",
+        "",
+        "06:50p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC384/history/20261007/0945Z/VVTS/VVPC"
+    },
+    {
+      "id": "Row_outbound_HVN657",
+      "cells": [
+        "HVN657",
+        "A321",
+        "Singapore Changi (SIN)",
+        "05:56p +07",
+        "",
+        "08:32p +08"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN657/history/20261007/1010Z/VVTS/WSSS"
+    },
+    {
+      "id": "Row_outbound_HVN607",
+      "cells": [
+        "HVN607",
+        "A321",
+        "Suvarnabhumi Bangkok Int'l (BKK)",
+        "05:49p +07",
+        "",
+        "06:57p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN607/history/20261007/1000Z/VVTS/VTBS"
+    },
+    {
+      "id": "Row_outbound_VJC394",
+      "cells": [
+        "VJC394",
+        "A321",
+        "Pleiku (PXU)",
+        "05:03p +07",
+        "",
+        "05:46p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC394/history/20261007/0950Z/VVTS/VVPK"
+    },
+    {
+      "id": "Row_outbound_VJC820",
+      "cells": [
+        "VJC820",
+        "A321",
+        "Tokyo Int'l (Haneda) (HND)",
+        "05:00p +07",
+        "",
+        "12:36a JST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC820/history/20261007/0940Z/VVTS/RJTT"
+    },
+    {
+      "id": "Row_outbound_HVN140",
+      "cells": [
+        "HVN140",
+        "A321",
+        "Da Nang Int'l (DAD)",
+        "04:55p +07",
+        "",
+        "06:02p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN140/history/20261007/0955Z/VVTS/VVDN"
+    },
+    {
+      "id": "Row_outbound_MAS759",
+      "cells": [
+        "MAS759",
+        "B38M",
+        "Kuala Lumpur Int'l (KUL)",
+        "04:54p +07",
+        "",
+        "07:30p +08"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/MAS759/history/20261007/0950Z/VVTS/WMKK"
+    },
+    {
+      "id": "Row_outbound_VJC1831",
+      "cells": [
+        "VJC1831",
+        "A21N",
+        "Wattay Int'l (VTE)",
+        "04:48p +07",
+        "",
+        "06:21p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC1831/history/20261007/0935Z/VVTS/VLVT"
+    },
+    {
+      "id": "Row_outbound_SPQ640",
+      "cells": [
+        "SPQ640",
+        "A21N",
+        "Chengdu Tianfu Int'l (TFU)",
+        "04:45p +07",
+        "",
+        "08:32p CST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ640/history/20261007/0945Z/VVTS/ZUTF"
+    },
+    {
+      "id": "Row_outbound_HVN570",
+      "cells": [
+        "HVN570",
+        "A321",
+        "Taiwan Taoyuan Int'l (TPE)",
+        "04:42p +07",
+        "",
+        "08:49p CST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN570/history/20261007/0940Z/VVTS/RCTP"
+    },
+    {
+      "id": "Row_outbound_VJC310",
+      "cells": [
+        "VJC310",
+        "A321",
+        "Phu Bai (HUI)",
+        "04:40p +07",
+        "",
+        "05:41PM +07 (?)"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC310/history/20261007/0930Z/VVTS/VVPB"
+    },
+    {
+      "id": "Row_inbound_SPQ230",
+      "cells": [
+        "SPQ230",
+        "A21N",
+        "Noi Bai Int'l (HAN)",
+        "02:29p +07",
+        "",
+        "04:29p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ230/history/20261007/0740Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_inbound_SPQ137",
+      "cells": [
+        "SPQ137",
+        "A21N",
+        "Noi Bai Int'l (HAN)",
+        "04:05p +07",
+        "",
+        "06:05p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ137/history/20261007/0840Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_inbound_VJC639",
+      "cells": [
+        "VJC639",
+        "A320",
+        "Da Nang Int'l (DAD)",
+        "05:05p +07",
+        "",
+        "06:20p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC639/history/20261007/1015Z/VVDN/VVTS"
+    },
+    {
+      "id": "Row_inbound_HVN630",
+      "cells": [
+        "HVN630",
+        "A321",
+        "Jakarta-Soekarno-Hatta Int'l (CGK)",
+        "02:14p WIB",
+        "",
+        "06:27p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN630/history/20261007/0700Z/WIII/VVTS"
+    },
+    {
+      "id": "Row_inbound_VJC637",
+      "cells": [
+        "VJC637",
+        "A321",
+        "Da Nang Int'l (DAD)",
+        "05:20p +07",
+        "",
+        "06:30p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC637/history/20261007/0950Z/VVDN/VVTS"
+    },
+    {
+      "id": "Row_inbound_HVN1423",
+      "cells": [
+        "HVN1423",
+        "A321",
+        "Pleiku (PXU)",
+        "04:36p +07",
+        "",
+        "06:36p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN1423/history/20261007/0940Z/VVPK/VVTS"
+    },
+    {
+      "id": "Row_inbound_VAG551",
+      "cells": [
+        "VAG551",
+        "A321",
+        "Vinh (VII)",
+        "04:08p +07",
+        "",
+        "06:40p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VAG551/history/20261007/0850Z/VVVH/VVTS"
+    },
+    {
+      "id": "Row_inbound_SIA186",
+      "cells": [
+        "SIA186",
+        "B78X",
+        "Singapore Changi (SIN)",
+        "05:30p +08",
+        "",
+        "06:41p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SIA186/history/20261007/0925Z/WSSS/VVTS"
+    },
+    {
+      "id": "Row_inbound_HVN1828",
+      "cells": [
+        "HVN1828",
+        "A20N",
+        "Phu Quoc International (PQC)",
+        "05:15p +07",
+        "",
+        "06:41p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN1828/history/20261007/1015Z/VVPQ/VVTS"
+    },
+    {
+      "id": "Row_inbound_MAS766",
+      "cells": [
+        "MAS766",
+        "B38M",
+        "Kuala Lumpur Int'l (KUL)",
+        "05:32p +08",
+        "",
+        "06:41p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/MAS766/history/20261007/0930Z/WMKK/VVTS"
+    },
+    {
+      "id": "Row_inbound_VFC8086",
+      "cells": [
+        "VFC8086",
+        "AT72",
+        "Co Ong (VCS)",
+        "04:37p +07",
+        "",
+        "06:41p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VFC8086/history/20261007/0940Z/VVCS/VVTS"
+    },
+    {
+      "id": "Row_inbound_SPQ1515",
+      "cells": [
+        "SPQ1515",
+        "A21N",
+        "Cat Bi (HPH)",
+        "04:06p +07",
+        "",
+        "06:41p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ1515/history/20261007/0900Z/VVCI/VVTS"
+    },
+    {
+      "id": "Row_inbound_VFC8068",
+      "cells": [
+        "VFC8068",
+        "AT72",
+        "Co Ong (VCS)",
+        "04:53p +07",
+        "",
+        "06:41p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VFC8068/history/20261007/0955Z/VVCS/VVTS"
+    },
+    {
+      "id": "Row_inbound_VJC211",
+      "cells": [
+        "VJC211",
+        "A320",
+        "Vinh (VII)",
+        "04:26p +07",
+        "",
+        "06:42p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC211/history/20261007/0655Z/VVVH/VVTS"
+    },
+    {
+      "id": "Row_inbound_HVN273",
+      "cells": [
+        "HVN273",
+        "B78X",
+        "Noi Bai Int'l (HAN)",
+        "04:12p +07",
+        "",
+        "06:42p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN273/history/20261007/0910Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_inbound_VJC853",
+      "cells": [
+        "VJC853",
+        "A321",
+        "Taichung (RMQ)",
+        "04:08p CST",
+        "",
+        "06:43p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC853/history/20261007/0740Z/RCMQ/VVTS"
+    },
+    {
+      "id": "Row_inbound_VJC147",
+      "cells": [
+        "VJC147",
+        "A321",
+        "Noi Bai Int'l (HAN)",
+        "04:09p +07",
+        "",
+        "06:44p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC147/history/20261007/0855Z/VVNB/VVTS"
+    },
+    {
+      "id": "Row_inbound_VJC253",
+      "cells": [
+        "VJC253",
+        "A321",
+        "Tho Xuan (THD)",
+        "04:29p +07",
+        "",
+        "06:46p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC253/history/20261007/0920Z/VVTX/VVTS"
+    },
+    {
+      "id": "Row_inbound_HVN503",
+      "cells": [
+        "HVN503",
+        "A321",
+        "Guangzhou Baiyun Int'l (CAN)",
+        "03:57p CST",
+        "",
+        "06:47p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN503/history/20261007/0725Z/ZGGG/VVTS"
+    },
+    {
+      "id": "Row_inbound_VJC213",
+      "cells": [
+        "VJC213",
+        "A321",
+        "Vinh (VII)",
+        "05:02p +07",
+        "",
+        "06:48p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC213/history/20261007/0930Z/VVVH/VVTS"
+    },
+    {
+      "id": "Row_other_SPQ111",
+      "cells": [
+        "SPQ111",
+        "A21N",
+        "Chengdu Tianfu Int'l (TFU)",
+        "04:45p +07",
+        "",
+        "08:55p CST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ111/history/20261007/0945Z/VVTS/ZUTF"
+    },
+    {
+      "id": "Row_other_VFC8440",
+      "cells": [
+        "VFC8440",
+        "AT76",
+        "Dong Tac (TBB)",
+        "05:00p +07",
+        "",
+        "06:10p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VFC8440/history/20261007/1000Z/VVTS/VVTH"
+    },
+    {
+      "id": "Row_other_VJC152",
+      "cells": [
+        "VJC152",
+        "A320",
+        "Noi Bai Int'l (HAN)",
+        "05:20p +07",
+        "",
+        "07:10p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC152/history/20261007/1020Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_other_HVN254",
+      "cells": [
+        "HVN254",
+        "B78X",
+        "Noi Bai Int'l (HAN)",
+        "05:21p +07",
+        "",
+        "06:39p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN254/history/20261007/1010Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_other_HVN7024",
+      "cells": [
+        "HVN7024",
+        "A321",
+        "Cat Bi (HPH)",
+        "05:25p +07",
+        "",
+        "07:10p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN7024/history/20261007/1025Z/VVTS/VVCI"
+    },
+    {
+      "id": "Row_other_VAG1102",
+      "cells": [
+        "VAG1102",
+        "A321",
+        "Cat Bi (HPH)",
+        "05:25p +07",
+        "",
+        "07:05p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VAG1102/history/20261007/1025Z/VVTS/VVCI"
+    },
+    {
+      "id": "Row_other_SPQ198",
+      "cells": [
+        "SPQ198",
+        "A21N",
+        "Da Nang Int'l (DAD)",
+        "05:40p +07",
+        "",
+        "06:45p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ198/history/20261007/1040Z/VVTS/VVDN"
+    },
+    {
+      "id": "Row_other_VJC262",
+      "cells": [
+        "VJC262",
+        "A321",
+        "Dong Hoi Airport (VDH)",
+        "05:50p +07",
+        "",
+        "07:05p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC262/history/20261007/1050Z/VVTS/VVDH"
+    },
+    {
+      "id": "Row_other_VJC282",
+      "cells": [
+        "VJC282",
+        "A321",
+        "Cat Bi (HPH)",
+        "05:50p +07",
+        "",
+        "07:30p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC282/history/20261007/1050Z/VVTS/VVCI"
+    },
+    {
+      "id": "Row_other_HVN98",
+      "cells": [
+        "HVN98",
+        "A359",
+        "San Francisco Int'l (SFO)",
+        "06:05p +07",
+        "",
+        "05:12p PDT"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN98/history/20261007/1050Z/VVTS/KSFO"
+    },
+    {
+      "id": "Row_other_VJC352",
+      "cells": [
+        "VJC352",
+        "A321",
+        "Buon Ma Thuot (BMV)",
+        "06:05p +07",
+        "",
+        "06:45p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC352/history/20261007/1105Z/VVTS/VVBM"
+    },
+    {
+      "id": "Row_other_SPQ138",
+      "cells": [
+        "SPQ138",
+        "A21N",
+        "Noi Bai Int'l (HAN)",
+        "06:10p +07",
+        "",
+        "08:00p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ138/history/20261007/1110Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_other_SPQ1522",
+      "cells": [
+        "SPQ1522",
+        "A20N",
+        "Cat Bi (HPH)",
+        "06:10p +07",
+        "",
+        "07:55p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ1522/history/20261007/1110Z/VVTS/VVCI"
+    },
+    {
+      "id": "Row_other_HVN979",
+      "cells": [
+        "HVN979",
+        "A359",
+        "Chatrapati Shivaji Int'l (BOM)",
+        "06:10p +07",
+        "",
+        "09:25p IST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN979/history/20261007/1110Z/VVTS/VABB"
+    },
+    {
+      "id": "Row_other_SPQ860",
+      "cells": [
+        "SPQ860",
+        "A332",
+        "Noi Bai Int'l (HAN)",
+        "06:10p +07",
+        "",
+        "08:00p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SPQ860/history/20261007/1110Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_other_HVN218",
+      "cells": [
+        "HVN218",
+        "A359",
+        "Noi Bai Int'l (HAN)",
+        "06:10p +07",
+        "",
+        "08:00p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN218/history/20261007/1110Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_other_VJC146",
+      "cells": [
+        "VJC146",
+        "A21N",
+        "Noi Bai Int'l (HAN)",
+        "06:14p +07",
+        "",
+        "08:04p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC146/history/20261007/0955Z/VVTS/VVNB"
+    },
+    {
+      "id": "Row_other_VJC3948",
+      "cells": [
+        "VJC3948",
+        "A320",
+        "Beijing Daxing International Airport (PKX)",
+        "06:15p +07",
+        "",
+        "11:55p CST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/VJC3948/history/20261007/1115Z/VVTS/ZBAD"
+    },
+    {
+      "id": "Row_other_SJX714",
+      "cells": [
+        "SJX714",
+        "A339",
+        "Taiwan Taoyuan Int'l (TPE)",
+        "06:15p +07",
+        "",
+        "10:25p CST"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/SJX714/history/20261007/1115Z/VVTS/RCTP"
+    },
+    {
+      "id": "Row_other_HVN1414",
+      "cells": [
+        "HVN1414",
+        "A20N",
+        "Buon Ma Thuot (BMV)",
+        "06:24p +07",
+        "",
+        "07:00p +07"
+      ],
+      "flight_url": "https://www.flightaware.com/live/flight/HVN1414/history/20261007/1124Z/VVTS/VVBM"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOSAIC · Tối ưu Chương 3</title><link rel="stylesheet" href="{{ url_for('static', filename='atfm.css') }}"></head>
+<body>
+<header><a href="/">← MOSAIC Radar</a><span>CHƯƠNG 3 · THỬ NGHIỆM GIẢ LẬP</span></header>
+<main>
+<h1>Tối ưu ATFM <small>Công thức của nhóm · Mỗi chuyến bay một biện pháp</small></h1>
+<p><code>f = Σ c(mᵢ, lᵢ) + λP</code> · <code>Fitness = 1 / (1 + f)</code></p>
+<div class="notice">42 chuyến/60 phút là tham số nghiên cứu đã xác nhận. Traffic, đường bay và bảng chi phí vẫn là giả định. Kết quả dưới đây chưa đánh giá hiệu quả trên ba ca lịch sử VVTS.</div>
+<section>
+<h2>1 · Cấu hình thí nghiệm</h2>
+<label>Kịch bản <select id="case"><option value="existing">54 arrivals · capacity giảm sẵn có</option><option value="nominal">54 arrivals · 42 chuyến/giờ</option><option value="holiday_peak">54 arrivals · dồn ETA còn 55%</option></select></label>
+<p>Ground delay: 5/10/15/20 phút, chỉ áp dụng khi còn ở mặt đất. Giảm ground speed: 5/10/15% trên đoạn upstream giả định. Không kết hợp hai biện pháp cho cùng một flight.</p>
+<label>Population <input id="population" type="number" min="4" max="150" value="60"></label>
+<label>Generations <input id="generations" type="number" min="1" max="300" value="150"></label>
+<label>Budget/nhánh/seed <input id="budget" type="number" min="50" max="20000" value="6000"></label>
+<label>λ <input id="lambda" type="number" min="1" max="100000" value="1000"></label>
+<label>Penalty <select id="power"><option value="1">Tuyến tính</option><option value="2">Bình phương mức vượt</option></select></label>
+<p>10 seed ghép cặp. Ground và mixed kế thừa cùng incumbent; budget tính cả heuristic và bước chuẩn bị. Tournament k=3, crossover 0.8, mutation 0.1, elitism 10%, dừng sau 40 thế hệ không cải thiện.</p>
+<button id="load">Xem kết quả đã lưu</button><button id="run">Chạy 10 seed</button> <a href="/api/atfm/formulation/export.csv">KPI CSV</a> · <a href="/api/atfm/formulation/export.json">Toàn bộ dữ liệu JSON</a>
+<p id="status" role="status">Đang đọc kết quả…</p>
+</section>
+<section>
+<h2>2 · Chi phí, penalty và tính khả thi</h2>
+<p id="scenario-description"></p>
+<p>Chi phí giả định: <code>c = ground phút</code> hoặc <code>2 × speed delay phút</code>. Với mức giảm tốc <code>r</code> trên đoạn dài <code>T</code> phút, <code>speed delay = T × r/(1−r)</code>. Không dùng phần trăm tốc độ làm số phút.</p>
+<p><code>P = vượt capacity + vượt occupancy tích lũy + số cặp mất giãn cách + số cặp xung đột mới</code>. Occupancy tính bằng tàu bay·phút. Xung đột mới so với phương án không điều tiết là đại diện cho nguy cơ điểm nóng; DBSCAN được kiểm tra riêng ở mục 3.</p>
+<p>Giãn cách 5 NM/1.000 ft được kiểm tra liên tục trên các đoạn thẳng giả lập trong TMA. Upstream chưa được kiểm tra. Phương án còn vi phạm giữ nguyên penalty và hiện “Chưa khả thi”; không tự thêm holding để làm mất dấu vi phạm.</p>
+<div class="scroll"><table><thead><tr><th>Nhóm</th><th>Seed khả thi</th><th>Mean f ↓</th><th>Std f</th><th>Mean chi phí</th><th>Mean delay (phút)</th><th>Mean cặp xung đột</th></tr></thead><tbody id="summary"></tbody></table></div>
+<p id="assessment"></p>
+<p id="domain-diagnostics"></p>
+<details><summary>Kết quả từng seed và phương án không điều tiết</summary><div class="scroll"><table><thead><tr><th>Phương án</th><th>TMA giả lập</th><th>Chi phí</th><th>P</th><th>f ↓</th><th>Fitness ↑</th><th>Delay phút</th><th>Vượt capacity</th><th>Cặp xung đột</th><th>Cặp mới</th><th>Lượt đánh giá</th><th>Giây</th></tr></thead><tbody id="metrics"></tbody></table></div></details>
+<div id="convergence"></div>
+</section>
+<section>
+<h2>3 · Kiểm tra lại qua mô-đun MOSAIC</h2>
+<p>Phương án không điều tiết và phương án có f thấp nhất của mỗi nhóm đi qua DBSCAN và bộ chấm complexity hiện tại mỗi 30 giây. Bộ chấm hiện tại dùng trọng số; chưa có bước fit PCA. Hình học dùng cùng các đường giả định của bộ tối ưu, nên đây là kiểm tra chẩn đoán trong mô hình.</p>
+<div class="scroll"><table><thead><tr><th>Phương án</th><th>Peak complexity</th><th>Frame có hotspot</th><th>Nhóm hotspot mới</th></tr></thead><tbody id="validation"></tbody></table></div>
+<p>“Nhóm hotspot mới” là tập callsign chưa xuất hiện trong bất kỳ frame hotspot của phương án không điều tiết. Chỉ số này được báo cáo sau tìm kiếm, không nằm trực tiếp trong fitness.</p>
+<details><summary>Giả định và giới hạn</summary><ul id="limitations"></ul></details>
+</section>
+<section>
+<h2>4 · Xem biện pháp và phát lại</h2>
+<select id="method" aria-label="Phương án"><option>Đang tải…</option></select>
+<button id="replay">Thay traffic bằng replay giả lập</button><button id="pause">Tạm dừng</button><a href="/" target="_blank" rel="noopener">Mở radar ↗</a>
+<p id="plan-status"></p><p id="replay-status"></p>
+<div class="scroll"><table><thead><tr><th>Flight</th><th>m</th><th>Biện pháp</th><th>Mức l</th><th>Delay phút</th><th>Chi phí</th><th>Entry phút</th></tr></thead><tbody id="flights"></tbody></table></div>
+</section>
+<p><a href="/atfm">ATFM Lab trước đây</a> · <a href="/vvts-cases">Coverage của ba ca lịch sử VVTS</a></p>
+</main><script src="{{ url_for('static', filename='atfm_formulation.js') }}"></script>
+</body></html>

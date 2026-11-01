@@ -1,0 +1,24 @@
+/* Supervisor supplies one clock and controls; each monitor keeps its map/menu. */
+.embedded-control-view #hmi-brand,
+.embedded-control-view #tma-overall-btn,
+.embedded-control-view .control-view-nav,
+.embedded-control-view #pause-resume-btn,
+.embedded-control-view #speed-dropdown,
+.embedded-control-view #theme-toggle,
+.embedded-control-view #hmi-status,
+.embedded-control-view .topbar,
+.embedded-control-view #run-toggle,
+.embedded-control-view #step,
+.embedded-control-view #wx-strip,
+.embedded-control-view .sidebar,
+.embedded-control-view .operations-launch {display:none}
+.embedded-control-view #hmi-header {height:44px;min-height:44px;padding:4px 8px;gap:8px;justify-content:flex-start}
+.embedded-control-view .workspace {display:block;padding:0;height:100dvh}
+.embedded-control-view .map-panel {height:100%;border:0;border-radius:0}
+.embedded-control-view .map-toolbar {height:44px;min-height:44px;padding:4px 8px}
+.embedded-control-view .map-toolbar {height:auto;flex-shrink:0}
+.embedded-control-view .map-toolbar .map-view-controls {flex-wrap:wrap}
+.embedded-control-view .map-toolbar .toggles {display:none}
+.embedded-control-view .map-footer,.embedded-control-view .map-hint {display:none}
+.embedded-control-view .map-viewport {min-height:0}
+.embedded-control-view #workspace-menu {max-width:calc(100vw - 16px);left:0}

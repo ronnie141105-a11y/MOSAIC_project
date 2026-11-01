@@ -1,0 +1,66 @@
+INSTRUMENT                                   AER ODR OME ELEV 10 m                         HO CHI MINH/TAN SON NHAT INTL (VVTS)
+APPROACH                                      HEIGHTS RELATED TO                                                            ILS W RWY 25R
+CHART – ICAO                               THR RWY 25R – ELEV 10 m                                                        RNA V TRANSITION
+
+
+ 1.   TABULAR DESCRIPTION
+    Serial      Path      Waypoint     Fly-      Course       Magnetic   Distance      Turn      Altitude    Speed
+   number    Descriptor   Identifier   over       °M(°T)      Variation     (km)     Direction     (m)         limit    VPA     Nav Spec
+                                                                                                             (km/h)
+     010         IF       BOMSU          –           –            +1          –          –        -1500       -425        –      RNAV 1
+                                                                                                  +790
+     020         TF        TS426         –     252 (251.4)        +1         9.2         –        +600          –         –      RNAV 1
+
+     010         IF        SOKAN         –           –            +1          –          –        -1500       -425        –      RNAV 1
+                                                                                                  +730
+     020         TF        TS426         –     280 (279.3)        +1         9.4         –        +600          –         –      RNAV 1
+
+     010         IF        TS426         –           –            +1          –          –        +600          –         –      RNAV 1
+     020         TF        TS424         –     250 (249.1)        +1         7.2         –        +600          –         –      RNAV 1
+     030         CF        RW25R         Y     250 (249.1)        +1          –          –        @26           –        -3°          X
+     040         CF        TS420         –     250 (249.1)        +1          –          –          –           –         –      RNAV 1
+     050         TF        TS500         –     295 (294.1)        +1        37.1         –        @600        -425        –      RNAV 1
+     060         HM        TS500         –     295 (294.0)        +1          –          L        +600        -405        –      RNAV 1
+
+ 2.   HOLDING PROCEDURE
+    Holding Fix     Inbound Course       Magnetic         Time (s)            Turn            Altitude          Speed          Nav Spec
+                         °M(°T)          Variation                         Direction            (m)             (km/h)
+       TS500          295 (294.0)            +1          60 ≤ FL140             L              +600              -405           RNAV 1
+                                                        90 > FL140
+
+ 3.   WAYPOINT LIST
+
+             WAYPOINT ID/FIX                    COORDINATES (WGS-84)
+          BOMSU                            10°54'37.875”N          106°53'59.311”E
+          RW25R                            10°49'29.480”N          106°39'47.432”E
+          SOKAN                            10°52'13.005”N          106°54'17.156”E
+          TS420                            10°49'01.800"N          106°38'34.000"E
+          TS422                            10°49'53.800"N          106°40'51.800"E
+          TS424                            10°51'38.765”N          106°45'30.124”E
+          TS426                            10°53'02.523”N          106°49'12.337”E
+          TS500                            10°57'14.000"N          106°20'00.000"E
+          HCM GP/DME                        10°49'29.5"N            106°39'36.4"E
+          HCM LLZ                           10°48'49.9"N            106°38'02.7"E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 DT\M:\2025\AIRAC AMDT 01.25\DRAFT\V1\VVTS_APCH ILS W RWY 25R_TABULAR_V1.doc
+

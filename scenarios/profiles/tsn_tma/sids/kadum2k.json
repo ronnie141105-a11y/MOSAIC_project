@@ -1,0 +1,100 @@
+{
+  "id": "KADUM2K",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "107129.pdf",
+  "legs": [
+    {
+      "fix": "_KADUM2K_CA",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 900,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 900,
+      "phase": "sid_ca"
+    },
+    {
+      "fix": "TS638",
+      "altitude_constraints": [
+        {
+          "type": "at_or_below",
+          "value": 3350,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 1800
+    },
+    {
+      "fix": "TS686",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3050,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3050
+    },
+    {
+      "fix": "KADUM",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4500
+    }
+  ],
+  "coordination_required": true,
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "nominal_chart_route",
+  "limitations": [
+    "Nominal altitude and speed assumptions; no wind or aircraft performance model.",
+    "CA endpoint assumes 5% climb. Subsequent turn/CF interception is a straight nominal connection, not a protected turn model."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {},
+  "display_fixes": [
+    "TS638",
+    "TS686",
+    "KADUM"
+  ],
+  "transitions": {
+    "DOVIN": {
+      "fixes": [
+        "KADUM",
+        "DOVIN"
+      ],
+      "source": "107129.pdf"
+    },
+    "BIXEX": {
+      "fixes": [
+        "KADUM",
+        "BIXEX"
+      ],
+      "source": "107129.pdf"
+    },
+    "PTH": {
+      "fixes": [
+        "KADUM",
+        "PTH"
+      ],
+      "source": "107129.pdf"
+    },
+    "PATMA": {
+      "fixes": [
+        "KADUM",
+        "PATMA"
+      ],
+      "source": "107129.pdf"
+    }
+  }
+}

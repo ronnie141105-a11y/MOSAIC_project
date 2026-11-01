@@ -1,0 +1,24 @@
+{
+  "workbook_low_20": {
+    "departure": "D001",
+    "roll_start_s": 2045.0,
+    "wheel_off_s": 2100.0,
+    "previous_arrival": "A009",
+    "previous_runway_exit_s": 2042.0,
+    "next_arrival": "A006",
+    "next_arrival_distance_at_roll_nm": 7.657779637149497,
+    "next_touchdown_s": 2241.0,
+    "wheel_off_to_touchdown_s": 141.0
+  },
+  "workbook_peak_50": {
+    "departure": "D003",
+    "roll_start_s": 815.0,
+    "wheel_off_s": 870.0,
+    "previous_arrival": "A001",
+    "previous_runway_exit_s": 767.0,
+    "next_arrival": "A003",
+    "next_arrival_distance_at_roll_nm": 14.917176112417692,
+    "next_touchdown_s": 1170.0,
+    "wheel_off_to_touchdown_s": 300.0
+  }
+}

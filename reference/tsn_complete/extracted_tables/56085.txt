@@ -1,0 +1,65 @@
+AIP Viet Nam                                                                                               AIRAC AIP SUP A45/23-13
+                                                                                                                           28 DEC 2023
+
+STANDARD ARRIVAL CHART -                         TRANSITION LVL       FL190              HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (STAR)                                TRANSITION ALT 5500 m                                                RNAV RWY 25L/R
+                                                                                                                                DALAP 2H
+
+ 1.   TABULAR DESCRIPTION
+
+  DALAP 2H ARRIVAL
+    Serial      Path      Waypoint      Fly–       Course      Magnetic Distance        Turn      Altitude     Speed
+   number Descriptor      Identifier    over       °M(°T)      Variation     (km)    Direction       (m)         limit     Nav Spec
+                                                                                                               (km/h)
+     010         IF        DALAP          –           –           +1           –          –       @3350         -460        RNAV 1
+     020         TF         VIKEP         –     254 (253.3)       +1         18.3         –       @2750           –         RNAV 1
+     030         TF         TS452         –     173 (172.0)       +1         11.2         –           –           –         RNAV 1
+     040         TF         TS438         –     191 (189.8)       +1         11.7         –           –           –         RNAV 1
+     050         TF         TS436         –     209 (208.0)       +1         11.7         –           –           –         RNAV 1
+     060         TF         TS434         –     229 (227.5)       +1         13.5         –           –           –         RNAV 1
+     070         TF         TS432         –     250 (248.5)       +1         13.5         –       @2750           –         RNAV 1
+     080         TF        SOKAN          –     350 (349.0)       +1         37.0         –        -1500        -425        RNAV 1
+                                                                                                    +730
+
+  RINKU TRANSITION
+    Serial      Path      Waypoint      Fly–       Course      Magnetic Distance        Turn      Altitude     Speed
+   number Descriptor      Identifier    over       °M(°T)      Variation     (km)    Direction       (m)         limit     Nav Spec
+                                                                                                               (km/h)
+     010         IF        DOVIN          –           –           +1           –          –           –           –         RNAV 1
+     020         TF         TS918         –     135 (134.2)       +1         26.5         –           –           –         RNAV 1
+     030         TF         TS916         –     147 (146.2)       +1         26.5         –           –           –         RNAV 1
+     040         TF         TS914         –     159 (158.3)       +1         26.5         –           –           –         RNAV 1
+     050         TF         TS912         –     171 (170.3)       +1         26.5         –           –           –         RNAV 1
+     060         TF        RINKU          –     183 (181.9)       +1         24.7         –           –           –         RNAV 1
+     070         TF        DALAP          –     278 (277.4)       +1        127.0         –       @3350         -460        RNAV 1
+
+  DOVIN TRANSITION
+    Serial      Path      Waypoint      Fly–       Course      Magnetic Distance        Turn      Altitude     Speed
+   number Descriptor      Identifier    over       °M(°T)      Variation     (km)    Direction       (m)         limit     Nav Spec
+                                                                                                               (km/h)
+     010         IF        DOVIN          –           –           +1           –          –           –           –         RNAV 1
+     020         TF        DALAP          –     219 (218.2)       +1        127.0         –       @3350         -460        RNAV 1
+
+  VETOM TRANSITION
+    Serial      Path      Waypoint      Fly–       Course      Magnetic Distance        Turn      Altitude     Speed
+   number Descriptor      Identifier    over       °M(°T)      Variation     (km)    Direction       (m)         limit     Nav Spec
+                                                                                                               (km/h)
+     010         IF        VETOM          –           –           +1           –          –           –           –         RNAV 1
+     020         TF        DALAP          –     226 (224.6)       +1         34.0         –       @3350         -460        RNAV 1
+
+  PTH TRANSITION
+    Serial      Path      Waypoint      Fly–       Course      Magnetic Distance        Turn      Altitude     Speed
+   number Descriptor      Identifier    over       °M(°T)      Variation     (km)    Direction       (m)         limit     Nav Spec
+                                                                                                               (km/h)
+     010         IF          PTH          –           –           +1           –          –           –           –         RNAV 1
+     020         TF        DALAP          –     278 (277.3)       +1         75.2         –       @3350         -460        RNAV 1
+
+
+
+
+
+
+
+
+
+© 2023 Civil Aviation Authority of Viet Nam

@@ -1,0 +1,137 @@
+{
+  "id": "VICAL3J",
+  "kind": "star",
+  "direction": "inbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "56089.pdf",
+  "legs": [
+    {
+      "fix": "VICAL",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 5000
+    },
+    {
+      "fix": "TS484",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 4550,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4550
+    },
+    {
+      "fix": "TS482",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3650,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3650
+    },
+    {
+      "fix": "BUTGA",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 2150,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": 460,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "NUNGO",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 2150,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS468",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS466",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS464",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "TS462",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 2150,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2150
+    },
+    {
+      "fix": "BOMSU",
+      "altitude_constraints": [
+        {
+          "type": "window",
+          "minimum": 790,
+          "maximum": 1500,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": 425,
+      "simulation_target_altitude_m": 1200
+    }
+  ],
+  "coordination_required": true,
+  "nominal_ground_speed_kt": 240,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "nominal_chart_route",
+  "limitations": [
+    "Nominal altitude and speed assumptions; no wind or aircraft performance model."
+  ],
+  "display_fixes": [
+    "VICAL",
+    "TS484",
+    "TS482",
+    "BUTGA",
+    "NUNGO",
+    "TS468",
+    "TS466",
+    "TS464",
+    "TS462",
+    "BOMSU"
+  ],
+  "transitions": {
+    "NIXIV": {
+      "fixes": [
+        "NIXIV",
+        "VICAL"
+      ],
+      "source": "56089.pdf"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "workbook_low_20": {
+    "manifest.json": "b78beab08b3c4109537e14ed0cf1787c4df6a8041043104566cf91d3535fb290",
+    "tracks.csv": "36f7b63ddd793cf9903a0d43e56d3dcdf410efdc2b21af055e634050ca666ae0",
+    "ground_tracks.json.gz": "4b2afc25f80677575dfc35de72b522dce762df13cb9e9835489091dd2b5bc3b7",
+    "planning.csv": "7c3f3069e9c7ed6983432338baa74ed1be50062bae6c0cae48f4d6ba91c79b78",
+    "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+    "fpl.csv": "7c3f3069e9c7ed6983432338baa74ed1be50062bae6c0cae48f4d6ba91c79b78"
+  },
+  "workbook_peak_50": {
+    "manifest.json": "b2a9bc85efbd86c229979b5f791b9491ca99e2b7bdb8c9f5f95de0ecf5dfc5d2",
+    "tracks.csv": "dc8185b7e93df9b01c029d690dd865ddc93e454999d73788718f26dca1cbc73d",
+    "ground_tracks.json.gz": "e22ec7869444aeb47a86a23e12f79c0b43362974c16b3a461b3554f9de0893b6",
+    "planning.csv": "e72d1dd881b481fdfccdc961cc67f68f836602834a058a27a39c8ed51619a288",
+    "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+    "fpl.csv": "e72d1dd881b481fdfccdc961cc67f68f836602834a058a27a39c8ed51619a288"
+  }
+}

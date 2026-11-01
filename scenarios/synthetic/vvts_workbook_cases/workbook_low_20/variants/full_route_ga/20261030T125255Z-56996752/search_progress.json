@@ -1,0 +1,5323 @@
+{
+  "NO_CONTROL": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [],
+    "search": {}
+  },
+  "FCFS": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [],
+    "search": {
+      "policy": "FCFS_READY_TIME",
+      "request_clock": "earliest modelled safe takeoff slot",
+      "arrival_policy": "frozen airborne trajectories; no origin GDP or arrival speed control",
+      "departure_order": [
+        "D001",
+        "D002",
+        "D003",
+        "D004",
+        "D005",
+        "D006",
+        "D007",
+        "D008",
+        "D009"
+      ],
+      "decisions": [
+        {
+          "callsign": "D001",
+          "request_time_s": 3630.0,
+          "proposed_takeoff_s": 3630.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D002",
+          "request_time_s": 3810.0,
+          "proposed_takeoff_s": 3810.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D003",
+          "request_time_s": 3960.0,
+          "proposed_takeoff_s": 3960.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D004",
+          "request_time_s": 4140.0,
+          "proposed_takeoff_s": 4140.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D005",
+          "request_time_s": 4290.0,
+          "proposed_takeoff_s": 4290.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D006",
+          "request_time_s": 4440.0,
+          "proposed_takeoff_s": 4440.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D007",
+          "request_time_s": 4590.0,
+          "proposed_takeoff_s": 4590.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D008",
+          "request_time_s": 4740.0,
+          "proposed_takeoff_s": 4740.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        },
+        {
+          "callsign": "D009",
+          "request_time_s": 4920.0,
+          "proposed_takeoff_s": 4920.0,
+          "ground_delay_min": 0,
+          "domain_exhausted": false,
+          "unresolved_reasons": []
+        }
+      ],
+      "domain_exhaustions": 0,
+      "inherited_arrival_excess_aircraft_minutes": 0.0,
+      "candidate_checks": 9,
+      "planning_elapsed_s": 0.0054750998970121145
+    }
+  },
+  "TEAM_GROUND_11": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [
+      {
+        "generation": 0,
+        "objective": 0.0,
+        "fitness": 1.0,
+        "evaluations": 49
+      }
+    ],
+    "search": {
+      "optimizer_version": "hybrid-sequence-ga-1",
+      "search_evaluations": 49,
+      "total_evaluations": 67,
+      "preparation_evaluations": 18,
+      "total_budget": 6000,
+      "stop_reason": "zero_cost_feasible",
+      "generations_completed": 0,
+      "restarts": 0,
+      "projected_incumbent_objective": 0.0,
+      "projected_incumbent_plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_history": [
+        {
+          "generation": -1,
+          "candidate_objective": 0.0,
+          "best_objective": 0.0,
+          "projected_objective": 0.0,
+          "withdrawn_speed_proposals": 0
+        },
+        {
+          "generation": 0,
+          "candidate_objective": 1.0,
+          "best_objective": 0.0,
+          "withdrawn_speed_proposals": 0,
+          "projected_objective": 1.0
+        }
+      ],
+      "native_checks": 2,
+      "native_check_budget": 4,
+      "execution_error_samples": 2,
+      "coarse_warm_start": true,
+      "selection_basis": "native_execution",
+      "search_elapsed_s": 0.030881399987265468,
+      "total_elapsed_s": 7.4336584999691695
+    }
+  },
+  "TEAM_MIXED_11": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [
+      {
+        "generation": 0,
+        "objective": 0.0,
+        "fitness": 1.0,
+        "evaluations": 74
+      }
+    ],
+    "search": {
+      "optimizer_version": "hybrid-sequence-ga-1",
+      "search_evaluations": 74,
+      "total_evaluations": 92,
+      "preparation_evaluations": 18,
+      "total_budget": 6000,
+      "stop_reason": "zero_cost_feasible",
+      "generations_completed": 0,
+      "restarts": 0,
+      "projected_incumbent_objective": 0.0,
+      "projected_incumbent_plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_history": [
+        {
+          "generation": -1,
+          "candidate_objective": 0.0,
+          "best_objective": 0.0,
+          "projected_objective": 0.0,
+          "withdrawn_speed_proposals": 0
+        },
+        {
+          "generation": 0,
+          "candidate_objective": 0.06666666666666667,
+          "best_objective": 0.0,
+          "withdrawn_speed_proposals": 0,
+          "projected_objective": 0.05515795773352086
+        }
+      ],
+      "native_checks": 2,
+      "native_check_budget": 4,
+      "execution_error_samples": 2,
+      "coarse_warm_start": true,
+      "selection_basis": "native_execution",
+      "search_elapsed_s": 0.05725700012408197,
+      "total_elapsed_s": 7.454225100111216
+    }
+  },
+  "TEAM_GROUND_22": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [
+      {
+        "generation": 0,
+        "objective": 0.0,
+        "fitness": 1.0,
+        "evaluations": 48
+      }
+    ],
+    "search": {
+      "optimizer_version": "hybrid-sequence-ga-1",
+      "search_evaluations": 48,
+      "total_evaluations": 66,
+      "preparation_evaluations": 18,
+      "total_budget": 6000,
+      "stop_reason": "zero_cost_feasible",
+      "generations_completed": 0,
+      "restarts": 0,
+      "projected_incumbent_objective": 0.0,
+      "projected_incumbent_plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_history": [
+        {
+          "generation": -1,
+          "candidate_objective": 0.0,
+          "best_objective": 0.0,
+          "projected_objective": 0.0,
+          "withdrawn_speed_proposals": 0
+        },
+        {
+          "generation": 0,
+          "candidate_objective": 1.0,
+          "best_objective": 0.0,
+          "withdrawn_speed_proposals": 0,
+          "projected_objective": 1.0
+        }
+      ],
+      "native_checks": 2,
+      "native_check_budget": 4,
+      "execution_error_samples": 2,
+      "coarse_warm_start": true,
+      "selection_basis": "native_execution",
+      "search_elapsed_s": 0.03448130004107952,
+      "total_elapsed_s": 0.034547700081020594
+    }
+  },
+  "TEAM_MIXED_22": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [
+      {
+        "generation": 0,
+        "objective": 0.0,
+        "fitness": 1.0,
+        "evaluations": 81
+      }
+    ],
+    "search": {
+      "optimizer_version": "hybrid-sequence-ga-1",
+      "search_evaluations": 81,
+      "total_evaluations": 99,
+      "preparation_evaluations": 18,
+      "total_budget": 6000,
+      "stop_reason": "zero_cost_feasible",
+      "generations_completed": 0,
+      "restarts": 0,
+      "projected_incumbent_objective": 0.0,
+      "projected_incumbent_plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_history": [
+        {
+          "generation": -1,
+          "candidate_objective": 0.0,
+          "best_objective": 0.0,
+          "projected_objective": 0.0,
+          "withdrawn_speed_proposals": 0
+        },
+        {
+          "generation": 0,
+          "candidate_objective": 0.06666666666666667,
+          "best_objective": 0.0,
+          "withdrawn_speed_proposals": 0,
+          "projected_objective": 0.05515795773352086
+        }
+      ],
+      "native_checks": 2,
+      "native_check_budget": 4,
+      "execution_error_samples": 2,
+      "coarse_warm_start": true,
+      "selection_basis": "native_execution",
+      "search_elapsed_s": 0.046760400058701634,
+      "total_elapsed_s": 0.04680700018070638
+    }
+  },
+  "TEAM_GROUND_33": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [
+      {
+        "generation": 0,
+        "objective": 0.0,
+        "fitness": 1.0,
+        "evaluations": 49
+      }
+    ],
+    "search": {
+      "optimizer_version": "hybrid-sequence-ga-1",
+      "search_evaluations": 49,
+      "total_evaluations": 67,
+      "preparation_evaluations": 18,
+      "total_budget": 6000,
+      "stop_reason": "zero_cost_feasible",
+      "generations_completed": 0,
+      "restarts": 0,
+      "projected_incumbent_objective": 0.0,
+      "projected_incumbent_plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_history": [
+        {
+          "generation": -1,
+          "candidate_objective": 0.0,
+          "best_objective": 0.0,
+          "projected_objective": 0.0,
+          "withdrawn_speed_proposals": 0
+        },
+        {
+          "generation": 0,
+          "candidate_objective": 1.0,
+          "best_objective": 0.0,
+          "withdrawn_speed_proposals": 0,
+          "projected_objective": 1.0
+        }
+      ],
+      "native_checks": 2,
+      "native_check_budget": 4,
+      "execution_error_samples": 2,
+      "coarse_warm_start": true,
+      "selection_basis": "native_execution",
+      "search_elapsed_s": 0.03584469994530082,
+      "total_elapsed_s": 0.03591310000047088
+    }
+  },
+  "TEAM_MIXED_33": {
+    "plan": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "metrics": {
+      "objective": 0.0,
+      "converted_cost": 0.0,
+      "penalty": 0.0,
+      "capacity_excess_flights": 0,
+      "sector_peak_excess_aircraft": 0,
+      "sector_excess_aircraft_minutes": 0.0,
+      "sector_peaks": {
+        "APPROACH": 6,
+        "HCM-S1": 1,
+        "HCM-S2": 3,
+        "HCM-S5": 1,
+        "HCM-S6": 3,
+        "HCM-S7": 3
+      },
+      "arrival_conflict_pairs": 0,
+      "departure_conflict_pairs": 0,
+      "arrival_departure_conflict_pairs": 0,
+      "separation_conflict_pairs": 0,
+      "new_conflict_pairs": 0,
+      "departure_sequence_pairs": 0,
+      "runway_spacing_pairs": 0,
+      "arrival_transfer_spacing_pairs": 0,
+      "feasible_sampled": true,
+      "sample_s": 20,
+      "total_delay_min": 0.0,
+      "ground_delay_min": 0,
+      "speed_delay_min": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "no_action_flights": 20,
+      "ground_flights": 0,
+      "speed_flights": 0,
+      "optimized_movements": 20,
+      "completed_in_original_window": 20
+    },
+    "flights": [
+      {
+        "id": "A001",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:11:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:00:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:11:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A002",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:25:45.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:03:00.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:25:45.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A003",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:19:08.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:06:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:19:08.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A004",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:22:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:09:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:22:30.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A005",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:29:13.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:12:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:29:13.000+00:00",
+        "ground_eligible": false,
+        "procedure": "VICAL3H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A006",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:37:21.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:15:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:37:21.000+00:00",
+        "ground_eligible": false,
+        "procedure": "SAPEN2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A007",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:40:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:29:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:40:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A008",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:54:46.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:32:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:54:46.000+00:00",
+        "ground_eligible": false,
+        "procedure": "BITIS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A009",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:33:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:18:01.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:33:00.000+00:00",
+        "ground_eligible": false,
+        "procedure": "ELSAS2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A010",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:48:31.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:35:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:48:31.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2H",
+        "speed_scope": "none"
+      },
+      {
+        "id": "A011",
+        "direction": "arrival",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T00:58:09.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-20T22:00:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T00:00:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T00:45:02.000+00:00",
+        "first_track_utc": "2026-10-21T00:00:00.000+00:00",
+        "last_track_utc": "2026-10-21T00:58:09.000+00:00",
+        "ground_eligible": false,
+        "procedure": "DALAP2J",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D001",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:00:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:16:14.326+00:00",
+        "first_track_utc": "2026-10-21T01:00:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:35:40.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D002",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:03:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:18:06.429+00:00",
+        "first_track_utc": "2026-10-21T01:03:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:28:19.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D003",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:06:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:06:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:41:10.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D004",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:09:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:21:18.432+00:00",
+        "first_track_utc": "2026-10-21T01:09:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:37:43.000+00:00",
+        "ground_eligible": true,
+        "procedure": "XOBAV2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D005",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:11:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:11:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:49:47.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D006",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:14:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:28:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:14:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:38:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D007",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:16:30.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:33:13.050+00:00",
+        "first_track_utc": "2026-10-21T01:16:30.000+00:00",
+        "last_track_utc": "2026-10-21T01:58:20.000+00:00",
+        "ground_eligible": true,
+        "procedure": "ANTRI2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D008",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:19:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:34:44.326+00:00",
+        "first_track_utc": "2026-10-21T01:19:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:53:09.000+00:00",
+        "ground_eligible": true,
+        "procedure": "KADUM2D",
+        "speed_scope": "none"
+      },
+      {
+        "id": "D009",
+        "direction": "departure",
+        "measure": 0,
+        "level": 0,
+        "ground_delay_min": 0,
+        "speed_delay_min": 0,
+        "total_delay_min": 0.0,
+        "converted_cost": 0.0,
+        "planned_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_runway_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_origin_takeoff_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_admission_utc": "2026-10-21T01:22:00.000+00:00",
+        "adjusted_transfer_utc": "2026-10-21T01:36:36.429+00:00",
+        "first_track_utc": "2026-10-21T01:22:00.000+00:00",
+        "last_track_utc": "2026-10-21T01:46:49.000+00:00",
+        "ground_eligible": true,
+        "procedure": "LANHI2D",
+        "speed_scope": "none"
+      }
+    ],
+    "audit": {
+      "conflict_pairs": [],
+      "runway_spacing_pairs": [],
+      "arrival_transfer_spacing_pairs": [],
+      "sector_occupancy": [
+        {
+          "sector_id": "APPROACH",
+          "peak": 6,
+          "capacity": 6
+        },
+        {
+          "sector_id": "HCM-S1",
+          "peak": 1,
+          "capacity": 4
+        },
+        {
+          "sector_id": "HCM-S2",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S5",
+          "peak": 1,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S6",
+          "peak": 3,
+          "capacity": 3
+        },
+        {
+          "sector_id": "HCM-S7",
+          "peak": 3,
+          "capacity": 3
+        }
+      ],
+      "scope": "Complete Centre / TMA / runway paths, all pair types, full lead-in and tail"
+    },
+    "history": [
+      {
+        "generation": 0,
+        "objective": 0.0,
+        "fitness": 1.0,
+        "evaluations": 77
+      }
+    ],
+    "search": {
+      "optimizer_version": "hybrid-sequence-ga-1",
+      "search_evaluations": 77,
+      "total_evaluations": 95,
+      "preparation_evaluations": 18,
+      "total_budget": 6000,
+      "stop_reason": "zero_cost_feasible",
+      "generations_completed": 0,
+      "restarts": 0,
+      "projected_incumbent_objective": 0.0,
+      "projected_incumbent_plan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_history": [
+        {
+          "generation": -1,
+          "candidate_objective": 0.0,
+          "best_objective": 0.0,
+          "projected_objective": 0.0,
+          "withdrawn_speed_proposals": 0
+        },
+        {
+          "generation": 0,
+          "candidate_objective": 0.06666666666666667,
+          "best_objective": 0.0,
+          "withdrawn_speed_proposals": 0,
+          "projected_objective": 0.05515795773352086
+        }
+      ],
+      "native_checks": 2,
+      "native_check_budget": 4,
+      "execution_error_samples": 2,
+      "coarse_warm_start": true,
+      "selection_basis": "native_execution",
+      "search_elapsed_s": 0.055603399872779846,
+      "total_elapsed_s": 0.05566950002685189
+    }
+  }
+}

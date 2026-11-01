@@ -1,0 +1,606 @@
+{
+  "name": "VVTS_CHAPTER3_NOMINAL",
+  "synthetic": true,
+  "decision_min": -60,
+  "note": "Synthetic variations of the existing 54-arrival scenario. 42 flights/60 min is the user-confirmed study capacity, not verified VVTS declared capacity. Costs and paths are assumed.",
+  "demand_counts_15min": [
+    5,
+    6,
+    10,
+    10,
+    8,
+    6,
+    5,
+    4
+  ],
+  "entry_capacity_15min": null,
+  "tail_capacity_15min": 6,
+  "occupancy_limit": null,
+  "max_ground_delay_min": 20,
+  "weights": {
+    "ground": 1,
+    "airborne": 4,
+    "max_delay": 0.2,
+    "speed": 2
+  },
+  "flights": [
+    {
+      "id": "SYN001",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 1.44,
+      "dwell_min": 18,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 71.44
+    },
+    {
+      "id": "SYN002",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 4.62,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": -50.38,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN003",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 7.48,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": -37.519999999999996,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN004",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 10.37,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": -34.63,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN005",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 13.49,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": -21.509999999999998,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN006",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 16.25,
+      "dwell_min": 24,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 86.25
+    },
+    {
+      "id": "SYN007",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 18.66,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": -36.34,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN008",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 21.3,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": -23.7,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN009",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 23.72,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": -31.28,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN010",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 26.22,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": -8.780000000000001,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN011",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 28.96,
+      "dwell_min": 20,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 98.96000000000001
+    },
+    {
+      "id": "SYN012",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 30.85,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": -4.149999999999999,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN013",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 32.46,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": -12.54,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN014",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 33.72,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": -1.2800000000000011,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN015",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 35.13,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": -9.869999999999997,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN016",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 36.75,
+      "dwell_min": 18,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 106.75
+    },
+    {
+      "id": "SYN017",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 38.07,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 3.0700000000000003,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN018",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 39.57,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": -15.43,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN019",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 41.22,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": -3.780000000000001,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN020",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 42.85,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": -12.149999999999999,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN021",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 44.19,
+      "dwell_min": 24,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 114.19
+    },
+    {
+      "id": "SYN022",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 45.65,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 0.6499999999999986,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN023",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 47.22,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": -7.780000000000001,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN024",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 48.52,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 3.520000000000003,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN025",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 50.01,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 5.009999999999998,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN026",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 51.88,
+      "dwell_min": 20,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 121.88
+    },
+    {
+      "id": "SYN027",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 53.44,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": -1.5600000000000023,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN028",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 54.62,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 9.619999999999997,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN029",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 56.37,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 1.3699999999999974,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN030",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 57.74,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 12.740000000000002,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN031",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 59.1,
+      "dwell_min": 18,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 129.1
+    },
+    {
+      "id": "SYN032",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 61.19,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 26.189999999999998,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN033",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 63.05,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 28.049999999999997,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN034",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 64.51,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 9.510000000000005,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN035",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 66.74,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 31.739999999999995,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN036",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 68.25,
+      "dwell_min": 24,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 138.25
+    },
+    {
+      "id": "SYN037",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 70.52,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 35.519999999999996,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN038",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 71.97,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 26.97,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN039",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 73.98,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 38.980000000000004,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN040",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 76.32,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 41.31999999999999,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN041",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 78.58,
+      "dwell_min": 20,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 148.57999999999998
+    },
+    {
+      "id": "SYN042",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 81.15,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 36.150000000000006,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN043",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 83.76,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 38.760000000000005,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN044",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 86.41,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 31.409999999999997,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN045",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 88.88,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 53.879999999999995,
+      "travel_to_entry_min": 35
+    },
+    {
+      "id": "SYN046",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 91.56,
+      "dwell_min": 18,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 161.56
+    },
+    {
+      "id": "SYN047",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 94.3,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 39.3,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN048",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 97.53,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 52.53,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN049",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 100.7,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 45.7,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN050",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 103.63,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 58.629999999999995,
+      "travel_to_entry_min": 45
+    },
+    {
+      "id": "SYN051",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 107.07,
+      "dwell_min": 24,
+      "ground_eligible": false,
+      "reference_takeoff_min": -70,
+      "travel_to_entry_min": 177.07
+    },
+    {
+      "id": "SYN052",
+      "gate": "G_N",
+      "aircraft_type": "A320",
+      "eta_min": 110.62,
+      "dwell_min": 18,
+      "ground_eligible": true,
+      "reference_takeoff_min": 55.620000000000005,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN053",
+      "gate": "G_E",
+      "aircraft_type": "A321",
+      "eta_min": 114.39,
+      "dwell_min": 20,
+      "ground_eligible": true,
+      "reference_takeoff_min": 59.39,
+      "travel_to_entry_min": 55
+    },
+    {
+      "id": "SYN054",
+      "gate": "G_W",
+      "aircraft_type": "B789",
+      "eta_min": 117.9,
+      "dwell_min": 24,
+      "ground_eligible": true,
+      "reference_takeoff_min": 82.9,
+      "travel_to_entry_min": 35
+    }
+  ],
+  "max_speed_delay_min": 4,
+  "upstream_segment_min": 20,
+  "nominal_ground_speed_kt": 300,
+  "case": "nominal",
+  "formulation_version": "chapter3-categorical-v1",
+  "capacity_interval_min": 60,
+  "hourly_capacity": 42,
+  "ground_levels_min": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "speed_levels_pct": [
+    5,
+    10,
+    15
+  ],
+  "penalty_lambda": 1000,
+  "penalty_power": 1,
+  "cost_rates": {
+    "ground_per_min": 1,
+    "speed_per_min": 2
+  },
+  "penalty_weights": {
+    "capacity": 1,
+    "occupancy": 1,
+    "separation": 1,
+    "new_conflict": 1
+  },
+  "horizontal_min_nm": 5,
+  "vertical_min_ft": 1000,
+  "max_speed_reduction_pct": 15,
+  "capacity_per_interval": [
+    42,
+    42
+  ],
+  "tail_capacity": 42
+}

@@ -1,0 +1,109 @@
+{
+  "counts": {
+    "total": 60,
+    "arrivals": 36,
+    "departures": 24
+  },
+  "separation_audit": {
+    "sample_s": 1,
+    "violating_pairs": 0,
+    "arrival_transfer_minimum_s": 120,
+    "minimum_arrival_transfer_gap_s": 180.0
+  },
+  "surface_audit": {
+    "landing_release_fraction": 0.6666666666666666,
+    "minimum_takeoff_gap_s": 144.0,
+    "violations": [],
+    "violating_pairs": 0
+  },
+  "sector_occupancy": {
+    "basis": "Concurrent airborne aircraft in displayed ACC lateral/vertical slabs; 40 NM Approach takes precedence; excludes ground and other sectors",
+    "sample_s": 1,
+    "sectors": [
+      {
+        "id": "APPROACH",
+        "label": "VVTS Approach",
+        "capacity": 6,
+        "peak": 7,
+        "excess_aircraft_seconds": 14,
+        "seconds_over_capacity": 14,
+        "first_exceedance_s": 15150.0
+      },
+      {
+        "id": "HCM-S1",
+        "label": "HCM Sector 1",
+        "capacity": 4,
+        "peak": 3,
+        "excess_aircraft_seconds": 0,
+        "seconds_over_capacity": 0,
+        "first_exceedance_s": null
+      },
+      {
+        "id": "HCM-S2",
+        "label": "HCM Sector 2",
+        "capacity": 3,
+        "peak": 5,
+        "excess_aircraft_seconds": 603,
+        "seconds_over_capacity": 358,
+        "first_exceedance_s": 15765.0
+      },
+      {
+        "id": "HCM-S5",
+        "label": "HCM Sector 5",
+        "capacity": 3,
+        "peak": 2,
+        "excess_aircraft_seconds": 0,
+        "seconds_over_capacity": 0,
+        "first_exceedance_s": null
+      },
+      {
+        "id": "HCM-S6",
+        "label": "HCM Sector 6",
+        "capacity": 3,
+        "peak": 5,
+        "excess_aircraft_seconds": 1025,
+        "seconds_over_capacity": 990,
+        "first_exceedance_s": 1544.0
+      },
+      {
+        "id": "HCM-S7",
+        "label": "HCM Sector 7",
+        "capacity": 3,
+        "peak": 4,
+        "excess_aircraft_seconds": 105,
+        "seconds_over_capacity": 105,
+        "first_exceedance_s": 354.0
+      }
+    ],
+    "total_excess_aircraft_seconds": 1747
+  },
+  "duration_s": 18651,
+  "all_departures_spawn_at_stands": false,
+  "all_arrivals_park_at_stands": true,
+  "all_arrivals_visible_at_start": true,
+  "initial_departure_states": {
+    "HOLDING": 1,
+    "PARKED": 23
+  },
+  "stream_audit": {
+    "centre_horizontal_conflict_pairs": [],
+    "minimum_initial_horizontal_nm": 21.03195165400426,
+    "maximum_airborne_holding_aircraft": 0,
+    "maximum_committed_surface_departures": 2
+  },
+  "route_distribution": {
+    "W1_AC": 8,
+    "BIBAN_BITIS": 8,
+    "W1_LKH": 7,
+    "PTH_BAOMY": 5,
+    "SAPEN_WEST": 3,
+    "NIXIV_VICAL": 3,
+    "VTV": 2,
+    "KADUM_BMT": 8,
+    "LANHI_ELSAS": 7,
+    "XOBAV_NIXIV": 3,
+    "ANTRI_DOVIN": 3,
+    "ANTRI_PTH": 3
+  },
+  "source_sha256": "4199bdcb5a15fd8c33eab2959c75c9f51b8ff53fdb78b086864f0fcd89f7489b"
+}

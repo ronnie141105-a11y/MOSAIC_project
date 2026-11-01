@@ -1,0 +1,7 @@
+sector_id,capacity_aircraft,basis
+APPROACH,6,simultaneous_airborne_in_sector
+HCM-S1,4,simultaneous_airborne_in_sector
+HCM-S2,3,simultaneous_airborne_in_sector
+HCM-S5,3,simultaneous_airborne_in_sector
+HCM-S6,3,simultaneous_airborne_in_sector
+HCM-S7,3,simultaneous_airborne_in_sector

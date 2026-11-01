@@ -1,0 +1,13 @@
+﻿case_id,configuration,method,mean_delay_min,std_delay_min,mean_sector_excess_aircraft_minutes
+workbook_low_20,Previous,FCFS,0.0,0.0,0.0
+workbook_low_20,Previous,TEAM_GROUND,0.0,0.0,0.0
+workbook_low_20,Previous,TEAM_MIXED,0.0,0.0,0.0
+workbook_low_20,Expanded,FCFS,0.0,0.0,0.0
+workbook_low_20,Expanded,TEAM_GROUND,0.0,0.0,0.0
+workbook_low_20,Expanded,TEAM_MIXED,0.0,0.0,0.0
+workbook_peak_50,Previous,FCFS,145.9,0.0,18.833333333333332
+workbook_peak_50,Previous,TEAM_GROUND,142.53888888888886,5.446337539355455,18.833333333333332
+workbook_peak_50,Previous,TEAM_MIXED,145.6833333333333,0.0,18.833333333333332
+workbook_peak_50,Expanded,FCFS,103.9,0.0,22.4
+workbook_peak_50,Expanded,TEAM_GROUND,112.81111111111112,31.44611940964936,18.833333333333332
+workbook_peak_50,Expanded,TEAM_MIXED,114.39999999999999,12.187117515365697,16.83888888888889

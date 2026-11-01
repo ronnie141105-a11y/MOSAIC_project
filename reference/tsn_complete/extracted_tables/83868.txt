@@ -1,0 +1,83 @@
+STANDARD DEPARTURE CHART -                                     TRANSITION  LVL          FL190                 HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                       TRANSITION ALT           5500 m                                                    RNAV RWY 25L/R
+                                                                                                                                                             ANTRI 2F
+
+
+
+  1.   TABULAR DESCRIPTION
+
+   ANTRI 2F DEPARTURE
+
+    Serial         Path       Waypoint      Fly-        Course         Magnetic     Distance     Radius        Arc        Turn      Altitude    Speed
+   number      Descriptor     Identifier    over         °M(°T)        Variation      (km)         (km)      Center     Direction      (m)        limit    Nav Spec
+                                                                                                                ID                              (km/h)
+
+   INITIAL CLIMB RWY 25L
+
+      010           IF         RW25L          -             -              +1            -           -           -          -           -           -       RNAV 1
+
+      020           TF         TS652          -      250     (249.1)       +1          7.5           -           -          -           -           -       RNAV 1
+
+      030           RF         TS658          -      043     (042.0)       +1         15.8         5.9       TSC03          R           -         -445      RNAV 1
+
+   INITIAL CLIMB RWY 25R
+
+      010           IF         RW25R          -             -              +1            -           -           -          -           -           -       RNAV 1
+
+      020           TF         TS654          -      250     (249.1)       +1          6.9           -           -          -           -           -       RNAV 1
+
+      030           RF         TS658          -      043     (042.0)       +1         15.3         5.7       TSC04          R           -         -445      RNAV 1
+
+   FROM TS658
+
+      010           IF         TS658          -             -              +1            -           -           -          -           -         -445      RNAV 1
+
+      020           RF         TS662          -      098     (097.3)       +1          5.7         5.9       TSC03          R           -         -445      RNAV 1
+
+      030           TF         TS664          -      098     (097.3)       +1          5.7           -           -          -        +1200          -       RNAV 1
+
+      040           TF         TS666          -      098     (097.3)       +1          9.3           -           -          -        +1850          -       RNAV 1
+
+      050           TF         TS668          -      089     (088.3)       +1         13.9           -           -          -        +3050          -       RNAV 1
+
+      060           TF         TS814          -      089     (088.3)       +1         23.7           -           -          -        +3650          -       RNAV 1
+
+      070           TF         TS816          -      032     (031.3)       +1         17.2           -           -          -           -           -       RNAV 1
+
+      080           TF         ANTRI          -      032     (031.3)       +1         17.2           -           -          -           -           -       RNAV 1
+
+   DOVIN TRANSITION
+
+    Serial         Path       Waypoint      Fly-        Course         Magnetic     Distance     Radius        Arc        Turn      Altitude    Speed
+   number      Descriptor     Identifier    over         °M(°T)        Variation      (km)         (km)      Center     Direction      (m)        limit    Nav Spec
+                                                                                                                ID                              (km/h)
+
+      010           IF          ANTRI         -             -              +1            -           -           -           -          -           -        RNAV 1
+
+      020           TF          DOVIN         -      050      (048.6)      +1         126.6          -           -           -          -           -        RNAV 1
+
+   BIXEX TRANSITION
+
+    Serial         Path       Waypoint      Fly-        Course         Magnetic     Distance     Radius        Arc        Turn      Altitude    Speed
+   number      Descriptor     Identifier    over         °M(°T)        Variation      (km)         (km)      Center     Direction      (m)        limit    Nav Spec
+                                                                                                                ID                              (km/h)
+
+      010           IF          ANTRI         -             -              +1            -           -           -           -          -           -        RNAV 1
+
+      020           TF          BIXEX         -      065     (063.5)       +1         110.0          -           -           -          -           -        RNAV 1
+
+   PTH TRANSITION
+
+    Serial         Path       Waypoint      Fly-        Course         Magnetic     Distance     Radius        Arc        Turn      Altitude    Speed
+   number      Descriptor     Identifier    over         °M(°T)        Variation      (km)         (km)      Center     Direction      (m)        limit    Nav Spec
+                                                                                                                ID                              (km/h)
+
+      010           IF          ANTRI         -             -              +1            -           -           -           -          -           -        RNAV 1
+
+      020           TF           PTH          -      107      (105.7)      +1          94.9          -           -           -          -           -        RNAV 1
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V2\VVTS_SID RNAV RWY 25LR ANTRI
+2F_TABULAR_V2.docx

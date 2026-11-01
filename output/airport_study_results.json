@@ -1,0 +1,397 @@
+{
+  "profile": "tsn_tma",
+  "duration_s": 2200,
+  "units": "simulation seconds",
+  "scenarios": {
+    "vvts_baseline": {
+      "label": "Baseline: one departure and one arrival",
+      "takeoffs": 1,
+      "landings": 1,
+      "stand_arrivals": 1,
+      "mean_taxi_out_s": 104.0,
+      "total_departure_hold_s": 0.0,
+      "last_takeoff_s": 105.0,
+      "mean_ctot_delta_s": null,
+      "flights": {
+        "DEP901": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 57.0,
+            "takeoff": 105.0,
+            "tma_handoff": 140.0,
+            "sid_exit": 693.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 104.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "ARR901": {
+          "operation": "arr",
+          "milestones_s": {
+            "approach_visible": 1337.0,
+            "touchdown": 1541.0,
+            "runway_exit": 1605.0,
+            "stand_arrival": 1732.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": null,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": 191.0
+        }
+      }
+    },
+    "vvts_departure_surge": {
+      "label": "Departure surge: immediate taxi",
+      "takeoffs": 5,
+      "landings": 0,
+      "stand_arrivals": 0,
+      "mean_taxi_out_s": 220.0,
+      "total_departure_hold_s": 453.0,
+      "last_takeoff_s": 337.0,
+      "mean_ctot_delta_s": null,
+      "flights": {
+        "DEP901": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 57.0,
+            "takeoff": 105.0,
+            "tma_handoff": 140.0,
+            "sid_exit": 693.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 104.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP902": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 114.0,
+            "takeoff": 163.0,
+            "tma_handoff": 198.0,
+            "sid_exit": 1304.0
+          },
+          "hold_s": 46.0,
+          "taxi_out_s": 162.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP903": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 172.0,
+            "takeoff": 221.0,
+            "tma_handoff": 256.0,
+            "sid_exit": 1309.0
+          },
+          "hold_s": 95.0,
+          "taxi_out_s": 220.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP904": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 230.0,
+            "takeoff": 279.0,
+            "tma_handoff": 314.0,
+            "sid_exit": 1285.0
+          },
+          "hold_s": 128.0,
+          "taxi_out_s": 278.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP905": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 288.0,
+            "takeoff": 337.0,
+            "tma_handoff": 372.0,
+            "sid_exit": 1219.0
+          },
+          "hold_s": 184.0,
+          "taxi_out_s": 336.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        }
+      }
+    },
+    "vvts_stand_metering": {
+      "label": "Departure surge: stand metering",
+      "takeoffs": 5,
+      "landings": 0,
+      "stand_arrivals": 0,
+      "mean_taxi_out_s": 127.0,
+      "total_departure_hold_s": 0.0,
+      "last_takeoff_s": 389.0,
+      "mean_ctot_delta_s": null,
+      "flights": {
+        "DEP901": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 57.0,
+            "takeoff": 105.0,
+            "tma_handoff": 140.0,
+            "sid_exit": 693.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 104.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP902": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 60.0,
+            "runway_entry": 125.0,
+            "takeoff": 173.0,
+            "tma_handoff": 208.0,
+            "sid_exit": 1314.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 113.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP903": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 120.0,
+            "runway_entry": 194.0,
+            "takeoff": 242.0,
+            "tma_handoff": 277.0,
+            "sid_exit": 1330.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 122.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP904": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 180.0,
+            "runway_entry": 279.0,
+            "takeoff": 327.0,
+            "tma_handoff": 362.0,
+            "sid_exit": 1333.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 147.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP905": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 240.0,
+            "runway_entry": 341.0,
+            "takeoff": 389.0,
+            "tma_handoff": 424.0,
+            "sid_exit": 1271.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 149.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        }
+      }
+    },
+    "vvts_ctot_sequence": {
+      "label": "CTOT sequence: timed runway release",
+      "takeoffs": 5,
+      "landings": 0,
+      "stand_arrivals": 0,
+      "mean_taxi_out_s": 221.2,
+      "total_departure_hold_s": 459.0,
+      "last_takeoff_s": 341.0,
+      "mean_ctot_delta_s": 2.2,
+      "flights": {
+        "DEP901": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 57.0,
+            "takeoff": 105.0,
+            "tma_handoff": 140.0,
+            "sid_exit": 693.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 104.0,
+          "ctot_delta_s": 5.0,
+          "landing_to_stand_s": null
+        },
+        "DEP902": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 114.0,
+            "takeoff": 163.0,
+            "tma_handoff": 198.0,
+            "sid_exit": 1304.0
+          },
+          "hold_s": 46.0,
+          "taxi_out_s": 162.0,
+          "ctot_delta_s": 3.0,
+          "landing_to_stand_s": null
+        },
+        "DEP903": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 172.0,
+            "takeoff": 221.0,
+            "tma_handoff": 256.0,
+            "sid_exit": 1309.0
+          },
+          "hold_s": 95.0,
+          "taxi_out_s": 220.0,
+          "ctot_delta_s": 1.0,
+          "landing_to_stand_s": null
+        },
+        "DEP904": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 232.0,
+            "takeoff": 281.0,
+            "tma_handoff": 316.0,
+            "sid_exit": 1287.0
+          },
+          "hold_s": 130.0,
+          "taxi_out_s": 280.0,
+          "ctot_delta_s": 1.0,
+          "landing_to_stand_s": null
+        },
+        "DEP905": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 292.0,
+            "takeoff": 341.0,
+            "tma_handoff": 376.0,
+            "sid_exit": 1223.0
+          },
+          "hold_s": 188.0,
+          "taxi_out_s": 340.0,
+          "ctot_delta_s": 1.0,
+          "landing_to_stand_s": null
+        }
+      }
+    },
+    "vvts_mixed_flow": {
+      "label": "Mixed flow: arrivals and departures",
+      "takeoffs": 3,
+      "landings": 2,
+      "stand_arrivals": 2,
+      "mean_taxi_out_s": 162.0,
+      "total_departure_hold_s": 141.0,
+      "last_takeoff_s": 221.0,
+      "mean_ctot_delta_s": null,
+      "flights": {
+        "DEP901": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 57.0,
+            "takeoff": 105.0,
+            "tma_handoff": 140.0,
+            "sid_exit": 693.0
+          },
+          "hold_s": 0.0,
+          "taxi_out_s": 104.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP902": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 114.0,
+            "takeoff": 163.0,
+            "tma_handoff": 198.0,
+            "sid_exit": 1304.0
+          },
+          "hold_s": 46.0,
+          "taxi_out_s": 162.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "DEP903": {
+          "operation": "dep",
+          "milestones_s": {
+            "takeoff_clearance": 0.0,
+            "off_block": 1.0,
+            "runway_entry": 172.0,
+            "takeoff": 221.0,
+            "tma_handoff": 256.0,
+            "sid_exit": 1309.0
+          },
+          "hold_s": 95.0,
+          "taxi_out_s": 220.0,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": null
+        },
+        "ARR901": {
+          "operation": "arr",
+          "milestones_s": {
+            "approach_visible": 1337.0,
+            "touchdown": 1541.0,
+            "runway_exit": 1749.0,
+            "crossing_clearance": 1887.0,
+            "crossing_entry": 1899.0,
+            "crossing_exit": 1935.0,
+            "stand_arrival": 1977.0
+          },
+          "hold_s": 30.0,
+          "taxi_out_s": null,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": 436.0
+        },
+        "ARR902": {
+          "operation": "arr",
+          "milestones_s": {
+            "approach_visible": 1036.0,
+            "touchdown": 1240.0,
+            "runway_exit": 1448.0,
+            "crossing_clearance": 1586.0,
+            "crossing_entry": 1598.0,
+            "crossing_exit": 1612.0,
+            "stand_arrival": 1682.0
+          },
+          "hold_s": 30.0,
+          "taxi_out_s": null,
+          "ctot_delta_s": null,
+          "landing_to_stand_s": 442.0
+        }
+      }
+    }
+  }
+}

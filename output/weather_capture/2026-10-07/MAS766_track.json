@@ -1,0 +1,2090 @@
+{
+  "callsign": "MAS766",
+  "source_url": "https://www.flightaware.com/live/flight/MAS766/history/20261007/0930Z/WMKK/VVTS/tracklog",
+  "retrieved_at_utc": "2026-10-07T11:36:59.197697+00:00",
+  "display_timezone": "EDT",
+  "samples": [
+    {
+      "time_display": "Wed 05:32:56 AM",
+      "time_utc": "2026-10-07T09:32:56+00:00",
+      "lat": 2.7266,
+      "lon": 101.7091,
+      "course_deg": 146,
+      "groundspeed_kt": 156,
+      "altitude_ft": 325,
+      "reporting_facility": "Surface and Near-Surface"
+    },
+    {
+      "time_display": "Wed 05:33:08 AM",
+      "time_utc": "2026-10-07T09:33:08+00:00",
+      "lat": 2.7195,
+      "lon": 101.714,
+      "course_deg": 145,
+      "groundspeed_kt": 160,
+      "altitude_ft": 750,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:33:25 AM",
+      "time_utc": "2026-10-07T09:33:25+00:00",
+      "lat": 2.7084,
+      "lon": 101.7218,
+      "course_deg": 145,
+      "groundspeed_kt": 183,
+      "altitude_ft": 1125,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:33:41 AM",
+      "time_utc": "2026-10-07T09:33:41+00:00",
+      "lat": 2.6973,
+      "lon": 101.7291,
+      "course_deg": 147,
+      "groundspeed_kt": 202,
+      "altitude_ft": 1400,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:33:57 AM",
+      "time_utc": "2026-10-07T09:33:57+00:00",
+      "lat": 2.6835,
+      "lon": 101.738,
+      "course_deg": 147,
+      "groundspeed_kt": 224,
+      "altitude_ft": 1725,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:34:14 AM",
+      "time_utc": "2026-10-07T09:34:14+00:00",
+      "lat": 2.6667,
+      "lon": 101.7491,
+      "course_deg": 146,
+      "groundspeed_kt": 249,
+      "altitude_ft": 2100,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:34:44 AM",
+      "time_utc": "2026-10-07T09:34:44+00:00",
+      "lat": 2.6396,
+      "lon": 101.7675,
+      "course_deg": 146,
+      "groundspeed_kt": 256,
+      "altitude_ft": 3325,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:35:14 AM",
+      "time_utc": "2026-10-07T09:35:14+00:00",
+      "lat": 2.608,
+      "lon": 101.7889,
+      "course_deg": 146,
+      "groundspeed_kt": 260,
+      "altitude_ft": 4775,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:35:45 AM",
+      "time_utc": "2026-10-07T09:35:45+00:00",
+      "lat": 2.5782,
+      "lon": 101.8088,
+      "course_deg": 146,
+      "groundspeed_kt": 265,
+      "altitude_ft": 6100,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:36:03 AM",
+      "time_utc": "2026-10-07T09:36:03+00:00",
+      "lat": 2.5599,
+      "lon": 101.822,
+      "course_deg": 136,
+      "groundspeed_kt": 273,
+      "altitude_ft": 6800,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:36:20 AM",
+      "time_utc": "2026-10-07T09:36:20+00:00",
+      "lat": 2.5481,
+      "lon": 101.8423,
+      "course_deg": 108,
+      "groundspeed_kt": 277,
+      "altitude_ft": 7500,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:36:38 AM",
+      "time_utc": "2026-10-07T09:36:38+00:00",
+      "lat": 2.5478,
+      "lon": 101.8642,
+      "course_deg": 78,
+      "groundspeed_kt": 283,
+      "altitude_ft": 8150,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:36:57 AM",
+      "time_utc": "2026-10-07T09:36:57+00:00",
+      "lat": 2.5578,
+      "lon": 101.8873,
+      "course_deg": 64,
+      "groundspeed_kt": 287,
+      "altitude_ft": 8850,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:37:27 AM",
+      "time_utc": "2026-10-07T09:37:27+00:00",
+      "lat": 2.5755,
+      "lon": 101.9231,
+      "course_deg": 64,
+      "groundspeed_kt": 291,
+      "altitude_ft": 9725,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:37:57 AM",
+      "time_utc": "2026-10-07T09:37:57+00:00",
+      "lat": 2.5934,
+      "lon": 101.9589,
+      "course_deg": 64,
+      "groundspeed_kt": 301,
+      "altitude_ft": 10475,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:38:30 AM",
+      "time_utc": "2026-10-07T09:38:30+00:00",
+      "lat": 2.6158,
+      "lon": 102.0042,
+      "course_deg": 64,
+      "groundspeed_kt": 322,
+      "altitude_ft": 11325,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:39:00 AM",
+      "time_utc": "2026-10-07T09:39:00+00:00",
+      "lat": 2.6361,
+      "lon": 102.0452,
+      "course_deg": 64,
+      "groundspeed_kt": 332,
+      "altitude_ft": 11850,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:39:31 AM",
+      "time_utc": "2026-10-07T09:39:31+00:00",
+      "lat": 2.6566,
+      "lon": 102.0867,
+      "course_deg": 64,
+      "groundspeed_kt": 338,
+      "altitude_ft": 12250,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:39:53 AM",
+      "time_utc": "2026-10-07T09:39:53+00:00",
+      "lat": 2.6734,
+      "lon": 102.1184,
+      "course_deg": 59,
+      "groundspeed_kt": 342,
+      "altitude_ft": 12425,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:40:13 AM",
+      "time_utc": "2026-10-07T09:40:13+00:00",
+      "lat": 2.692,
+      "lon": 102.1441,
+      "course_deg": 50,
+      "groundspeed_kt": 344,
+      "altitude_ft": 12575,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:40:43 AM",
+      "time_utc": "2026-10-07T09:40:43+00:00",
+      "lat": 2.7234,
+      "lon": 102.1794,
+      "course_deg": 49,
+      "groundspeed_kt": 344,
+      "altitude_ft": 12975,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:41:13 AM",
+      "time_utc": "2026-10-07T09:41:13+00:00",
+      "lat": 2.7545,
+      "lon": 102.2142,
+      "course_deg": 48,
+      "groundspeed_kt": 343,
+      "altitude_ft": 13275,
+      "reporting_facility": "FlightAware ADS-B (WMAA)"
+    },
+    {
+      "time_display": "Wed 05:41:43 AM",
+      "time_utc": "2026-10-07T09:41:43+00:00",
+      "lat": 2.7877,
+      "lon": 102.2512,
+      "course_deg": 48,
+      "groundspeed_kt": 342,
+      "altitude_ft": 13950,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:42:04 AM",
+      "time_utc": "2026-10-07T09:42:04+00:00",
+      "lat": 2.81,
+      "lon": 102.2759,
+      "course_deg": 47,
+      "groundspeed_kt": 346,
+      "altitude_ft": 14675,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:42:22 AM",
+      "time_utc": "2026-10-07T09:42:22+00:00",
+      "lat": 2.8316,
+      "lon": 102.2929,
+      "course_deg": 31,
+      "groundspeed_kt": 348,
+      "altitude_ft": 15350,
+      "reporting_facility": "FlightAware ADS-B (XSP / WSSL)"
+    },
+    {
+      "time_display": "Wed 05:43:04 AM",
+      "time_utc": "2026-10-07T09:43:04+00:00",
+      "lat": 2.8956,
+      "lon": 102.3138,
+      "course_deg": 15,
+      "groundspeed_kt": 349,
+      "altitude_ft": 16975,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:43:35 AM",
+      "time_utc": "2026-10-07T09:43:35+00:00",
+      "lat": 2.9465,
+      "lon": 102.3273,
+      "course_deg": 15,
+      "groundspeed_kt": 354,
+      "altitude_ft": 18100,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:44:05 AM",
+      "time_utc": "2026-10-07T09:44:05+00:00",
+      "lat": 2.9942,
+      "lon": 102.3399,
+      "course_deg": 15,
+      "groundspeed_kt": 357,
+      "altitude_ft": 19100,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:44:35 AM",
+      "time_utc": "2026-10-07T09:44:35+00:00",
+      "lat": 3.0429,
+      "lon": 102.3525,
+      "course_deg": 15,
+      "groundspeed_kt": 360,
+      "altitude_ft": 20050,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:45:05 AM",
+      "time_utc": "2026-10-07T09:45:05+00:00",
+      "lat": 3.0923,
+      "lon": 102.3655,
+      "course_deg": 15,
+      "groundspeed_kt": 367,
+      "altitude_ft": 20850,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:45:35 AM",
+      "time_utc": "2026-10-07T09:45:35+00:00",
+      "lat": 3.1399,
+      "lon": 102.3781,
+      "course_deg": 15,
+      "groundspeed_kt": 377,
+      "altitude_ft": 21450,
+      "reporting_facility": "FlightAware ADS-B (XSP / WSSL)"
+    },
+    {
+      "time_display": "Wed 05:46:05 AM",
+      "time_utc": "2026-10-07T09:46:05+00:00",
+      "lat": 3.191,
+      "lon": 102.3914,
+      "course_deg": 15,
+      "groundspeed_kt": 387,
+      "altitude_ft": 22050,
+      "reporting_facility": "FlightAware ADS-B (KUL / WMKK)"
+    },
+    {
+      "time_display": "Wed 05:46:35 AM",
+      "time_utc": "2026-10-07T09:46:35+00:00",
+      "lat": 3.2437,
+      "lon": 102.4052,
+      "course_deg": 15,
+      "groundspeed_kt": 396,
+      "altitude_ft": 22725,
+      "reporting_facility": "FlightAware ADS-B (XSP / WSSL)"
+    },
+    {
+      "time_display": "Wed 05:47:05 AM",
+      "time_utc": "2026-10-07T09:47:05+00:00",
+      "lat": 3.2977,
+      "lon": 102.4193,
+      "course_deg": 15,
+      "groundspeed_kt": 398,
+      "altitude_ft": 23575,
+      "reporting_facility": "FlightAware ADS-B (XSP / WSSL)"
+    },
+    {
+      "time_display": "Wed 05:47:25 AM",
+      "time_utc": "2026-10-07T09:47:25+00:00",
+      "lat": 3.3344,
+      "lon": 102.43,
+      "course_deg": 20,
+      "groundspeed_kt": 399,
+      "altitude_ft": 24100,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:47:50 AM",
+      "time_utc": "2026-10-07T09:47:50+00:00",
+      "lat": 3.3752,
+      "lon": 102.4536,
+      "course_deg": 37,
+      "groundspeed_kt": 399,
+      "altitude_ft": 24775,
+      "reporting_facility": "FlightAware ADS-B (MKZ / WMKM)"
+    },
+    {
+      "time_display": "Wed 05:48:21 AM",
+      "time_utc": "2026-10-07T09:48:21+00:00",
+      "lat": 3.4186,
+      "lon": 102.4882,
+      "course_deg": 39,
+      "groundspeed_kt": 405,
+      "altitude_ft": 25425,
+      "reporting_facility": "FlightAware ADS-B (JHB / WMKJ)"
+    },
+    {
+      "time_display": "Wed 05:48:54 AM",
+      "time_utc": "2026-10-07T09:48:54+00:00",
+      "lat": 3.467,
+      "lon": 102.5268,
+      "course_deg": 39,
+      "groundspeed_kt": 413,
+      "altitude_ft": 26150,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:49:25 AM",
+      "time_utc": "2026-10-07T09:49:25+00:00",
+      "lat": 3.5164,
+      "lon": 102.5654,
+      "course_deg": 38,
+      "groundspeed_kt": 419,
+      "altitude_ft": 26875,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:49:55 AM",
+      "time_utc": "2026-10-07T09:49:55+00:00",
+      "lat": 3.5631,
+      "lon": 102.6017,
+      "course_deg": 38,
+      "groundspeed_kt": 425,
+      "altitude_ft": 27525,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:50:25 AM",
+      "time_utc": "2026-10-07T09:50:25+00:00",
+      "lat": 3.6099,
+      "lon": 102.6386,
+      "course_deg": 39,
+      "groundspeed_kt": 428,
+      "altitude_ft": 28200,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:50:56 AM",
+      "time_utc": "2026-10-07T09:50:56+00:00",
+      "lat": 3.656,
+      "lon": 102.676,
+      "course_deg": 39,
+      "groundspeed_kt": 428,
+      "altitude_ft": 28950,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:51:26 AM",
+      "time_utc": "2026-10-07T09:51:26+00:00",
+      "lat": 3.7033,
+      "lon": 102.7146,
+      "course_deg": 39,
+      "groundspeed_kt": 429,
+      "altitude_ft": 29725,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 05:51:56 AM",
+      "time_utc": "2026-10-07T09:51:56+00:00",
+      "lat": 3.7498,
+      "lon": 102.7523,
+      "course_deg": 39,
+      "groundspeed_kt": 432,
+      "altitude_ft": 30250,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:52:26 AM",
+      "time_utc": "2026-10-07T09:52:26+00:00",
+      "lat": 3.7972,
+      "lon": 102.7904,
+      "course_deg": 39,
+      "groundspeed_kt": 432,
+      "altitude_ft": 30525,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:52:56 AM",
+      "time_utc": "2026-10-07T09:52:56+00:00",
+      "lat": 3.8432,
+      "lon": 102.8268,
+      "course_deg": 39,
+      "groundspeed_kt": 431,
+      "altitude_ft": 30775,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:53:26 AM",
+      "time_utc": "2026-10-07T09:53:26+00:00",
+      "lat": 3.8903,
+      "lon": 102.8642,
+      "course_deg": 39,
+      "groundspeed_kt": 432,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:53:56 AM",
+      "time_utc": "2026-10-07T09:53:56+00:00",
+      "lat": 3.9373,
+      "lon": 102.9014,
+      "course_deg": 38,
+      "groundspeed_kt": 433,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:54:26 AM",
+      "time_utc": "2026-10-07T09:54:26+00:00",
+      "lat": 3.9854,
+      "lon": 102.9393,
+      "course_deg": 38,
+      "groundspeed_kt": 433,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:54:50 AM",
+      "time_utc": "2026-10-07T09:54:50+00:00",
+      "lat": 4.0225,
+      "lon": 102.9677,
+      "course_deg": 34,
+      "groundspeed_kt": 433,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:55:06 AM",
+      "time_utc": "2026-10-07T09:55:06+00:00",
+      "lat": 4.0514,
+      "lon": 102.9828,
+      "course_deg": 23,
+      "groundspeed_kt": 436,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:55:29 AM",
+      "time_utc": "2026-10-07T09:55:29+00:00",
+      "lat": 4.0967,
+      "lon": 102.9974,
+      "course_deg": 13,
+      "groundspeed_kt": 438,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:55:49 AM",
+      "time_utc": "2026-10-07T09:55:49+00:00",
+      "lat": 4.1369,
+      "lon": 103.0034,
+      "course_deg": 4,
+      "groundspeed_kt": 442,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 05:56:24 AM",
+      "time_utc": "2026-10-07T09:56:24+00:00",
+      "lat": 4.2094,
+      "lon": 103.0084,
+      "course_deg": 9,
+      "groundspeed_kt": 441,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 05:56:54 AM",
+      "time_utc": "2026-10-07T09:56:54+00:00",
+      "lat": 4.2638,
+      "lon": 103.0223,
+      "course_deg": 17,
+      "groundspeed_kt": 438,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 05:57:24 AM",
+      "time_utc": "2026-10-07T09:57:24+00:00",
+      "lat": 4.3246,
+      "lon": 103.041,
+      "course_deg": 17,
+      "groundspeed_kt": 439,
+      "altitude_ft": 31000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 05:57:54 AM",
+      "time_utc": "2026-10-07T09:57:54+00:00",
+      "lat": 4.3838,
+      "lon": 103.0592,
+      "course_deg": 17,
+      "groundspeed_kt": 441,
+      "altitude_ft": 31275,
+      "reporting_facility": "FlightAware ADS-B (XSP / WSSL)"
+    },
+    {
+      "time_display": "Wed 05:58:24 AM",
+      "time_utc": "2026-10-07T09:58:24+00:00",
+      "lat": 4.4415,
+      "lon": 103.0772,
+      "course_deg": 18,
+      "groundspeed_kt": 442,
+      "altitude_ft": 31875,
+      "reporting_facility": "FlightAware ADS-B (XSP / WSSL)"
+    },
+    {
+      "time_display": "Wed 05:58:57 AM",
+      "time_utc": "2026-10-07T09:58:57+00:00",
+      "lat": 4.5051,
+      "lon": 103.0975,
+      "course_deg": 18,
+      "groundspeed_kt": 441,
+      "altitude_ft": 32600,
+      "reporting_facility": "FlightAware ADS-B (PEN / WMKP)"
+    },
+    {
+      "time_display": "Wed 05:59:29 AM",
+      "time_utc": "2026-10-07T09:59:29+00:00",
+      "lat": 4.5693,
+      "lon": 103.118,
+      "course_deg": 18,
+      "groundspeed_kt": 443,
+      "altitude_ft": 33275,
+      "reporting_facility": "FlightAware ADS-B (SZB / WMSA)"
+    },
+    {
+      "time_display": "Wed 06:00:01 AM",
+      "time_utc": "2026-10-07T10:00:01+00:00",
+      "lat": 4.6321,
+      "lon": 103.1379,
+      "course_deg": 18,
+      "groundspeed_kt": 446,
+      "altitude_ft": 33825,
+      "reporting_facility": "FlightAware ADS-B (KUA / WMKD)"
+    },
+    {
+      "time_display": "Wed 06:00:32 AM",
+      "time_utc": "2026-10-07T10:00:32+00:00",
+      "lat": 4.6951,
+      "lon": 103.1576,
+      "course_deg": 17,
+      "groundspeed_kt": 443,
+      "altitude_ft": 34575,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:00:59 AM",
+      "time_utc": "2026-10-07T10:00:59+00:00",
+      "lat": 4.7486,
+      "lon": 103.172,
+      "course_deg": 11,
+      "groundspeed_kt": 445,
+      "altitude_ft": 35075,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:01:31 AM",
+      "time_utc": "2026-10-07T10:01:31+00:00",
+      "lat": 4.8127,
+      "lon": 103.1838,
+      "course_deg": 11,
+      "groundspeed_kt": 445,
+      "altitude_ft": 35650,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:02:02 AM",
+      "time_utc": "2026-10-07T10:02:02+00:00",
+      "lat": 4.8751,
+      "lon": 103.1954,
+      "course_deg": 11,
+      "groundspeed_kt": 445,
+      "altitude_ft": 36175,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:02:32 AM",
+      "time_utc": "2026-10-07T10:02:32+00:00",
+      "lat": 4.9367,
+      "lon": 103.2072,
+      "course_deg": 11,
+      "groundspeed_kt": 447,
+      "altitude_ft": 36625,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:03:02 AM",
+      "time_utc": "2026-10-07T10:03:02+00:00",
+      "lat": 4.9981,
+      "lon": 103.2188,
+      "course_deg": 11,
+      "groundspeed_kt": 446,
+      "altitude_ft": 37125,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:03:37 AM",
+      "time_utc": "2026-10-07T10:03:37+00:00",
+      "lat": 5.0691,
+      "lon": 103.2322,
+      "course_deg": 11,
+      "groundspeed_kt": 442,
+      "altitude_ft": 37675,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:04:07 AM",
+      "time_utc": "2026-10-07T10:04:07+00:00",
+      "lat": 5.128,
+      "lon": 103.2434,
+      "course_deg": 11,
+      "groundspeed_kt": 438,
+      "altitude_ft": 38125,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:04:37 AM",
+      "time_utc": "2026-10-07T10:04:37+00:00",
+      "lat": 5.189,
+      "lon": 103.2549,
+      "course_deg": 11,
+      "groundspeed_kt": 437,
+      "altitude_ft": 38350,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:05:07 AM",
+      "time_utc": "2026-10-07T10:05:07+00:00",
+      "lat": 5.2492,
+      "lon": 103.2662,
+      "course_deg": 11,
+      "groundspeed_kt": 436,
+      "altitude_ft": 38575,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:05:40 AM",
+      "time_utc": "2026-10-07T10:05:40+00:00",
+      "lat": 5.3119,
+      "lon": 103.278,
+      "course_deg": 11,
+      "groundspeed_kt": 438,
+      "altitude_ft": 38825,
+      "reporting_facility": "FlightAware ADS-B (PEN / WMKP)"
+    },
+    {
+      "time_display": "Wed 06:06:10 AM",
+      "time_utc": "2026-10-07T10:06:10+00:00",
+      "lat": 5.3724,
+      "lon": 103.2894,
+      "course_deg": 11,
+      "groundspeed_kt": 438,
+      "altitude_ft": 39025,
+      "reporting_facility": "FlightAware ADS-B (PEN / WMKP)"
+    },
+    {
+      "time_display": "Wed 06:06:40 AM",
+      "time_utc": "2026-10-07T10:06:40+00:00",
+      "lat": 5.4327,
+      "lon": 103.3008,
+      "course_deg": 11,
+      "groundspeed_kt": 439,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (PEN / WMKP)"
+    },
+    {
+      "time_display": "Wed 06:07:10 AM",
+      "time_utc": "2026-10-07T10:07:10+00:00",
+      "lat": 5.493,
+      "lon": 103.3121,
+      "course_deg": 11,
+      "groundspeed_kt": 439,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (PEN / WMKP)"
+    },
+    {
+      "time_display": "Wed 06:07:40 AM",
+      "time_utc": "2026-10-07T10:07:40+00:00",
+      "lat": 5.5515,
+      "lon": 103.3232,
+      "course_deg": 11,
+      "groundspeed_kt": 441,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (PEN / WMKP)"
+    },
+    {
+      "time_display": "Wed 06:08:14 AM",
+      "time_utc": "2026-10-07T10:08:14+00:00",
+      "lat": 5.6222,
+      "lon": 103.3366,
+      "course_deg": 11,
+      "groundspeed_kt": 442,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:08:44 AM",
+      "time_utc": "2026-10-07T10:08:44+00:00",
+      "lat": 5.6824,
+      "lon": 103.3479,
+      "course_deg": 11,
+      "groundspeed_kt": 443,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:09:14 AM",
+      "time_utc": "2026-10-07T10:09:14+00:00",
+      "lat": 5.7436,
+      "lon": 103.3593,
+      "course_deg": 11,
+      "groundspeed_kt": 444,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:09:44 AM",
+      "time_utc": "2026-10-07T10:09:44+00:00",
+      "lat": 5.8044,
+      "lon": 103.3708,
+      "course_deg": 11,
+      "groundspeed_kt": 443,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:10:15 AM",
+      "time_utc": "2026-10-07T10:10:15+00:00",
+      "lat": 5.865,
+      "lon": 103.3823,
+      "course_deg": 11,
+      "groundspeed_kt": 439,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:10:45 AM",
+      "time_utc": "2026-10-07T10:10:45+00:00",
+      "lat": 5.9248,
+      "lon": 103.3937,
+      "course_deg": 11,
+      "groundspeed_kt": 437,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:11:15 AM",
+      "time_utc": "2026-10-07T10:11:15+00:00",
+      "lat": 5.9845,
+      "lon": 103.4049,
+      "course_deg": 11,
+      "groundspeed_kt": 433,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:11:45 AM",
+      "time_utc": "2026-10-07T10:11:45+00:00",
+      "lat": 6.0427,
+      "lon": 103.4158,
+      "course_deg": 11,
+      "groundspeed_kt": 433,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:12:15 AM",
+      "time_utc": "2026-10-07T10:12:15+00:00",
+      "lat": 6.1046,
+      "lon": 103.4276,
+      "course_deg": 11,
+      "groundspeed_kt": 433,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:12:45 AM",
+      "time_utc": "2026-10-07T10:12:45+00:00",
+      "lat": 6.1625,
+      "lon": 103.4385,
+      "course_deg": 11,
+      "groundspeed_kt": 433,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:13:16 AM",
+      "time_utc": "2026-10-07T10:13:16+00:00",
+      "lat": 6.2224,
+      "lon": 103.4498,
+      "course_deg": 11,
+      "groundspeed_kt": 433,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:13:46 AM",
+      "time_utc": "2026-10-07T10:13:46+00:00",
+      "lat": 6.2817,
+      "lon": 103.461,
+      "course_deg": 11,
+      "groundspeed_kt": 431,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:14:46 AM",
+      "time_utc": "2026-10-07T10:14:46+00:00",
+      "lat": 6.3988,
+      "lon": 103.4831,
+      "course_deg": 11,
+      "groundspeed_kt": 432,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:15:16 AM",
+      "time_utc": "2026-10-07T10:15:16+00:00",
+      "lat": 6.4589,
+      "lon": 103.4945,
+      "course_deg": 11,
+      "groundspeed_kt": 429,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:15:46 AM",
+      "time_utc": "2026-10-07T10:15:46+00:00",
+      "lat": 6.5168,
+      "lon": 103.5055,
+      "course_deg": 11,
+      "groundspeed_kt": 426,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:16:19 AM",
+      "time_utc": "2026-10-07T10:16:19+00:00",
+      "lat": 6.5815,
+      "lon": 103.5178,
+      "course_deg": 11,
+      "groundspeed_kt": 426,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (KBR / WMKC)"
+    },
+    {
+      "time_display": "Wed 06:17:17 AM",
+      "time_utc": "2026-10-07T10:17:17+00:00",
+      "lat": 6.6929,
+      "lon": 103.5389,
+      "course_deg": 11,
+      "groundspeed_kt": 425,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:17:47 AM",
+      "time_utc": "2026-10-07T10:17:47+00:00",
+      "lat": 6.7517,
+      "lon": 103.55,
+      "course_deg": 11,
+      "groundspeed_kt": 424,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:18:17 AM",
+      "time_utc": "2026-10-07T10:18:17+00:00",
+      "lat": 6.8105,
+      "lon": 103.561,
+      "course_deg": 11,
+      "groundspeed_kt": 424,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:18:53 AM",
+      "time_utc": "2026-10-07T10:18:53+00:00",
+      "lat": 6.8789,
+      "lon": 103.5741,
+      "course_deg": 11,
+      "groundspeed_kt": 423,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:19:18 AM",
+      "time_utc": "2026-10-07T10:19:18+00:00",
+      "lat": 6.9256,
+      "lon": 103.5898,
+      "course_deg": 31,
+      "groundspeed_kt": 416,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:19:38 AM",
+      "time_utc": "2026-10-07T10:19:38+00:00",
+      "lat": 6.9541,
+      "lon": 103.6158,
+      "course_deg": 53,
+      "groundspeed_kt": 412,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:20:10 AM",
+      "time_utc": "2026-10-07T10:20:10+00:00",
+      "lat": 6.9865,
+      "lon": 103.6675,
+      "course_deg": 56,
+      "groundspeed_kt": 411,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:20:30 AM",
+      "time_utc": "2026-10-07T10:20:30+00:00",
+      "lat": 7.0117,
+      "lon": 103.6962,
+      "course_deg": 42,
+      "groundspeed_kt": 412,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:21:06 AM",
+      "time_utc": "2026-10-07T10:21:06+00:00",
+      "lat": 7.0659,
+      "lon": 103.74,
+      "course_deg": 39,
+      "groundspeed_kt": 411,
+      "altitude_ft": 39000,
+      "reporting_facility": "FlightAware ADS-B (TGG / WMKN)"
+    },
+    {
+      "time_display": "Wed 06:39:01 AM",
+      "time_utc": "2026-10-07T10:39:01+00:00",
+      "lat": 8.603,
+      "lon": 105.0725,
+      "course_deg": 35,
+      "groundspeed_kt": 358,
+      "altitude_ft": 30250,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:39:33 AM",
+      "time_utc": "2026-10-07T10:39:33+00:00",
+      "lat": 8.6466,
+      "lon": 105.1031,
+      "course_deg": 35,
+      "groundspeed_kt": 358,
+      "altitude_ft": 29700,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:42:09 AM",
+      "time_utc": "2026-10-07T10:42:09+00:00",
+      "lat": 8.8603,
+      "lon": 105.2533,
+      "course_deg": 35,
+      "groundspeed_kt": 357,
+      "altitude_ft": 27100,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:42:33 AM",
+      "time_utc": "2026-10-07T10:42:33+00:00",
+      "lat": 8.8897,
+      "lon": 105.2775,
+      "course_deg": 50,
+      "groundspeed_kt": 347,
+      "altitude_ft": 26725,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:42:55 AM",
+      "time_utc": "2026-10-07T10:42:55+00:00",
+      "lat": 8.9016,
+      "lon": 105.3106,
+      "course_deg": 83,
+      "groundspeed_kt": 341,
+      "altitude_ft": 26275,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:43:14 AM",
+      "time_utc": "2026-10-07T10:43:14+00:00",
+      "lat": 8.8952,
+      "lon": 105.3404,
+      "course_deg": 116,
+      "groundspeed_kt": 334,
+      "altitude_ft": 25875,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:43:34 AM",
+      "time_utc": "2026-10-07T10:43:34+00:00",
+      "lat": 8.8749,
+      "lon": 105.363,
+      "course_deg": 146,
+      "groundspeed_kt": 333,
+      "altitude_ft": 25575,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:43:54 AM",
+      "time_utc": "2026-10-07T10:43:54+00:00",
+      "lat": 8.8467,
+      "lon": 105.3726,
+      "course_deg": 177,
+      "groundspeed_kt": 335,
+      "altitude_ft": 25425,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:49:15 AM",
+      "time_utc": "2026-10-07T10:49:15+00:00",
+      "lat": 8.8757,
+      "lon": 105.264,
+      "course_deg": 35,
+      "groundspeed_kt": 332,
+      "altitude_ft": 25000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:50:09 AM",
+      "time_utc": "2026-10-07T10:50:09+00:00",
+      "lat": 8.9432,
+      "lon": 105.312,
+      "course_deg": 35,
+      "groundspeed_kt": 333,
+      "altitude_ft": 25000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:50:42 AM",
+      "time_utc": "2026-10-07T10:50:42+00:00",
+      "lat": 8.9852,
+      "lon": 105.3414,
+      "course_deg": 35,
+      "groundspeed_kt": 332,
+      "altitude_ft": 24800,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:51:12 AM",
+      "time_utc": "2026-10-07T10:51:12+00:00",
+      "lat": 9.0223,
+      "lon": 105.3675,
+      "course_deg": 35,
+      "groundspeed_kt": 329,
+      "altitude_ft": 24550,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:52:04 AM",
+      "time_utc": "2026-10-07T10:52:04+00:00",
+      "lat": 9.0873,
+      "lon": 105.4134,
+      "course_deg": 35,
+      "groundspeed_kt": 322,
+      "altitude_ft": 24050,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:52:34 AM",
+      "time_utc": "2026-10-07T10:52:34+00:00",
+      "lat": 9.124,
+      "lon": 105.4391,
+      "course_deg": 35,
+      "groundspeed_kt": 322,
+      "altitude_ft": 23775,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:53:04 AM",
+      "time_utc": "2026-10-07T10:53:04+00:00",
+      "lat": 9.1592,
+      "lon": 105.4641,
+      "course_deg": 35,
+      "groundspeed_kt": 321,
+      "altitude_ft": 23500,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:53:35 AM",
+      "time_utc": "2026-10-07T10:53:35+00:00",
+      "lat": 9.1974,
+      "lon": 105.491,
+      "course_deg": 35,
+      "groundspeed_kt": 320,
+      "altitude_ft": 23200,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:54:14 AM",
+      "time_utc": "2026-10-07T10:54:14+00:00",
+      "lat": 9.246,
+      "lon": 105.5253,
+      "course_deg": 35,
+      "groundspeed_kt": 315,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:54:44 AM",
+      "time_utc": "2026-10-07T10:54:44+00:00",
+      "lat": 9.2817,
+      "lon": 105.5506,
+      "course_deg": 35,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:55:35 AM",
+      "time_utc": "2026-10-07T10:55:35+00:00",
+      "lat": 9.3414,
+      "lon": 105.5927,
+      "course_deg": 35,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:56:12 AM",
+      "time_utc": "2026-10-07T10:56:12+00:00",
+      "lat": 9.3859,
+      "lon": 105.6243,
+      "course_deg": 35,
+      "groundspeed_kt": 315,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:56:45 AM",
+      "time_utc": "2026-10-07T10:56:45+00:00",
+      "lat": 9.4266,
+      "lon": 105.653,
+      "course_deg": 35,
+      "groundspeed_kt": 315,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:57:15 AM",
+      "time_utc": "2026-10-07T10:57:15+00:00",
+      "lat": 9.4627,
+      "lon": 105.6785,
+      "course_deg": 35,
+      "groundspeed_kt": 313,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:57:52 AM",
+      "time_utc": "2026-10-07T10:57:52+00:00",
+      "lat": 9.5048,
+      "lon": 105.7083,
+      "course_deg": 35,
+      "groundspeed_kt": 311,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:58:23 AM",
+      "time_utc": "2026-10-07T10:58:23+00:00",
+      "lat": 9.5413,
+      "lon": 105.7341,
+      "course_deg": 35,
+      "groundspeed_kt": 309,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:58:55 AM",
+      "time_utc": "2026-10-07T10:58:55+00:00",
+      "lat": 9.5787,
+      "lon": 105.7606,
+      "course_deg": 35,
+      "groundspeed_kt": 307,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:59:25 AM",
+      "time_utc": "2026-10-07T10:59:25+00:00",
+      "lat": 9.6136,
+      "lon": 105.7853,
+      "course_deg": 35,
+      "groundspeed_kt": 307,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 06:59:55 AM",
+      "time_utc": "2026-10-07T10:59:55+00:00",
+      "lat": 9.6483,
+      "lon": 105.81,
+      "course_deg": 35,
+      "groundspeed_kt": 306,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:00:26 AM",
+      "time_utc": "2026-10-07T11:00:26+00:00",
+      "lat": 9.6857,
+      "lon": 105.8364,
+      "course_deg": 35,
+      "groundspeed_kt": 306,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (VKG / VVRG)"
+    },
+    {
+      "time_display": "Wed 07:00:58 AM",
+      "time_utc": "2026-10-07T11:00:58+00:00",
+      "lat": 9.7235,
+      "lon": 105.8632,
+      "course_deg": 35,
+      "groundspeed_kt": 310,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:01:28 AM",
+      "time_utc": "2026-10-07T11:01:28+00:00",
+      "lat": 9.7594,
+      "lon": 105.8887,
+      "course_deg": 35,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:01:55 AM",
+      "time_utc": "2026-10-07T11:01:55+00:00",
+      "lat": 9.7891,
+      "lon": 105.91,
+      "course_deg": 38,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:02:11 AM",
+      "time_utc": "2026-10-07T11:02:11+00:00",
+      "lat": 9.804,
+      "lon": 105.9281,
+      "course_deg": 63,
+      "groundspeed_kt": 316,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:02:31 AM",
+      "time_utc": "2026-10-07T11:02:31+00:00",
+      "lat": 9.809,
+      "lon": 105.9582,
+      "course_deg": 95,
+      "groundspeed_kt": 322,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:02:48 AM",
+      "time_utc": "2026-10-07T11:02:48+00:00",
+      "lat": 9.8009,
+      "lon": 105.9814,
+      "course_deg": 128,
+      "groundspeed_kt": 329,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:03:10 AM",
+      "time_utc": "2026-10-07T11:03:10+00:00",
+      "lat": 9.7733,
+      "lon": 106.0035,
+      "course_deg": 159,
+      "groundspeed_kt": 334,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:03:31 AM",
+      "time_utc": "2026-10-07T11:03:31+00:00",
+      "lat": 9.7402,
+      "lon": 106.0041,
+      "course_deg": 183,
+      "groundspeed_kt": 334,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:03:55 AM",
+      "time_utc": "2026-10-07T11:03:55+00:00",
+      "lat": 9.7096,
+      "lon": 105.9857,
+      "course_deg": 215,
+      "groundspeed_kt": 332,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:04:29 AM",
+      "time_utc": "2026-10-07T11:04:29+00:00",
+      "lat": 9.6677,
+      "lon": 105.9561,
+      "course_deg": 215,
+      "groundspeed_kt": 331,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:04:51 AM",
+      "time_utc": "2026-10-07T11:04:51+00:00",
+      "lat": 9.6416,
+      "lon": 105.934,
+      "course_deg": 233,
+      "groundspeed_kt": 329,
+      "altitude_ft": 23025,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:05:10 AM",
+      "time_utc": "2026-10-07T11:05:10+00:00",
+      "lat": 9.6311,
+      "lon": 105.9057,
+      "course_deg": 264,
+      "groundspeed_kt": 327,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:05:28 AM",
+      "time_utc": "2026-10-07T11:05:28+00:00",
+      "lat": 9.6354,
+      "lon": 105.8801,
+      "course_deg": 294,
+      "groundspeed_kt": 322,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (VKG / VVRG)"
+    },
+    {
+      "time_display": "Wed 07:05:44 AM",
+      "time_utc": "2026-10-07T11:05:44+00:00",
+      "lat": 9.6481,
+      "lon": 105.8618,
+      "course_deg": 317,
+      "groundspeed_kt": 316,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:06:09 AM",
+      "time_utc": "2026-10-07T11:06:09+00:00",
+      "lat": 9.6816,
+      "lon": 105.8472,
+      "course_deg": 355,
+      "groundspeed_kt": 312,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:06:31 AM",
+      "time_utc": "2026-10-07T11:06:31+00:00",
+      "lat": 9.7136,
+      "lon": 105.8554,
+      "course_deg": 30,
+      "groundspeed_kt": 315,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:07:08 AM",
+      "time_utc": "2026-10-07T11:07:08+00:00",
+      "lat": 9.757,
+      "lon": 105.8859,
+      "course_deg": 35,
+      "groundspeed_kt": 315,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:07:36 AM",
+      "time_utc": "2026-10-07T11:07:36+00:00",
+      "lat": 9.7912,
+      "lon": 105.9111,
+      "course_deg": 40,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:07:57 AM",
+      "time_utc": "2026-10-07T11:07:57+00:00",
+      "lat": 9.8066,
+      "lon": 105.9359,
+      "course_deg": 73,
+      "groundspeed_kt": 317,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:08:18 AM",
+      "time_utc": "2026-10-07T11:08:18+00:00",
+      "lat": 9.8053,
+      "lon": 105.9685,
+      "course_deg": 110,
+      "groundspeed_kt": 324,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:08:40 AM",
+      "time_utc": "2026-10-07T11:08:40+00:00",
+      "lat": 9.7855,
+      "lon": 105.9939,
+      "course_deg": 143,
+      "groundspeed_kt": 331,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:08:58 AM",
+      "time_utc": "2026-10-07T11:08:58+00:00",
+      "lat": 9.7595,
+      "lon": 106.0025,
+      "course_deg": 174,
+      "groundspeed_kt": 334,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:09:14 AM",
+      "time_utc": "2026-10-07T11:09:14+00:00",
+      "lat": 9.7355,
+      "lon": 105.9978,
+      "course_deg": 203,
+      "groundspeed_kt": 333,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:10:05 AM",
+      "time_utc": "2026-10-07T11:10:05+00:00",
+      "lat": 9.6713,
+      "lon": 105.9533,
+      "course_deg": 216,
+      "groundspeed_kt": 331,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:10:25 AM",
+      "time_utc": "2026-10-07T11:10:25+00:00",
+      "lat": 9.6472,
+      "lon": 105.9333,
+      "course_deg": 223,
+      "groundspeed_kt": 330,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:10:46 AM",
+      "time_utc": "2026-10-07T11:10:46+00:00",
+      "lat": 9.6361,
+      "lon": 105.9044,
+      "course_deg": 266,
+      "groundspeed_kt": 325,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:11:08 AM",
+      "time_utc": "2026-10-07T11:11:08+00:00",
+      "lat": 9.6446,
+      "lon": 105.8719,
+      "course_deg": 300,
+      "groundspeed_kt": 319,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:11:30 AM",
+      "time_utc": "2026-10-07T11:11:30+00:00",
+      "lat": 9.6687,
+      "lon": 105.8521,
+      "course_deg": 338,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:11:50 AM",
+      "time_utc": "2026-10-07T11:11:50+00:00",
+      "lat": 9.6995,
+      "lon": 105.8498,
+      "course_deg": 10,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:12:32 AM",
+      "time_utc": "2026-10-07T11:12:32+00:00",
+      "lat": 9.7504,
+      "lon": 105.8812,
+      "course_deg": 35,
+      "groundspeed_kt": 315,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:13:02 AM",
+      "time_utc": "2026-10-07T11:13:02+00:00",
+      "lat": 9.7869,
+      "lon": 105.9077,
+      "course_deg": 37,
+      "groundspeed_kt": 316,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:13:21 AM",
+      "time_utc": "2026-10-07T11:13:21+00:00",
+      "lat": 9.8044,
+      "lon": 105.9293,
+      "course_deg": 66,
+      "groundspeed_kt": 319,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:13:39 AM",
+      "time_utc": "2026-10-07T11:13:39+00:00",
+      "lat": 9.8084,
+      "lon": 105.9543,
+      "course_deg": 98,
+      "groundspeed_kt": 324,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:14:02 AM",
+      "time_utc": "2026-10-07T11:14:02+00:00",
+      "lat": 9.7944,
+      "lon": 105.9862,
+      "course_deg": 132,
+      "groundspeed_kt": 331,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:14:18 AM",
+      "time_utc": "2026-10-07T11:14:18+00:00",
+      "lat": 9.7753,
+      "lon": 105.9989,
+      "course_deg": 163,
+      "groundspeed_kt": 336,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:14:36 AM",
+      "time_utc": "2026-10-07T11:14:36+00:00",
+      "lat": 9.7458,
+      "lon": 106.001,
+      "course_deg": 193,
+      "groundspeed_kt": 336,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:14:59 AM",
+      "time_utc": "2026-10-07T11:14:59+00:00",
+      "lat": 9.7164,
+      "lon": 105.9851,
+      "course_deg": 215,
+      "groundspeed_kt": 335,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:15:33 AM",
+      "time_utc": "2026-10-07T11:15:33+00:00",
+      "lat": 9.673,
+      "lon": 105.9543,
+      "course_deg": 216,
+      "groundspeed_kt": 331,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:15:51 AM",
+      "time_utc": "2026-10-07T11:15:51+00:00",
+      "lat": 9.6514,
+      "lon": 105.9376,
+      "course_deg": 225,
+      "groundspeed_kt": 328,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:16:14 AM",
+      "time_utc": "2026-10-07T11:16:14+00:00",
+      "lat": 9.6365,
+      "lon": 105.9055,
+      "course_deg": 263,
+      "groundspeed_kt": 323,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:16:33 AM",
+      "time_utc": "2026-10-07T11:16:33+00:00",
+      "lat": 9.6417,
+      "lon": 105.8779,
+      "course_deg": 295,
+      "groundspeed_kt": 318,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:16:55 AM",
+      "time_utc": "2026-10-07T11:16:55+00:00",
+      "lat": 9.6626,
+      "lon": 105.8553,
+      "course_deg": 326,
+      "groundspeed_kt": 313,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:17:12 AM",
+      "time_utc": "2026-10-07T11:17:12+00:00",
+      "lat": 9.6861,
+      "lon": 105.8485,
+      "course_deg": 357,
+      "groundspeed_kt": 311,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:17:31 AM",
+      "time_utc": "2026-10-07T11:17:31+00:00",
+      "lat": 9.7134,
+      "lon": 105.8553,
+      "course_deg": 29,
+      "groundspeed_kt": 312,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:18:15 AM",
+      "time_utc": "2026-10-07T11:18:15+00:00",
+      "lat": 9.7661,
+      "lon": 105.8925,
+      "course_deg": 36,
+      "groundspeed_kt": 313,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:18:36 AM",
+      "time_utc": "2026-10-07T11:18:36+00:00",
+      "lat": 9.7894,
+      "lon": 105.9096,
+      "course_deg": 38,
+      "groundspeed_kt": 313,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:18:55 AM",
+      "time_utc": "2026-10-07T11:18:55+00:00",
+      "lat": 9.8058,
+      "lon": 105.9331,
+      "course_deg": 72,
+      "groundspeed_kt": 318,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:19:20 AM",
+      "time_utc": "2026-10-07T11:19:20+00:00",
+      "lat": 9.8038,
+      "lon": 105.972,
+      "course_deg": 111,
+      "groundspeed_kt": 326,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:19:41 AM",
+      "time_utc": "2026-10-07T11:19:41+00:00",
+      "lat": 9.7833,
+      "lon": 105.9949,
+      "course_deg": 147,
+      "groundspeed_kt": 332,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:19:59 AM",
+      "time_utc": "2026-10-07T11:19:59+00:00",
+      "lat": 9.7574,
+      "lon": 106.002,
+      "course_deg": 181,
+      "groundspeed_kt": 336,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:20:19 AM",
+      "time_utc": "2026-10-07T11:20:19+00:00",
+      "lat": 9.7282,
+      "lon": 105.9928,
+      "course_deg": 212,
+      "groundspeed_kt": 334,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:20:52 AM",
+      "time_utc": "2026-10-07T11:20:52+00:00",
+      "lat": 9.6872,
+      "lon": 105.9637,
+      "course_deg": 215,
+      "groundspeed_kt": 332,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:21:21 AM",
+      "time_utc": "2026-10-07T11:21:21+00:00",
+      "lat": 9.6522,
+      "lon": 105.9378,
+      "course_deg": 223,
+      "groundspeed_kt": 330,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:21:40 AM",
+      "time_utc": "2026-10-07T11:21:40+00:00",
+      "lat": 9.6377,
+      "lon": 105.9112,
+      "course_deg": 258,
+      "groundspeed_kt": 324,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:21:56 AM",
+      "time_utc": "2026-10-07T11:21:56+00:00",
+      "lat": 9.6384,
+      "lon": 105.8877,
+      "course_deg": 281,
+      "groundspeed_kt": 320,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:22:17 AM",
+      "time_utc": "2026-10-07T11:22:17+00:00",
+      "lat": 9.6557,
+      "lon": 105.8604,
+      "course_deg": 320,
+      "groundspeed_kt": 307,
+      "altitude_ft": 22975,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:22:35 AM",
+      "time_utc": "2026-10-07T11:22:35+00:00",
+      "lat": 9.6765,
+      "lon": 105.85,
+      "course_deg": 347,
+      "groundspeed_kt": 300,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:22:55 AM",
+      "time_utc": "2026-10-07T11:22:55+00:00",
+      "lat": 9.7033,
+      "lon": 105.851,
+      "course_deg": 16,
+      "groundspeed_kt": 299,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:23:38 AM",
+      "time_utc": "2026-10-07T11:23:38+00:00",
+      "lat": 9.755,
+      "lon": 105.8845,
+      "course_deg": 35,
+      "groundspeed_kt": 302,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (VCA / VVCT)"
+    },
+    {
+      "time_display": "Wed 07:24:08 AM",
+      "time_utc": "2026-10-07T11:24:08+00:00",
+      "lat": 9.7896,
+      "lon": 105.9098,
+      "course_deg": 38,
+      "groundspeed_kt": 300,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:24:31 AM",
+      "time_utc": "2026-10-07T11:24:31+00:00",
+      "lat": 9.8066,
+      "lon": 105.936,
+      "course_deg": 74,
+      "groundspeed_kt": 304,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:24:51 AM",
+      "time_utc": "2026-10-07T11:24:51+00:00",
+      "lat": 9.8064,
+      "lon": 105.9645,
+      "course_deg": 105,
+      "groundspeed_kt": 309,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:25:08 AM",
+      "time_utc": "2026-10-07T11:25:08+00:00",
+      "lat": 9.7943,
+      "lon": 105.9858,
+      "course_deg": 131,
+      "groundspeed_kt": 314,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:25:32 AM",
+      "time_utc": "2026-10-07T11:25:32+00:00",
+      "lat": 9.7653,
+      "lon": 106.0011,
+      "course_deg": 171,
+      "groundspeed_kt": 316,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:25:58 AM",
+      "time_utc": "2026-10-07T11:25:58+00:00",
+      "lat": 9.7269,
+      "lon": 105.9916,
+      "course_deg": 213,
+      "groundspeed_kt": 317,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:26:38 AM",
+      "time_utc": "2026-10-07T11:26:38+00:00",
+      "lat": 9.6804,
+      "lon": 105.9588,
+      "course_deg": 215,
+      "groundspeed_kt": 315,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:26:57 AM",
+      "time_utc": "2026-10-07T11:26:57+00:00",
+      "lat": 9.6558,
+      "lon": 105.9407,
+      "course_deg": 219,
+      "groundspeed_kt": 316,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:27:17 AM",
+      "time_utc": "2026-10-07T11:27:17+00:00",
+      "lat": 9.6402,
+      "lon": 105.9186,
+      "course_deg": 248,
+      "groundspeed_kt": 313,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:27:34 AM",
+      "time_utc": "2026-10-07T11:27:34+00:00",
+      "lat": 9.6378,
+      "lon": 105.8924,
+      "course_deg": 278,
+      "groundspeed_kt": 307,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:27:50 AM",
+      "time_utc": "2026-10-07T11:27:50+00:00",
+      "lat": 9.6453,
+      "lon": 105.8725,
+      "course_deg": 302,
+      "groundspeed_kt": 304,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:28:13 AM",
+      "time_utc": "2026-10-07T11:28:13+00:00",
+      "lat": 9.6698,
+      "lon": 105.8523,
+      "course_deg": 338,
+      "groundspeed_kt": 299,
+      "altitude_ft": 23000,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:28:39 AM",
+      "time_utc": "2026-10-07T11:28:39+00:00",
+      "lat": 9.7072,
+      "lon": 105.8523,
+      "course_deg": 20,
+      "groundspeed_kt": 300,
+      "altitude_ft": 22950,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:29:17 AM",
+      "time_utc": "2026-10-07T11:29:17+00:00",
+      "lat": 9.749,
+      "lon": 105.8802,
+      "course_deg": 35,
+      "groundspeed_kt": 302,
+      "altitude_ft": 22600,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:29:50 AM",
+      "time_utc": "2026-10-07T11:29:50+00:00",
+      "lat": 9.7864,
+      "lon": 105.9073,
+      "course_deg": 38,
+      "groundspeed_kt": 301,
+      "altitude_ft": 22300,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:30:06 AM",
+      "time_utc": "2026-10-07T11:30:06+00:00",
+      "lat": 9.8023,
+      "lon": 105.9254,
+      "course_deg": 61,
+      "groundspeed_kt": 302,
+      "altitude_ft": 22150,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:30:26 AM",
+      "time_utc": "2026-10-07T11:30:26+00:00",
+      "lat": 9.8078,
+      "lon": 105.9529,
+      "course_deg": 93,
+      "groundspeed_kt": 310,
+      "altitude_ft": 21975,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:30:51 AM",
+      "time_utc": "2026-10-07T11:30:51+00:00",
+      "lat": 9.7935,
+      "lon": 105.9846,
+      "course_deg": 135,
+      "groundspeed_kt": 315,
+      "altitude_ft": 21750,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:31:10 AM",
+      "time_utc": "2026-10-07T11:31:10+00:00",
+      "lat": 9.7701,
+      "lon": 105.998,
+      "course_deg": 166,
+      "groundspeed_kt": 312,
+      "altitude_ft": 21575,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    },
+    {
+      "time_display": "Wed 07:31:31 AM",
+      "time_utc": "2026-10-07T11:31:31+00:00",
+      "lat": 9.7391,
+      "lon": 105.9957,
+      "course_deg": 200,
+      "groundspeed_kt": 309,
+      "altitude_ft": 21400,
+      "reporting_facility": "FlightAware ADS-B (SGN / VVTS)"
+    }
+  ],
+  "filed_flight_plan": null,
+  "atc_clearance": null
+}

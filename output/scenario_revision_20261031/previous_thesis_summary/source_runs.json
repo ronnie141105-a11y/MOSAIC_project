@@ -1,0 +1,26 @@
+{
+  "workbook_low_20": {
+    "run_id": "20261030T141243Z-bb5aa8fc",
+    "version": "full-route-hybrid-ga-8",
+    "input_sha256": {
+      "manifest.json": "3b7d6acfa44a0853da5ba8c5fdb80be4424d6c93f140706ac4653e57eb959333",
+      "tracks.csv": "36f7b63ddd793cf9903a0d43e56d3dcdf410efdc2b21af055e634050ca666ae0",
+      "ground_tracks.json.gz": "4b2afc25f80677575dfc35de72b522dce762df13cb9e9835489091dd2b5bc3b7",
+      "planning.csv": "7c3f3069e9c7ed6983432338baa74ed1be50062bae6c0cae48f4d6ba91c79b78",
+      "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+      "fpl.csv": "7c3f3069e9c7ed6983432338baa74ed1be50062bae6c0cae48f4d6ba91c79b78"
+    }
+  },
+  "workbook_peak_50": {
+    "run_id": "20261030T140230Z-a23210aa",
+    "version": "full-route-hybrid-ga-8",
+    "input_sha256": {
+      "manifest.json": "8341d1372131300a02805e1d97e138b0680f50fcb9a099594c871f68233d8b75",
+      "tracks.csv": "8a46e30868058893d0a392ff1532a89c4bdb8239e492d2b4bca2c10b410b5952",
+      "ground_tracks.json.gz": "ea137d81e381c44d2e783683686577b40495f88d59747ee3d8378744f2eb31b1",
+      "planning.csv": "53d7d009061cf9ffcddf839235df3240b06e73b38075d7664cc7f0856b559b83",
+      "capacity.csv": "5acc3fc108ed277a3dd151a82809bb17d742ea54700a33385f785f2f9987a2e9",
+      "fpl.csv": "53d7d009061cf9ffcddf839235df3240b06e73b38075d7664cc7f0856b559b83"
+    }
+  }
+}

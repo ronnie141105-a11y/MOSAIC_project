@@ -1,0 +1,48 @@
+{
+  "provider": "FlightAware",
+  "tracks": [
+    {
+      "file": "output\\weather_capture\\2026-10-07\\HVN133_track.json",
+      "url": "https://www.flightaware.com/live/flight/HVN133/history/20261007/0830Z/VVDN/VVTS/tracklog",
+      "retrieved_at_utc": "2026-10-07T11:36:59.297468+00:00",
+      "sha256": "b1b4ed346f227ebf126821eba8d091ad1d25622a44643b8f5fbd6e1d0be3aaad"
+    },
+    {
+      "file": "output\\weather_capture\\2026-10-07\\HVN273_track.json",
+      "url": "https://www.flightaware.com/live/flight/HVN273/history/20261007/0910Z/VVNB/VVTS/tracklog",
+      "retrieved_at_utc": "2026-10-07T11:37:00.669598+00:00",
+      "sha256": "355221dc19c92ab3e41ed4c5ddef7190a14dac0082b1b52a96ecd5e191676d19"
+    },
+    {
+      "file": "output\\weather_capture\\2026-10-07\\MAS766_track.json",
+      "url": "https://www.flightaware.com/live/flight/MAS766/history/20261007/0930Z/WMKK/VVTS/tracklog",
+      "retrieved_at_utc": "2026-10-07T11:36:59.197697+00:00",
+      "sha256": "2c1ace9bd18dc899a44216c8d299a2eb83b9faa77f16458a616cf08a364eee09"
+    },
+    {
+      "file": "output\\weather_capture\\2026-10-07\\SIA186_track.json",
+      "url": "https://www.flightaware.com/live/flight/SIA186/history/20261007/0925Z/WSSS/VVTS/tracklog",
+      "retrieved_at_utc": "2026-10-07T11:36:59.111220+00:00",
+      "sha256": "326a0839fb508fc490acab8252c0c4a6dbd35636f701f23cfea89b83ec212149"
+    },
+    {
+      "file": "output\\weather_capture\\2026-10-07\\VJC147_track.json",
+      "url": "https://www.flightaware.com/live/flight/VJC147/history/20261007/0855Z/VVNB/VVTS/tracklog",
+      "retrieved_at_utc": "2026-10-07T11:37:00.941883+00:00",
+      "sha256": "0c9464ba7edb8e3d94c91a752d76d46f6329d44f50e5e5f87ec6f114b32065dc"
+    },
+    {
+      "file": "output\\weather_capture\\2026-10-07\\VJC211_track.json",
+      "url": "https://www.flightaware.com/live/flight/VJC211/history/20261007/0655Z/VVVH/VVTS/tracklog",
+      "retrieved_at_utc": "2026-10-07T11:37:00.598412+00:00",
+      "sha256": "ae8a81ea79b2310a5e4473e284250c218c93e2ebade35e87c480b0c17441dfe0"
+    }
+  ],
+  "caveats": [
+    "Selected flights only; not the full arrival/departure population.",
+    "Tracks end at the source capture cutoff, before the 19:00 end of the requested window.",
+    "Vertical speed is absent in source rows; recovery uses past altitude only.",
+    "Circling does not establish a holding clearance, fix assignment, or delay cause.",
+    "VJC211 diversion remains unconfirmed."
+  ]
+}

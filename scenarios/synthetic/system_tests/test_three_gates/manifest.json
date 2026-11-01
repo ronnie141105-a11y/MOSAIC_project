@@ -1,0 +1,444 @@
+{
+  "case_id": "test_three_gates",
+  "label": "T3 \u00b7 Three arrival routes",
+  "basis": "Six arrivals via three STARs, with two departures.",
+  "synthetic": true,
+  "system_test_version": "system-tests-1",
+  "local_start": "2026-10-20T02:00:00+00:00",
+  "local_end": "2026-10-20T03:31:10+00:00",
+  "duration_s": 5470,
+  "connected_fir": true,
+  "counts": {
+    "total": 8,
+    "arrivals": 6,
+    "departures": 2
+  },
+  "flights": [
+    {
+      "callsign": "TSTGA01",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "BITIS2H",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "simulated_slot_utc": "2026-10-20T02:47:55+00:00",
+      "planned_event_utc": "2026-10-20T02:47:55+00:00",
+      "first_track_utc": "2026-10-20T02:00:00+00:00",
+      "last_track_utc": "2026-10-20T02:47:55+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTGA02",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "DALAP2H",
+      "centre_route": "DALAP2H transition / N500",
+      "simulated_slot_utc": "2026-10-20T02:51:00+00:00",
+      "planned_event_utc": "2026-10-20T02:51:00+00:00",
+      "first_track_utc": "2026-10-20T02:14:40+00:00",
+      "last_track_utc": "2026-10-20T02:51:00+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTGA03",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "VICAL3H",
+      "centre_route": "VICAL3H transition / W9",
+      "simulated_slot_utc": "2026-10-20T03:05:05+00:00",
+      "planned_event_utc": "2026-10-20T03:05:05+00:00",
+      "first_track_utc": "2026-10-20T02:24:10+00:00",
+      "last_track_utc": "2026-10-20T03:05:05+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTGA04",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "adep": "VVTS",
+      "ades": "VVNB",
+      "runway": "25L",
+      "procedure": "XOBAV2D",
+      "centre_route": "W9",
+      "simulated_slot_utc": "2026-10-20T02:00:00+00:00",
+      "planned_event_utc": "2026-10-20T02:00:00+00:00",
+      "first_track_utc": "2026-10-20T02:00:00+00:00",
+      "last_track_utc": "2026-10-20T02:24:20+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTGA05",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "BITIS2H",
+      "centre_route": "BITIS2H transition / W16 / W8",
+      "simulated_slot_utc": "2026-10-20T03:13:25+00:00",
+      "planned_event_utc": "2026-10-20T03:13:25+00:00",
+      "first_track_utc": "2026-10-20T02:25:30+00:00",
+      "last_track_utc": "2026-10-20T03:13:25+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTGA06",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "DALAP2H",
+      "centre_route": "DALAP2H transition / N500",
+      "simulated_slot_utc": "2026-10-20T03:16:30+00:00",
+      "planned_event_utc": "2026-10-20T03:16:30+00:00",
+      "first_track_utc": "2026-10-20T02:40:10+00:00",
+      "last_track_utc": "2026-10-20T03:16:30+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTGA07",
+      "aircraft_type": "A320",
+      "direction": "arrival",
+      "adep": "VVNB",
+      "ades": "VVTS",
+      "runway": "25R",
+      "procedure": "VICAL3H",
+      "centre_route": "VICAL3H transition / W9",
+      "simulated_slot_utc": "2026-10-20T03:30:35+00:00",
+      "planned_event_utc": "2026-10-20T03:30:35+00:00",
+      "first_track_utc": "2026-10-20T02:49:40+00:00",
+      "last_track_utc": "2026-10-20T03:30:35+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    },
+    {
+      "callsign": "TSTGA08",
+      "aircraft_type": "A320",
+      "direction": "departure",
+      "adep": "VVTS",
+      "ades": "VVNB",
+      "runway": "25L",
+      "procedure": "SAPEN2D",
+      "centre_route": "SYNTHETIC CONNECTOR",
+      "simulated_slot_utc": "2026-10-20T02:01:20+00:00",
+      "planned_event_utc": "2026-10-20T02:01:20+00:00",
+      "first_track_utc": "2026-10-20T02:01:20+00:00",
+      "last_track_utc": "2026-10-20T02:25:00+00:00",
+      "evidence": "synthetic_system_test",
+      "synthetic": true
+    }
+  ],
+  "separation_audit": {
+    "sample_s": 1,
+    "horizontal_nm": 10,
+    "same_heading_horizontal_nm": 20,
+    "same_heading_tolerance_deg": 25,
+    "vertical_ft": 1000,
+    "separation_logic": "horizontal >= threshold OR vertical >= 1000 ft",
+    "admission_buffer_horizontal_nm": 0.3,
+    "admission_buffer_vertical_ft": 100,
+    "transfer_minimum_s": 120,
+    "minimum_arrival_transfer_gap_s": 168.568,
+    "violating_pairs": 0,
+    "pair_checks": [
+      {
+        "left": "TSTGA01",
+        "right": "TSTGA02",
+        "violations": 0,
+        "minimum_horizontal_nm": 1.9923108289509759,
+        "minimum_vertical_ft": 1179.7386622473773
+      },
+      {
+        "left": "TSTGA01",
+        "right": "TSTGA03",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.817330222882056,
+        "minimum_vertical_ft": 1362.054348176608
+      },
+      {
+        "left": "TSTGA01",
+        "right": "TSTGA04",
+        "violations": 0,
+        "minimum_horizontal_nm": 36.63863625883814,
+        "minimum_vertical_ft": 16.327158390655313
+      },
+      {
+        "left": "TSTGA01",
+        "right": "TSTGA05",
+        "violations": 0,
+        "minimum_horizontal_nm": 16.49857875249711,
+        "minimum_vertical_ft": 7821.65826289987
+      },
+      {
+        "left": "TSTGA01",
+        "right": "TSTGA06",
+        "violations": 0,
+        "minimum_horizontal_nm": 76.32958208965563,
+        "minimum_vertical_ft": 17988.25967459241
+      },
+      {
+        "left": "TSTGA01",
+        "right": "TSTGA07",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TSTGA01",
+        "right": "TSTGA08",
+        "violations": 0,
+        "minimum_horizontal_nm": 55.56843039162119,
+        "minimum_vertical_ft": 16.64619499229957
+      },
+      {
+        "left": "TSTGA02",
+        "right": "TSTGA03",
+        "violations": 0,
+        "minimum_horizontal_nm": 19.870227432136524,
+        "minimum_vertical_ft": 4.245061698293284
+      },
+      {
+        "left": "TSTGA02",
+        "right": "TSTGA04",
+        "violations": 0,
+        "minimum_horizontal_nm": 137.4788609621705,
+        "minimum_vertical_ft": 18.77846910383232
+      },
+      {
+        "left": "TSTGA02",
+        "right": "TSTGA05",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.84350179445121,
+        "minimum_vertical_ft": 4702.136994284367
+      },
+      {
+        "left": "TSTGA02",
+        "right": "TSTGA06",
+        "violations": 0,
+        "minimum_horizontal_nm": 61.37980583479355,
+        "minimum_vertical_ft": 14731.347177796326
+      },
+      {
+        "left": "TSTGA02",
+        "right": "TSTGA07",
+        "violations": 0,
+        "minimum_horizontal_nm": 116.01133920295298,
+        "minimum_vertical_ft": 23497.759776948275
+      },
+      {
+        "left": "TSTGA02",
+        "right": "TSTGA08",
+        "violations": 0,
+        "minimum_horizontal_nm": 179.48543036942004,
+        "minimum_vertical_ft": 1.8706156239168195
+      },
+      {
+        "left": "TSTGA03",
+        "right": "TSTGA04",
+        "violations": 0,
+        "minimum_horizontal_nm": 0.11181802464469665,
+        "minimum_vertical_ft": 4272.820900899947
+      },
+      {
+        "left": "TSTGA03",
+        "right": "TSTGA05",
+        "violations": 0,
+        "minimum_horizontal_nm": 17.885805801302453,
+        "minimum_vertical_ft": 0.0
+      },
+      {
+        "left": "TSTGA03",
+        "right": "TSTGA06",
+        "violations": 0,
+        "minimum_horizontal_nm": 12.329604962251153,
+        "minimum_vertical_ft": 3914.1541187472385
+      },
+      {
+        "left": "TSTGA03",
+        "right": "TSTGA07",
+        "violations": 0,
+        "minimum_horizontal_nm": 38.347790969580274,
+        "minimum_vertical_ft": 6534.16344087904
+      },
+      {
+        "left": "TSTGA03",
+        "right": "TSTGA08",
+        "violations": 0,
+        "minimum_horizontal_nm": 208.14122874637698,
+        "minimum_vertical_ft": 3428.7359426913717
+      },
+      {
+        "left": "TSTGA04",
+        "right": "TSTGA05",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TSTGA04",
+        "right": "TSTGA06",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TSTGA04",
+        "right": "TSTGA07",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TSTGA04",
+        "right": "TSTGA08",
+        "violations": 0,
+        "minimum_horizontal_nm": 3.8095714550939057,
+        "minimum_vertical_ft": 2.2174075475049904
+      },
+      {
+        "left": "TSTGA05",
+        "right": "TSTGA06",
+        "violations": 0,
+        "minimum_horizontal_nm": 1.9923108289509759,
+        "minimum_vertical_ft": 1179.7386622473773
+      },
+      {
+        "left": "TSTGA05",
+        "right": "TSTGA07",
+        "violations": 0,
+        "minimum_horizontal_nm": 23.817330222882056,
+        "minimum_vertical_ft": 1362.054348176608
+      },
+      {
+        "left": "TSTGA05",
+        "right": "TSTGA08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TSTGA06",
+        "right": "TSTGA07",
+        "violations": 0,
+        "minimum_horizontal_nm": 19.870227432136524,
+        "minimum_vertical_ft": 4.245061698293284
+      },
+      {
+        "left": "TSTGA06",
+        "right": "TSTGA08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      },
+      {
+        "left": "TSTGA07",
+        "right": "TSTGA08",
+        "violations": 0,
+        "minimum_horizontal_nm": null,
+        "minimum_vertical_ft": null
+      }
+    ],
+    "transfer_events": [
+      {
+        "callsign": "TSTGA01",
+        "direction": "arrival",
+        "time_s": 982.267,
+        "procedure": "BITIS2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.275365161194115,
+        "lon": 106.25787461494359
+      },
+      {
+        "callsign": "TSTGA02",
+        "direction": "arrival",
+        "time_s": 1821.122,
+        "procedure": "DALAP2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.989531446892448,
+        "lon": 107.3062391856748
+      },
+      {
+        "callsign": "TSTGA03",
+        "direction": "arrival",
+        "time_s": 2343.699,
+        "procedure": "VICAL3H",
+        "fix": "VVTS_40NM",
+        "lat": 10.160015946530029,
+        "lon": 106.75458234351761
+      },
+      {
+        "callsign": "TSTGA04",
+        "direction": "departure",
+        "time_s": 736.364,
+        "procedure": "XOBAV2D",
+        "fix": "VVTS_40NM",
+        "lat": 10.152211052925825,
+        "lon": 106.63912862885778
+      },
+      {
+        "callsign": "TSTGA05",
+        "direction": "arrival",
+        "time_s": 2512.267,
+        "procedure": "BITIS2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.275365161194115,
+        "lon": 106.25787461494359
+      },
+      {
+        "callsign": "TSTGA06",
+        "direction": "arrival",
+        "time_s": 3351.122,
+        "procedure": "DALAP2H",
+        "fix": "VVTS_40NM",
+        "lat": 10.989531446892448,
+        "lon": 107.3062391856748
+      },
+      {
+        "callsign": "TSTGA07",
+        "direction": "arrival",
+        "time_s": 3873.699,
+        "procedure": "VICAL3H",
+        "fix": "VVTS_40NM",
+        "lat": 10.160015946530029,
+        "lon": 106.75458234351761
+      },
+      {
+        "callsign": "TSTGA08",
+        "direction": "departure",
+        "time_s": 744.394,
+        "procedure": "SAPEN2D",
+        "fix": "VVTS_40NM",
+        "lat": 11.086511710480535,
+        "lon": 106.02938299558328
+      }
+    ],
+    "arrival_transfer_gaps_s": [
+      838.855,
+      522.577,
+      168.568,
+      838.855,
+      522.577
+    ]
+  },
+  "limitations": [
+    "Synthetic functional test; not real FPL, observed traffic or an ATFM case study.",
+    "Paths are generated by the existing procedure propagator and checked on a one-second grid.",
+    "Departure tracks begin at the runway; taxi movements are not part of these fixtures.",
+    "40 NM transfer fixes are study boundary intersections, not published transfer agreements."
+  ]
+}

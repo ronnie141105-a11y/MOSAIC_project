@@ -1,0 +1,60 @@
+STANDARD DEPARTURE CHART -                                   TRANSITION LVL         FL190                 HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                     TR ANSITION ALT 5500 m                                                         RNAV RWY 25L/R
+                                                                                                                                        ANTRI 2D, LANHI 2D
+
+
+ 1.    TABULAR DESCRIPTION
+
+    ANTRI 2D DEPARTURE
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance         Turn        Altitude     Speed
+    number       Descriptor      Identifier      over           °M(°T)          Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+    INITIAL CLIMB R W Y 25L
+      010            CF            TS612           Y             250                +1           7.1             -             -          -445        RN AV 1
+      020            DF            TS626           -               -                +1             -             -          +1200           -         RN AV 1
+    INITIAL CLIMB R W Y 25R
+      010            CF            TS614           Y             250                +1           7.2             -             -          -445        RN AV 1
+      020            DF            TS626           -               -                +1             -             -          +1200           -         RN AV 1
+    FROM TS626
+      010             IF           TS626           -               -               +1              -             -         +1200            -        R NAV 1
+      020            TF            TS628           -       070     (069.1)          +1           9.8             -          -2750           -         RN AV 1
+      030            TF            TS632           -       070     (069.1)          +1           14.8            -          +3050           -         RN AV 1
+      040            TF            TS814           -       053     (051.5)          +1           32.1            -             -            -         RN AV 1
+      050            TF            TS816           -       032     (031.3)          +1           17.2            -             -            -         RN AV 1
+      060            TF            AN TRI          -       032     (031.3)          +1           17.2            -             -            -         RN AV 1
+    DOVIN TRANSITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance         Turn        Altitude     Speed
+    number       Descriptor      Identifier      over           °M(°T)          Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF           AN TRI          -               -               +1              -             -             -            -        R NAV 1
+      020            TF           D OVIN           -       050     (048.6)          +1          126.6            -             -            -         RN AV 1
+    BIXEX TRANSITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance         Turn        Altitude     Speed
+    number       Descriptor      Identifier      over           °M(°T)          Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF           AN TRI          -               -               +1              -             -             -            -        R NAV 1
+      020            TF            BIXEX           -       065     (063.5)          +1          110.0            -             -            -         RN AV 1
+    PTH TRAN SITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance         Turn        Altitude     Speed
+    number       Descriptor      Identifier      over           °M(°T)          Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF           AN TRI          -               -                +1             -             -             -            -         RN AV 1
+      020            TF             PTH            -       107     (105.7)          +1           94.9            -             -            -         RN AV 1
+    PATMA TRAN SITION
+     Serial         Path         Waypoint        Fly-          Course          Magnetic       Distance         Turn        Altitude     Speed
+    number       Descriptor      Identifier      over           °M(°T)          Variation        (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                        (km/h)
+      010             IF           AN TRI          -               -                +1             -             -             -            -         RN AV 1
+      020            TF           PATMA            -       027     (025.6)          +1          144.2            -             -            -         RN AV 1
+
+
+
+
+
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V2\VVTS_SID RNAV RWY 25LR ANTRI 2D LANHI
+2D_TABULAR_V2.docx

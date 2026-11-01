@@ -1,0 +1,69 @@
+{
+  "id": "tsn_tma",
+  "label": "VVTS TMA study - RWY 25L/25R",
+  "kind": "tma",
+  "waypoints": "waypoints.json",
+  "procedures": [
+    "sids/sapen2d.json",
+    "sids/bachu2d.json",
+    "sids/misan2d.json",
+    "sids/enpas2d.json",
+    "sids/xobav2d.json",
+    "sids/kadum2d.json",
+    "sids/antri2d.json",
+    "sids/lanhi2d.json",
+    "stars/sapen2h.json",
+    "stars/bitis2h.json",
+    "stars/vical3h.json",
+    "stars/elsas2h.json",
+    "stars/dalap2h.json",
+    "stars/dalap2j.json",
+    "sids/antri2e.json",
+    "sids/lanhi2e.json",
+    "sids/tanos2e.json",
+    "sids/tanos2d.json",
+    "sids/antri2f.json",
+    "sids/kadum2f.json",
+    "sids/kadum2g.json",
+    "sids/kadum2k.json",
+    "sids/sapen2k.json",
+    "stars/bitis2j.json",
+    "stars/sapen2j.json",
+    "stars/vical3j.json"
+  ],
+  "holds": "holds.json",
+  "center": {
+    "lat": 10.818333333333333,
+    "lon": 106.65055555555556,
+    "ident": "TSH",
+    "source": "10430.pdf"
+  },
+  "radius_nm": 40,
+  "lower_altitude_m": 600,
+  "upper_altitude_m": 5050,
+  "prediction_horizons_min": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    15
+  ],
+  "study_thresholds": {
+    "cluster_horizontal_nm": 8,
+    "conflict_horizontal_nm": 5,
+    "vertical_ft": 1000,
+    "status": "Simulation assumptions; not validated VVTS separation minima"
+  },
+  "source_status": "Supplied historical area/SID/STAR charts and 2025 approach documents; study use",
+  "limitations": [
+    "Conventional SID coordinate reconciliation pending; not included as flyable procedures.",
+    "Holding data retained; no holding execution in this version.",
+    "Climb gradients and aircraft performance not enforced; no GA optimization in this version."
+  ],
+  "approach": "approach_ils_w_25r.json",
+  "area_routes": "area_routes.json",
+  "navaids": "context_navaids.json",
+  "radar_display_radius_nm": 100,
+  "archive": "TSN_TMA_CHART.zip"
+}

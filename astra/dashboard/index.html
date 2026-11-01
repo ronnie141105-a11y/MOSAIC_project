@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MOSAIC &mdash; Tactical FMP HMI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='embedded_control.css') }}">
+</head>
+<body class="{{ 'tma-profile centre-profile' if control_view|default('') == 'centre' else 'tma-profile' if airspace_profile == 'tsn_tma' else 'fir-profile' }}">
+    <!--
+        Two-page HMI shell (Complexity Forecast / Dissipation Workspace),
+        modeled on the reference ASTRA HMI (EUROCONTROL D2.10 Section 2).
+        Read-only: ResolutionEngine's ranked candidates are advisory-only
+        regardless -- nothing here ever auto-applies one of its ranked
+        candidates on its own.
+    -->
+    <header id="hmi-header">
+        <div id="hmi-brand">
+            <h1>MOSAIC</h1>
+            <span id="hmi-subtitle">{{ 'Ho Chi Minh Centre' if control_view|default('') == 'centre' else 'VVTS Approach' if airspace_profile == 'tsn_tma' else 'Tactical FMP Hotspot Prediction & Resolution' }}</span>
+        </div>
+        <div id="workspace-menu-wrap">
+            <button type="button" id="workspace-menu-btn" class="header-btn" aria-expanded="false" aria-label="Open menu"><span class="menu-lines"><i></i><i></i><i></i></span></button>
+            <div id="workspace-menu" class="hidden">
+                <span class="menu-caption">Workspace</span>
+                {% if connected_views|default(false) %}<a href="/supervisor" class="workspace-menu-item">Supervisor</a><a href="/centre" class="workspace-menu-item" target="_blank" rel="noopener">Centre · Ho Chi Minh FIR</a><a href="/" class="workspace-menu-item" target="_blank" rel="noopener">Approach · VVTS 40 NM</a><a href="/airport" class="workspace-menu-item" target="_blank" rel="noopener">Tower · VVTS</a>{% endif %}
+                <button type="button" class="workspace-menu-item" data-panel="panel-alerts" aria-pressed="false">Alerts</button>
+                <button type="button" class="workspace-menu-item" data-panel="panel-event" aria-pressed="false">Event and measures</button>
+                <a href="/scenario" class="workspace-menu-item">Scenario Builder</a>
+                <div id="options-dropdown" class="options-dropdown">
+                    <button type="button" id="options-btn" class="workspace-menu-item" aria-expanded="false">Options</button>
+                    <div id="options-panel" class="options-panel hidden"><div id="map-layer-toggles" class="layer-toggles"></div></div>
+                </div>
+            </div>
+        </div>
+        {% if airspace_profile == 'tsn_tma' %}<button type="button" id="tma-overall-btn" class="header-btn">Overall TMA</button>{% endif %}
+        {% if connected_views|default(false) %}<nav class="control-view-nav"><a href="/centre" class="{{ 'active' if control_view == 'centre' else '' }}">Centre</a><a href="/" class="{{ 'active' if control_view == 'approach' else '' }}">Approach</a><a href="/airport">Tower</a></nav>{% endif %}
+        <button type="button" id="theme-toggle" class="header-btn theme-toggle">Night</button>
+        <button type="button" id="pause-resume-btn" class="header-btn pause-resume-btn">Pause</button>
+        <div id="speed-dropdown" class="options-dropdown">
+            <button type="button" id="speed-btn" class="header-btn">Speed</button>
+            <div id="speed-panel" class="options-panel hidden">
+                <div id="speed-buttons" class="horizon-btn-row"></div>
+            </div>
+        </div>
+        <div id="hmi-status">
+            <span id="status-time" class="status-time-utc"><span id="status-time-value">&ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;</span> UTC</span>
+        </div>
+    </header>
+
+    <main id="tab-forecast" class="tab-page">
+        <section class="panel panel-sectors-full">
+            <h2>Complexity Forecast</h2>
+            <p class="panel-hint">
+                Rolling 5-minute complexity history per fixed sector (opt-in; configure
+                <code>ASTRAConfig.sectors</code> to populate this page).
+            </p>
+            <div id="sector-charts"></div>
+        </section>
+
+        <section id="panel-timeline" class="panel panel-timeline">
+            <h2>Onset &middot; Peak &middot; Dissipation Timeline</h2>
+            <div id="timeline-list"></div>
+        </section>
+    </main>
+
+    <main id="tab-dissipation" class="tab-page active">
+        <aside id="aircraft-info-box" class="aircraft-info-box aircraft-side-panel hidden" aria-label="Selected aircraft details"></aside>
+        <div id="workspace-panels" class="hidden">
+        <section id="panel-alerts" class="panel panel-alerts workspace-panel hidden">
+            <div class="table-scroll">
+                <table id="tracks-table">
+                    <thead>
+                        <tr>
+                            <th>ARHAC</th>
+                            <th>Status</th>
+                            <th>Onset in</th>
+                            <th>Act by</th>
+                            <th>N. flights</th>
+                            <th>Sector</th>
+                            <th>Complexity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tracks-tbody">
+                        <tr><td colspan="8" class="empty-row">No open tracks.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="panel-event" class="panel panel-event workspace-panel hidden">
+            <div id="event-body">
+                <div id="event-stepper" class="event-stepper"></div>
+                <div class="event-top">
+                    <div id="complexity-reduction" class="complexity-reduction"></div>
+                </div>
+                <div id="candidate-list" class="candidate-list"></div>
+                <div id="event-aircraft-table-container" class="event-aircraft-table-container">
+                    <div class="table-scroll event-aircraft-table-scroll">
+                        <table id="event-aircraft-table" class="event-aircraft-table">
+                            <colgroup>
+                                <col style="width:22%">
+                                <col style="width:20%">
+                                <col style="width:18%">
+                                <col style="width:18%">
+                                <col style="width:22%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Callsign</th>
+                                    <th>FL<span class="th-sub">(Predicted-Target)</span></th>
+                                    <th>Groundspeed<span class="th-sub">(kts)</span></th>
+                                    <th>Vertical Rate<span class="th-sub">(ft/min)</span></th>
+                                    <th>Act by</th>
+                                </tr>
+                            </thead>
+                            <tbody id="event-aircraft-tbody">
+                                <tr><td colspan="5" class="empty-row">No aircraft in this event.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div>
+        <section id="panel-map" class="panel panel-map">
+            <div id="map-sector-toggles" class="sector-toggle-row"></div>
+            <div id="map-stack" class="map-stack">
+                <canvas id="map-canvas" width="720" height="520"></canvas>
+                <canvas id="map-weather-canvas" width="720" height="520" aria-label="Simulated TMA weather coverage"></canvas>
+                <canvas id="map-traffic-canvas" width="720" height="520"></canvas>
+                <div id="wx-radar-legend" class="wx-radar-legend" hidden></div>
+                <div id="aircraft-hover-box" class="aircraft-hover-box hidden" role="tooltip"></div>
+                <div id="hotspot-info-boxes" class="hotspot-info-boxes"></div>
+                <div id="display-mode-box" class="display-mode-box">
+                    <label for="display-mode-select">Display Mode</label>
+                    <select id="display-mode-select">
+                        <option value="overall">Overall FIR</option>
+                        <option value="event">Event Sector</option>
+                    </select>
+                    <button type="button" id="reset-view-btn" class="reset-view-btn">Return to Overall {{ "TMA" if airspace_profile == "tsn_tma" else "FIR" }}</button>
+                </div>
+                <div id="event-sector-message" class="event-sector-message hidden"></div>
+            </div>
+            <div id="time-slider-bar" class="time-slider-bar">
+                <div class="time-slider-row">
+                    <div id="time-box" class="time-box">
+                        <span class="time-box-label">Now</span>
+                        <span id="time-box-value" class="time-box-value">&ndash;&ndash;:&ndash;&ndash;</span>
+                    </div>
+                    <div id="time-slider-track-wrap" class="time-slider-track-wrap">
+                        <div class="time-slider-track"></div>
+                        <div id="time-slider-alert-segment" class="time-slider-alert-segment hidden"></div>
+                        <input
+                            type="range"
+                            id="time-slider"
+                            class="time-slider"
+                            min="0"
+                            max="{{ max_horizon }}"
+                            step="1"
+                            value="0"
+                            aria-label="Prediction time, minutes from now"
+                        >
+                    </div>
+                </div>
+                <div class="time-slider-labels">
+                    <span id="time-slider-spacer" class="time-slider-spacer"></span>
+                    <div class="time-slider-labels-track">
+                        <span id="time-slider-start-label" class="time-slider-edge-label">&ndash;&ndash;:&ndash;&ndash;</span>
+                        <span id="time-slider-end-label" class="time-slider-edge-label">&ndash;&ndash;:&ndash;&ndash;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Server-provided constants -- the frontend never hard-codes
+        // these (design review OQ-5(B): poll at poll_interval_s, not an
+        // arbitrary fixed cadence). Also true of the geo-manifest URL:
+        // this app's static prefix is derived from its folder name
+        // (`/dashboard/...`, not the Flask default `/static/...`), so
+        // geo_layers.js must be told the real URL rather than assume one.
+        window.ASTRA_POLL_INTERVAL_S = {{ poll_interval_s }};
+        // The DBSCAN horizontal separation threshold (NM) that decides
+        // hotspot membership -- the hotspot polygon is drawn at exactly
+        // this radius around each member aircraft, so it visually *is*
+        // the "still triggers / no longer triggers" boundary, not a
+        // cosmetic buffer. See drawComplexityRegions() in dashboard.js.
+        window.ASTRA_SEPARATION_NM = {{ separation_horizontal_nm }};
+        // Alert Box display filter -- a hotspot below this complexity
+        // score still exists as an open, resolvable/forecastable track
+        // (map/timeline/resolution panels are unaffected), it just
+        // isn't shown in the Alert Box table. See renderTracksTable().
+        window.ASTRA_ALERT_MIN_COMPLEXITY = {{ alert_min_complexity_score }};
+        window.ASTRA_GEO_MANIFEST_URL = {{ geo_manifest_url | tojson }};
+        window.ASTRA_AIRSPACE_PROFILE = {{ airspace_profile | tojson }};
+        window.MOSAIC_CONTROL_VIEW = {{ control_view|default('')|tojson }};
+        window.MOSAIC_BOUNDARY = {{ handoff_boundary|default(none)|tojson }};
+        window.MOSAIC_ARRIVAL_TRANSFERS = {{ arrival_transfer_limits|default({})|tojson }};
+        window.ASTRA_PREDICTION_HORIZONS = {{ prediction_horizons | tojson }};
+        window.ASTRA_MAX_HORIZON_MIN = {{ max_horizon | tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='control_areas.js') }}"></script>
+    <script src="{{ url_for('static', filename='monitor_theme.js') }}"></script>
+    <script src="{{ url_for('static', filename='supervisor_sync.js') }}"></script>
+    <script src="{{ url_for('static', filename='geo_layers.js') }}"></script>
+    <script src="{{ url_for('static', filename='traffic_style.js') }}"></script>
+    <script src="{{ url_for('static', filename='radar_geometry.js') }}"></script>
+    <script src="{{ url_for('static', filename='radar_motion.js') }}"></script>
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+    {% if control_view|default('') == 'centre' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='gate_flow.css') }}">
+    <script src="{{ url_for('static', filename='gate_flow.js') }}"></script>
+    {% endif %}
+    {% include 'operations_panel.html' %}
+</body>
+</html>

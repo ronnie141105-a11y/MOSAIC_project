@@ -1,0 +1,5850 @@
+{
+  "source_url": "https://aviationweather.gov/api/data/metar?ids=VVTS&format=json&hours=96",
+  "retrieved_at_utc": "2026-10-10T15:16:42.198863+00:00",
+  "observations": [
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T15:05:36.006Z",
+      "obsTime": 1791644400,
+      "reportTime": "2026-10-10T15:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 130,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101500Z 13005KT 090V160 CAVOK 28/26 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T14:35:21.204Z",
+      "obsTime": 1791642600,
+      "reportTime": "2026-10-10T14:30:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 120,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101430Z 12006KT 100V170 CAVOK 28/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T14:05:23.883Z",
+      "obsTime": 1791640800,
+      "reportTime": "2026-10-10T14:00:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 120,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101400Z 12006KT 090V160 CAVOK 28/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T13:35:32.023Z",
+      "obsTime": 1791639000,
+      "reportTime": "2026-10-10T13:30:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": 150,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101330Z 15005KT 090V180 CAVOK 29/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T13:05:24.443Z",
+      "obsTime": 1791637200,
+      "reportTime": "2026-10-10T13:00:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101300Z VRB05KT CAVOK 29/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T12:35:28.014Z",
+      "obsTime": 1791635400,
+      "reportTime": "2026-10-10T12:30:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": 160,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101230Z 16007KT CAVOK 29/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T12:05:25.616Z",
+      "obsTime": 1791633600,
+      "reportTime": "2026-10-10T12:00:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": 130,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101200Z 13006KT CAVOK 29/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T11:35:29.320Z",
+      "obsTime": 1791631800,
+      "reportTime": "2026-10-10T11:30:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": 140,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101130Z 14006KT 110V170 CAVOK 29/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T11:05:25.756Z",
+      "obsTime": 1791630000,
+      "reportTime": "2026-10-10T11:00:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": 130,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101100Z 13007KT 9999 FEW018 29/25 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T10:35:28.551Z",
+      "obsTime": 1791628200,
+      "reportTime": "2026-10-10T10:30:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": 110,
+      "wspd": 10,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101030Z 11010KT CAVOK 30/25 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T10:05:38.599Z",
+      "obsTime": 1791626400,
+      "reportTime": "2026-10-10T10:00:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": 100,
+      "wspd": 10,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 101000Z 10010KT 070V130 9999 FEW026 30/25 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T09:35:35.741Z",
+      "obsTime": 1791624600,
+      "reportTime": "2026-10-10T09:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 110,
+      "wspd": 8,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100930Z 11008KT 070V150 9999 FEW031 31/25 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 3100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T09:05:22.898Z",
+      "obsTime": 1791622800,
+      "reportTime": "2026-10-10T09:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 150,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1006,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100900Z 15007KT 100V180 9999 FEW031 31/25 Q1006 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 3100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T08:35:28.988Z",
+      "obsTime": 1791621000,
+      "reportTime": "2026-10-10T08:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 130,
+      "wspd": 8,
+      "visib": "6+",
+      "altim": 1006,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100830Z 13008KT 090V170 9999 FEW032 31/25 Q1006 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 3200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T08:05:28.338Z",
+      "obsTime": 1791619200,
+      "reportTime": "2026-10-10T08:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 110,
+      "wspd": 11,
+      "visib": "6+",
+      "altim": 1006,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100800Z 11011KT 9999 FEW029 31/25 Q1006 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T07:35:22.544Z",
+      "obsTime": 1791617400,
+      "reportTime": "2026-10-10T07:30:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": 120,
+      "wspd": 12,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100730Z 12012KT 100V160 9999 FEW029 30/25 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T07:05:25.504Z",
+      "obsTime": 1791615600,
+      "reportTime": "2026-10-10T07:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 120,
+      "wspd": 12,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100700Z 12012KT 9999 SCT030 31/25 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 3000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T06:35:19.173Z",
+      "obsTime": 1791613800,
+      "reportTime": "2026-10-10T06:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 120,
+      "wspd": 13,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100630Z 12013KT 090V150 9999 SCT029 31/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T06:05:26.586Z",
+      "obsTime": 1791612000,
+      "reportTime": "2026-10-10T06:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 100,
+      "wspd": 14,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100600Z 10014KT 9999 SCT029 31/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T05:35:32.408Z",
+      "obsTime": 1791610200,
+      "reportTime": "2026-10-10T05:30:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": 100,
+      "wspd": 10,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100530Z 10010KT 060V140 9999 SCT031 30/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 3100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T05:05:23.588Z",
+      "obsTime": 1791608400,
+      "reportTime": "2026-10-10T05:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 90,
+      "wspd": 10,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100500Z 09010KT 9999 SCT028 31/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T04:35:27.231Z",
+      "obsTime": 1791606600,
+      "reportTime": "2026-10-10T04:30:00.000Z",
+      "temp": 31,
+      "dewp": 26,
+      "wdir": 130,
+      "wspd": 8,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100430Z 13008KT 090V150 9999 FEW027 31/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T04:05:33.575Z",
+      "obsTime": 1791604800,
+      "reportTime": "2026-10-10T04:00:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": 100,
+      "wspd": 10,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100400Z 10010KT 9999 FEW025 30/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T03:35:20.541Z",
+      "obsTime": 1791603000,
+      "reportTime": "2026-10-10T03:30:00.000Z",
+      "temp": 30,
+      "dewp": 26,
+      "wdir": 100,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100330Z 10005KT 030V130 9999 FEW025 30/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T03:05:21.473Z",
+      "obsTime": 1791601200,
+      "reportTime": "2026-10-10T03:00:00.000Z",
+      "temp": 29,
+      "dewp": 26,
+      "wdir": 70,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100300Z 07006KT 9999 FEW018 29/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T02:35:26.435Z",
+      "obsTime": 1791599400,
+      "reportTime": "2026-10-10T02:30:00.000Z",
+      "temp": 29,
+      "dewp": 26,
+      "wdir": 80,
+      "wspd": 8,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100230Z 08008KT 9999 FEW017 29/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T02:05:31.050Z",
+      "obsTime": 1791597600,
+      "reportTime": "2026-10-10T02:00:00.000Z",
+      "temp": 28,
+      "dewp": 27,
+      "wdir": 90,
+      "wspd": 9,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100200Z 09009KT 9999 FEW009 BKN096 28/27 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 900
+        },
+        {
+          "cover": "BKN",
+          "base": 9600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T01:35:30.068Z",
+      "obsTime": 1791595800,
+      "reportTime": "2026-10-10T01:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 60,
+      "wspd": 8,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100130Z 06008KT 9999 FEW009 BKN083 28/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 900
+        },
+        {
+          "cover": "BKN",
+          "base": 8300
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T01:05:22.333Z",
+      "obsTime": 1791594000,
+      "reportTime": "2026-10-10T01:00:00.000Z",
+      "temp": 28,
+      "dewp": 27,
+      "wdir": 110,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100100Z 11004KT 060V140 9999 SCT009 FEW016TCU BKN076 28/27 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 900
+        },
+        {
+          "cover": "FEW",
+          "base": 1600
+        },
+        {
+          "cover": "BKN",
+          "base": 7600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T00:35:28.957Z",
+      "obsTime": 1791592200,
+      "reportTime": "2026-10-10T00:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 130,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100030Z 13007KT 070V150 9999 SCT010 FEW017TCU BKN078 27/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1000
+        },
+        {
+          "cover": "FEW",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 7800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-10T00:05:28.709Z",
+      "obsTime": 1791590400,
+      "reportTime": "2026-10-10T00:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 120,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 100000Z 12006KT 080V150 9999 SCT012 FEW017TCU BKN079 27/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1200
+        },
+        {
+          "cover": "FEW",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 7900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T23:35:41.125Z",
+      "obsTime": 1791588600,
+      "reportTime": "2026-10-09T23:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092330Z VRB03KT 9999 SCT014 SCT048 27/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1400
+        },
+        {
+          "cover": "SCT",
+          "base": 4800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T23:05:45.478Z",
+      "obsTime": 1791586800,
+      "reportTime": "2026-10-09T23:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 150,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092300Z 15004KT 130V190 9999 FEW012 SCT035 27/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1200
+        },
+        {
+          "cover": "SCT",
+          "base": 3500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T22:35:19.141Z",
+      "obsTime": 1791585000,
+      "reportTime": "2026-10-09T22:30:00.000Z",
+      "temp": 26,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092230Z VRB02KT 9999 FEW046 26/26 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 4600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T22:05:27.332Z",
+      "obsTime": 1791583200,
+      "reportTime": "2026-10-09T22:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 150,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092200Z 15003KT 110V180 9999 FEW022 27/26 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T21:36:25.620Z",
+      "obsTime": 1791581400,
+      "reportTime": "2026-10-09T21:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 140,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092130Z 14005KT 110V170 CAVOK 27/26 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T21:05:26.061Z",
+      "obsTime": 1791579600,
+      "reportTime": "2026-10-09T21:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 110,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092100Z 11005KT 070V130 9999 FEW020 BKN055 27/26 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2000
+        },
+        {
+          "cover": "BKN",
+          "base": 5500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T20:35:21.645Z",
+      "obsTime": 1791577800,
+      "reportTime": "2026-10-09T20:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 130,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092030Z 13004KT 100V170 9999 FEW020 BKN087 27/26 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2000
+        },
+        {
+          "cover": "BKN",
+          "base": 8700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T20:05:31.000Z",
+      "obsTime": 1791576000,
+      "reportTime": "2026-10-09T20:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 130,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 092000Z 13006KT 100V170 9999 FEW020 SCT052 27/26 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2000
+        },
+        {
+          "cover": "SCT",
+          "base": 5200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T19:35:21.921Z",
+      "obsTime": 1791574200,
+      "reportTime": "2026-10-09T19:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 120,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091930Z 12007KT 090V150 9999 SCT020 FEW022TCU SCT052 27/26 Q1007 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2200
+        },
+        {
+          "cover": "SCT",
+          "base": 5200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T19:05:29.709Z",
+      "obsTime": 1791572400,
+      "reportTime": "2026-10-09T19:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 140,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091900Z 14006KT 100V180 9999 SCT020 FEW022TCU SCT052 28/26 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2200
+        },
+        {
+          "cover": "SCT",
+          "base": 5200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T18:35:22.438Z",
+      "obsTime": 1791570600,
+      "reportTime": "2026-10-09T18:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 120,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091830Z 12005KT 9999 SCT020 FEW022TCU SCT052 28/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2200
+        },
+        {
+          "cover": "SCT",
+          "base": 5200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T18:05:35.784Z",
+      "obsTime": 1791568800,
+      "reportTime": "2026-10-09T18:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 120,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091800Z 12006KT 080V160 9999 SCT048 28/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 4800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T17:35:26.799Z",
+      "obsTime": 1791567000,
+      "reportTime": "2026-10-09T17:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 110,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091730Z 11003KT 080V150 9999 SCT048 SCT063 28/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 4800
+        },
+        {
+          "cover": "SCT",
+          "base": 6300
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T17:05:29.107Z",
+      "obsTime": 1791565200,
+      "reportTime": "2026-10-09T17:00:00.000Z",
+      "temp": 28,
+      "dewp": 27,
+      "wdir": 120,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091700Z 12005KT 090V150 9999 SCT048 SCT063 28/27 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 4800
+        },
+        {
+          "cover": "SCT",
+          "base": 6300
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T16:35:25.839Z",
+      "obsTime": 1791563400,
+      "reportTime": "2026-10-09T16:30:00.000Z",
+      "temp": 27,
+      "dewp": 27,
+      "wdir": 100,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091630Z 10005KT 9999 FEW014 27/27 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T16:05:30.472Z",
+      "obsTime": 1791561600,
+      "reportTime": "2026-10-09T16:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 110,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091600Z 11005KT 060V140 9999 FEW025 28/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T15:35:27.632Z",
+      "obsTime": 1791559800,
+      "reportTime": "2026-10-09T15:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 130,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091530Z 13003KT 070V190 9999 FEW025 28/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T15:05:29.594Z",
+      "obsTime": 1791558000,
+      "reportTime": "2026-10-09T15:00:00.000Z",
+      "temp": 28,
+      "dewp": 27,
+      "wdir": "VRB",
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091500Z VRB05KT 9999 FEW021 28/27 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T14:35:25.164Z",
+      "obsTime": 1791556200,
+      "reportTime": "2026-10-09T14:30:00.000Z",
+      "temp": 28,
+      "dewp": 27,
+      "wdir": 130,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091430Z 13006KT 090V180 9999 FEW021 28/27 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T14:05:33.610Z",
+      "obsTime": 1791554400,
+      "reportTime": "2026-10-09T14:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 120,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091400Z 12006KT 090V160 9999 FEW021 28/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T13:35:26.103Z",
+      "obsTime": 1791552600,
+      "reportTime": "2026-10-09T13:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 110,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091330Z 11007KT 070V140 9999 SCT020 28/26 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T13:05:33.335Z",
+      "obsTime": 1791550800,
+      "reportTime": "2026-10-09T13:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 110,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091300Z 11004KT 050V150 9999 SCT020 28/26 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T12:35:25.941Z",
+      "obsTime": 1791549000,
+      "reportTime": "2026-10-09T12:30:00.000Z",
+      "temp": 28,
+      "dewp": 27,
+      "wdir": 120,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091230Z 12005KT 080V140 9999 SCT022 SCT050 28/27 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2200
+        },
+        {
+          "cover": "SCT",
+          "base": 5000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T12:05:38.245Z",
+      "obsTime": 1791547200,
+      "reportTime": "2026-10-09T12:00:00.000Z",
+      "temp": 27,
+      "dewp": 27,
+      "wdir": 40,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091200Z 04004KT 9999 SCT023 SCT050 27/27 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 5000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T11:35:25.222Z",
+      "obsTime": 1791545400,
+      "reportTime": "2026-10-09T11:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091130Z VRB04KT 9999 -RA SCT023 SCT077 27/26 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 7700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T11:05:34.788Z",
+      "obsTime": 1791543600,
+      "reportTime": "2026-10-09T11:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 90,
+      "wspd": 4,
+      "visib": 4.97,
+      "altim": 1008,
+      "qcField": 16,
+      "wxString": "-RA VCTS",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091100Z 09004KT 050V140 8000 -RA VCTS SCT017 FEW019CB BKN082 27/26 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1700
+        },
+        {
+          "cover": "FEW",
+          "base": 1900
+        },
+        {
+          "cover": "BKN",
+          "base": 8200
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T10:36:04.948Z",
+      "obsTime": 1791541800,
+      "reportTime": "2026-10-09T10:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 4,
+      "visib": 4.35,
+      "altim": 1008,
+      "qcField": 0,
+      "wxString": "TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091030Z VRB04KT 7000 TSRA SCT021 FEW023CB SCT075 28/26 Q1008 TEMPO TL1120 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2100
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 7500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T10:10:04.896Z",
+      "obsTime": 1791540000,
+      "reportTime": "2026-10-09T10:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 90,
+      "wspd": 11,
+      "visib": 4.97,
+      "altim": 1007,
+      "qcField": 0,
+      "wxString": "-SHRA VCTS",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 091000Z 09011KT 8000 -SHRA VCTS SCT025 FEW028CB SCT075 28/26 Q1007 TEMPO TL1030 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2500
+        },
+        {
+          "cover": "FEW",
+          "base": 2800
+        },
+        {
+          "cover": "SCT",
+          "base": 7500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T09:36:03.796Z",
+      "obsTime": 1791538200,
+      "reportTime": "2026-10-09T09:30:00.000Z",
+      "temp": 29,
+      "dewp": 26,
+      "wdir": 100,
+      "wspd": 11,
+      "visib": 4.97,
+      "altim": 1007,
+      "qcField": 0,
+      "wxString": "-SHRA",
+      "maxT": -1.5,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090930Z 10011KT 080V150 8000 -SHRA SCT022 FEW025CB 29/26 Q1007 TEMPO FM0945 TL1030 11015G26KT 2000 +TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2200
+        },
+        {
+          "cover": "FEW",
+          "base": 2500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T09:10:06.730Z",
+      "obsTime": 1791536400,
+      "reportTime": "2026-10-09T09:00:00.000Z",
+      "temp": 30,
+      "dewp": 26,
+      "wdir": 150,
+      "wspd": 8,
+      "visib": 4.97,
+      "altim": 1006,
+      "qcField": 0,
+      "wxString": "-SHRA",
+      "maxT": -1.5,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090900Z 15008KT 8000 -SHRA SCT023 FEW026CB SCT040 30/26 Q1006 TEMPO FM1020 11015G26KT 2000 +TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "FEW",
+          "base": 2600
+        },
+        {
+          "cover": "SCT",
+          "base": 4000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T08:36:05.308Z",
+      "obsTime": 1791534600,
+      "reportTime": "2026-10-09T08:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 0,
+      "wspd": 0,
+      "visib": "6+",
+      "altim": 1006,
+      "qcField": 0,
+      "wxString": "VCSH",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090830Z 00000KT 9999 VCSH SCT024 FEW026CB SCT067 31/25 Q1006 TEMPO FM0845 TL0920 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2400
+        },
+        {
+          "cover": "FEW",
+          "base": 2600
+        },
+        {
+          "cover": "SCT",
+          "base": 6700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T08:05:33.961Z",
+      "obsTime": 1791532800,
+      "reportTime": "2026-10-09T08:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 270,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1006,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090800Z 27004KT 220V330 9999 FEW026 SCT073 31/25 Q1006 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2600
+        },
+        {
+          "cover": "SCT",
+          "base": 7300
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T07:35:30.038Z",
+      "obsTime": 1791531000,
+      "reportTime": "2026-10-09T07:30:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": 270,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1006,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090730Z 27006KT 230V320 9999 -RA SCT025 FEW027TCU SCT074 30/25 Q1006 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2500
+        },
+        {
+          "cover": "FEW",
+          "base": 2700
+        },
+        {
+          "cover": "SCT",
+          "base": 7400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T07:12:04.803Z",
+      "obsTime": 1791529200,
+      "reportTime": "2026-10-09T07:00:00.000Z",
+      "temp": 31,
+      "dewp": 24,
+      "wdir": 260,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 0,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090700Z 26006KT 220V330 9999 SCT020 FEW023CB BKN045 31/24 Q1007 TEMPO TL0735 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 4500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T06:36:04.177Z",
+      "obsTime": 1791527400,
+      "reportTime": "2026-10-09T06:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1007,
+      "qcField": 0,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090630Z VRB02KT 9999 SCT023 FEW025CB BKN050 31/25 Q1007 TEMPO FM0650 TL0720 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "FEW",
+          "base": 2500
+        },
+        {
+          "cover": "BKN",
+          "base": 5000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T06:05:30.798Z",
+      "obsTime": 1791525600,
+      "reportTime": "2026-10-09T06:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090600Z VRB02KT 9999 BKN026 31/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 2600
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T05:35:26.002Z",
+      "obsTime": 1791523800,
+      "reportTime": "2026-10-09T05:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090530Z VRB02KT 9999 BKN025 31/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 2500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T05:05:35.833Z",
+      "obsTime": 1791522000,
+      "reportTime": "2026-10-09T05:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 20,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090500Z 02003KT 330V110 9999 BKN023 31/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 2300
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T04:35:29.867Z",
+      "obsTime": 1791520200,
+      "reportTime": "2026-10-09T04:30:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090430Z VRB02KT 9999 BKN022 30/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 2200
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T04:05:30.855Z",
+      "obsTime": 1791518400,
+      "reportTime": "2026-10-09T04:00:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090400Z VRB03KT 9999 BKN021 30/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 2100
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T03:35:28.826Z",
+      "obsTime": 1791516600,
+      "reportTime": "2026-10-09T03:30:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090330Z VRB02KT 9999 SCT020 SCT031 29/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "SCT",
+          "base": 3100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T03:05:21.161Z",
+      "obsTime": 1791514800,
+      "reportTime": "2026-10-09T03:00:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 290,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090300Z 29004KT 250V320 9999 SCT019 SCT027 28/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1900
+        },
+        {
+          "cover": "SCT",
+          "base": 2700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T02:35:27.156Z",
+      "obsTime": 1791513000,
+      "reportTime": "2026-10-09T02:30:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090230Z VRB02KT 9999 BKN016 28/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 1600
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T02:05:23.111Z",
+      "obsTime": 1791511200,
+      "reportTime": "2026-10-09T02:00:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 10,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090200Z 01004KT 330V050 9999 BKN015 28/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 1500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T01:35:27.671Z",
+      "obsTime": 1791509400,
+      "reportTime": "2026-10-09T01:30:00.000Z",
+      "temp": 27,
+      "dewp": 25,
+      "wdir": 330,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090130Z 33003KT 290V070 9999 BKN010 27/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 1000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T01:06:27.422Z",
+      "obsTime": 1791507600,
+      "reportTime": "2026-10-09T01:00:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 320,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090100Z 32003KT 270V360 9999 BKN011 26/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 1100
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T00:35:19.760Z",
+      "obsTime": 1791505800,
+      "reportTime": "2026-10-09T00:30:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 310,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090030Z 31003KT 9999 BKN009 26/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 900
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-09T00:05:35.768Z",
+      "obsTime": 1791504000,
+      "reportTime": "2026-10-09T00:00:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 290,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 090000Z 29004KT 260V320 9999 BKN008 26/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 800
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T23:35:33.532Z",
+      "obsTime": 1791502200,
+      "reportTime": "2026-10-08T23:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 310,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082330Z 31003KT 280V340 9999 BKN007 BKN011 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 700
+        },
+        {
+          "cover": "BKN",
+          "base": 1100
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T23:05:29.578Z",
+      "obsTime": 1791500400,
+      "reportTime": "2026-10-08T23:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 320,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082300Z 32003KT 250V360 9999 BKN007 25/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 700
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T22:35:32.172Z",
+      "obsTime": 1791498600,
+      "reportTime": "2026-10-08T22:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082230Z VRB02KT 9999 BKN007 25/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 700
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T22:05:29.196Z",
+      "obsTime": 1791496800,
+      "reportTime": "2026-10-08T22:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 270,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082200Z 27003KT 9999 SCT006 25/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T21:35:21.100Z",
+      "obsTime": 1791495000,
+      "reportTime": "2026-10-08T21:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 310,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082130Z 31005KT 280V360 9999 FEW007 25/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T21:05:25.066Z",
+      "obsTime": 1791493200,
+      "reportTime": "2026-10-08T21:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 320,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082100Z 32003KT 300V010 9999 FEW006 25/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T20:35:28.223Z",
+      "obsTime": 1791491400,
+      "reportTime": "2026-10-08T20:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 10,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082030Z 01003KT 9999 FEW006 BKN016 BKN034 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 600
+        },
+        {
+          "cover": "BKN",
+          "base": 1600
+        },
+        {
+          "cover": "BKN",
+          "base": 3400
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T20:05:32.698Z",
+      "obsTime": 1791489600,
+      "reportTime": "2026-10-08T20:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 082000Z VRB02KT 9999 BKN007 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 700
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T19:35:23.063Z",
+      "obsTime": 1791487800,
+      "reportTime": "2026-10-08T19:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 40,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081930Z 04003KT 9999 BKN007 FEW010TCU 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 700
+        },
+        {
+          "cover": "FEW",
+          "base": 1000
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T19:05:36.128Z",
+      "obsTime": 1791486000,
+      "reportTime": "2026-10-08T19:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081900Z VRB02KT 9999 SCT007 FEW010TCU OVC059 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "OVC",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 700
+        },
+        {
+          "cover": "FEW",
+          "base": 1000
+        },
+        {
+          "cover": "OVC",
+          "base": 5900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T18:35:23.005Z",
+      "obsTime": 1791484200,
+      "reportTime": "2026-10-08T18:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 250,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081830Z 25004KT 9999 -RA BKN006 FEW015TCU OVC061 25/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "OVC",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 600
+        },
+        {
+          "cover": "FEW",
+          "base": 1500
+        },
+        {
+          "cover": "OVC",
+          "base": 6100
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T18:05:34.936Z",
+      "obsTime": 1791482400,
+      "reportTime": "2026-10-08T18:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": 4.97,
+      "altim": 1011,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081800Z VRB02KT 8000 -RA FEW005 BKN056 25/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 500
+        },
+        {
+          "cover": "BKN",
+          "base": 5600
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T17:35:23.697Z",
+      "obsTime": 1791480600,
+      "reportTime": "2026-10-08T17:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 340,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081730Z 34003KT 300V020 9999 -RA FEW006 OVC096 25/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "OVC",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 600
+        },
+        {
+          "cover": "OVC",
+          "base": 9600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T17:05:32.836Z",
+      "obsTime": 1791478800,
+      "reportTime": "2026-10-08T17:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 360,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081700Z 36004KT 330V030 9999 -RA FEW009 BKN097 25/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 900
+        },
+        {
+          "cover": "BKN",
+          "base": 9700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T16:35:20.816Z",
+      "obsTime": 1791477000,
+      "reportTime": "2026-10-08T16:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 300,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081630Z 30003KT 280V340 9999 -RA FEW015 BKN074 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1500
+        },
+        {
+          "cover": "BKN",
+          "base": 7400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T16:05:29.119Z",
+      "obsTime": 1791475200,
+      "reportTime": "2026-10-08T16:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 290,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081600Z 29004KT 240V330 9999 -RA FEW007 BKN049 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 700
+        },
+        {
+          "cover": "BKN",
+          "base": 4900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T15:35:24.391Z",
+      "obsTime": 1791473400,
+      "reportTime": "2026-10-08T15:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 290,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081530Z 29005KT 9999 -RA SCT015 BKN051 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1500
+        },
+        {
+          "cover": "BKN",
+          "base": 5100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T15:05:26.925Z",
+      "obsTime": 1791471600,
+      "reportTime": "2026-10-08T15:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 290,
+      "wspd": 5,
+      "visib": 5.59,
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081500Z 29005KT 9000 -RA SCT007 FEW018CB BKN078 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 700
+        },
+        {
+          "cover": "FEW",
+          "base": 1800
+        },
+        {
+          "cover": "BKN",
+          "base": 7800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T14:35:25.093Z",
+      "obsTime": 1791469800,
+      "reportTime": "2026-10-08T14:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 310,
+      "wspd": 7,
+      "visib": 4.97,
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081430Z 31007KT 8000 -RA SCT007 FEW017CB BKN044 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 700
+        },
+        {
+          "cover": "FEW",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 4400
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T14:10:06.471Z",
+      "obsTime": 1791468000,
+      "reportTime": "2026-10-08T14:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 340,
+      "wspd": 5,
+      "visib": 0.99,
+      "altim": 1012,
+      "qcField": 0,
+      "wxString": "+SHRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081400Z 34005KT 270V030 1600 +SHRA SCT007 SCT013CB BKN028 25/25 Q1012 BECMG TL1420 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 700
+        },
+        {
+          "cover": "SCT",
+          "base": 1300
+        },
+        {
+          "cover": "BKN",
+          "base": 2800
+        }
+      ],
+      "fltCat": "LIFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T13:36:06.386Z",
+      "obsTime": 1791466200,
+      "reportTime": "2026-10-08T13:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 30,
+      "wspd": 8,
+      "visib": 1.12,
+      "altim": 1012,
+      "qcField": 0,
+      "wxString": "+SHRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081330Z 03008KT 360V060 1800 +SHRA SCT007 SCT013CB OVC075 25/25 Q1012 BECMG TL1400 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "OVC",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 700
+        },
+        {
+          "cover": "SCT",
+          "base": 1300
+        },
+        {
+          "cover": "OVC",
+          "base": 7500
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T13:12:02.373Z",
+      "obsTime": 1791464400,
+      "reportTime": "2026-10-08T13:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 300,
+      "wspd": 6,
+      "visib": 4.97,
+      "altim": 1011,
+      "qcField": 0,
+      "wxString": "-SHRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081300Z 30006KT 270V330 8000 -SHRA FEW007 SCT015 FEW019CB BKN048 25/25 Q1011 TEMPO FM1320 TL1400 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 700
+        },
+        {
+          "cover": "SCT",
+          "base": 1500
+        },
+        {
+          "cover": "FEW",
+          "base": 1900
+        },
+        {
+          "cover": "BKN",
+          "base": 4800
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T12:35:19.636Z",
+      "obsTime": 1791462600,
+      "reportTime": "2026-10-08T12:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 260,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081230Z 26007KT 9999 -RA SCT023 FEW025TCU BKN060 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "FEW",
+          "base": 2500
+        },
+        {
+          "cover": "BKN",
+          "base": 6000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T12:05:26.022Z",
+      "obsTime": 1791460800,
+      "reportTime": "2026-10-08T12:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 260,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081200Z 26005KT 9999 -RA SCT023 FEW026TCU BKN061 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "FEW",
+          "base": 2600
+        },
+        {
+          "cover": "BKN",
+          "base": 6100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T11:35:36.590Z",
+      "obsTime": 1791459000,
+      "reportTime": "2026-10-08T11:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 280,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081130Z 28005KT 9999 -RA FEW018 BKN042 25/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1800
+        },
+        {
+          "cover": "BKN",
+          "base": 4200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T11:05:32.392Z",
+      "obsTime": 1791457200,
+      "reportTime": "2026-10-08T11:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 250,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081100Z 25005KT 9999 -RA SCT017 BKN042 25/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 4200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T10:35:33.059Z",
+      "obsTime": 1791455400,
+      "reportTime": "2026-10-08T10:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 300,
+      "wspd": 5,
+      "visib": 4.97,
+      "altim": 1009,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081030Z 30005KT 8000 -RA SCT015 FEW017CB BKN058 25/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1500
+        },
+        {
+          "cover": "FEW",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 5800
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T10:12:02.502Z",
+      "obsTime": 1791453600,
+      "reportTime": "2026-10-08T10:00:00.000Z",
+      "temp": 26,
+      "dewp": 24,
+      "wdir": 330,
+      "wspd": 9,
+      "visib": 4.97,
+      "altim": 1010,
+      "qcField": 0,
+      "wxString": "SHRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 081000Z 33009KT 300V010 8000 3000W SHRA SCT015 FEW017CB BKN058 26/24 Q1010 TEMPO TL1050 36015G28KT 1500 +TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1500
+        },
+        {
+          "cover": "FEW",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 5800
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T09:36:07.113Z",
+      "obsTime": 1791451800,
+      "reportTime": "2026-10-08T09:30:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 300,
+      "wspd": 9,
+      "visib": 4.97,
+      "altim": 1009,
+      "qcField": 0,
+      "wxString": "-SHRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080930Z 30009KT 270V360 8000 -SHRA SCT015 FEW017CB 28/25 Q1009 TEMPO TL1050 36015G28KT 1500 +TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1500
+        },
+        {
+          "cover": "FEW",
+          "base": 1700
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T09:12:04.875Z",
+      "obsTime": 1791450000,
+      "reportTime": "2026-10-08T09:00:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 270,
+      "wspd": 13,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 0,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080900Z 27013KT 9999 SCT022 BKN056 28/25 Q1008 TEMPO FM1000 TL1050 36015G28KT 2000 +SHRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2200
+        },
+        {
+          "cover": "BKN",
+          "base": 5600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T08:36:22.702Z",
+      "obsTime": 1791448200,
+      "reportTime": "2026-10-08T08:30:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 290,
+      "wspd": 8,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 0,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080830Z 29008KT 9999 FEW022 BKN054 28/25 Q1008 TEMPO FM1000 36015G28KT 2000 +SHRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2200
+        },
+        {
+          "cover": "BKN",
+          "base": 5400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T08:05:36.996Z",
+      "obsTime": 1791446400,
+      "reportTime": "2026-10-08T08:00:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 250,
+      "wspd": 9,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080800Z 25009KT 9999 FEW023 BKN054 28/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 5400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T07:35:27.134Z",
+      "obsTime": 1791444600,
+      "reportTime": "2026-10-08T07:30:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 280,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1008,
+      "qcField": 16,
+      "wxString": "-SHRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080730Z 28006KT 250V310 9999 -SHRA SCT021 FEW024CB BKN049 28/25 Q1008 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2100
+        },
+        {
+          "cover": "FEW",
+          "base": 2400
+        },
+        {
+          "cover": "BKN",
+          "base": 4900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T07:12:06.481Z",
+      "obsTime": 1791442800,
+      "reportTime": "2026-10-08T07:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 260,
+      "wspd": 10,
+      "visib": 4.97,
+      "altim": 1008,
+      "qcField": 0,
+      "wxString": "-TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080700Z 26010KT 8000 -TSRA SCT021 FEW025CB BKN047 28/26 Q1008 TEMPO TL0730 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2100
+        },
+        {
+          "cover": "FEW",
+          "base": 2500
+        },
+        {
+          "cover": "BKN",
+          "base": 4700
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T06:36:34.196Z",
+      "obsTime": 1791441000,
+      "reportTime": "2026-10-08T06:30:00.000Z",
+      "temp": 29,
+      "dewp": 26,
+      "wdir": 280,
+      "wspd": 11,
+      "visib": 5.59,
+      "altim": 1009,
+      "qcField": 0,
+      "wxString": "-TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080630Z 28011KT 9000 -TSRA SCT020 FEW023CB BKN046 29/26 Q1009 TEMPO FM0650 TL0730 02015G26KT 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 4600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T06:12:05.244Z",
+      "obsTime": 1791439200,
+      "reportTime": "2026-10-08T06:00:00.000Z",
+      "temp": 31,
+      "dewp": 26,
+      "wdir": 270,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 0,
+      "wxString": "VCTS",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080600Z 27006KT 220V300 9999 VCTS SCT022 FEW025CB BKN044 31/26 Q1010 TEMPO TL0635 30016KT 4000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2200
+        },
+        {
+          "cover": "FEW",
+          "base": 2500
+        },
+        {
+          "cover": "BKN",
+          "base": 4400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T05:36:09.015Z",
+      "obsTime": 1791437400,
+      "reportTime": "2026-10-08T05:30:00.000Z",
+      "temp": 31,
+      "dewp": 27,
+      "wdir": 200,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 0,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080530Z 20004KT 160V250 9999 SCT022 FEW025CB BKN044 31/27 Q1010 TEMPO FM0550 TL0635 30016KT 4000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2200
+        },
+        {
+          "cover": "FEW",
+          "base": 2500
+        },
+        {
+          "cover": "BKN",
+          "base": 4400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T05:05:31.597Z",
+      "obsTime": 1791435600,
+      "reportTime": "2026-10-08T05:00:00.000Z",
+      "temp": 31,
+      "dewp": 27,
+      "wdir": 220,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080500Z 22005KT 170V280 9999 BKN021 FEW025CB 31/27 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 2100
+        },
+        {
+          "cover": "FEW",
+          "base": 2500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T04:35:18.308Z",
+      "obsTime": 1791433800,
+      "reportTime": "2026-10-08T04:30:00.000Z",
+      "temp": 30,
+      "dewp": 27,
+      "wdir": 230,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080430Z 23004KT 180V290 9999 BKN018 FEW023CB 30/27 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 1800
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T04:05:28.198Z",
+      "obsTime": 1791432000,
+      "reportTime": "2026-10-08T04:00:00.000Z",
+      "temp": 30,
+      "dewp": 26,
+      "wdir": 210,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "VCSH",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080400Z 21004KT 170V250 9999 VCSH BKN021 FEW023CB 30/26 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 2100
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T03:35:38.185Z",
+      "obsTime": 1791430200,
+      "reportTime": "2026-10-08T03:30:00.000Z",
+      "temp": 30,
+      "dewp": 26,
+      "wdir": 350,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080330Z 35004KT 300V070 9999 SCT017 BKN026 30/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 2600
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T03:05:23.324Z",
+      "obsTime": 1791428400,
+      "reportTime": "2026-10-08T03:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 340,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080300Z 34003KT 300V040 9999 FEW017 SCT023 BKN027 28/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1700
+        },
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 2700
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T02:35:28.979Z",
+      "obsTime": 1791426600,
+      "reportTime": "2026-10-08T02:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 310,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080230Z 31003KT 260V360 9999 SCT016 BKN020 28/26 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1600
+        },
+        {
+          "cover": "BKN",
+          "base": 2000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T02:05:22.144Z",
+      "obsTime": 1791424800,
+      "reportTime": "2026-10-08T02:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 330,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080200Z 33004KT 300V020 9999 BKN013 28/26 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "BKN",
+          "base": 1300
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T01:35:27.688Z",
+      "obsTime": 1791423000,
+      "reportTime": "2026-10-08T01:30:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": 280,
+      "wspd": 4,
+      "visib": 4.97,
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080130Z 28004KT 230V320 8000 SCT012 BKN055 28/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1200
+        },
+        {
+          "cover": "BKN",
+          "base": 5500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T01:05:32.575Z",
+      "obsTime": 1791421200,
+      "reportTime": "2026-10-08T01:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 1,
+      "visib": 4.35,
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080100Z VRB01KT 7000 FEW008 BKN055 27/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 800
+        },
+        {
+          "cover": "BKN",
+          "base": 5500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T00:35:19.973Z",
+      "obsTime": 1791419400,
+      "reportTime": "2026-10-08T00:30:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 1,
+      "visib": 3.73,
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080030Z VRB01KT 6000 FEW008 BKN055 26/25 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 800
+        },
+        {
+          "cover": "BKN",
+          "base": 5500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-08T00:05:32.778Z",
+      "obsTime": 1791417600,
+      "reportTime": "2026-10-08T00:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": 2.86,
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 080000Z VRB02KT 4600 BR FEW016 SCT056 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1600
+        },
+        {
+          "cover": "SCT",
+          "base": 5600
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T23:36:27.577Z",
+      "obsTime": 1791415800,
+      "reportTime": "2026-10-07T23:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": 2.49,
+      "altim": 1012,
+      "qcField": 0,
+      "wxString": "BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072330Z VRB02KT 4000 BR FEW006 SCT056 25/25 Q1012 TEMPO TL2350 3000 BR",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 600
+        },
+        {
+          "cover": "SCT",
+          "base": 5600
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T23:05:23.798Z",
+      "obsTime": 1791414000,
+      "reportTime": "2026-10-07T23:00:00.000Z",
+      "temp": 24,
+      "dewp": 24,
+      "wdir": 270,
+      "wspd": 4,
+      "visib": 4.97,
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072300Z 27004KT 8000 FEW019 SCT042 24/24 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1900
+        },
+        {
+          "cover": "SCT",
+          "base": 4200
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T22:35:19.890Z",
+      "obsTime": 1791412200,
+      "reportTime": "2026-10-07T22:30:00.000Z",
+      "temp": 24,
+      "dewp": 24,
+      "wdir": 250,
+      "wspd": 4,
+      "visib": 4.35,
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072230Z 25004KT 7000 FEW006 BKN019 24/24 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 600
+        },
+        {
+          "cover": "BKN",
+          "base": 1900
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T22:05:28.203Z",
+      "obsTime": 1791410400,
+      "reportTime": "2026-10-07T22:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 240,
+      "wspd": 4,
+      "visib": 4.97,
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072200Z 24004KT 8000 FEW007 BKN021 25/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 700
+        },
+        {
+          "cover": "BKN",
+          "base": 2100
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T21:35:29.261Z",
+      "obsTime": 1791408600,
+      "reportTime": "2026-10-07T21:30:00.000Z",
+      "temp": 24,
+      "dewp": 24,
+      "wdir": 250,
+      "wspd": 5,
+      "visib": 4.35,
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072130Z 25005KT 7000 SCT006 24/24 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 600
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T21:05:27.695Z",
+      "obsTime": 1791406800,
+      "reportTime": "2026-10-07T21:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 240,
+      "wspd": 6,
+      "visib": 3.73,
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072100Z 24006KT 6000 FEW006 BKN020 25/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 600
+        },
+        {
+          "cover": "BKN",
+          "base": 2000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T20:35:34.777Z",
+      "obsTime": 1791405000,
+      "reportTime": "2026-10-07T20:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 240,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072030Z 24006KT 9999 FEW006 BKN020 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 600
+        },
+        {
+          "cover": "BKN",
+          "base": 2000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T20:05:38.188Z",
+      "obsTime": 1791403200,
+      "reportTime": "2026-10-07T20:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 210,
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 072000Z 21002KT 9999 -RA SCT027 BKN048 25/25 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2700
+        },
+        {
+          "cover": "BKN",
+          "base": 4800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T19:35:26.244Z",
+      "obsTime": 1791401400,
+      "reportTime": "2026-10-07T19:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 200,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071930Z 20003KT 170V240 9999 -RA FEW007 SCT027 BKN048 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 700
+        },
+        {
+          "cover": "SCT",
+          "base": 2700
+        },
+        {
+          "cover": "BKN",
+          "base": 4800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T19:05:30.830Z",
+      "obsTime": 1791399600,
+      "reportTime": "2026-10-07T19:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 140,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071900Z 14004KT 050V180 9999 SCT007 FEW024CB BKN048 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 700
+        },
+        {
+          "cover": "FEW",
+          "base": 2400
+        },
+        {
+          "cover": "BKN",
+          "base": 4800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T18:35:41.623Z",
+      "obsTime": 1791397800,
+      "reportTime": "2026-10-07T18:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071830Z VRB04KT 9999 -RA FEW007 FEW018CB BKN048 25/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 700
+        },
+        {
+          "cover": "FEW",
+          "base": 1800
+        },
+        {
+          "cover": "BKN",
+          "base": 4800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T18:10:04.547Z",
+      "obsTime": 1791396000,
+      "reportTime": "2026-10-07T18:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 150,
+      "wspd": 3,
+      "visib": 5.59,
+      "altim": 1013,
+      "qcField": 0,
+      "wxString": "-TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071800Z 15003KT 080V240 9000 -TSRA SCT006 FEW016CB BKN045 25/25 Q1013 TEMPO TL1820 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 600
+        },
+        {
+          "cover": "FEW",
+          "base": 1600
+        },
+        {
+          "cover": "BKN",
+          "base": 4500
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T17:36:24.448Z",
+      "obsTime": 1791394200,
+      "reportTime": "2026-10-07T17:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 240,
+      "wspd": 6,
+      "visib": 5.59,
+      "altim": 1013,
+      "qcField": 0,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071730Z 24006KT 210V280 9000 -RA SCT012 SCT020CB BKN050 25/25 Q1013 TEMPO 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1200
+        },
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "BKN",
+          "base": 5000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T17:10:03.142Z",
+      "obsTime": 1791392400,
+      "reportTime": "2026-10-07T17:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 120,
+      "wspd": 6,
+      "visib": 1.12,
+      "altim": 1013,
+      "qcField": 0,
+      "wxString": "+SHRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071700Z 12006KT 090V180 1800 +SHRA SCT011 FEW018CB BKN035 25/25 Q1013 BECMG TL1730 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1100
+        },
+        {
+          "cover": "FEW",
+          "base": 1800
+        },
+        {
+          "cover": "BKN",
+          "base": 3500
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T16:35:23.584Z",
+      "obsTime": 1791390600,
+      "reportTime": "2026-10-07T16:30:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 140,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071630Z 14003KT 090V180 9999 SCT018 FEW021CB BKN041 26/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1800
+        },
+        {
+          "cover": "FEW",
+          "base": 2100
+        },
+        {
+          "cover": "BKN",
+          "base": 4100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T16:05:32.082Z",
+      "obsTime": 1791388800,
+      "reportTime": "2026-10-07T16:00:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 90,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071600Z 09006KT 9999 -RA FEW008 FEW015TCU BKN042 26/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 800
+        },
+        {
+          "cover": "FEW",
+          "base": 1500
+        },
+        {
+          "cover": "BKN",
+          "base": 4200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T15:35:29.581Z",
+      "obsTime": 1791387000,
+      "reportTime": "2026-10-07T15:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 90,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071530Z 09005KT 050V110 9999 -RA FEW008 BKN038 25/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 800
+        },
+        {
+          "cover": "BKN",
+          "base": 3800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T15:05:22.070Z",
+      "obsTime": 1791385200,
+      "reportTime": "2026-10-07T15:00:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 110,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071500Z 11004KT 060V150 9999 -RA SCT035 BKN072 26/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 3500
+        },
+        {
+          "cover": "BKN",
+          "base": 7200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T14:35:35.675Z",
+      "obsTime": 1791383400,
+      "reportTime": "2026-10-07T14:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": 140,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071430Z 14003KT 110V210 9999 -RA FEW023 BKN068 25/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 6800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T14:05:21.098Z",
+      "obsTime": 1791381600,
+      "reportTime": "2026-10-07T14:00:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1013,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071400Z VRB02KT 9999 -RA SCT020 BKN068 25/25 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "BKN",
+          "base": 6800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T13:35:32.196Z",
+      "obsTime": 1791379800,
+      "reportTime": "2026-10-07T13:30:00.000Z",
+      "temp": 25,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1013,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071330Z VRB02KT 9999 -RA SCT020 FEW023CB BKN068 25/25 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 6800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T13:12:02.825Z",
+      "obsTime": 1791378000,
+      "reportTime": "2026-10-07T13:00:00.000Z",
+      "temp": 25,
+      "dewp": 24,
+      "wdir": 70,
+      "wspd": 6,
+      "visib": 5.59,
+      "altim": 1013,
+      "qcField": 0,
+      "wxString": "-TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071300Z 07006KT 050V120 9000 -TSRA SCT020 FEW023CB BKN068 25/24 Q1013 TEMPO 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 6800
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T12:36:15.204Z",
+      "obsTime": 1791376200,
+      "reportTime": "2026-10-07T12:30:00.000Z",
+      "temp": 24,
+      "dewp": 24,
+      "wdir": 120,
+      "wspd": 4,
+      "visib": 5.59,
+      "altim": 1012,
+      "qcField": 0,
+      "wxString": "-TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071230Z 12004KT 080V150 9000 -TSRA SCT016 FEW018CB BKN060 24/24 Q1012 TEMPO FM1250 TL1400 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1600
+        },
+        {
+          "cover": "FEW",
+          "base": 1800
+        },
+        {
+          "cover": "BKN",
+          "base": 6000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T12:10:05.610Z",
+      "obsTime": 1791374400,
+      "reportTime": "2026-10-07T12:00:00.000Z",
+      "temp": 24,
+      "dewp": 24,
+      "wdir": "VRB",
+      "wspd": 1,
+      "visib": 3.11,
+      "altim": 1013,
+      "qcField": 0,
+      "wxString": "+TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071200Z VRB01KT 5000 1500W +TSRA SCT014 SCT017CB BKN045 24/24 Q1013 BECMG TL1210 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1400
+        },
+        {
+          "cover": "SCT",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 4500
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T11:46:05.758Z",
+      "obsTime": 1791372600,
+      "reportTime": "2026-10-07T11:30:00.000Z",
+      "temp": 24,
+      "dewp": 24,
+      "wdir": 40,
+      "wspd": 11,
+      "visib": 2.17,
+      "altim": 1013,
+      "qcField": 0,
+      "wxString": "TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071130Z 04011KT 3500 TSRA SCT014 FEW017CB BKN045 24/24 Q1013 BECMG TL1150 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1400
+        },
+        {
+          "cover": "FEW",
+          "base": 1700
+        },
+        {
+          "cover": "BKN",
+          "base": 4500
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T11:10:04.597Z",
+      "obsTime": 1791370800,
+      "reportTime": "2026-10-07T11:00:00.000Z",
+      "temp": 24,
+      "dewp": 24,
+      "wdir": 50,
+      "wspd": 16,
+      "visib": 0.62,
+      "altim": 1013,
+      "qcField": 0,
+      "wxString": "+TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071100Z 05016KT 1000 R07R/P2000N +TSRA SCT013 SCT018CB BKN048 24/24 Q1013 BECMG TL1125 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1300
+        },
+        {
+          "cover": "SCT",
+          "base": 1800
+        },
+        {
+          "cover": "BKN",
+          "base": 4800
+        }
+      ],
+      "fltCat": "LIFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T10:36:02.812Z",
+      "obsTime": 1791369000,
+      "reportTime": "2026-10-07T10:30:00.000Z",
+      "temp": 26,
+      "dewp": 24,
+      "wdir": 40,
+      "wspd": 8,
+      "visib": 2.49,
+      "altim": 1011,
+      "qcField": 0,
+      "wxString": "+TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071030Z 04008KT 4000 1000E +TSRA SCT013 SCT018CB BKN048 26/24 Q1011 BECMG TL1040 3000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1300
+        },
+        {
+          "cover": "SCT",
+          "base": 1800
+        },
+        {
+          "cover": "BKN",
+          "base": 4800
+        }
+      ],
+      "fltCat": "IFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T10:12:03.902Z",
+      "obsTime": 1791367200,
+      "reportTime": "2026-10-07T10:00:00.000Z",
+      "temp": 31,
+      "dewp": 24,
+      "wdir": 120,
+      "wspd": 4,
+      "visib": 4.35,
+      "altim": 1010,
+      "qcField": 0,
+      "wxString": "TSRA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 071000Z 12004KT 080V180 7000 TSRA SCT016 FEW020CB SCT048 31/24 Q1010 TEMPO TL1040 4000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1600
+        },
+        {
+          "cover": "FEW",
+          "base": 2000
+        },
+        {
+          "cover": "SCT",
+          "base": 4800
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T09:35:36.299Z",
+      "obsTime": 1791365400,
+      "reportTime": "2026-10-07T09:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 150,
+      "wspd": 5,
+      "wgst": 15,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "wxString": "VCTS",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070930Z 15005G15KT 9999 VCTS SCT017 FEW020CB 31/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1700
+        },
+        {
+          "cover": "FEW",
+          "base": 2000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T09:12:04.850Z",
+      "obsTime": 1791363600,
+      "reportTime": "2026-10-07T09:00:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 170,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 0,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070900Z 17007KT 9999 SCT019 FEW021CB 31/25 Q1009 TEMPO FM0930 TL1000 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1900
+        },
+        {
+          "cover": "FEW",
+          "base": 2100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T08:35:37.541Z",
+      "obsTime": 1791361800,
+      "reportTime": "2026-10-07T08:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": 160,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "wxString": "VCTS",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070830Z 16006KT 130V200 9999 VCTS SCT019 FEW021CB SCT047 31/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1900
+        },
+        {
+          "cover": "FEW",
+          "base": 2100
+        },
+        {
+          "cover": "SCT",
+          "base": 4700
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T08:05:41.015Z",
+      "obsTime": 1791360000,
+      "reportTime": "2026-10-07T08:00:00.000Z",
+      "temp": 33,
+      "dewp": 25,
+      "wdir": 310,
+      "wspd": 8,
+      "visib": "6+",
+      "altim": 1009,
+      "qcField": 16,
+      "wxString": "VCSH",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070800Z 31008KT 270V350 9999 VCSH SCT020 FEW023CB SCT046 33/25 Q1009 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 4600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T07:36:02.804Z",
+      "obsTime": 1791358200,
+      "reportTime": "2026-10-07T07:30:00.000Z",
+      "temp": 33,
+      "dewp": 25,
+      "wdir": 320,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 0,
+      "wxString": "VCTS",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070730Z 32005KT 280V360 9999 VCTS SCT020 FEW023CB SCT044 33/25 Q1010 TEMPO FM0800 TL0830 5000 TSRA",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 4400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T07:05:35.806Z",
+      "obsTime": 1791356400,
+      "reportTime": "2026-10-07T07:00:00.000Z",
+      "temp": 33,
+      "dewp": 25,
+      "wdir": 320,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "wxString": "VCSH",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070700Z 32006KT 270V040 9999 VCSH SCT020 FEW023CB SCT044 33/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 4400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T06:35:28.429Z",
+      "obsTime": 1791354600,
+      "reportTime": "2026-10-07T06:30:00.000Z",
+      "temp": 34,
+      "dewp": 25,
+      "wdir": 350,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1010,
+      "qcField": 16,
+      "wxString": "VCSH",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070630Z 35007KT 280V040 9999 VCSH SCT020 FEW023CB SCT042 34/25 Q1010 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 4200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T06:05:28.520Z",
+      "obsTime": 1791352800,
+      "reportTime": "2026-10-07T06:00:00.000Z",
+      "temp": 34,
+      "dewp": 26,
+      "wdir": 350,
+      "wspd": 5,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070600Z 35005KT 310V050 9999 SCT020 FEW023CB SCT041 34/26 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 4100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T05:35:31.922Z",
+      "obsTime": 1791351000,
+      "reportTime": "2026-10-07T05:30:00.000Z",
+      "temp": 33,
+      "dewp": 26,
+      "wdir": 300,
+      "wspd": 7,
+      "visib": "6+",
+      "altim": 1011,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070530Z 30007KT 230V350 9999 SCT020 FEW023CB SCT039 33/26 Q1011 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 3900
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T05:05:29.392Z",
+      "obsTime": 1791349200,
+      "reportTime": "2026-10-07T05:00:00.000Z",
+      "temp": 33,
+      "dewp": 25,
+      "wdir": 290,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070500Z 29006KT 250V350 9999 SCT020 FEW023TCU SCT040 33/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2000
+        },
+        {
+          "cover": "FEW",
+          "base": 2300
+        },
+        {
+          "cover": "SCT",
+          "base": 4000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T04:35:26.689Z",
+      "obsTime": 1791347400,
+      "reportTime": "2026-10-07T04:30:00.000Z",
+      "temp": 33,
+      "dewp": 26,
+      "wdir": 340,
+      "wspd": 6,
+      "visib": "6+",
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070430Z 34006KT 280V030 9999 SCT021 SCT040 33/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2100
+        },
+        {
+          "cover": "SCT",
+          "base": 4000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T04:05:36.066Z",
+      "obsTime": 1791345600,
+      "reportTime": "2026-10-07T04:00:00.000Z",
+      "temp": 33,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070400Z VRB04KT 9999 FEW021 SCT036 33/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2100
+        },
+        {
+          "cover": "SCT",
+          "base": 3600
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T03:35:32.551Z",
+      "obsTime": 1791343800,
+      "reportTime": "2026-10-07T03:30:00.000Z",
+      "temp": 32,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070330Z VRB03KT 9999 FEW021 32/26 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 2100
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T03:05:30.924Z",
+      "obsTime": 1791342000,
+      "reportTime": "2026-10-07T03:00:00.000Z",
+      "temp": 31,
+      "dewp": 26,
+      "wdir": 340,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070300Z 34004KT 260V050 CAVOK 31/26 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T02:35:34.931Z",
+      "obsTime": 1791340200,
+      "reportTime": "2026-10-07T02:30:00.000Z",
+      "temp": 31,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070230Z VRB04KT CAVOK 31/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T02:05:36.808Z",
+      "obsTime": 1791338400,
+      "reportTime": "2026-10-07T02:00:00.000Z",
+      "temp": 30,
+      "dewp": 25,
+      "wdir": 40,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070200Z 04004KT 340V100 CAVOK 30/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T01:35:31.339Z",
+      "obsTime": 1791336600,
+      "reportTime": "2026-10-07T01:30:00.000Z",
+      "temp": 29,
+      "dewp": 25,
+      "wdir": 40,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070130Z 04003KT 300V100 CAVOK 29/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T01:05:40.981Z",
+      "obsTime": 1791334800,
+      "reportTime": "2026-10-07T01:00:00.000Z",
+      "temp": 29,
+      "dewp": 26,
+      "wdir": 20,
+      "wspd": 4,
+      "visib": 5.59,
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070100Z 02004KT 340V050 9000 NSC 29/26 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CLR",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T00:35:31.096Z",
+      "obsTime": 1791333000,
+      "reportTime": "2026-10-07T00:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": 4.97,
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070030Z VRB02KT 8000 FEW011 27/26 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1100
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-07T00:05:38.628Z",
+      "obsTime": 1791331200,
+      "reportTime": "2026-10-07T00:00:00.000Z",
+      "temp": 27,
+      "dewp": 25,
+      "wdir": 20,
+      "wspd": 4,
+      "visib": 3.11,
+      "altim": 1014,
+      "qcField": 16,
+      "wxString": "BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 070000Z 02004KT 5000 BR FEW010 27/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T23:35:37.398Z",
+      "obsTime": 1791329400,
+      "reportTime": "2026-10-06T23:30:00.000Z",
+      "temp": 26,
+      "dewp": 26,
+      "wdir": 40,
+      "wspd": 3,
+      "visib": 3.11,
+      "altim": 1013,
+      "qcField": 16,
+      "wxString": "BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062330Z 04003KT 5000 BR NSC 26/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CLR",
+      "clouds": [],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T23:05:23.929Z",
+      "obsTime": 1791327600,
+      "reportTime": "2026-10-06T23:00:00.000Z",
+      "temp": 26,
+      "dewp": 26,
+      "wdir": 40,
+      "wspd": 3,
+      "visib": 3.11,
+      "altim": 1013,
+      "qcField": 16,
+      "wxString": "BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062300Z 04003KT 010V070 5000 BR NSC 26/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CLR",
+      "clouds": [],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T22:35:18.409Z",
+      "obsTime": 1791325800,
+      "reportTime": "2026-10-06T22:30:00.000Z",
+      "temp": 26,
+      "dewp": 26,
+      "wdir": 50,
+      "wspd": 3,
+      "visib": 4.35,
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062230Z 05003KT 020V080 7000 NSC 26/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CLR",
+      "clouds": [],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T22:05:28.959Z",
+      "obsTime": 1791324000,
+      "reportTime": "2026-10-06T22:00:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 40,
+      "wspd": 4,
+      "visib": 3.11,
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062200Z 04004KT 360V070 5000 -RA BR SCT031 26/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 3100
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T21:37:10.617Z",
+      "obsTime": 1791322200,
+      "reportTime": "2026-10-06T21:30:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": "VRB",
+      "wspd": 1,
+      "visib": 3.73,
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062130Z VRB01KT 6000 -RA SCT030 26/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 3000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T21:05:27.066Z",
+      "obsTime": 1791320400,
+      "reportTime": "2026-10-06T21:00:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 40,
+      "wspd": 3,
+      "visib": 3.11,
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062100Z 04003KT 5000 BR SCT030 26/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 3000
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T20:35:33.936Z",
+      "obsTime": 1791318600,
+      "reportTime": "2026-10-06T20:30:00.000Z",
+      "temp": 26,
+      "dewp": 25,
+      "wdir": 50,
+      "wspd": 4,
+      "visib": 3.11,
+      "altim": 1012,
+      "qcField": 16,
+      "wxString": "BR",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062030Z 05004KT 5000 BR FEW017 26/25 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 1700
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T20:05:36.456Z",
+      "obsTime": 1791316800,
+      "reportTime": "2026-10-06T20:00:00.000Z",
+      "temp": 26,
+      "dewp": 26,
+      "wdir": 10,
+      "wspd": 2,
+      "visib": 3.73,
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 062000Z 01002KT 6000 SCT025 FEW027TCU 26/26 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2500
+        },
+        {
+          "cover": "FEW",
+          "base": 2700
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T19:35:31.766Z",
+      "obsTime": 1791315000,
+      "reportTime": "2026-10-06T19:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 360,
+      "wspd": 3,
+      "visib": 4.97,
+      "altim": 1012,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061930Z 36003KT 8000 NSC 27/26 Q1012 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CLR",
+      "clouds": [],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T19:05:37.125Z",
+      "obsTime": 1791313200,
+      "reportTime": "2026-10-06T19:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 330,
+      "wspd": 3,
+      "visib": 5.59,
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061900Z 33003KT 290V350 9000 SCT022 SCT070 27/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "SCT",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2200
+        },
+        {
+          "cover": "SCT",
+          "base": 7000
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T18:35:33.021Z",
+      "obsTime": 1791311400,
+      "reportTime": "2026-10-06T18:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 330,
+      "wspd": 3,
+      "visib": 5.59,
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061830Z 33003KT 290V350 9000 SCT023 BKN072 27/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 2300
+        },
+        {
+          "cover": "BKN",
+          "base": 7200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T18:05:29.568Z",
+      "obsTime": 1791309600,
+      "reportTime": "2026-10-06T18:00:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 320,
+      "wspd": 4,
+      "visib": 4.35,
+      "altim": 1013,
+      "qcField": 16,
+      "wxString": "-RA",
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061800Z 32004KT 7000 -RA SCT016 FEW019CB BKN051 27/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1600
+        },
+        {
+          "cover": "FEW",
+          "base": 1900
+        },
+        {
+          "cover": "BKN",
+          "base": 5100
+        }
+      ],
+      "fltCat": "MVFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T17:35:25.064Z",
+      "obsTime": 1791307800,
+      "reportTime": "2026-10-06T17:30:00.000Z",
+      "temp": 27,
+      "dewp": 26,
+      "wdir": 310,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1013,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061730Z 31004KT 9999 SCT019 FEW022CB 27/26 Q1013 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "FEW",
+      "clouds": [
+        {
+          "cover": "SCT",
+          "base": 1900
+        },
+        {
+          "cover": "FEW",
+          "base": 2200
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T17:05:28.414Z",
+      "obsTime": 1791306000,
+      "reportTime": "2026-10-06T17:00:00.000Z",
+      "temp": 28,
+      "dewp": 26,
+      "wdir": "VRB",
+      "wspd": 2,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061700Z VRB02KT CAVOK 28/26 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T16:35:30.409Z",
+      "obsTime": 1791304200,
+      "reportTime": "2026-10-06T16:30:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 140,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061630Z 14003KT 110V190 9999 FEW007 BKN055 BKN074 28/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "BKN",
+      "clouds": [
+        {
+          "cover": "FEW",
+          "base": 700
+        },
+        {
+          "cover": "BKN",
+          "base": 5500
+        },
+        {
+          "cover": "BKN",
+          "base": 7400
+        }
+      ],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T16:05:32.809Z",
+      "obsTime": 1791302400,
+      "reportTime": "2026-10-06T16:00:00.000Z",
+      "temp": 27,
+      "dewp": 25,
+      "wdir": 110,
+      "wspd": 4,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061600Z 11004KT 070V140 CAVOK 27/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    },
+    {
+      "icaoId": "VVTS",
+      "receiptTime": "2026-10-06T15:35:23.623Z",
+      "obsTime": 1791300600,
+      "reportTime": "2026-10-06T15:30:00.000Z",
+      "temp": 28,
+      "dewp": 25,
+      "wdir": 90,
+      "wspd": 3,
+      "visib": "6+",
+      "altim": 1014,
+      "qcField": 16,
+      "metarType": "METAR",
+      "rawOb": "METAR VVTS 061530Z 09003KT 040V190 CAVOK 28/25 Q1014 NOSIG",
+      "lat": 10.817,
+      "lon": 106.667,
+      "elev": 10,
+      "name": "Ho Chi Minh/Nhat Intl, 23, VN",
+      "cover": "CAVOK",
+      "clouds": [],
+      "fltCat": "VFR"
+    }
+  ]
+}

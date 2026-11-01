@@ -1,0 +1,74 @@
+STANDARD DEPARTURE CHART -                             TRANSITION LVL       FL190              HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                TRANSITION ALT      5500 m                                           RNAV RWY 25L/R
+                                                                                                                                    KADUM 2F
+
+
+ 2.   WAYPOINT LIST
+
+    WAYPOINT ID               COORD INATES (W GS-84)
+        BIXE X           11°36'13.277”N        108°08'19.311”E
+        DOVIN            11°55'01.000”N        108°06'29.000”E
+       KADU M            11°21'26.000”N        107°03'34.000”E
+
+        PATMA            12°20'11.000”N        107°48'36.000”E
+         PTH             10°55'41.000”N        108°04'19.000”E
+
+        R W25L           10°49'25.371”N        106°40'10.310”E
+        R W25R           10°49'29.480”N        106°39'47.432”E
+
+        TS652            10°47'58.727”N        106°36'20.842”E
+        TS654            10°48'08.831”N        106°36'13.830”E
+        TS658            10°53'08.037”N        106°32'46.261”E
+        TS686            11°08'50.561”N        106°47'06.738”E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V2\VVTS_SID RNAV RWY 25LR KADUM
+2F_TABULAR_V2.docx

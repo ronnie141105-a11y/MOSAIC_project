@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOSAIC · ATFM Lab</title><link rel="stylesheet" href="{{ url_for('static', filename='atfm.css') }}"></head>
+<body>
+<header><a href="/">← MOSAIC Radar</a><span>NGHIÊN CỨU · DỮ LIỆU GIẢ LẬP</span></header>
+<main>
+<h1>ATFM Lab <small>Ground delay + upstream speed control</small></h1>
+<p><a href="/atfm-formulation">Mở bài toán Chương 3 · gene [m, l], chi phí và penalty →</a></p>
+<p>54 arrivals / 120 phút · Demand cao trùng giảm entry capacity · 43 flights có thể nhận ground delay, 11 đã airborne.</p>
+<div class="notice">Capacity, dwell time và tốc độ là giả định. Mô hình tối ưu arrival-entry flow; chưa kiểm chứng separation 4D, fuel, runway hay capacity thực tế VVTS.</div>
+
+<section>
+<h2>1 · Chạy so sánh</h2>
+<label>Chế độ <select id="mode"><option value="uncertainty">ETA và capacity bất định</option><option value="deterministic">Danh định · ground / mixed</option></select></label>
+<p id="mode-description"></p>
+<label>Population <input id="population" type="number" min="4" max="100" value="40"></label>
+<label>Generations <input id="generations" type="number" min="1" max="200" value="60"></label>
+<label>Ngân sách đánh giá <input id="max-evaluations" type="number" min="50" max="20000" value="6000"></label>
+<div id="uncertainty-controls">
+<label>Trọng số rủi ro <input id="risk-weight" type="number" min="0" max="1" step="0.05" value="0.25"></label>
+<label>ETA ± phút <input id="eta-jitter" type="number" min="0" max="10" step="0.5" value="2"></label>
+<label>Giảm capacity tối đa <input id="capacity-drop" type="number" min="0" max="2" step="1" value="1"></label>
+<p>Mỗi phương án nhận ground delay 0–30 phút và speed absorption 0–4 phút trước TMA. ETA và capacity được tạo theo seed để tái lập; capacity có thể giảm thêm theo từng khoảng 15 phút. Bộ test được giữ riêng khỏi quá trình tìm kiếm.</p>
+</div>
+<button id="run">Chạy experiment</button>
+<a href="/api/atfm/export.csv">Tải KPI danh định CSV</a>
+<p id="status" role="status">Đang đọc trạng thái…</p>
+</section>
+
+<section id="uncertainty-results" hidden>
+<h2>2 · Đánh giá ETA và capacity bất định</h2>
+<p id="uncertainty-settings"></p>
+<p>Mọi phương án được đóng băng trước khi đánh giá test. Năm seed GA cùng dùng một bộ test; số seed GA không làm tăng số mẫu bất định độc lập. Giữ toàn bộ phương án để so sánh, không dùng kết quả test để chọn phương án triển khai.</p>
+<p><code>Risk objective = (1 − risk weight) × mean objective + risk weight × worst objective</code></p>
+<p>Worst objective là giá trị lớn nhất trong bộ mẫu đang xét. Kết quả này mô tả các kịch bản giả lập đã thử; chưa chứng minh tính ổn định với mọi bất định.</p>
+<h3>Test · các kịch bản giữ riêng khỏi tìm kiếm</h3>
+<div class="scroll"><table><thead><tr><th>Phương án</th><th>Số mẫu</th><th>Mean objective ↓</th><th>Worst objective ↓</th><th>Risk objective ↓</th><th>Mean tổng delay (phút)</th><th>Mean holding (phút)</th><th>Mean airborne extra (phút)</th></tr></thead><tbody id="uncertainty-test"></tbody></table></div>
+<p id="uncertainty-assessment"></p>
+<details><summary>Training · các kịch bản được dùng để tìm phương án</summary><div class="scroll"><table><thead><tr><th>Phương án</th><th>Số mẫu</th><th>Mean objective ↓</th><th>Worst objective ↓</th><th>Risk objective ↓</th><th>Mean tổng delay (phút)</th><th>Mean holding (phút)</th><th>Mean airborne extra (phút)</th></tr></thead><tbody id="uncertainty-training"></tbody></table></div></details>
+<p>Delay là tổng theo toàn bộ flights trong mỗi mẫu, sau đó lấy trung bình giữa các mẫu. Airborne extra = speed absorption + holding. Giảm weighted objective có thể chỉ thay đổi phân bổ delay; cần đọc cả các cột delay.</p>
+<a href="/api/atfm/uncertainty.csv">Tải training / test CSV</a> · <a href="/api/atfm/uncertainty-realizations.json">Tải cấu hình và mẫu bất định JSON</a>
+</section>
+
+<section>
+<h2 id="nominal-heading">3 · Kết quả danh định</h2>
+<div id="chart"></div>
+<p>Biểu đồ hiển thị demand và capacity danh định. Capacity: 6 flights/15 phút; giảm còn 4 trong phút 30–60. Occupancy limit: 8. Sau phút 120 vẫn phục vụ hết demand. ETA nhiễu có thể chuyển flights sang khoảng thời gian khác; bảng training/test dùng từng kịch bản đã thay đổi.</p>
+<p><code>J = ground + 2 × speed absorption + 4 × holding + 0.2 × maximum delay</code></p>
+<p>Speed absorption tăng thời gian trên một đoạn upstream giả định dài 100 NM: 20–24 phút, tương ứng ground speed 300–250 kt. Không diễn giải weighted objective thành fuel saving.</p>
+<p id="nominal-description"></p>
+<div class="scroll"><table><thead><tr><th>Phương án</th><th>Ground</th><th>Speed</th><th>Holding</th><th>Tổng delay</th><th>Max</th><th>Objective ↓</th><th>Tổng lượt đánh giá</th><th>Tìm kiếm (giây)</th></tr></thead><tbody id="metrics"></tbody></table></div>
+<p id="assessment"></p>
+<div id="convergence"></div>
+<details id="stress-details"><summary id="stress-summary">ETA stress test và weight sensitivity</summary><p id="stress-description"></p><pre id="stress"></pre></details>
+</section>
+
+<section>
+<h2 id="replay-heading">4 · Phát lại trên simulator MOSAIC</h2>
+<p>Replay luôn dùng ETA và capacity danh định; không phát lại một mẫu test hay trường hợp worst. Chọn phương án rồi nạp: traffic đang chạy trong phiên này sẽ được thay bằng replay giả lập. Entry/exit được phát qua MockConnector và pipeline/dashboard hiện có. Hình học ba hướng chỉ minh họa; replay không phải kiểm chứng động học độc lập.</p>
+<select id="method" aria-label="Phương án replay danh định"></select><button id="replay">Thay traffic bằng replay danh định</button><button id="pause">Tạm dừng</button><a href="/" target="_blank" rel="noopener">Mở radar MOSAIC ↗</a>
+<p id="replaystatus"></p>
+<div class="scroll"><table><thead><tr><th>Flight</th><th>Ground phút</th><th>Speed phút</th><th>Upstream kt</th><th>Entry phút</th><th>Holding phút</th></tr></thead><tbody id="flights"></tbody></table></div>
+</section>
+</main><script src="{{ url_for('static', filename='atfm.js') }}"></script>
+</body></html>

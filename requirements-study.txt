@@ -1,0 +1,3 @@
+# Optional offline figures for scripts/report_fcfs_ga_comparison.py.
+# The simulator and optimizer use requirements.txt and do not need Matplotlib.
+matplotlib>=3.8,<4

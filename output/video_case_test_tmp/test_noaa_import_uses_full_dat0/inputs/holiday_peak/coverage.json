@@ -1,0 +1,9 @@
+{
+  "complete_airport_traffic": false,
+  "complete_fpl": false,
+  "weather_complete": false,
+  "declared_capacity_verified": false,
+  "planned_demand_complete": false,
+  "analysis_resource": "VVTS_ARRIVAL_RUNWAY",
+  "notes": []
+}

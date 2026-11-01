@@ -1,0 +1,327 @@
+{
+  "name": "linked",
+  "airspace_profile": "tsn_tma",
+  "aircraft": [
+    {
+      "callsign": "ARR901",
+      "aircraft_type": "A320",
+      "lat": 10.53840917,
+      "lon": 106.69438861,
+      "heading_deg": 112.06643395764122,
+      "altitude_ft": 10006.561679790026,
+      "ground_speed_kt": 240,
+      "vertical_speed_fpm": 0.0,
+      "on_route": true,
+      "flight_type": null,
+      "procedure_id": "BITIS2H",
+      "direction": "inbound",
+      "route_waypoints": [
+        [
+          10.47707167,
+          106.84817139
+        ],
+        [
+          10.50873,
+          106.97599611
+        ],
+        [
+          10.55795111,
+          107.10221917
+        ],
+        [
+          10.59228389,
+          107.14913611
+        ],
+        [
+          10.64862778,
+          107.20228972
+        ],
+        [
+          10.75126778,
+          107.25736167
+        ],
+        [
+          10.86576417,
+          107.2773875
+        ],
+        [
+          10.87027917,
+          106.90476556
+        ],
+        [
+          10.88403417,
+          106.82009361
+        ],
+        [
+          10.86076806,
+          106.75836778
+        ],
+        [
+          10.83161111,
+          106.68105556
+        ],
+        [
+          10.82485556,
+          106.66317556
+        ],
+        [
+          10.823876084749948,
+          106.66056413700034
+        ]
+      ],
+      "procedure_profile": {
+        "flight_type": "PROCEDURE",
+        "procedure_id": "BITIS2H",
+        "direction": "inbound",
+        "runway": "25R",
+        "transition": {
+          "fixes": [
+            "SOKAN",
+            "TS426",
+            "TS424",
+            "TS422",
+            "RW25R"
+          ],
+          "initial_altitude_window_m": [
+            730,
+            1500
+          ],
+          "max_ias_kmh": 425
+        },
+        "endpoint_behavior": "landing",
+        "legs": [
+          {
+            "fix": "LETRO",
+            "target_altitude_ft": 7053.805774278215,
+            "max_ias_kt": 248.38012958963282,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "VANLI",
+            "target_altitude_ft": 7053.805774278215,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "TS488",
+            "target_altitude_ft": 7053.805774278215,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "RUNSI",
+            "target_altitude_ft": 7053.805774278215,
+            "max_ias_kt": 248.38012958963282,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "TS458",
+            "target_altitude_ft": 7053.805774278215,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "TS456",
+            "target_altitude_ft": 7053.805774278215,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "TS454",
+            "target_altitude_ft": 7053.805774278215,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "SOKAN",
+            "target_altitude_ft": 3937.007874015748,
+            "max_ias_kt": 229.48164146868248,
+            "nominal_speed_kt": 240,
+            "phase": "star"
+          },
+          {
+            "fix": "TS426",
+            "target_altitude_ft": 2000.127691257825,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 180,
+            "phase": "approach"
+          },
+          {
+            "fix": "TS424",
+            "target_altitude_ft": 2000.127691257825,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 160,
+            "phase": "approach"
+          },
+          {
+            "fix": "TS422",
+            "target_altitude_ft": 445.04896192325697,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 140,
+            "phase": "approach"
+          },
+          {
+            "fix": "RW25R",
+            "target_altitude_ft": 85.30183727034121,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 140,
+            "phase": "approach"
+          },
+          {
+            "fix": "TD25R",
+            "target_altitude_ft": 32.808398950131235,
+            "max_ias_kt": null,
+            "nominal_speed_kt": 140,
+            "phase": "landing"
+          }
+        ],
+        "approach_id": "ILS_W_25R",
+        "coordination_assumed_granted": true,
+        "source": "56080.pdf",
+        "tma_weather": {
+          "preset": "clear",
+          "center": {
+            "lat": 10.818333333333333,
+            "lon": 106.65055555555556,
+            "ident": "TSH",
+            "source": "10430.pdf"
+          },
+          "radius_nm": 40,
+          "wind_direction_deg": 250,
+          "wind_speed_kt": 6,
+          "speed_factor": 1.0,
+          "until_s": null,
+          "source": "SIMULATED_TMA_WEATHER"
+        }
+      }
+    }
+  ],
+  "airport": {
+    "fpl": {
+      "DEP901": {
+        "callsign": "DEP901",
+        "origin": "VVTS",
+        "destination": "VVNB",
+        "requested_fl": 240,
+        "departure_route": "VVTS SID",
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "sid": "SAPEN2D",
+        "transition": null,
+        "runway": "25L",
+        "aircraft_type": "A320",
+        "stand": "S-01"
+      },
+      "ARR901": {
+        "callsign": "ARR901",
+        "origin": "VVNB",
+        "destination": "VVTS",
+        "requested_fl": 240,
+        "arrival_route": "L637 BITIS",
+        "star": "BITIS2H",
+        "runway": "25R",
+        "aircraft_type": "A320",
+        "stand": null
+      }
+    },
+    "departures": {
+      "DEP901": {
+        "stage": "ground"
+      }
+    },
+    "sim_time_s": 0.0,
+    "events": [
+      {
+        "callsign": "DEP901",
+        "event": "takeoff_clearance",
+        "time_s": 0.0
+      }
+    ],
+    "milestones": {
+      "DEP901": {
+        "takeoff_clearance": 0.0
+      }
+    },
+    "study_key": "vvts_baseline",
+    "rollout_tracks": [],
+    "flow_management": {
+      "weather": {
+        "raw": "METAR VVTS 071127Z 25006KT 9999 FEW020 31/24 Q1010",
+        "station": "VVTS",
+        "observation_time": "071127Z",
+        "wind_direction_deg": 250,
+        "wind_speed_kt": 6,
+        "gust_kt": null,
+        "visibility_m": 9999,
+        "visibility_at_least": true,
+        "weather": [],
+        "clouds": [
+          {
+            "cover": "FEW",
+            "height_ft": 2000,
+            "kind": ""
+          }
+        ],
+        "ceiling_ft": null,
+        "temperature_c": 31,
+        "dewpoint_c": 24,
+        "qnh_hpa": 1010,
+        "preset": "clear",
+        "label": "Fair weather",
+        "capacity_factor": 1.0,
+        "taxi_factor": 1.0,
+        "source": "SIMULATED"
+      },
+      "nominal_departures_per_hour": 60.0,
+      "nominal_arrivals_per_hour": 40.0,
+      "recovery_at_s": null,
+      "program": null,
+      "slots": [],
+      "history": [],
+      "last_entry_s": null
+    },
+    "rollout_origins": {},
+    "aircraft": [
+      {
+        "callsign": "DEP901",
+        "aircraft_type": "A320",
+        "operation": "dep",
+        "stand_id": "n273",
+        "state": "PARKED",
+        "route": [
+          "n273",
+          "n146",
+          "n164",
+          "n107",
+          "n123",
+          "n290",
+          "n291",
+          "n292",
+          "n301",
+          "n300",
+          "n124"
+        ],
+        "seg_idx": 0,
+        "seg_prog": 0.0,
+        "x": 1276.2654400987833,
+        "y": 420.0614950261456,
+        "cleared_takeoff": true,
+        "cleared_cross": false,
+        "off_block_time_s": 0.0,
+        "ctot_s": 0.0,
+        "manual_route": false,
+        "atfm_off_block_s": 0.0,
+        "atfm_ctot_s": 0.0,
+        "flow_stand_hold_s": 0.0,
+        "current_speed_mps": 0.0
+      }
+    ]
+  }
+}

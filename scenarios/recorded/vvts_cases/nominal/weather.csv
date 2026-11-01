@@ -1,0 +1,5 @@
+﻿report_type,observation_utc,issue_utc,valid_from_utc,valid_to_utc,raw,source
+METAR,2026-10-08T03:30:00+00:00,,,,METAR VVTS 080330Z 35004KT 300V070 9999 SCT017 BKN026 30/26 Q1013 NOSIG,https://aviationweather.gov/api/data/metar?ids=VVTS&format=json&hours=96
+METAR,2026-10-08T03:00:00+00:00,,,,METAR VVTS 080300Z 34003KT 300V040 9999 FEW017 SCT023 BKN027 28/26 Q1013 NOSIG,https://aviationweather.gov/api/data/metar?ids=VVTS&format=json&hours=96
+METAR,2026-10-08T02:30:00+00:00,,,,METAR VVTS 080230Z 31003KT 260V360 9999 SCT016 BKN020 28/26 Q1014 NOSIG,https://aviationweather.gov/api/data/metar?ids=VVTS&format=json&hours=96
+METAR,2026-10-08T02:00:00+00:00,,,,METAR VVTS 080200Z 33004KT 300V020 9999 BKN013 28/26 Q1014 NOSIG,https://aviationweather.gov/api/data/metar?ids=VVTS&format=json&hours=96

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOSAIC · VVTS Tower</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='airport.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='embedded_control.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='tower_split.css') }}">
+  <script defer src="{{ url_for('static', filename='monitor_theme.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='supervisor_sync.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='tower_view.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='tower_radar_geometry.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='tower_chart_geometry.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='tower_split.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='airport.js') }}"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><div><strong>MOSAIC</strong><small>VVTS Tower</small></div></div>
+    <nav class="control-view-nav"><a href="/centre">Centre</a><a href="/">Approach</a><a href="/airport" class="active">Tower</a><a href="/supervisor">Supervisor</a></nav>
+    <div class="sim-status"><button id="theme-toggle" type="button" class="theme-toggle">Night</button><span id="run-indicator" class="run-indicator"></span><span id="run-label">Paused</span><span id="clock">00:00:00</span> UTC</div>
+  </header>
+
+  <main class="workspace">
+    <section class="map-panel" aria-label="VVTS airport map">
+      <div class="map-toolbar">
+        <div class="toolbar-group map-view-controls"><button id="run-toggle" type="button" class="toolbar-primary">▶ Resume</button><button id="step" type="button">+1 s</button><select id="tower-layout" aria-label="Tower display layout"><option value="split">ILS + apron</option><option value="full">Full airport</option></select><button id="fit-view" type="button">Fit maps</button><button id="zoom-out" type="button" aria-label="Zoom out">−</button><button id="zoom-in" type="button" aria-label="Zoom in">+</button><select id="map-orientation" aria-label="Tower map orientation" hidden><option value="horizontal">Horizontal</option><option value="auto">Auto fit</option><option value="vertical">Vertical</option></select></div>
+        <div class="toolbar-group toggles"><label><input id="show-taxiways" type="checkbox" checked> Taxiways</label><label><input id="show-routes" type="checkbox" checked> Routes</label><label><input id="show-labels" type="checkbox" checked> Labels</label></div>
+      </div>
+      <div id="map-viewport" class="map-viewport">
+        <svg id="airport-map" viewBox="0 0 1820 965" aria-label="Airport layout with aircraft and taxi routes">
+          <g id="world">
+            <rect x="0" y="0" width="1820" height="965" fill="#f7f6e5"></rect>
+            <image href="/airport/assets/tsn_labeled.svg" x="0" y="0" width="1421.504" height="964.615" class="chart"></image>
+            <g id="taxiway-lines"></g>
+            <g id="key-points"></g>
+            <path d="M1137 205 L1780 205" class="approach-line"></path>
+            <text x="1410" y="181" class="approach-caption">ILS 25R · 8 NM approach view</text>
+            <path d="M300 333 L20 297" class="departure-line"></path>
+            <text x="30" y="275" class="departure-caption">25L departure</text>
+            <g id="route-lines"></g>
+            <g id="aircraft-layer"></g>
+            <g id="drag-layer"></g>
+          </g>
+        </svg>
+        <div id="tower-split" class="tower-split" aria-label="Tower ILS and apron radar"></div>
+        <div id="aircraft-tooltip" class="aircraft-tooltip" hidden></div>
+        <section id="airport-flight-panel" class="airport-flight-panel" hidden aria-label="Selected flight details">
+          <div class="section-title"><h2>Flight details</h2><button id="flight-panel-close" type="button" aria-label="Close flight details">×</button></div>
+          <div id="flight-panel-content"></div>
+        </section>
+        <div class="map-hint">Wheel zoom · Drag background to pan · UP sets map bearing · N↑ resets north</div>
+      </div>
+      <div class="map-footer"><span id="map-message">Select an aircraft to inspect its route.</span><span>AEON airport layout</span></div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="side-card">
+        <div class="section-title"><h2>Selected aircraft</h2><span id="selected-phase" class="phase-pill">NONE</span></div>
+        <div id="selected-name" class="selected-name">No aircraft selected</div>
+        <div id="selected-detail" class="selected-detail">Choose a flight on the map or in the traffic list.</div>
+        <div id="selected-facts" class="selected-facts"></div>
+        <div class="action-row"><button id="takeoff-clearance" type="button" disabled>Clear takeoff</button><button id="crossing-clearance" type="button" disabled>Clear crossing</button></div>
+        <div class="action-row"><button id="restore-route" type="button" disabled>Restore planned route</button></div>
+        <div id="selected-timeline" class="selected-timeline"></div>
+      </section>
+
+      <section class="side-card traffic-card">
+        <div class="section-title"><h2>Airport traffic</h2><span id="traffic-count" class="count-pill">0</span></div>
+        <div id="traffic-list" class="traffic-list"></div>
+      </section>
+
+      <details class="side-card">
+        <summary>Add departure</summary>
+        <form id="departure-form" class="entry-form">
+          <label>Callsign<input name="callsign" required maxlength="16" placeholder="DEP201"></label>
+          <label>Aircraft type<input name="aircraft_type" value="A320" required></label>
+          <label>Stand<select name="stand_id" id="stand" required></select></label>
+          <label>SID<select name="sid" id="sid" required></select></label>
+          <label>Requested FL<input name="requested_fl" type="number" value="240" min="10" max="450" required></label>
+          <label>Destination<input name="destination" value="VVNB" required maxlength="4"></label>
+          <label class="wide">Departure route<input name="depart_route" placeholder="SAPEN L637"></label>
+          <label>Off-block (sim s)<input name="off_block_time_s" type="number" value="0" min="0"></label>
+          <label>CTOT (sim s)<input name="ctot_s" type="number" value="0" min="0"></label>
+          <button type="submit" class="wide primary">Spawn at stand</button>
+        </form>
+      </details>
+
+      <details class="side-card">
+        <summary>Add arrival</summary>
+        <form id="arrival-form" class="entry-form">
+          <label>Callsign<input name="callsign" required maxlength="16" placeholder="ARR201"></label>
+          <label>Aircraft type<input name="aircraft_type" value="A320" required></label>
+          <label>Origin<input name="origin" value="VVNB" required maxlength="4"></label>
+          <label>STAR<select name="star" id="star" required></select></label>
+          <label>Requested FL<input name="requested_fl" type="number" value="240" min="10" max="450" required></label>
+          <label class="wide">Arrival route<input name="arrival_route" placeholder="L637 BITIS"></label>
+          <button type="submit" class="wide primary">Spawn inbound</button>
+        </form>
+      </details>
+
+      <section class="side-card scenario-card"><h2>Study scenarios</h2><select id="scenario-select" aria-label="Choose study scenario"></select><p id="scenario-description"></p><button id="load-scenario" type="button">Load scenario</button></section>
+      <section class="side-card metrics-card"><h2>Run measures</h2><div id="run-measures">Load a scenario to see movement times.</div></section>
+      <div id="error" role="alert" aria-live="polite"></div>
+    </aside>
+  </main>
+  {% include 'operations_panel.html' %}
+</body>
+</html>

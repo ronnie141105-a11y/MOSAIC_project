@@ -1,0 +1,30 @@
+{
+  "camerasBefore": [
+    {
+      "label": "ILS · 25R / 25L",
+      "span": "24126.31689112493",
+      "up": "0"
+    },
+    {
+      "label": "APRON",
+      "span": "3189.860591956599",
+      "up": "0"
+    }
+  ],
+  "camerasAfter": [
+    {
+      "label": "ILS · 25R / 25L",
+      "span": "24126.31689112493",
+      "up": "0"
+    },
+    {
+      "label": "APRON",
+      "span": "2551.888473565279",
+      "up": "90"
+    }
+  ],
+  "pan": {
+    "apronMoved": true,
+    "ilsUnchanged": true
+  }
+}

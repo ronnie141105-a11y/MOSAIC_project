@@ -1,0 +1,6 @@
+﻿method,objective,converted_cost,penalty,capacity_excess_flights,arrival_conflict_pairs,arrival_departure_conflict_pairs,new_conflict_pairs,feasible_sampled,total_delay_min,mean_delay_min,max_delay_min,ground_delay_min,speed_delay_min,no_action_flights,ground_flights,speed_flights,optimized_arrivals,fixed_departures
+NO_CONTROL,15000.0,0.0,15,0,15,0,0,False,0.0,0.0,0.0,0,0,23,0,0,23,32
+GREEDY_GROUND,13015.0,15.0,13,0,13,0,0,False,15.0,0.6521739130434783,10.0,15.0,0,21,2,0,23,32
+GREEDY_MIXED,12017.105263157895,17.105263157894736,12,0,12,0,0,False,16.05263157894737,0.6979405034324944,10.0,15.0,1.0526315789473684,20,2,1,23,32
+TEAM_GROUND_11,12020.0,20.0,12,0,12,0,0,False,20.0,0.8695652173913043,10.0,20.0,0,20,3,0,23,32
+TEAM_MIXED_11,12017.105263157895,17.105263157894736,12,0,12,0,0,False,16.05263157894737,0.6979405034324944,10.0,15.0,1.0526315789473684,20,2,1,23,32

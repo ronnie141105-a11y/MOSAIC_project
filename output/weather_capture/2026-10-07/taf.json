@@ -1,0 +1,21 @@
+{
+  "source_url": "https://aviationweather.gov/api/data/taf?ids=VVTS&format=json",
+  "retrieved_at_utc": "2026-10-07T11:36:56.913403+00:00",
+  "headers": {
+    "Date": "Wed, 07 Oct 2026 11:36:57 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "2725",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Cache-control": "max-age=60",
+    "ETag": "W/\"aa5-y/zMr53Aw08sJKWOeg32C8DrsO0\"",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Content-Security-Policy": "frame-ancestors 'self' *.weather.gov",
+    "Strict-Transport-Security": "max-age=63072000; includeSubDomains",
+    "x-azure-ref": "20261007T113656Z-16db9f99f4dnl42ghC1SG14yqc00000006400000000037rx",
+    "x-fd-int-roxy-purgeid": "66959007",
+    "X-Cache": "TCP_MISS",
+    "Accept-Ranges": "bytes"
+  },
+  "body": "[{\"icaoId\":\"VVTS\",\"dbPopTime\":\"2026-10-07T11:35:28.942Z\",\"bulletinTime\":\"2026-10-07T11:00:00.000Z\",\"issueTime\":\"2026-10-07T11:00:00.000Z\",\"validTimeFrom\":1791374400,\"validTimeTo\":1791482400,\"rawTAF\":\"TAF VVTS 071100Z 0712/0818 33005KT 9999 SCT017 TEMPO 0712/0718 5000 TSRA SCT015 FEW017CB BKN040 BECMG 0721/0723 4000 BR BECMG 0800/0801 9999 NSW TEMPO 0806/0808 5000 TSRA SCT015 FEW017CB TEMPO 0808/0811 06018KT 3000 TSRA SCT013 SCT015CB\",\"mostRecent\":1,\"remarks\":\"\",\"lat\":10.817,\"lon\":106.667,\"elev\":10,\"prior\":1,\"name\":\"Ho Chi Minh/Nhat Intl\",\"fcsts\":[{\"timeFrom\":1791374400,\"timeTo\":1791406800,\"timeBec\":null,\"fcstChange\":null,\"probability\":null,\"wdir\":330,\"wspd\":5,\"wgst\":null,\"wshearHgt\":null,\"wshearDir\":null,\"wshearSpd\":null,\"visib\":\"6+\",\"altim\":null,\"vertVis\":null,\"wxString\":null,\"notDecoded\":null,\"clouds\":[{\"cover\":\"SCT\",\"base\":1700,\"type\":null}],\"icgTurb\":[],\"temp\":[]},{\"timeFrom\":1791374400,\"timeTo\":1791396000,\"timeBec\":null,\"fcstChange\":\"TEMPO\",\"probability\":null,\"wdir\":null,\"wspd\":null,\"wgst\":null,\"wshearHgt\":null,\"wshearDir\":null,\"wshearSpd\":null,\"visib\":3.11,\"altim\":null,\"vertVis\":null,\"wxString\":\"TSRA\",\"notDecoded\":null,\"clouds\":[{\"cover\":\"SCT\",\"base\":1500,\"type\":null},{\"cover\":\"FEW\",\"base\":1700,\"type\":\"CB\"},{\"cover\":\"BKN\",\"base\":4000,\"type\":null}],\"icgTurb\":[],\"temp\":[]},{\"timeFrom\":1791406800,\"timeTo\":1791417600,\"timeBec\":1791414000,\"fcstChange\":\"BECMG\",\"probability\":null,\"wdir\":330,\"wspd\":5,\"wgst\":null,\"wshearHgt\":null,\"wshearDir\":null,\"wshearSpd\":null,\"visib\":2.49,\"altim\":null,\"vertVis\":null,\"wxString\":\"BR\",\"notDecoded\":null,\"clouds\":[{\"cover\":\"SCT\",\"base\":1700,\"type\":null}],\"icgTurb\":[],\"temp\":[]},{\"timeFrom\":1791417600,\"timeTo\":1791482400,\"timeBec\":1791421200,\"fcstChange\":\"BECMG\",\"probability\":null,\"wdir\":330,\"wspd\":5,\"wgst\":null,\"wshearHgt\":null,\"wshearDir\":null,\"wshearSpd\":null,\"visib\":\"6+\",\"altim\":null,\"vertVis\":null,\"wxString\":\"NSW\",\"notDecoded\":null,\"clouds\":[{\"cover\":\"SCT\",\"base\":1700,\"type\":null}],\"icgTurb\":[],\"temp\":[]},{\"timeFrom\":1791439200,\"timeTo\":1791446400,\"timeBec\":null,\"fcstChange\":\"TEMPO\",\"probability\":null,\"wdir\":null,\"wspd\":null,\"wgst\":null,\"wshearHgt\":null,\"wshearDir\":null,\"wshearSpd\":null,\"visib\":3.11,\"altim\":null,\"vertVis\":null,\"wxString\":\"TSRA\",\"notDecoded\":null,\"clouds\":[{\"cover\":\"SCT\",\"base\":1500,\"type\":null},{\"cover\":\"FEW\",\"base\":1700,\"type\":\"CB\"}],\"icgTurb\":[],\"temp\":[]},{\"timeFrom\":1791446400,\"timeTo\":1791457200,\"timeBec\":null,\"fcstChange\":\"TEMPO\",\"probability\":null,\"wdir\":60,\"wspd\":18,\"wgst\":null,\"wshearHgt\":null,\"wshearDir\":null,\"wshearSpd\":null,\"visib\":1.86,\"altim\":null,\"vertVis\":null,\"wxString\":\"TSRA\",\"notDecoded\":null,\"clouds\":[{\"cover\":\"SCT\",\"base\":1300,\"type\":null},{\"cover\":\"SCT\",\"base\":1500,\"type\":\"CB\"}],\"icgTurb\":[],\"temp\":[]}]}]"
+}

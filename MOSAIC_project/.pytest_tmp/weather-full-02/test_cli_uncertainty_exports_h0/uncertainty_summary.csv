@@ -1,0 +1,2 @@
+﻿method,split,count,mean_objective,worst_objective,risk_objective,mean_total_delay_min,mean_airborne_holding_min,mean_airborne_extra_min
+GA_UNCERTAINTY_11,test,12,20,30,22.5,10,2,3

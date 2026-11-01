@@ -1,0 +1,251 @@
+{
+  "validated_at": "2026-10-30",
+  "validation_scope": "Restored user-selected 36-arrival / 24-departure overload cohort",
+  "python_tests_passed_unique": 44,
+  "javascript_tests_passed": 25,
+  "deterministic_build_check": true,
+  "source_workbook_sha256": "4199bdcb5a15fd8c33eab2959c75c9f51b8ff53fdb78b086864f0fcd89f7489b",
+  "ui_checks": [
+    "36 airborne and 24 surface aircraft at startup",
+    "Runway chart: 23 parked departures and 1 at HLD",
+    "Centre fits the complete longer upstream cohort",
+    "All 36 landed arrivals remain visible at stands",
+    "Restart restores time zero"
+  ],
+  "cases": {
+    "workbook_peak_50": {
+      "counts": {
+        "total": 60,
+        "arrivals": 36,
+        "departures": 24
+      },
+      "initial_departure_states": {
+        "HOLDING": 1,
+        "PARKED": 23
+      },
+      "stream_audit": {
+        "centre_horizontal_conflict_pairs": [],
+        "minimum_initial_horizontal_nm": 21.03195165400426,
+        "maximum_airborne_holding_aircraft": 0,
+        "maximum_committed_surface_departures": 2
+      },
+      "airborne_conflict_pairs": 0,
+      "surface_audit": {
+        "landing_release_fraction": 0.6666666666666666,
+        "minimum_takeoff_gap_s": 144.0,
+        "violations": [],
+        "violating_pairs": 0
+      },
+      "sector_excess_aircraft_seconds": 1806,
+      "optimizer_run_id": "20261030T041004Z-e33a6288",
+      "optimizer_seeds": [
+        11,
+        22,
+        33
+      ],
+      "native_ga": {
+        "TEAM_GROUND": {
+          "objective": 280056.6666666666,
+          "converted_cost": 390.0,
+          "penalty": 27.966666666666665,
+          "capacity_excess_flights": 2,
+          "sector_peak_excess_aircraft": 2,
+          "sector_excess_aircraft_minutes": 27.966666666666665,
+          "sector_peaks": {
+            "APPROACH": 6,
+            "HCM-S1": 3,
+            "HCM-S2": 5,
+            "HCM-S5": 2,
+            "HCM-S6": 5,
+            "HCM-S7": 4
+          },
+          "arrival_conflict_pairs": 0,
+          "departure_conflict_pairs": 0,
+          "arrival_departure_conflict_pairs": 0,
+          "separation_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "runway_spacing_pairs": 0,
+          "arrival_transfer_spacing_pairs": 0,
+          "feasible_sampled": false,
+          "sample_s": 1,
+          "total_delay_min": 390.0,
+          "ground_delay_min": 390.0,
+          "speed_delay_min": 0.0,
+          "mean_delay_min": 6.5,
+          "max_delay_min": 35.0,
+          "no_action_flights": 57,
+          "ground_flights": 3,
+          "speed_flights": 0,
+          "optimized_movements": 60,
+          "completed_in_original_window": 47,
+          "centre_conflict_pairs": 0,
+          "terminal_conflict_pairs": 0,
+          "across_boundary_conflict_pairs": 0,
+          "native_withdrawn_speed_proposals": 0,
+          "airborne_holding_delay_min": 0.0,
+          "measurement_basis": "native_airport_and_airborne_execution",
+          "safety_metering_delay_min": 320.0
+        },
+        "TEAM_MIXED": {
+          "objective": 291866.6666666667,
+          "converted_cost": 700.0,
+          "penalty": 29.116666666666667,
+          "capacity_excess_flights": 2,
+          "sector_peak_excess_aircraft": 2,
+          "sector_excess_aircraft_minutes": 29.116666666666667,
+          "sector_peaks": {
+            "APPROACH": 7,
+            "HCM-S1": 3,
+            "HCM-S2": 5,
+            "HCM-S5": 2,
+            "HCM-S6": 5,
+            "HCM-S7": 4
+          },
+          "arrival_conflict_pairs": 0,
+          "departure_conflict_pairs": 0,
+          "arrival_departure_conflict_pairs": 0,
+          "separation_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "runway_spacing_pairs": 0,
+          "arrival_transfer_spacing_pairs": 0,
+          "feasible_sampled": false,
+          "sample_s": 1,
+          "total_delay_min": 700.0,
+          "ground_delay_min": 700.0,
+          "speed_delay_min": 0.0,
+          "mean_delay_min": 11.666666666666666,
+          "max_delay_min": 50.0,
+          "no_action_flights": 57,
+          "ground_flights": 3,
+          "speed_flights": 0,
+          "optimized_movements": 60,
+          "completed_in_original_window": 46,
+          "centre_conflict_pairs": 0,
+          "terminal_conflict_pairs": 0,
+          "across_boundary_conflict_pairs": 0,
+          "native_withdrawn_speed_proposals": 2,
+          "airborne_holding_delay_min": 0.0,
+          "measurement_basis": "native_airport_and_airborne_execution",
+          "safety_metering_delay_min": 585.0
+        }
+      }
+    },
+    "workbook_low_20": {
+      "counts": {
+        "total": 20,
+        "arrivals": 11,
+        "departures": 9
+      },
+      "initial_departure_states": {
+        "HOLDING": 1,
+        "PARKED": 8
+      },
+      "stream_audit": {
+        "centre_horizontal_conflict_pairs": [],
+        "minimum_initial_horizontal_nm": 16.162891944774007,
+        "maximum_airborne_holding_aircraft": 0,
+        "maximum_committed_surface_departures": 2
+      },
+      "airborne_conflict_pairs": 0,
+      "surface_audit": {
+        "landing_release_fraction": 0.6666666666666666,
+        "minimum_takeoff_gap_s": 150.0,
+        "violations": [],
+        "violating_pairs": 0
+      },
+      "sector_excess_aircraft_seconds": 0,
+      "optimizer_run_id": "20261030T033809Z-3ac918ba",
+      "optimizer_seeds": [
+        11,
+        22,
+        33
+      ],
+      "native_ga": {
+        "TEAM_GROUND": {
+          "objective": 0.0,
+          "converted_cost": 0.0,
+          "penalty": 0.0,
+          "capacity_excess_flights": 0,
+          "sector_peak_excess_aircraft": 0,
+          "sector_excess_aircraft_minutes": 0.0,
+          "sector_peaks": {
+            "APPROACH": 6,
+            "HCM-S1": 1,
+            "HCM-S2": 3,
+            "HCM-S5": 1,
+            "HCM-S6": 3,
+            "HCM-S7": 3
+          },
+          "arrival_conflict_pairs": 0,
+          "departure_conflict_pairs": 0,
+          "arrival_departure_conflict_pairs": 0,
+          "separation_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "runway_spacing_pairs": 0,
+          "arrival_transfer_spacing_pairs": 0,
+          "feasible_sampled": true,
+          "sample_s": 1,
+          "total_delay_min": 0.0,
+          "ground_delay_min": 0.0,
+          "speed_delay_min": 0.0,
+          "mean_delay_min": 0.0,
+          "max_delay_min": 0,
+          "no_action_flights": 20,
+          "ground_flights": 0,
+          "speed_flights": 0,
+          "optimized_movements": 20,
+          "completed_in_original_window": 20,
+          "centre_conflict_pairs": 0,
+          "terminal_conflict_pairs": 0,
+          "across_boundary_conflict_pairs": 0,
+          "airborne_holding_delay_min": 0.0,
+          "measurement_basis": "native_airport_and_airborne_execution",
+          "safety_metering_delay_min": 0.0,
+          "native_withdrawn_speed_proposals": 0
+        },
+        "TEAM_MIXED": {
+          "objective": 0.0,
+          "converted_cost": 0.0,
+          "penalty": 0.0,
+          "capacity_excess_flights": 0,
+          "sector_peak_excess_aircraft": 0,
+          "sector_excess_aircraft_minutes": 0.0,
+          "sector_peaks": {
+            "APPROACH": 6,
+            "HCM-S1": 1,
+            "HCM-S2": 3,
+            "HCM-S5": 1,
+            "HCM-S6": 3,
+            "HCM-S7": 3
+          },
+          "arrival_conflict_pairs": 0,
+          "departure_conflict_pairs": 0,
+          "arrival_departure_conflict_pairs": 0,
+          "separation_conflict_pairs": 0,
+          "new_conflict_pairs": 0,
+          "runway_spacing_pairs": 0,
+          "arrival_transfer_spacing_pairs": 0,
+          "feasible_sampled": true,
+          "sample_s": 1,
+          "total_delay_min": 0.0,
+          "ground_delay_min": 0.0,
+          "speed_delay_min": 0.0,
+          "mean_delay_min": 0.0,
+          "max_delay_min": 0,
+          "no_action_flights": 20,
+          "ground_flights": 0,
+          "speed_flights": 0,
+          "optimized_movements": 20,
+          "completed_in_original_window": 20,
+          "centre_conflict_pairs": 0,
+          "terminal_conflict_pairs": 0,
+          "across_boundary_conflict_pairs": 0,
+          "airborne_holding_delay_min": 0.0,
+          "measurement_basis": "native_airport_and_airborne_execution",
+          "safety_metering_delay_min": 0.0,
+          "native_withdrawn_speed_proposals": 0
+        }
+      }
+    }
+  }
+}

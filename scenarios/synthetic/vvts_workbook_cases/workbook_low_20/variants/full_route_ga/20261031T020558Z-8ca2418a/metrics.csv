@@ -1,0 +1,25 @@
+﻿method,objective,converted_cost,penalty,capacity_excess_flights,sector_peak_excess_aircraft,sector_excess_aircraft_minutes,sector_peaks,arrival_conflict_pairs,departure_conflict_pairs,arrival_departure_conflict_pairs,separation_conflict_pairs,new_conflict_pairs,departure_sequence_pairs,runway_spacing_pairs,arrival_transfer_spacing_pairs,feasible_sampled,sample_s,total_delay_min,ground_delay_min,speed_delay_min,mean_delay_min,max_delay_min,no_action_flights,ground_flights,speed_flights,optimized_movements,completed_in_original_window
+NO_CONTROL,187.0,187.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,187.0,0,0,9.35,32.0,20,0,0,20,20
+FCFS_FINE,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+FCFS_COARSE,187.0,187.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,187.0,0,0,9.35,32.0,20,0,0,20,20
+FCFS,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_11,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_11,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_22,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_22,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_33,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_33,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_44,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_44,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_55,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_55,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_66,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_66,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_77,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_77,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_88,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_88,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_99,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_99,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_GROUND_110,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20
+TEAM_MIXED_110,184.0,184.0,0.0,0,0,0.0,"{'APPROACH': 6, 'HCM-S1': 1, 'HCM-S2': 2, 'HCM-S5': 1, 'HCM-S6': 3, 'HCM-S7': 3}",0,0,0,0,0,0,0,0,True,20,184.0,51,0,9.2,32.0,16,4,0,20,20

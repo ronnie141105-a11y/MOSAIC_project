@@ -1,0 +1,484 @@
+{
+  "GA_GROUND_22": {
+    "samples": [
+      {
+        "active": true,
+        "completed": 0,
+        "entered": 0,
+        "method": "GA_GROUND_22",
+        "occupancy": 0,
+        "running": true,
+        "time_min": 0.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 0,
+        "entered": 3,
+        "method": "GA_GROUND_22",
+        "occupancy": 3,
+        "running": true,
+        "time_min": 10.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 0,
+        "entered": 7,
+        "method": "GA_GROUND_22",
+        "occupancy": 7,
+        "running": true,
+        "time_min": 20.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 2,
+        "entered": 10,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 30.0,
+        "total": 54,
+        "upstream_holding": 1
+      },
+      {
+        "active": true,
+        "completed": 6,
+        "entered": 12,
+        "method": "GA_GROUND_22",
+        "occupancy": 6,
+        "running": true,
+        "time_min": 40.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 10,
+        "entered": 15,
+        "method": "GA_GROUND_22",
+        "occupancy": 5,
+        "running": true,
+        "time_min": 50.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 12,
+        "entered": 18,
+        "method": "GA_GROUND_22",
+        "occupancy": 6,
+        "running": true,
+        "time_min": 60.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 14,
+        "entered": 22,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 70.0,
+        "total": 54,
+        "upstream_holding": 1
+      },
+      {
+        "active": true,
+        "completed": 18,
+        "entered": 26,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 80.0,
+        "total": 54,
+        "upstream_holding": 2
+      },
+      {
+        "active": true,
+        "completed": 21,
+        "entered": 29,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 90.0,
+        "total": 54,
+        "upstream_holding": 4
+      },
+      {
+        "active": true,
+        "completed": 26,
+        "entered": 33,
+        "method": "GA_GROUND_22",
+        "occupancy": 7,
+        "running": true,
+        "time_min": 100.0,
+        "total": 54,
+        "upstream_holding": 5
+      },
+      {
+        "active": true,
+        "completed": 29,
+        "entered": 37,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 110.0,
+        "total": 54,
+        "upstream_holding": 6
+      },
+      {
+        "active": true,
+        "completed": 32,
+        "entered": 40,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 120.0,
+        "total": 54,
+        "upstream_holding": 7
+      },
+      {
+        "active": true,
+        "completed": 36,
+        "entered": 44,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 130.0,
+        "total": 54,
+        "upstream_holding": 6
+      },
+      {
+        "active": true,
+        "completed": 40,
+        "entered": 48,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 140.0,
+        "total": 54,
+        "upstream_holding": 3
+      },
+      {
+        "active": true,
+        "completed": 43,
+        "entered": 51,
+        "method": "GA_GROUND_22",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 150.0,
+        "total": 54,
+        "upstream_holding": 3
+      },
+      {
+        "active": true,
+        "completed": 47,
+        "entered": 54,
+        "method": "GA_GROUND_22",
+        "occupancy": 7,
+        "running": true,
+        "time_min": 160.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 51,
+        "entered": 54,
+        "method": "GA_GROUND_22",
+        "occupancy": 3,
+        "running": true,
+        "time_min": 170.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 53,
+        "entered": 54,
+        "method": "GA_GROUND_22",
+        "occupancy": 1,
+        "running": true,
+        "time_min": 180.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 54,
+        "entered": 54,
+        "method": "GA_GROUND_22",
+        "occupancy": 0,
+        "running": false,
+        "time_min": 190.0,
+        "total": 54,
+        "upstream_holding": 0
+      }
+    ],
+    "final": {
+      "active": true,
+      "completed": 54,
+      "entered": 54,
+      "method": "GA_GROUND_22",
+      "occupancy": 0,
+      "running": false,
+      "time_min": 190.0,
+      "total": 54,
+      "upstream_holding": 0
+    },
+    "health": {
+      "status": "ok",
+      "cycle_count": 97,
+      "connected_clients": 0,
+      "hz": 1.0
+    }
+  },
+  "GA_MIXED_11": {
+    "samples": [
+      {
+        "active": true,
+        "completed": 0,
+        "entered": 0,
+        "method": "GA_MIXED_11",
+        "occupancy": 0,
+        "running": true,
+        "time_min": 0.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 0,
+        "entered": 3,
+        "method": "GA_MIXED_11",
+        "occupancy": 3,
+        "running": true,
+        "time_min": 10.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 0,
+        "entered": 6,
+        "method": "GA_MIXED_11",
+        "occupancy": 6,
+        "running": true,
+        "time_min": 20.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 2,
+        "entered": 10,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 30.0,
+        "total": 54,
+        "upstream_holding": 1
+      },
+      {
+        "active": true,
+        "completed": 5,
+        "entered": 12,
+        "method": "GA_MIXED_11",
+        "occupancy": 7,
+        "running": true,
+        "time_min": 40.0,
+        "total": 54,
+        "upstream_holding": 1
+      },
+      {
+        "active": true,
+        "completed": 9,
+        "entered": 15,
+        "method": "GA_MIXED_11",
+        "occupancy": 6,
+        "running": true,
+        "time_min": 50.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 12,
+        "entered": 18,
+        "method": "GA_MIXED_11",
+        "occupancy": 6,
+        "running": true,
+        "time_min": 60.0,
+        "total": 54,
+        "upstream_holding": 1
+      },
+      {
+        "active": true,
+        "completed": 14,
+        "entered": 22,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 70.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 17,
+        "entered": 25,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 80.0,
+        "total": 54,
+        "upstream_holding": 1
+      },
+      {
+        "active": true,
+        "completed": 21,
+        "entered": 29,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 90.0,
+        "total": 54,
+        "upstream_holding": 4
+      },
+      {
+        "active": true,
+        "completed": 25,
+        "entered": 33,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 100.0,
+        "total": 54,
+        "upstream_holding": 4
+      },
+      {
+        "active": true,
+        "completed": 28,
+        "entered": 36,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 110.0,
+        "total": 54,
+        "upstream_holding": 6
+      },
+      {
+        "active": true,
+        "completed": 32,
+        "entered": 40,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 120.0,
+        "total": 54,
+        "upstream_holding": 6
+      },
+      {
+        "active": true,
+        "completed": 36,
+        "entered": 44,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 130.0,
+        "total": 54,
+        "upstream_holding": 5
+      },
+      {
+        "active": true,
+        "completed": 40,
+        "entered": 48,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 140.0,
+        "total": 54,
+        "upstream_holding": 3
+      },
+      {
+        "active": true,
+        "completed": 43,
+        "entered": 51,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 150.0,
+        "total": 54,
+        "upstream_holding": 2
+      },
+      {
+        "active": true,
+        "completed": 46,
+        "entered": 54,
+        "method": "GA_MIXED_11",
+        "occupancy": 8,
+        "running": true,
+        "time_min": 160.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 51,
+        "entered": 54,
+        "method": "GA_MIXED_11",
+        "occupancy": 3,
+        "running": true,
+        "time_min": 170.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 53,
+        "entered": 54,
+        "method": "GA_MIXED_11",
+        "occupancy": 1,
+        "running": true,
+        "time_min": 180.0,
+        "total": 54,
+        "upstream_holding": 0
+      },
+      {
+        "active": true,
+        "completed": 54,
+        "entered": 54,
+        "method": "GA_MIXED_11",
+        "occupancy": 0,
+        "running": false,
+        "time_min": 190.0,
+        "total": 54,
+        "upstream_holding": 0
+      }
+    ],
+    "final": {
+      "active": true,
+      "completed": 54,
+      "entered": 54,
+      "method": "GA_MIXED_11",
+      "occupancy": 0,
+      "running": false,
+      "time_min": 190.0,
+      "total": 54,
+      "upstream_holding": 0
+    },
+    "health": {
+      "status": "ok",
+      "cycle_count": 116,
+      "connected_clients": 0,
+      "hz": 1.0
+    }
+  }
+}

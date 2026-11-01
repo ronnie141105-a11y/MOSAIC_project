@@ -1,0 +1,58 @@
+STANDARD DEPARTURE CHART -                                  TRANSITION LVL         FL190               HO CHI MINH/TAN SON NHAT INTL (VVTS)
+INSTRUMENT (SID) - ICAO                                    TRANSITION  ALT 5500 m                                                       RNAV RWY 25L/R
+                                                                                                                  BACHU 2D, KADUM 2D, ENPAS 2D
+                                                                                                                    XOBAV 2D, MISAN 2D, SAPEN 2D
+
+
+ 1.    TABULAR DESCRIPTION
+
+    BACHU 2D DEPARTURE
+     Serial         Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude     Speed
+    number      Descriptor       Identifier     over          °M(°T)          Variation       (km)       Direction        (m)          limit     Nav Spec
+                                                                                                                                     (km/h)
+    INITIAL CLIMB R W Y 25L
+      010            CF           TS616           -             250               +1           11.7           -             -            -        RNAV 1
+    INITIAL CLIMB R W Y 25R
+      010            CF           TS616           -             248               +1           10.8           -             -            -        RNAV 1
+    FROM TS616
+      010            IF           TS616           -              -               +1             -             -             -           -         RNAV 1
+      020            TF           TS618           -       250     (249.0)         +1           26.5           -          -3350           -        RNAV 1
+      030            TF          BACHU            -       252     (251.1)         +1           34.9           -             -            -        RNAV 1
+
+
+    KADUM 2D DEPARTURE
+      Serial        Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude     Speed
+    number       D escriptor    Identifier      over          °M(°T)          Variation       (km)        Direction       (m)          limit     N av Spec
+                                                                                                                                     (km/h)
+    INITIAL C LIMB R WY 25L
+       010           CF           TS616           -             250               +1           11.7           -             -            -        RNAV 1
+    INITIAL C LIMB R WY 25R
+       010           CF           TS616           -             248               +1           10.8           -             -            -        RNAV 1
+    FROM TS616
+       010            IF          TS616           -               -               +1             -            -             -            -        RNAV 1
+       020           TF           TS636           -        340     (339.0)        +1           16.7           -             -            -        RNAV 1
+       030           TF           TS638           -        053     (052.1)        +1           14.2           -          -3350           -        RNAV 1
+       040           TF           TS686           -        053     (052.2)        +1           28.1           -          +3050           -        RNAV 1
+       050           TF          KADUM            -        053     (052.2)        +1           37.9           -             -            -        RNAV 1
+    DOVIN TRAN SITION
+      Serial        Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude     Speed
+    number       D escriptor    Identifier      over          °M(°T)          Variation       (km)        Direction       (m)          limit     N av Spec
+                                                                                                                                     (km/h)
+       010            IF         KADUM            -               -               +1             -            -             -            -        RNAV 1
+       020           TF           DOVIN           -        062     (061.5)        +1          130.0           -             -            -        RNAV 1
+    BIXEX TRANSITION
+      Serial        Path        Waypoint        Fly-          Course          Magnetic      Distance        Turn        Altitude     Speed
+    number       D escriptor    Identifier      over          °M(°T)          Variation       (km)        Direction       (m)          limit     N av Spec
+                                                                                                                                     (km/h)
+       010            IF         KADUM            -               -               +1             -            -             -            -        RNAV 1
+       020           TF           BIXEX           -        078     (076.9)        +1          120.9           -             -            -        RNAV 1
+    PTH TRANSITION
+       010            IF         KADUM            -               -               +1             -            -             -            -        RNAV 1
+       020           TF            PTH            -        114     (113.1)        +1          120.4           -             -            -        RNAV 1
+
+
+
+
+
+DT\M:\2024\AMDT\AIRAC AIP AMDT 03.24\DRAFT\VVTS\V1\VVTS_SID RNAV RWY 25LR BACHU 2D KADUM
+2D ENPAS 2D XOBAV 2D MISAN 2D SAPEN 2D_TABULAR_V1.docx

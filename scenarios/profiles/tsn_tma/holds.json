@@ -1,0 +1,34 @@
+[
+  {
+    "fix": "NOKUM",
+    "source": "56080.pdf",
+    "inbound_magnetic_deg": 113,
+    "minimum_altitude_m": 3650,
+    "maximum_altitude_m": 4250,
+    "max_ias_kmh": 405
+  },
+  {
+    "fix": "BITIS",
+    "source": "56080.pdf",
+    "inbound_magnetic_deg": 29,
+    "minimum_altitude_m": 2450,
+    "maximum_flight_level": 200,
+    "max_ias_kmh": 425
+  },
+  {
+    "fix": "VICAL",
+    "source": "56080.pdf",
+    "inbound_magnetic_deg": 1,
+    "minimum_altitude_m": 2150,
+    "maximum_altitude_m": 3650,
+    "max_ias_kmh": 425
+  },
+  {
+    "fix": "DALAP",
+    "source": "56084.pdf",
+    "inbound_magnetic_deg": 57,
+    "minimum_altitude_m": 3350,
+    "maximum_altitude_m": 4250,
+    "max_ias_kmh": 405
+  }
+]

@@ -1,0 +1,55 @@
+CHANGE: NEW CHART.
+ Tan Son Nhat DLV            GND        TWR         TMC          ATIS      ELEV, ALT AND HGT IN METRES                                    PATMA                                           DOVIN
+         121.8              121.9      118.7      125.5         128.0      DISTANCES IN KILOMETRES                                        12°20'11''N                                     11°55'01''N
+         123.6              121.6      130.0      124.075                  BRG ARE MAG                                    850m            107°48'36''E                                    108536°06'291130''E
+                                                                           VAR 1° W                                                                       .7         130                    ●       ●
+  TA 5500       AD Elev 10                                                                                                                              35     °●                      120.9                                    1384
+                                                                                                                                                      °1   062  319       °                            BIXEX●1337              ●
+                                                                    978               ●285                              MSA 46  km                  38                078
+   RNAV1 required                                                  ●                                                       ARP                     0                                          991      11°361547'13''N
+                                                                                                                                                                                                ●      108°08●  '19''E
+   GNSS only                                                                                                          TS686                                  1                                          1425●
+                                                                                                                                               KADUM          14°                              716●                    ●▬ ▬●  ▬  ●●●●
+   RADAR surveillance required                                                                                        3050        37.9                                                                                 Phan Thiet
+                 Phnom Penh                                                                       VVR19                                                                                                  453●         D114.1 PTH
+                                                                                                  7 000                                                                            120.                                    1220
+                      FIR                                                                          GND            2K                                                                    4                              10°●55'41''N
+                 (CAMBODIA)               SAPEN                                                              UM                                                                                              1302●     108°04'19''E
+                                          11°01'12''N                                                   KAD   28.1
+                                          106°11'00''E                                                             TS638                                                                        728●
+                                             MAX 4250                                              °                  MAX 3350                          389●                     Not to scale
+                                                                      SA                        053  VVD26                                                             836●                                     513●
+                                                                         PE                           1 000            VVD23
+                                                                           N                           300              1 00050
+             Ho Chi Minh                                                     2K                                                                             393●                                                    697●
+                  FIR                                                                            250°                                                                                                       ●
+              (VIET NAM)                                                                              0°   VVP4                                                                      ●                       571
+                                                                                                   25      3 000         VVD24                                                    708          ●
+                                                                                                           GND           1 000                                                                   839
+                                                                                            900                            50
+                                                                                                        VVD25                                                                         VVD32
+                                                                                                         1 000                                     462                                Unspecified
+                                                                                                          300                                     ●                                   Unspecified
+                                                                                                                                                      ●525
+                                                                                     VVR36                                                             Not to scale              INITIAL CLIMB
+                                                                                      6 000
+                                                                                       600
+                                                                                                                                                                                                                        VVD23
+                                                                                                                                                                                                    VVD26                1 000
+                                                                                                                                                                                          2K         1 000                 50
+                                                                                                                                                                                   DUM3°              300
+                                                                                                                                                                S              KA      05           67  28   24
+                                           Usage condition:                                                                                                      AP                                          23
+                                           KADUM 2K  is       only  used  when  there  is  no  military  flight  operation  at                       SAPEN          EN                        250°     47
+                                           Bien       Hoa       and      approved       by       Regional      Air      Command      Centre       III. In 11°01'12''N  2K                       250°      39      VVP4
+                                           case of air defense combat situations, aircraft must vacate Bien Hoa                                      106°11'00''E                                                 3 000
+                                           airspace (VVR19) within 8 minutes.                                                                                                                                      GND
+                                                                                                                                                        MAX 4250                     900
+
+         1300
+         800                                                                                                                                                                                                                  VVD24
+                                                                                                                                                                                                                              1 000
+         300                                                                                                      Scale  1:1 250 000                                                             VVD25                          50
+       Contour                                                                                                    20  24 6810 14 18 Kilometres                 VVR36                              1 000
+       Intervals                                                                                                 2  0  2  4  6  8 10NM                         6 000                               300
+                                                                                                                                                                600

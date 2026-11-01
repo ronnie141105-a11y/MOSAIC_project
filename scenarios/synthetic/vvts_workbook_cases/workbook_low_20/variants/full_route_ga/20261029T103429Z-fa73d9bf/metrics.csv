@@ -1,0 +1,10 @@
+﻿method,objective,converted_cost,penalty,capacity_excess_flights,sector_peak_excess_aircraft,sector_excess_aircraft_minutes,sector_peaks,arrival_conflict_pairs,departure_conflict_pairs,arrival_departure_conflict_pairs,separation_conflict_pairs,new_conflict_pairs,runway_spacing_pairs,arrival_transfer_spacing_pairs,feasible_sampled,sample_s,total_delay_min,ground_delay_min,speed_delay_min,mean_delay_min,max_delay_min,no_action_flights,ground_flights,speed_flights,optimized_movements,completed_in_original_window
+NO_CONTROL,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+GREEDY_GROUND,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+GREEDY_MIXED,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+TEAM_GROUND_11,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+TEAM_MIXED_11,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+TEAM_GROUND_22,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+TEAM_MIXED_22,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+TEAM_GROUND_33,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8
+TEAM_MIXED_33,0.0,0.0,0.0,0,0,0.0,"{'APPROACH': 6, 'CENTRE_NE': 4, 'CENTRE_SE': 1, 'CENTRE_SW': 2, 'CENTRE_NW': 0}",0,0,0,0,0,0,0,True,20,0.0,0,0,0.0,0.0,20,0,0,20,8

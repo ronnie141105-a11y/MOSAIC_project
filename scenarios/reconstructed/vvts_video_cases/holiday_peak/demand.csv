@@ -1,0 +1,9 @@
+start_utc,end_utc,resource,flights_per_interval,evidence,source
+2026-02-22T03:00:00+00:00,2026-02-22T03:15:00+00:00,VVTS_RUNWAY_TOTAL,11,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy
+2026-02-22T03:15:00+00:00,2026-02-22T03:30:00+00:00,VVTS_RUNWAY_TOTAL,6,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy
+2026-02-22T03:30:00+00:00,2026-02-22T03:45:00+00:00,VVTS_RUNWAY_TOTAL,13,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy
+2026-02-22T03:45:00+00:00,2026-02-22T04:00:00+00:00,VVTS_RUNWAY_TOTAL,8,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy
+2026-02-22T04:00:00+00:00,2026-02-22T04:15:00+00:00,VVTS_RUNWAY_TOTAL,9,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy
+2026-02-22T04:15:00+00:00,2026-02-22T04:30:00+00:00,VVTS_RUNWAY_TOTAL,10,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy
+2026-02-22T04:30:00+00:00,2026-02-22T04:45:00+00:00,VVTS_RUNWAY_TOTAL,7,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy
+2026-02-22T04:45:00+00:00,2026-02-22T05:00:00+00:00,VVTS_RUNWAY_TOTAL,13,estimated_scenario_demand_not_observed_movements,video_visibility_timing_proxy

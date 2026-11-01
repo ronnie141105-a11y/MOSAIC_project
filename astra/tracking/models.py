@@ -1,0 +1,204 @@
+"""
+4DARHAC tracking data model (Milestone 5).
+
+Defines the persistent ``FourDArhac`` object -- the first genuinely
+*stateful* domain object in the ASTRA pipeline, surviving across poll
+cycles rather than being rebuilt from scratch every cycle like
+``Cluster`` (Milestone 3) and ``ComplexityRegion`` (Milestone 4).
+
+See docs/architecture.md §6.2 for the original domain-model sketch,
+astra/tracking/engine.py's module docstring for Milestone 5's as-built
+design decisions, and astra/forecast/engine.py's module docstring for
+Milestone 6's (the forecast fields below are populated by
+``astra.forecast.engine.ForecastEngine``, not by ``TrackerEngine``).
+"""
+
+from dataclasses import dataclass, field
+from typing import FrozenSet, List, Literal, Optional
+
+from astra.complexity.models import ComplexityRegion
+
+#: Lifecycle status of a tracked 4DARHAC.
+#:
+#: PROVISIONAL -- not yet observed at all: opened from a *predicted*
+#:                (non-zero horizon) cluster with no current real-world
+#:                counterpart. Lower confidence, forecastable (an onset
+#:                estimate is the whole point), but never resolvable --
+#:                see astra.tracking.engine's module docstring "Provisional
+#:                tracks" section and astra.resolution.engine's
+#:                `_RESOLVABLE_STATUSES` (deliberately excludes it).
+#: CANDIDATE  -- detected, not yet confirmed (damps single-cycle noise).
+#: CONFIRMED  -- seen for `tracking_confirm_cycles` consecutive cycles.
+#: GROWING    -- complexity_score rising cycle over cycle.
+#: PEAK       -- growth just flattened or reversed; the local maximum.
+#: DISSIPATING -- complexity_score falling cycle over cycle.
+#: CLOSED     -- not re-observed for `tracking_stale_cycles` cycles.
+#:
+#: Derived mechanically from the trend of complexity_score across the
+#: track's most recent entries (see
+#: ``astra.tracking.engine.TrackerEngine._next_status``) plus the
+#: staleness check for CLOSED. No time-based forecasting -- trend
+#: classification only; onset/peak/dissipation *time* prediction and
+#: calibrated confidence belong to Milestone 6, layered on top of this.
+ArhacStatus = Literal[
+    "PROVISIONAL", "CANDIDATE", "CONFIRMED", "GROWING", "PEAK", "DISSIPATING", "CLOSED"
+]
+
+
+@dataclass
+class FourDArhac:
+    """A persistent 4D Area of Relatively High ATC Complexity.
+
+    Mutable -- unlike ``Cluster`` and ``ComplexityRegion``, a
+    ``FourDArhac`` is updated in place: ``TrackerEngine`` (Milestone 5)
+    owns identity/membership/status; ``ForecastEngine`` (Milestone 6)
+    owns the forecast fields below, called afterward in the same poll
+    cycle. Instances are owned by exactly one ``TrackerEngine``; nothing
+    outside ``astra.tracking``/``astra.forecast`` should mutate one
+    directly.
+
+    Attributes:
+        arhac_id: Stable identifier assigned at first detection;
+            persists for the life of the track -- including across a
+            PROVISIONAL -> CANDIDATE promotion (see `provisional_track`),
+            so an FMP-visible track's identity never changes just
+            because a prediction turned out to be real.
+        status: Current lifecycle stage (see ``ArhacStatus``).
+        track: ``ComplexityRegion`` history for this ARHAC from *real*
+            (``horizon_min == 0``) observations only, ordered by
+            ``valid_at_s`` -- see this module's own docstring above "Why
+            horizon 0 only". Empty for a track that is still
+            ``PROVISIONAL`` (see `provisional_track` below); gains its
+            first entry the cycle it is promoted, at which point normal
+            Milestone 5 status-trend logic (``_next_status``) begins
+            exactly as it would for a brand-new track -- provisional
+            history does not count toward `tracking_confirm_cycles`.
+        provisional_track: ``ComplexityRegion`` history from *predicted*
+            (non-zero horizon) clusters, populated only while
+            ``status == "PROVISIONAL"`` -- i.e. before this ARHAC has
+            ever been observed for real. One entry is appended at most
+            once per poll cycle, from whichever configured horizon best
+            matches the track's last known (still-predicted) cluster --
+            see ``TrackerEngine._detect_and_extend_provisional``. Left
+            untouched (a frozen record of "we saw this coming, N cycles
+            in advance") once the track is promoted; never cleared.
+            Empty for a track that was never provisional (opened
+            directly from a real, horizon-0 detection).
+        member_aircraft: Union of ``member_callsigns`` across every
+            entry in ``track`` *and* ``provisional_track`` (membership
+            can change cycle to cycle as aircraft join or leave the
+            area, or as the predicted geometry is refined before it
+            ever becomes real).
+        first_detected_cycle_s: Absolute simulation time of the first
+            entry -- of ``provisional_track`` if this ARHAC ever was
+            provisional (preserved through promotion, so "how far in
+            advance was this flagged" is always ``track[0].computed_at_s
+            - first_detected_cycle_s``), otherwise of ``track``.
+        predicted_onset_s: Set by ``ForecastEngine`` -- the estimated
+            future time ``complexity_score`` first crosses
+            ``forecast_onset_threshold``, interpolated from this cycle's
+            matched predicted horizons. ``None`` if the track is already
+            above the threshold (onset already happened), if the trend
+            never crosses it within the available horizons, or if fewer
+            than ``forecast_min_matched_horizons`` horizons matched this
+            cycle (insufficient data -- see this module's own docstring above).
+            Always ``None`` for ``CANDIDATE``/``CLOSED`` tracks (not
+            forecast at all).
+        peak_complexity: Highest ``complexity_score`` observed *or*
+            predicted so far -- ``ForecastEngine`` may raise this (and
+            ``peak_time_s`` alongside it) if a matched predicted horizon
+            exceeds the previous value; see ``predicted_peak_time_s``.
+        peak_time_s: ``valid_at_s`` (if observed) or predicted time (if
+            raised by ``ForecastEngine``) of the entry that produced
+            ``peak_complexity``.
+        predicted_dissipation_s: Set by ``ForecastEngine`` -- the
+            estimated future time ``complexity_score`` first crosses
+            ``forecast_dissipation_threshold`` on the way down. Same
+            ``None`` conditions as ``predicted_onset_s``.
+        predicted_peak_time_s: Set by ``ForecastEngine`` -- the time of
+            the highest-scoring *matched predicted horizon* this cycle,
+            only if it exceeds the previously-known ``peak_complexity``
+            (i.e. a higher peak is expected in the future than anything
+            observed so far). ``None`` if no future horizon is expected
+            to exceed the current peak, or under the same insufficient-
+            data conditions as ``predicted_onset_s``.
+        confidence: Composite forecast confidence in ``[0, 1]``.
+            ``TrackerEngine`` seeds this with a detection-count ramp
+            placeholder (Milestone 5); ``ForecastEngine`` (Milestone 6)
+            multiplies that by horizon coverage and a horizon-distance
+            decay term. A documented heuristic, not a statistically
+            calibrated probability -- see this module's own docstring above.
+        priority: FMP triage rank among currently open tracks (1 =
+            highest ``peak_complexity``). Owned by ``TrackerEngine``,
+            recomputed every ``update()`` call. Unchanged by
+            ``ForecastEngine`` -- severity-only ranking is kept separate
+            from forecast urgency, see this module's own docstring above.
+        forecast_urgency_rank: FMP triage rank by soonest
+            ``predicted_onset_s`` among tracks forecast this cycle (1 =
+            soonest onset). Owned by ``ForecastEngine``, recomputed every
+            ``forecast_many()`` call; ``None`` for tracks with no
+            predicted onset this cycle (already active, no crossing
+            found, or insufficient matched horizons) and for tracks not
+            forecast at all. Deliberately separate from ``priority`` --
+            see this module's own docstring above.
+        last_updated_cycle_s: ``valid_at_s`` of the most recent
+            extending observation; compared against
+            ``tracking_stale_cycles`` to detect staleness.
+        trend_extremum_score: The running peak (while ``GROWING``/``PEAK``)
+            or trough (while ``DISSIPATING``) ``complexity_score`` reached
+            so far during the *current* trend regime -- ``None`` outside
+            a trend regime (``CANDIDATE``/``CONFIRMED``/``PROVISIONAL``/
+            ``CLOSED``). Owned by ``TrackerEngine._next_status``/
+            ``_next_trend_extremum``, used as the comparison baseline
+            instead of just the immediately-preceding cycle's score, so
+            that a genuine trend reversal is detected even when it
+            unfolds as many small per-cycle steps that never
+            individually exceed ``tracking_trend_tolerance`` -- fixes a
+            real bug where a track could report ``DISSIPATING``
+            indefinitely while ``complexity_score`` was actually
+            climbing back up (or the mirror case, stuck ``GROWING``
+            during a slow decline), because comparing only to the
+            previous cycle reset the baseline every single cycle and a
+            slow-enough reversal could hide from it forever. See
+            the relevant module's own docstring.
+    """
+
+    arhac_id: str
+    status: ArhacStatus
+    track: List[ComplexityRegion] = field(default_factory=list)
+    provisional_track: List[ComplexityRegion] = field(default_factory=list)
+    member_aircraft: FrozenSet[str] = field(default_factory=frozenset)
+    first_detected_cycle_s: float = 0.0
+    predicted_onset_s: Optional[float] = None
+    peak_complexity: float = 0.0
+    peak_time_s: Optional[float] = None
+    predicted_dissipation_s: Optional[float] = None
+    predicted_peak_time_s: Optional[float] = None
+    predicted_peak_complexity: Optional[float] = None
+    confidence: float = 0.0
+    priority: int = 0
+    forecast_urgency_rank: Optional[int] = None
+    last_updated_cycle_s: float = 0.0
+    trend_extremum_score: Optional[float] = None
+    #: Whether the anchor's own current (real-or-provisional)
+    #: ``complexity_score`` is already at or above
+    #: ``ASTRAConfig.forecast_onset_threshold`` as of this cycle -- set
+    #: by ``ForecastEngine.forecast()``, independent of whether enough
+    #: predicted horizons matched to forecast onset/peak/dissipation.
+    #:
+    #: Distinct from a simple ``predicted_onset_s is None`` check: that
+    #: condition is also true for a track too new to forecast at all
+    #: (insufficient matched horizons), which is a *different* reason
+    #: with a *lower* urgency, not a hotspot already happening.
+    #: ``already_critical`` disambiguates the two so
+    #: ``ForecastEngine._assign_urgency_rank`` can rank an
+    #: already-critical track *first* (most urgent, by descending
+    #: current score) instead of leaving it unranked like a genuinely
+    #: not-yet-forecastable one, and so ``ResolutionEngine._eligible``
+    #: can still resolve it despite there being no future onset time
+    #: left to react to.
+    already_critical: bool = False
+
+    def __len__(self) -> int:
+        """Number of distinct aircraft that have ever been part of this track."""
+        return len(self.member_aircraft)

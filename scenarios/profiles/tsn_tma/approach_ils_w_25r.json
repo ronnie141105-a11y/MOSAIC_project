@@ -1,0 +1,63 @@
+{
+  "id": "ILS_W_25R",
+  "runway": "25R",
+  "sources": [
+    "123981.pdf",
+    "123982.pdf"
+  ],
+  "source_status": "Supplied AIRAC AMDT 01/25 draft-labelled documents",
+  "transitions": {
+    "BOMSU": {
+      "fixes": [
+        "BOMSU",
+        "TS426",
+        "TS424",
+        "TS422",
+        "RW25R"
+      ],
+      "initial_altitude_window_m": [
+        790,
+        1500
+      ],
+      "max_ias_kmh": 425
+    },
+    "SOKAN": {
+      "fixes": [
+        "SOKAN",
+        "TS426",
+        "TS424",
+        "TS422",
+        "RW25R"
+      ],
+      "initial_altitude_window_m": [
+        730,
+        1500
+      ],
+      "max_ias_kmh": 425
+    }
+  },
+  "altitude_m": {
+    "TS426": 600,
+    "TS424": 600,
+    "RW25R": 26
+  },
+  "glidepath_deg": 3,
+  "threshold_elevation_m": 10,
+  "threshold_crossing_height_m": 16.4,
+  "missed_approach": {
+    "fixes": [
+      "TS420",
+      "TS500"
+    ],
+    "altitude_m": 600,
+    "hold_fix": "TS500",
+    "execution": "not implemented"
+  },
+  "nominal_speed_kt": {
+    "TS426": 180,
+    "TS424": 160,
+    "TS422": 140,
+    "RW25R": 140
+  },
+  "landing_model": "Threshold crossing then nominal touchdown 16/tan(3deg) metres beyond threshold; no ground roll"
+}

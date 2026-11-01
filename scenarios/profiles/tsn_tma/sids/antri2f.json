@@ -1,0 +1,631 @@
+{
+  "id": "ANTRI2F",
+  "kind": "sid",
+  "direction": "outbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "83868.pdf",
+  "legs": [
+    {
+      "fix": "TS652",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 400
+    },
+    {
+      "fix": "_ANTRI2F_TS658_1",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 409.61538461538464,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_2",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 419.2307692307692,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_3",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 428.84615384615387,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_4",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 438.46153846153845,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_5",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 448.0769230769231,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_6",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 457.6923076923077,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_7",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 467.3076923076923,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_8",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 476.9230769230769,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_9",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 486.53846153846155,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_10",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 496.1538461538462,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_11",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 505.7692307692308,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_12",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 515.3846153846154,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_13",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 525.0,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_14",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 534.6153846153846,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_15",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 544.2307692307693,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_16",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 553.8461538461538,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_17",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 563.4615384615385,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_18",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 573.0769230769231,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_19",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 582.6923076923076,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_20",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 592.3076923076924,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_21",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 601.9230769230769,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_22",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 611.5384615384615,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_23",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 621.1538461538462,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_24",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 630.7692307692307,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_25",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 640.3846153846154,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_26",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 650.0,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_27",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 659.6153846153846,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_28",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 669.2307692307693,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_29",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 678.8461538461538,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_30",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 688.4615384615385,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_31",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 698.0769230769231,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_32",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 707.6923076923077,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_33",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 717.3076923076923,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_34",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 726.9230769230769,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_35",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 736.5384615384615,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_36",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 746.1538461538462,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_37",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 755.7692307692307,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_38",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 765.3846153846154,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_39",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 775.0,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_40",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 784.6153846153846,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_41",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 794.2307692307693,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_42",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 803.8461538461538,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_43",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 813.4615384615385,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_44",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 823.0769230769231,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_45",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 832.6923076923077,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_46",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 842.3076923076923,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_47",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 851.9230769230769,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_48",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 861.5384615384615,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_49",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 871.1538461538462,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_50",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 880.7692307692307,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS658_51",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 890.3846153846154,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "TS658",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 900,
+      "path_descriptor": "RF",
+      "arc_center": "TSC03",
+      "radius_km": 5.9,
+      "turn": "R"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_1",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 905.2631578947369,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_2",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 910.5263157894736,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_3",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 915.7894736842105,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_4",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 921.0526315789474,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_5",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 926.3157894736842,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_6",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 931.578947368421,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_7",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 936.8421052631579,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_8",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 942.1052631578947,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_9",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 947.3684210526316,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_10",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 952.6315789473684,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_11",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 957.8947368421053,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_12",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 963.1578947368421,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_13",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 968.421052631579,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_14",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 973.6842105263158,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_15",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 978.9473684210526,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_16",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 984.2105263157895,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_17",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 989.4736842105264,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "_ANTRI2F_TS662_18",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 994.7368421052631,
+      "phase": "sid_rf"
+    },
+    {
+      "fix": "TS662",
+      "altitude_constraints": [],
+      "max_ias_kmh": 445,
+      "simulation_target_altitude_m": 1000,
+      "path_descriptor": "RF",
+      "arc_center": "TSC03",
+      "radius_km": 5.9,
+      "turn": "R"
+    },
+    {
+      "fix": "TS664",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 1200,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 1200
+    },
+    {
+      "fix": "TS666",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 1850,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 1850
+    },
+    {
+      "fix": "TS668",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3050,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3050
+    },
+    {
+      "fix": "TS814",
+      "altitude_constraints": [
+        {
+          "type": "at_or_above",
+          "value": 3650,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 3650
+    },
+    {
+      "fix": "TS816",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4200
+    },
+    {
+      "fix": "ANTRI",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 4500
+    }
+  ],
+  "coordination_required": true,
+  "nominal_ground_speed_kt": 205,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "nominal_chart_route",
+  "limitations": [
+    "Nominal altitude and speed assumptions; no wind or aircraft performance model."
+  ],
+  "start_altitude_m": 10,
+  "runway_fix_overrides": {},
+  "display_fixes": [
+    "TS652",
+    "TS658",
+    "TS662",
+    "TS664",
+    "TS666",
+    "TS668",
+    "TS814",
+    "TS816",
+    "ANTRI"
+  ],
+  "transitions": {
+    "DOVIN": {
+      "fixes": [
+        "ANTRI",
+        "DOVIN"
+      ],
+      "source": "83868.pdf"
+    },
+    "BIXEX": {
+      "fixes": [
+        "ANTRI",
+        "BIXEX"
+      ],
+      "source": "83868.pdf"
+    },
+    "PTH": {
+      "fixes": [
+        "ANTRI",
+        "PTH"
+      ],
+      "source": "83868.pdf"
+    },
+    "PATMA": {
+      "fixes": [
+        "ANTRI",
+        "PATMA"
+      ],
+      "source": "83869.pdf"
+    }
+  }
+}

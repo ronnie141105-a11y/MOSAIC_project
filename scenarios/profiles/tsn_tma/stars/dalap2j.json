@@ -1,0 +1,138 @@
+{
+  "id": "DALAP2J",
+  "kind": "star",
+  "direction": "inbound",
+  "runways": [
+    "25L",
+    "25R"
+  ],
+  "source": "56090.pdf",
+  "coordination_required": true,
+  "legs": [
+    {
+      "fix": "DALAP",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 3350,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": 460,
+      "simulation_target_altitude_m": 3350
+    },
+    {
+      "fix": "ANSUP",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 2750,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2750
+    },
+    {
+      "fix": "TS448",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2750
+    },
+    {
+      "fix": "TS446",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2750
+    },
+    {
+      "fix": "TS444",
+      "altitude_constraints": [],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2750
+    },
+    {
+      "fix": "TS442",
+      "altitude_constraints": [
+        {
+          "type": "at",
+          "value": 2750,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": null,
+      "simulation_target_altitude_m": 2750
+    },
+    {
+      "fix": "BOMSU",
+      "altitude_constraints": [
+        {
+          "type": "window",
+          "minimum": 790,
+          "maximum": 1500,
+          "unit": "m"
+        }
+      ],
+      "max_ias_kmh": 425,
+      "simulation_target_altitude_m": 1200
+    }
+  ],
+  "nominal_ground_speed_kt": 240,
+  "endpoint_behavior": "handoff",
+  "simulation_model": "piecewise_linear_altitude_on_fix_centrelines",
+  "limitations": [
+    "Nominal altitudes are scenario assumptions within extracted fix constraints, not ATC clearances.",
+    "No fly-by turn radius, wind or automatic holding; procedure extensions beyond the named SID terminus are not included."
+  ],
+  "transitions": {
+    "RINKU": {
+      "fixes": [
+        "DOVIN",
+        "TS918",
+        "TS916",
+        "TS914",
+        "TS912",
+        "RINKU",
+        "DALAP"
+      ],
+      "source": "56091.pdf"
+    },
+    "DOVIN": {
+      "fixes": [
+        "DOVIN",
+        "DALAP"
+      ],
+      "source": "56091.pdf"
+    },
+    "PTH": {
+      "fixes": [
+        "PTH",
+        "DALAP"
+      ],
+      "source": "56091.pdf"
+    },
+    "VETOM": {
+      "fixes": [
+        "VETOM",
+        "DALAP"
+      ],
+      "source": "56091.pdf"
+    },
+    "ELSAS": {
+      "fixes": [
+        "ELSAS",
+        "DALAP"
+      ],
+      "source": "56091.pdf"
+    }
+  },
+  "display_fixes": [
+    "DALAP",
+    "ANSUP",
+    "TS448",
+    "TS446",
+    "TS444",
+    "TS442",
+    "BOMSU"
+  ]
+}

@@ -1,0 +1,16 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOSAIC · ATFM Lab</title><link rel="stylesheet" href="{{ url_for('static', filename='atfm.css') }}"></head><body>
+<header><a href="/">← MOSAIC Radar</a><span>NGHIÊN CỨU · DỮ LIỆU GIẢ LẬP</span></header>
+<main><h1>ATFM Lab <small>Ground delay + upstream speed control</small></h1>
+<p>54 arrivals / 120 phút · Demand cao trùng giảm entry capacity · 43 flights có thể nhận ground delay, 11 đã airborne.</p>
+<div class="notice">Capacity, dwell time và tốc độ là giả định. Mô hình tối ưu arrival-entry flow; chưa kiểm chứng separation 4D, fuel, runway hay capacity thực tế VVTS.</div>
+<section><h2>1 · Chạy so sánh</h2><p>Chạy 5 seeds. GA ground tạo phương án xuất phát; ground tiếp tục (GA_CONTINUED_GROUND) và mixed cùng kế thừa phương án đó, với cùng giới hạn tổng lượt đánh giá tính cả bước chuẩn bị. Bảng kết quả hiển thị tổng lượt đánh giá và thời gian tìm kiếm. Mixed kết hợp ground delay 0–30 phút và speed absorption 0–4 phút trước TMA.</p>
+<label>Population <input id="population" type="number" min="4" max="100" value="60"></label><label>Generations <input id="generations" type="number" min="1" max="200" value="100"></label><button id="run">Chạy experiment</button><a href="/api/atfm/export.csv">Tải KPI CSV</a><p id="status" role="status">Đang đọc trạng thái…</p></section>
+<section><h2>2 · Demand, capacity và kết quả</h2><div id="chart"></div><p>Capacity: 6 flights/15 phút; giảm còn 4 trong phút 30–60. Occupancy limit: 8. Sau phút 120 vẫn phục vụ hết demand.</p>
+<p><code>J = ground + 2 × speed absorption + 4 × holding + 0.2 × maximum delay</code></p>
+<p>Speed absorption tăng thời gian trên một đoạn upstream giả định dài 100 NM: 20–24 phút, tương ứng ground speed 300–250 kt. Không diễn giải weighted objective thành fuel saving.</p>
+<div class="scroll"><table><thead><tr><th>Phương án</th><th>Ground</th><th>Speed</th><th>Holding</th><th>Tổng delay</th><th>Max</th><th>Objective ↓</th><th>Tổng lượt đánh giá</th><th>Tìm kiếm (giây)</th></tr></thead><tbody id="metrics"></tbody></table></div><p id="assessment"></p><div id="convergence"></div>
+<details><summary>ETA stress test và weight sensitivity</summary><p>Giữ nguyên các plans, thay ETA ±2 phút trên 3 seeds; không re-optimize. Re-score speed weight 1/2/4 chỉ kiểm tra cách đánh giá thay đổi.</p><pre id="stress"></pre></details></section>
+<section><h2>3 · Phát lại trên simulator MOSAIC</h2><p>Chọn phương án rồi nạp: traffic đang chạy trong phiên này sẽ được thay bằng replay giả lập. Entry/exit được phát qua MockConnector và pipeline/dashboard hiện có. Hình học ba hướng chỉ minh họa; replay không phải kiểm chứng động học độc lập.</p>
+<select id="method" aria-label="Phương án replay"></select><button id="replay">Thay traffic bằng replay</button><button id="pause">Tạm dừng</button><a href="/" target="_blank" rel="noopener">Mở radar MOSAIC ↗</a><p id="replaystatus"></p>
+<div class="scroll"><table><thead><tr><th>Flight</th><th>Ground phút</th><th>Speed phút</th><th>Upstream kt</th><th>Entry phút</th><th>Holding phút</th></tr></thead><tbody id="flights"></tbody></table></div></section>
+</main><script src="{{ url_for('static', filename='atfm.js') }}"></script></body></html>
